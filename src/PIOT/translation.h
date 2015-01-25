@@ -7,16 +7,16 @@
 
 #include <iostream>
 #include <string>
-
+using namespace std;
 class translation {
 public:
   translation(string pFilePath, string pFileName);
-  string trans();  //translate the program to pi(p) and return the pi(p)'s filename
+  void trans();  //translate the program to pi(p) and return the pi(p)'s filename
   string choice_rule(int index); //generate the choice rule.
-  boolean isRule(string line); //determine whehther the line is a rule.
+  bool isRule(string line); //determine whehther the line is a rule.
 private:
   string pFileName;
   string pFilePath;
   int p_index;
-}
+};
 #endif

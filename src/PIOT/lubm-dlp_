@@ -1,0 +1,1999 @@
+degreeFrom(X,Y) :- doctoralDegreeFrom(X,Y), not p0.
+a0 :- not p0.
+p0 :- not a0.
+memberOf(X,Y) :- worksFor(X,Y), not p1.
+a1 :- not p1.
+p1 :- not a1.
+degreeFrom(X,Y) :- mastersDegreeFrom(X,Y), not p2.
+a2 :- not p2.
+p2 :- not a2.
+member(Y,X) :- memberOf(X,Y), not p3.
+a3 :- not p3.
+p3 :- not a3.
+memberOf(Y,X) :- member(X,Y), not p4.
+a4 :- not p4.
+p4 :- not a4.
+degreeFrom(X,Y) :- undergraduateDegreeFrom(X,Y), not p5.
+a5 :- not p5.
+p5 :- not a5.
+hasAlumnus(Y,X) :- degreeFrom(X,Y), not p6.
+a6 :- not p6.
+p6 :- not a6.
+degreeFrom(Y,X) :- hasAlumnus(X,Y), not p7.
+a7 :- not p7.
+p7 :- not a7.
+worksFor(X,Y) :- headOf(X,Y), not p8.
+a8 :- not p8.
+p8 :- not a8.
+Professor(X) :- tenured(X,Y), not p9.
+a9 :- not p9.
+p9 :- not a9.
+Person(X) :- degreeFrom(X,Y), not p10.
+a10 :- not p10.
+p10 :- not a10.
+Faculty(X) :- Professor(X), not p11.
+a11 :- not p11.
+p11 :- not a11.
+Faculty(X) :- PostDoc(X), not p12.
+a12 :- not p12.
+p12 :- not a12.
+Professor(X) :- Dean(X), not p13.
+a13 :- not p13.
+p13 :- not a13.
+Publication(X) :- publicationDate(X,Y), not p14.
+a14 :- not p14.
+p14 :- not a14.
+Person(X) :- title(X,Y), not p15.
+a15 :- not p15.
+p15 :- not a15.
+Software(X) :- softwareDocumentation(X,Y), not p16.
+a16 :- not p16.
+p16 :- not a16.
+Student(X) :- Person(X), takesCourse(X,Y), Course(Y), not p17.
+a17 :- not p17.
+p17 :- not a17.
+takesCourse(X,f(X)) :- Student(X), not p18.
+a18 :- not p18.
+p18 :- not a18.
+Course(f(X)) :- Student(X), not p19.
+a19 :- not p19.
+p19 :- not a19.
+Person(X) :- Student(X), not p20.
+a20 :- not p20.
+p20 :- not a20.
+Publication(X) :- publicationResearch(X,Y), not p21.
+a21 :- not p21.
+p21 :- not a21.
+Chair(X) :- Person(X), headOf(X,Y), Department(Y), not p22.
+a22 :- not p22.
+p22 :- not a22.
+headOf(X,f(X)) :- Chair(X), not p23.
+a23 :- not p23.
+p23 :- not a23.
+Department(f(X)) :- Chair(X), not p24.
+a24 :- not p24.
+p24 :- not a24.
+Person(X) :- Chair(X), not p25.
+a25 :- not p25.
+p25 :- not a25.
+Publication(X) :- publicationAuthor(X,Y), not p26.
+a26 :- not p26.
+p26 :- not a26.
+Organization(X) :- affiliateOf(X,Y), not p27.
+a27 :- not p27.
+p27 :- not a27.
+Faculty(X) :- Lecturer(X), not p28.
+a28 :- not p28.
+p28 :- not a28.
+University(Y) :- degreeFrom(X,Y), not p29.
+a29 :- not p29.
+p29 :- not a29.
+University(Y) :- undergraduateDegreeFrom(X,Y), not p30.
+a30 :- not p30.
+p30 :- not a30.
+Person(Y) :- publicationAuthor(X,Y), not p31.
+a31 :- not p31.
+p31 :- not a31.
+Course(Y) :- teachingAssistantOf(X,Y), not p32.
+a32 :- not p32.
+p32 :- not a32.
+Person(X) :- advisor(X,Y), not p33.
+a33 :- not p33.
+p33 :- not a33.
+University(X) :- hasAlumnus(X,Y), not p34.
+a34 :- not p34.
+p34 :- not a34.
+Professor(X) :- VisitingProfessor(X), not p35.
+a35 :- not p35.
+p35 :- not a35.
+Professor(X) :- AssistantProfessor(X), not p36.
+a36 :- not p36.
+p36 :- not a36.
+Organization(X) :- affiliatedOrganizationOf(X,Y), not p37.
+a37 :- not p37.
+p37 :- not a37.
+Article(X) :- TechnicalReport(X), not p38.
+a38 :- not p38.
+p38 :- not a38.
+Professor(Y) :- advisor(X,Y), not p39.
+a39 :- not p39.
+p39 :- not a39.
+Publication(X) :- Book(X), not p40.
+a40 :- not p40.
+p40 :- not a40.
+Dean(X) :- headOf(X,Y), College(Y), not p41.
+a41 :- not p41.
+p41 :- not a41.
+headOf(X,f(X)) :- Dean(X), not p42.
+a42 :- not p42.
+p42 :- not a42.
+College(f(X)) :- Dean(X), not p43.
+a43 :- not p43.
+p43 :- not a43.
+internal_all_0(X) :- Thing(X), not p44.
+a44 :- not p44.
+p44 :- not a44.
+Publication(Y) :- orgPublication(X,Y), not p45.
+a45 :- not p45.
+p45 :- not a45.
+University(Y) :- mastersDegreeFrom(X,Y), not p46.
+a46 :- not p46.
+p46 :- not a46.
+University(Y) :- doctoralDegreeFrom(X,Y), not p47.
+a47 :- not p47.
+p47 :- not a47.
+Article(X) :- JournalArticle(X), not p48.
+a48 :- not p48.
+p48 :- not a48.
+Course(Y) :- listedCourse(X,Y), not p49.
+a49 :- not p49.
+p49 :- not a49.
+Course(Y) :- teacherOf(X,Y), not p50.
+a50 :- not p50.
+p50 :- not a50.
+Faculty(X) :- teacherOf(X,Y), not p51.
+a51 :- not p51.
+p51 :- not a51.
+Person(X) :- emailAddress(X,Y), not p52.
+a52 :- not p52.
+p52 :- not a52.
+Organization(X) :- Program(X), not p53.
+a53 :- not p53.
+p53 :- not a53.
+Work(X) :- Course(X), not p54.
+a54 :- not p54.
+p54 :- not a54.
+Person(X) :- ResearchAssistant(X), not p55.
+a55 :- not p55.
+p55 :- not a55.
+Publication(X) :- UnofficialPublication(X), not p56.
+a56 :- not p56.
+p56 :- not a56.
+Person(X) :- GraduateStudent(X), not p57.
+a57 :- not p57.
+p57 :- not a57.
+Organization(Y) :- affiliatedOrganizationOf(X,Y), not p58.
+a58 :- not p58.
+p58 :- not a58.
+Organization(X) :- University(X), not p59.
+a59 :- not p59.
+p59 :- not a59.
+Student(X) :- UndergraduateStudent(X), not p60.
+a60 :- not p60.
+p60 :- not a60.
+Work(X) :- Research(X), not p61.
+a61 :- not p61.
+p61 :- not a61.
+Article(X) :- ConferencePaper(X), not p62.
+a62 :- not p62.
+p62 :- not a62.
+worksFor(X,f(X)) :- ResearchAssistant(X), not p63.
+a63 :- not p63.
+p63 :- not a63.
+ResearchGroup(f(X)) :- ResearchAssistant(X), not p64.
+a64 :- not p64.
+p64 :- not a64.
+Organization(X) :- ResearchGroup(X), not p65.
+a65 :- not p65.
+p65 :- not a65.
+Professor(X) :- Chair(X), not p66.
+a66 :- not p66.
+p66 :- not a66.
+Director(X) :- Person(X), headOf(X,Y), Program(Y), not p67.
+a67 :- not p67.
+p67 :- not a67.
+headOf(X,f(X)) :- Director(X), not p68.
+a68 :- not p68.
+p68 :- not a68.
+Program(f(X)) :- Director(X), not p69.
+a69 :- not p69.
+p69 :- not a69.
+Person(X) :- Director(X), not p70.
+a70 :- not p70.
+p70 :- not a70.
+Employee(X) :- AdministrativeStaff(X), not p71.
+a71 :- not p71.
+p71 :- not a71.
+Employee(X) :- Person(X), worksFor(X,Y), Organization(Y), not p72.
+a72 :- not p72.
+p72 :- not a72.
+worksFor(X,f(X)) :- Employee(X), not p73.
+a73 :- not p73.
+p73 :- not a73.
+Organization(f(X)) :- Employee(X), not p74.
+a74 :- not p74.
+p74 :- not a74.
+Person(X) :- Employee(X), not p75.
+a75 :- not p75.
+p75 :- not a75.
+Organization(X) :- member(X,Y), not p76.
+a76 :- not p76.
+p76 :- not a76.
+AdministrativeStaff(X) :- SystemsStaff(X), not p77.
+a77 :- not p77.
+p77 :- not a77.
+ResearchGroup(X) :- researchProject(X,Y), not p78.
+a78 :- not p78.
+p78 :- not a78.
+Organization(X) :- Department(X), not p79.
+a79 :- not p79.
+p79 :- not a79.
+Organization(X) :- internal_all_1(X), not p80.
+a80 :- not p80.
+p80 :- not a80.
+Publication(Y) :- softwareDocumentation(X,Y), not p81.
+a81 :- not p81.
+p81 :- not a81.
+Person(X) :- telephone(X,Y), not p82.
+a82 :- not p82.
+p82 :- not a82.
+Organization(X) :- orgPublication(X,Y), not p83.
+a83 :- not p83.
+p83 :- not a83.
+Person(X) :- doctoralDegreeFrom(X,Y), not p84.
+a84 :- not p84.
+p84 :- not a84.
+Organization(X) :- Institute(X), not p85.
+a85 :- not p85.
+p85 :- not a85.
+Person(Y) :- affiliateOf(X,Y), not p86.
+a86 :- not p86.
+p86 :- not a86.
+Schedule(X) :- listedCourse(X,Y), not p87.
+a87 :- not p87.
+p87 :- not a87.
+Person(Y) :- hasAlumnus(X,Y), not p88.
+a88 :- not p88.
+p88 :- not a88.
+Publication(X) :- Specification(X), not p89.
+a89 :- not p89.
+p89 :- not a89.
+Publication(X) :- Software(X), not p90.
+a90 :- not p90.
+p90 :- not a90.
+Person(X) :- mastersDegreeFrom(X,Y), not p91.
+a91 :- not p91.
+p91 :- not a91.
+Person(X) :- undergraduateDegreeFrom(X,Y), not p92.
+a92 :- not p92.
+p92 :- not a92.
+TeachingAssistant(X) :- teachingAssistantOf(X,Y), not p93.
+a93 :- not p93.
+p93 :- not a93.
+AdministrativeStaff(X) :- ClericalStaff(X), not p94.
+a94 :- not p94.
+p94 :- not a94.
+Research(Y) :- publicationResearch(X,Y), not p95.
+a95 :- not p95.
+p95 :- not a95.
+Organization(X) :- College(X), not p96.
+a96 :- not p96.
+p96 :- not a96.
+Publication(X) :- Article(X), not p97.
+a97 :- not p97.
+p97 :- not a97.
+Professor(X) :- AssociateProfessor(X), not p98.
+a98 :- not p98.
+p98 :- not a98.
+Person(Y) :- member(X,Y), not p99.
+a99 :- not p99.
+p99 :- not a99.
+Course(X) :- GraduateCourse(X), not p100.
+a100 :- not p100.
+p100 :- not a100.
+Professor(X) :- FullProfessor(X), not p101.
+a101 :- not p101.
+p101 :- not a101.
+Publication(X) :- Manual(X), not p102.
+a102 :- not p102.
+p102 :- not a102.
+Software(X) :- softwareVersion(X,Y), not p103.
+a103 :- not p103.
+p103 :- not a103.
+TeachingAssistant(X) :- Person(X), teachingAssistantOf(X,Y), Course(Y), not p104.
+a104 :- not p104.
+p104 :- not a104.
+teachingAssistantOf(X,f(X)) :- TeachingAssistant(X), not p105.
+a105 :- not p105.
+p105 :- not a105.
+Course(f(X)) :- TeachingAssistant(X), not p106.
+a106 :- not p106.
+p106 :- not a106.
+Person(X) :- TeachingAssistant(X), not p107.
+a107 :- not p107.
+p107 :- not a107.
+Person(X) :- age(X,Y), not p108.
+a108 :- not p108.
+p108 :- not a108.
+takesCourse(X,f(X)) :- GraduateStudent(X), not p109.
+a109 :- not p109.
+p109 :- not a109.
+GraduateCourse(f(X)) :- GraduateStudent(X), not p110.
+a110 :- not p110.
+p110 :- not a110.
+Research(Y) :- researchProject(X,Y), not p111.
+a111 :- not p111.
+p111 :- not a111.
+Employee(X) :- Faculty(X), not p112.
+a112 :- not p112.
+p112 :- not a112.
+internal_all_4(Y) :- internal_all_3(X), subOrganizationOf(X,Y), not p113.
+a113 :- not p113.
+p113 :- not a113.
+internal_all_3(X) :- internal_all_4(X), not p114.
+a114 :- not p114.
+p114 :- not a114.
+internal_all_2(X) :- internal_all_4(X), not p115.
+a115 :- not p115.
+p115 :- not a115.
+internal_all_2(Y) :- internal_all_0(X), subOrganizationOf(X,Y), not p116.
+a116 :- not p116.
+p116 :- not a116.
+internal_all_0(X) :- internal_all_2(X), not p117.
+a117 :- not p117.
+p117 :- not a117.
+internal_all_3(X) :- internal_all_0(X), not p118.
+a118 :- not p118.
+p118 :- not a118.
+Organization(X) :- internal_all_2(X), not p119.
+a119 :- not p119.
+p119 :- not a119.
+internal_all_6(X) :- subOrganizationOf(X,Y), internal_all_7(Y), not p120.
+a120 :- not p120.
+p120 :- not a120.
+internal_all_7(X) :- internal_all_6(X), not p121.
+a121 :- not p121.
+p121 :- not a121.
+internal_all_7(X) :- internal_all_5(X), not p122.
+a122 :- not p122.
+p122 :- not a122.
+internal_all_1(X) :- subOrganizationOf(X,Y), internal_all_5(Y), not p123.
+a123 :- not p123.
+p123 :- not a123.
+internal_all_5(X) :- internal_all_1(X), not p124.
+a124 :- not p124.
+p124 :- not a124.
+internal_all_1(X) :- internal_all_6(X), not p125.
+a125 :- not p125.
+p125 :- not a125.
+internal_all_5(X) :- Thing(X), not p126.
+a126 :- not p126.
+p126 :- not a126.
+ :- softwareDocumentation(X,Y), tenured(X,Y), not p127.
+a127 :- not p127.
+p127 :- not a127.
+ :- affiliatedOrganizationOf(X,Y), member(X,Y), not p128.
+a128 :- not p128.
+p128 :- not a128.
+ :- memberOf(X,Y), researchProject(X,Y), not p129.
+a129 :- not p129.
+p129 :- not a129.
+ :- hasFaculty(X,Y), teachingAssistantOf(X,Y), not p130.
+a130 :- not p130.
+p130 :- not a130.
+ :- publicationAuthor(X,Y), softwareVersion(X,Y), not p131.
+a131 :- not p131.
+p131 :- not a131.
+ :- listedCourse(X,Y), publicationAuthor(X,Y), not p132.
+a132 :- not p132.
+p132 :- not a132.
+ :- affiliatedOrganizationOf(X,Y), tenured(X,Y), not p133.
+a133 :- not p133.
+p133 :- not a133.
+ :- hasFaculty(X,Y), member(X,Y), not p134.
+a134 :- not p134.
+p134 :- not a134.
+ :- hasExamRecord(X,Y), tenured(X,Y), not p135.
+a135 :- not p135.
+p135 :- not a135.
+ :- member(X,Y), takesCourse(X,Y), not p136.
+a136 :- not p136.
+p136 :- not a136.
+ :- member(X,Y), softwareVersion(X,Y), not p137.
+a137 :- not p137.
+p137 :- not a137.
+ :- hasAlumnus(X,Y), member(X,Y), not p138.
+a138 :- not p138.
+p138 :- not a138.
+ :- isPartOfUniversity(X,Y), teacherOf(X,Y), not p139.
+a139 :- not p139.
+p139 :- not a139.
+ :- degreeFrom(X,Y), teachingAssistantOf(X,Y), not p140.
+a140 :- not p140.
+p140 :- not a140.
+ :- listedCourse(X,Y), softwareDocumentation(X,Y), not p141.
+a141 :- not p141.
+p141 :- not a141.
+ :- orgPublication(X,Y), tenured(X,Y), not p142.
+a142 :- not p142.
+p142 :- not a142.
+ :- memberOf(X,Y), subOrganizationOf(X,Y), not p143.
+a143 :- not p143.
+p143 :- not a143.
+ :- isPartOfUniversity(X,Y), researchProject(X,Y), not p144.
+a144 :- not p144.
+p144 :- not a144.
+ :- degreeFrom(X,Y), memberOf(X,Y), not p145.
+a145 :- not p145.
+p145 :- not a145.
+ :- memberOf(X,Y), orgPublication(X,Y), not p146.
+a146 :- not p146.
+p146 :- not a146.
+ :- isPartOfUniversity(X,Y), memberOf(X,Y), not p147.
+a147 :- not p147.
+p147 :- not a147.
+ :- hasExamRecord(X,Y), subOrganizationOf(X,Y), not p148.
+a148 :- not p148.
+p148 :- not a148.
+ :- member(X,Y), publicationDate(X,Y), not p149.
+a149 :- not p149.
+p149 :- not a149.
+ :- hasAlumnus(X,Y), isPartOfUniversity(X,Y), not p150.
+a150 :- not p150.
+p150 :- not a150.
+ :- degreeFrom(X,Y), member(X,Y), not p151.
+a151 :- not p151.
+p151 :- not a151.
+ :- softwareDocumentation(X,Y), takesCourse(X,Y), not p152.
+a152 :- not p152.
+p152 :- not a152.
+ :- affiliatedOrganizationOf(X,Y), listedCourse(X,Y), not p153.
+a153 :- not p153.
+p153 :- not a153.
+ :- subOrganizationOf(X,Y), teacherOf(X,Y), not p154.
+a154 :- not p154.
+p154 :- not a154.
+ :- hasAlumnus(X,Y), tenured(X,Y), not p155.
+a155 :- not p155.
+p155 :- not a155.
+ :- advisor(X,Y), member(X,Y), not p156.
+a156 :- not p156.
+p156 :- not a156.
+ :- hasFaculty(X,Y), researchProject(X,Y), not p157.
+a157 :- not p157.
+p157 :- not a157.
+ :- publicationAuthor(X,Y), subOrganizationOf(X,Y), not p158.
+a158 :- not p158.
+p158 :- not a158.
+ :- listedCourse(X,Y), researchProject(X,Y), not p159.
+a159 :- not p159.
+p159 :- not a159.
+ :- advisor(X,Y), tenured(X,Y), not p160.
+a160 :- not p160.
+p160 :- not a160.
+ :- degreeFrom(X,Y), publicationAuthor(X,Y), not p161.
+a161 :- not p161.
+p161 :- not a161.
+ :- affiliatedOrganizationOf(X,Y), publicationDate(X,Y), not p162.
+a162 :- not p162.
+p162 :- not a162.
+ :- softwareDocumentation(X,Y), subOrganizationOf(X,Y), not p163.
+a163 :- not p163.
+p163 :- not a163.
+ :- publicationResearch(X,Y), researchProject(X,Y), not p164.
+a164 :- not p164.
+p164 :- not a164.
+ :- affiliatedOrganizationOf(X,Y), teachingAssistantOf(X,Y), not p165.
+a165 :- not p165.
+p165 :- not a165.
+ :- softwareDocumentation(X,Y), teacherOf(X,Y), not p166.
+a166 :- not p166.
+p166 :- not a166.
+ :- advisor(X,Y), softwareDocumentation(X,Y), not p167.
+a167 :- not p167.
+p167 :- not a167.
+ :- advisor(X,Y), subOrganizationOf(X,Y), not p168.
+a168 :- not p168.
+p168 :- not a168.
+ :- orgPublication(X,Y), publicationDate(X,Y), not p169.
+a169 :- not p169.
+p169 :- not a169.
+ :- hasAlumnus(X,Y), softwareDocumentation(X,Y), not p170.
+a170 :- not p170.
+p170 :- not a170.
+ :- isPartOfUniversity(X,Y), member(X,Y), not p171.
+a171 :- not p171.
+p171 :- not a171.
+ :- isPartOfUniversity(X,Y), listedCourse(X,Y), not p172.
+a172 :- not p172.
+p172 :- not a172.
+ :- affiliatedOrganizationOf(X,Y), hasAlumnus(X,Y), not p173.
+a173 :- not p173.
+p173 :- not a173.
+ :- hasFaculty(X,Y), takesCourse(X,Y), not p174.
+a174 :- not p174.
+p174 :- not a174.
+ :- advisor(X,Y), researchProject(X,Y), not p175.
+a175 :- not p175.
+p175 :- not a175.
+ :- memberOf(X,Y), softwareDocumentation(X,Y), not p176.
+a176 :- not p176.
+p176 :- not a176.
+ :- advisor(X,Y), listedCourse(X,Y), not p177.
+a177 :- not p177.
+p177 :- not a177.
+ :- member(X,Y), researchProject(X,Y), not p178.
+a178 :- not p178.
+p178 :- not a178.
+ :- orgPublication(X,Y), takesCourse(X,Y), not p179.
+a179 :- not p179.
+p179 :- not a179.
+ :- hasAlumnus(X,Y), orgPublication(X,Y), not p180.
+a180 :- not p180.
+p180 :- not a180.
+ :- advisor(X,Y), orgPublication(X,Y), not p181.
+a181 :- not p181.
+p181 :- not a181.
+ :- takesCourse(X,Y), teachingAssistantOf(X,Y), not p182.
+a182 :- not p182.
+p182 :- not a182.
+ :- affiliatedOrganizationOf(X,Y), subOrganizationOf(X,Y), not p183.
+a183 :- not p183.
+p183 :- not a183.
+ :- hasAlumnus(X,Y), researchProject(X,Y), not p184.
+a184 :- not p184.
+p184 :- not a184.
+ :- orgPublication(X,Y), subOrganizationOf(X,Y), not p185.
+a185 :- not p185.
+p185 :- not a185.
+ :- isPartOfUniversity(X,Y), softwareDocumentation(X,Y), not p186.
+a186 :- not p186.
+p186 :- not a186.
+ :- teacherOf(X,Y), teachingAssistantOf(X,Y), not p187.
+a187 :- not p187.
+p187 :- not a187.
+ :- softwareVersion(X,Y), tenured(X,Y), not p188.
+a188 :- not p188.
+p188 :- not a188.
+ :- advisor(X,Y), softwareVersion(X,Y), not p189.
+a189 :- not p189.
+p189 :- not a189.
+ :- publicationResearch(X,Y), teachingAssistantOf(X,Y), not p190.
+a190 :- not p190.
+p190 :- not a190.
+ :- member(X,Y), publicationAuthor(X,Y), not p191.
+a191 :- not p191.
+p191 :- not a191.
+ :- memberOf(X,Y), softwareVersion(X,Y), not p192.
+a192 :- not p192.
+p192 :- not a192.
+ :- isPartOfUniversity(X,Y), orgPublication(X,Y), not p193.
+a193 :- not p193.
+p193 :- not a193.
+ :- advisor(X,Y), hasExamRecord(X,Y), not p194.
+a194 :- not p194.
+p194 :- not a194.
+ :- softwareVersion(X,Y), teacherOf(X,Y), not p195.
+a195 :- not p195.
+p195 :- not a195.
+ :- publicationAuthor(X,Y), teacherOf(X,Y), not p196.
+a196 :- not p196.
+p196 :- not a196.
+ :- memberOf(X,Y), tenured(X,Y), not p197.
+a197 :- not p197.
+p197 :- not a197.
+ :- memberOf(X,Y), publicationResearch(X,Y), not p198.
+a198 :- not p198.
+p198 :- not a198.
+ :- publicationAuthor(X,Y), researchProject(X,Y), not p199.
+a199 :- not p199.
+p199 :- not a199.
+ :- publicationDate(X,Y), subOrganizationOf(X,Y), not p200.
+a200 :- not p200.
+p200 :- not a200.
+ :- softwareDocumentation(X,Y), softwareVersion(X,Y), not p201.
+a201 :- not p201.
+p201 :- not a201.
+ :- publicationResearch(X,Y), tenured(X,Y), not p202.
+a202 :- not p202.
+p202 :- not a202.
+ :- listedCourse(X,Y), orgPublication(X,Y), not p203.
+a203 :- not p203.
+p203 :- not a203.
+ :- takesCourse(X,Y), tenured(X,Y), not p204.
+a204 :- not p204.
+p204 :- not a204.
+ :- publicationResearch(X,Y), takesCourse(X,Y), not p205.
+a205 :- not p205.
+p205 :- not a205.
+ :- softwareVersion(X,Y), subOrganizationOf(X,Y), not p206.
+a206 :- not p206.
+p206 :- not a206.
+ :- publicationDate(X,Y), teachingAssistantOf(X,Y), not p207.
+a207 :- not p207.
+p207 :- not a207.
+ :- hasExamRecord(X,Y), teachingAssistantOf(X,Y), not p208.
+a208 :- not p208.
+p208 :- not a208.
+ :- memberOf(X,Y), teacherOf(X,Y), not p209.
+a209 :- not p209.
+p209 :- not a209.
+ :- publicationDate(X,Y), researchProject(X,Y), not p210.
+a210 :- not p210.
+p210 :- not a210.
+ :- degreeFrom(X,Y), isPartOfUniversity(X,Y), not p211.
+a211 :- not p211.
+p211 :- not a211.
+ :- listedCourse(X,Y), tenured(X,Y), not p212.
+a212 :- not p212.
+p212 :- not a212.
+ :- advisor(X,Y), isPartOfUniversity(X,Y), not p213.
+a213 :- not p213.
+p213 :- not a213.
+ :- researchProject(X,Y), subOrganizationOf(X,Y), not p214.
+a214 :- not p214.
+p214 :- not a214.
+ :- hasFaculty(X,Y), tenured(X,Y), not p215.
+a215 :- not p215.
+p215 :- not a215.
+ :- affiliatedOrganizationOf(X,Y), isPartOfUniversity(X,Y), not p216.
+a216 :- not p216.
+p216 :- not a216.
+ :- researchProject(X,Y), takesCourse(X,Y), not p217.
+a217 :- not p217.
+p217 :- not a217.
+ :- affiliatedOrganizationOf(X,Y), softwareVersion(X,Y), not p218.
+a218 :- not p218.
+p218 :- not a218.
+ :- researchProject(X,Y), teacherOf(X,Y), not p219.
+a219 :- not p219.
+p219 :- not a219.
+ :- degreeFrom(X,Y), subOrganizationOf(X,Y), not p220.
+a220 :- not p220.
+p220 :- not a220.
+ :- hasExamRecord(X,Y), member(X,Y), not p221.
+a221 :- not p221.
+p221 :- not a221.
+ :- hasAlumnus(X,Y), publicationResearch(X,Y), not p222.
+a222 :- not p222.
+p222 :- not a222.
+ :- isPartOfUniversity(X,Y), teachingAssistantOf(X,Y), not p223.
+a223 :- not p223.
+p223 :- not a223.
+ :- affiliatedOrganizationOf(X,Y), degreeFrom(X,Y), not p224.
+a224 :- not p224.
+p224 :- not a224.
+ :- publicationAuthor(X,Y), publicationResearch(X,Y), not p225.
+a225 :- not p225.
+p225 :- not a225.
+ :- degreeFrom(X,Y), takesCourse(X,Y), not p226.
+a226 :- not p226.
+p226 :- not a226.
+ :- advisor(X,Y), affiliatedOrganizationOf(X,Y), not p227.
+a227 :- not p227.
+p227 :- not a227.
+ :- listedCourse(X,Y), takesCourse(X,Y), not p228.
+a228 :- not p228.
+p228 :- not a228.
+ :- publicationAuthor(X,Y), takesCourse(X,Y), not p229.
+a229 :- not p229.
+p229 :- not a229.
+ :- isPartOfUniversity(X,Y), publicationResearch(X,Y), not p230.
+a230 :- not p230.
+p230 :- not a230.
+ :- hasAlumnus(X,Y), listedCourse(X,Y), not p231.
+a231 :- not p231.
+p231 :- not a231.
+ :- isPartOfUniversity(X,Y), takesCourse(X,Y), not p232.
+a232 :- not p232.
+p232 :- not a232.
+ :- orgPublication(X,Y), teachingAssistantOf(X,Y), not p233.
+a233 :- not p233.
+p233 :- not a233.
+ :- advisor(X,Y), takesCourse(X,Y), not p234.
+a234 :- not p234.
+p234 :- not a234.
+ :- hasExamRecord(X,Y), takesCourse(X,Y), not p235.
+a235 :- not p235.
+p235 :- not a235.
+ :- orgPublication(X,Y), softwareVersion(X,Y), not p236.
+a236 :- not p236.
+p236 :- not a236.
+ :- hasExamRecord(X,Y), softwareDocumentation(X,Y), not p237.
+a237 :- not p237.
+p237 :- not a237.
+ :- publicationAuthor(X,Y), softwareDocumentation(X,Y), not p238.
+a238 :- not p238.
+p238 :- not a238.
+ :- listedCourse(X,Y), memberOf(X,Y), not p239.
+a239 :- not p239.
+p239 :- not a239.
+ :- hasExamRecord(X,Y), softwareVersion(X,Y), not p240.
+a240 :- not p240.
+p240 :- not a240.
+ :- hasAlumnus(X,Y), subOrganizationOf(X,Y), not p241.
+a241 :- not p241.
+p241 :- not a241.
+ :- degreeFrom(X,Y), listedCourse(X,Y), not p242.
+a242 :- not p242.
+p242 :- not a242.
+ :- member(X,Y), memberOf(X,Y), not p243.
+a243 :- not p243.
+p243 :- not a243.
+ :- memberOf(X,Y), publicationAuthor(X,Y), not p244.
+a244 :- not p244.
+p244 :- not a244.
+ :- hasFaculty(X,Y), publicationDate(X,Y), not p245.
+a245 :- not p245.
+p245 :- not a245.
+ :- hasFaculty(X,Y), subOrganizationOf(X,Y), not p246.
+a246 :- not p246.
+p246 :- not a246.
+ :- degreeFrom(X,Y), orgPublication(X,Y), not p247.
+a247 :- not p247.
+p247 :- not a247.
+ :- publicationResearch(X,Y), softwareVersion(X,Y), not p248.
+a248 :- not p248.
+p248 :- not a248.
+ :- orgPublication(X,Y), publicationAuthor(X,Y), not p249.
+a249 :- not p249.
+p249 :- not a249.
+ :- hasFaculty(X,Y), isPartOfUniversity(X,Y), not p250.
+a250 :- not p250.
+p250 :- not a250.
+ :- publicationAuthor(X,Y), teachingAssistantOf(X,Y), not p251.
+a251 :- not p251.
+p251 :- not a251.
+ :- hasAlumnus(X,Y), publicationDate(X,Y), not p252.
+a252 :- not p252.
+p252 :- not a252.
+ :- hasFaculty(X,Y), publicationResearch(X,Y), not p253.
+a253 :- not p253.
+p253 :- not a253.
+ :- softwareVersion(X,Y), takesCourse(X,Y), not p254.
+a254 :- not p254.
+p254 :- not a254.
+ :- degreeFrom(X,Y), publicationResearch(X,Y), not p255.
+a255 :- not p255.
+p255 :- not a255.
+ :- listedCourse(X,Y), publicationResearch(X,Y), not p256.
+a256 :- not p256.
+p256 :- not a256.
+ :- member(X,Y), softwareDocumentation(X,Y), not p257.
+a257 :- not p257.
+p257 :- not a257.
+ :- affiliatedOrganizationOf(X,Y), teacherOf(X,Y), not p258.
+a258 :- not p258.
+p258 :- not a258.
+ :- softwareVersion(X,Y), teachingAssistantOf(X,Y), not p259.
+a259 :- not p259.
+p259 :- not a259.
+ :- degreeFrom(X,Y), publicationDate(X,Y), not p260.
+a260 :- not p260.
+p260 :- not a260.
+ :- hasExamRecord(X,Y), memberOf(X,Y), not p261.
+a261 :- not p261.
+p261 :- not a261.
+ :- hasFaculty(X,Y), teacherOf(X,Y), not p262.
+a262 :- not p262.
+p262 :- not a262.
+ :- hasExamRecord(X,Y), isPartOfUniversity(X,Y), not p263.
+a263 :- not p263.
+p263 :- not a263.
+ :- advisor(X,Y), hasFaculty(X,Y), not p264.
+a264 :- not p264.
+p264 :- not a264.
+ :- publicationDate(X,Y), softwareVersion(X,Y), not p265.
+a265 :- not p265.
+p265 :- not a265.
+ :- subOrganizationOf(X,Y), takesCourse(X,Y), not p266.
+a266 :- not p266.
+p266 :- not a266.
+ :- isPartOfUniversity(X,Y), publicationDate(X,Y), not p267.
+a267 :- not p267.
+p267 :- not a267.
+ :- researchProject(X,Y), tenured(X,Y), not p268.
+a268 :- not p268.
+p268 :- not a268.
+ :- hasExamRecord(X,Y), listedCourse(X,Y), not p269.
+a269 :- not p269.
+p269 :- not a269.
+ :- orgPublication(X,Y), researchProject(X,Y), not p270.
+a270 :- not p270.
+p270 :- not a270.
+ :- listedCourse(X,Y), publicationDate(X,Y), not p271.
+a271 :- not p271.
+p271 :- not a271.
+ :- hasExamRecord(X,Y), publicationDate(X,Y), not p272.
+a272 :- not p272.
+p272 :- not a272.
+ :- degreeFrom(X,Y), hasAlumnus(X,Y), not p273.
+a273 :- not p273.
+p273 :- not a273.
+ :- affiliatedOrganizationOf(X,Y), hasExamRecord(X,Y), not p274.
+a274 :- not p274.
+p274 :- not a274.
+ :- teachingAssistantOf(X,Y), tenured(X,Y), not p275.
+a275 :- not p275.
+p275 :- not a275.
+ :- hasAlumnus(X,Y), teachingAssistantOf(X,Y), not p276.
+a276 :- not p276.
+p276 :- not a276.
+ :- affiliatedOrganizationOf(X,Y), takesCourse(X,Y), not p277.
+a277 :- not p277.
+p277 :- not a277.
+ :- publicationDate(X,Y), publicationResearch(X,Y), not p278.
+a278 :- not p278.
+p278 :- not a278.
+ :- affiliatedOrganizationOf(X,Y), hasFaculty(X,Y), not p279.
+a279 :- not p279.
+p279 :- not a279.
+ :- publicationDate(X,Y), teacherOf(X,Y), not p280.
+a280 :- not p280.
+p280 :- not a280.
+ :- publicationDate(X,Y), tenured(X,Y), not p281.
+a281 :- not p281.
+p281 :- not a281.
+ :- listedCourse(X,Y), member(X,Y), not p282.
+a282 :- not p282.
+p282 :- not a282.
+ :- member(X,Y), subOrganizationOf(X,Y), not p283.
+a283 :- not p283.
+p283 :- not a283.
+ :- orgPublication(X,Y), softwareDocumentation(X,Y), not p284.
+a284 :- not p284.
+p284 :- not a284.
+ :- advisor(X,Y), degreeFrom(X,Y), not p285.
+a285 :- not p285.
+p285 :- not a285.
+ :- hasAlumnus(X,Y), hasFaculty(X,Y), not p286.
+a286 :- not p286.
+p286 :- not a286.
+ :- affiliatedOrganizationOf(X,Y), memberOf(X,Y), not p287.
+a287 :- not p287.
+p287 :- not a287.
+ :- subOrganizationOf(X,Y), teachingAssistantOf(X,Y), not p288.
+a288 :- not p288.
+p288 :- not a288.
+ :- member(X,Y), teacherOf(X,Y), not p289.
+a289 :- not p289.
+p289 :- not a289.
+ :- degreeFrom(X,Y), softwareVersion(X,Y), not p290.
+a290 :- not p290.
+p290 :- not a290.
+ :- takesCourse(X,Y), teacherOf(X,Y), not p291.
+a291 :- not p291.
+p291 :- not a291.
+ :- hasExamRecord(X,Y), publicationResearch(X,Y), not p292.
+a292 :- not p292.
+p292 :- not a292.
+ :- publicationResearch(X,Y), teacherOf(X,Y), not p293.
+a293 :- not p293.
+p293 :- not a293.
+ :- hasFaculty(X,Y), softwareVersion(X,Y), not p294.
+a294 :- not p294.
+p294 :- not a294.
+ :- hasAlumnus(X,Y), teacherOf(X,Y), not p295.
+a295 :- not p295.
+p295 :- not a295.
+ :- hasFaculty(X,Y), softwareDocumentation(X,Y), not p296.
+a296 :- not p296.
+p296 :- not a296.
+ :- publicationDate(X,Y), takesCourse(X,Y), not p297.
+a297 :- not p297.
+p297 :- not a297.
+ :- memberOf(X,Y), publicationDate(X,Y), not p298.
+a298 :- not p298.
+p298 :- not a298.
+ :- hasAlumnus(X,Y), takesCourse(X,Y), not p299.
+a299 :- not p299.
+p299 :- not a299.
+ :- affiliatedOrganizationOf(X,Y), softwareDocumentation(X,Y), not p300.
+a300 :- not p300.
+p300 :- not a300.
+ :- researchProject(X,Y), teachingAssistantOf(X,Y), not p301.
+a301 :- not p301.
+p301 :- not a301.
+ :- isPartOfUniversity(X,Y), subOrganizationOf(X,Y), not p302.
+a302 :- not p302.
+p302 :- not a302.
+ :- degreeFrom(X,Y), tenured(X,Y), not p303.
+a303 :- not p303.
+p303 :- not a303.
+ :- advisor(X,Y), hasAlumnus(X,Y), not p304.
+a304 :- not p304.
+p304 :- not a304.
+ :- degreeFrom(X,Y), teacherOf(X,Y), not p305.
+a305 :- not p305.
+p305 :- not a305.
+ :- hasFaculty(X,Y), publicationAuthor(X,Y), not p306.
+a306 :- not p306.
+p306 :- not a306.
+ :- publicationAuthor(X,Y), publicationDate(X,Y), not p307.
+a307 :- not p307.
+p307 :- not a307.
+ :- hasExamRecord(X,Y), researchProject(X,Y), not p308.
+a308 :- not p308.
+p308 :- not a308.
+ :- orgPublication(X,Y), publicationResearch(X,Y), not p309.
+a309 :- not p309.
+p309 :- not a309.
+ :- memberOf(X,Y), teachingAssistantOf(X,Y), not p310.
+a310 :- not p310.
+p310 :- not a310.
+ :- affiliatedOrganizationOf(X,Y), publicationAuthor(X,Y), not p311.
+a311 :- not p311.
+p311 :- not a311.
+ :- listedCourse(X,Y), teachingAssistantOf(X,Y), not p312.
+a312 :- not p312.
+p312 :- not a312.
+ :- degreeFrom(X,Y), hasFaculty(X,Y), not p313.
+a313 :- not p313.
+p313 :- not a313.
+ :- affiliatedOrganizationOf(X,Y), researchProject(X,Y), not p314.
+a314 :- not p314.
+p314 :- not a314.
+ :- advisor(X,Y), teachingAssistantOf(X,Y), not p315.
+a315 :- not p315.
+p315 :- not a315.
+ :- listedCourse(X,Y), teacherOf(X,Y), not p316.
+a316 :- not p316.
+p316 :- not a316.
+ :- member(X,Y), tenured(X,Y), not p317.
+a317 :- not p317.
+p317 :- not a317.
+ :- publicationResearch(X,Y), softwareDocumentation(X,Y), not p318.
+a318 :- not p318.
+p318 :- not a318.
+ :- member(X,Y), publicationResearch(X,Y), not p319.
+a319 :- not p319.
+p319 :- not a319.
+ :- hasFaculty(X,Y), memberOf(X,Y), not p320.
+a320 :- not p320.
+p320 :- not a320.
+ :- listedCourse(X,Y), subOrganizationOf(X,Y), not p321.
+a321 :- not p321.
+p321 :- not a321.
+ :- hasAlumnus(X,Y), hasExamRecord(X,Y), not p322.
+a322 :- not p322.
+p322 :- not a322.
+ :- publicationResearch(X,Y), subOrganizationOf(X,Y), not p323.
+a323 :- not p323.
+p323 :- not a323.
+ :- member(X,Y), orgPublication(X,Y), not p324.
+a324 :- not p324.
+p324 :- not a324.
+ :- advisor(X,Y), publicationAuthor(X,Y), not p325.
+a325 :- not p325.
+p325 :- not a325.
+ :- member(X,Y), teachingAssistantOf(X,Y), not p326.
+a326 :- not p326.
+p326 :- not a326.
+ :- advisor(X,Y), memberOf(X,Y), not p327.
+a327 :- not p327.
+p327 :- not a327.
+ :- hasFaculty(X,Y), listedCourse(X,Y), not p328.
+a328 :- not p328.
+p328 :- not a328.
+ :- publicationAuthor(X,Y), tenured(X,Y), not p329.
+a329 :- not p329.
+p329 :- not a329.
+ :- degreeFrom(X,Y), hasExamRecord(X,Y), not p330.
+a330 :- not p330.
+p330 :- not a330.
+ :- hasExamRecord(X,Y), hasFaculty(X,Y), not p331.
+a331 :- not p331.
+p331 :- not a331.
+ :- isPartOfUniversity(X,Y), publicationAuthor(X,Y), not p332.
+a332 :- not p332.
+p332 :- not a332.
+ :- advisor(X,Y), publicationDate(X,Y), not p333.
+a333 :- not p333.
+p333 :- not a333.
+ :- teacherOf(X,Y), tenured(X,Y), not p334.
+a334 :- not p334.
+p334 :- not a334.
+ :- researchProject(X,Y), softwareVersion(X,Y), not p335.
+a335 :- not p335.
+p335 :- not a335.
+ :- hasAlumnus(X,Y), publicationAuthor(X,Y), not p336.
+a336 :- not p336.
+p336 :- not a336.
+ :- hasAlumnus(X,Y), memberOf(X,Y), not p337.
+a337 :- not p337.
+p337 :- not a337.
+ :- listedCourse(X,Y), softwareVersion(X,Y), not p338.
+a338 :- not p338.
+p338 :- not a338.
+ :- hasAlumnus(X,Y), softwareVersion(X,Y), not p339.
+a339 :- not p339.
+p339 :- not a339.
+ :- isPartOfUniversity(X,Y), tenured(X,Y), not p340.
+a340 :- not p340.
+p340 :- not a340.
+ :- hasFaculty(X,Y), orgPublication(X,Y), not p341.
+a341 :- not p341.
+p341 :- not a341.
+ :- advisor(X,Y), publicationResearch(X,Y), not p342.
+a342 :- not p342.
+p342 :- not a342.
+ :- degreeFrom(X,Y), researchProject(X,Y), not p343.
+a343 :- not p343.
+p343 :- not a343.
+ :- affiliatedOrganizationOf(X,Y), orgPublication(X,Y), not p344.
+a344 :- not p344.
+p344 :- not a344.
+ :- isPartOfUniversity(X,Y), softwareVersion(X,Y), not p345.
+a345 :- not p345.
+p345 :- not a345.
+ :- softwareDocumentation(X,Y), teachingAssistantOf(X,Y), not p346.
+a346 :- not p346.
+p346 :- not a346.
+ :- publicationDate(X,Y), softwareDocumentation(X,Y), not p347.
+a347 :- not p347.
+p347 :- not a347.
+ :- subOrganizationOf(X,Y), tenured(X,Y), not p348.
+a348 :- not p348.
+p348 :- not a348.
+ :- degreeFrom(X,Y), softwareDocumentation(X,Y), not p349.
+a349 :- not p349.
+p349 :- not a349.
+ :- advisor(X,Y), teacherOf(X,Y), not p350.
+a350 :- not p350.
+p350 :- not a350.
+ :- orgPublication(X,Y), teacherOf(X,Y), not p351.
+a351 :- not p351.
+p351 :- not a351.
+ :- researchProject(X,Y), softwareDocumentation(X,Y), not p352.
+a352 :- not p352.
+p352 :- not a352.
+ :- Subj14Course(X), Subj20Course(X), not p353.
+a353 :- not p353.
+p353 :- not a353.
+ :- Subj18Professor(X), Subj1Professor(X), not p354.
+a354 :- not p354.
+p354 :- not a354.
+ :- Subj17Professor(X), Subj2Professor(X), not p355.
+a355 :- not p355.
+p355 :- not a355.
+ :- Subj16Professor(X), Subj3Professor(X), not p356.
+a356 :- not p356.
+p356 :- not a356.
+ :- Subj11Professor(X), Subj8Professor(X), not p357.
+a357 :- not p357.
+p357 :- not a357.
+ :- Subj10Professor(X), Subj9Professor(X), not p358.
+a358 :- not p358.
+p358 :- not a358.
+ :- Subj12Professor(X), Subj7Professor(X), not p359.
+a359 :- not p359.
+p359 :- not a359.
+ :- Subj13Professor(X), Subj6Professor(X), not p360.
+a360 :- not p360.
+p360 :- not a360.
+ :- Subj14Professor(X), Subj5Professor(X), not p361.
+a361 :- not p361.
+p361 :- not a361.
+ :- Subj15Professor(X), Subj4Professor(X), not p362.
+a362 :- not p362.
+p362 :- not a362.
+ :- Subj3Course(X), Subj9Course(X), not p363.
+a363 :- not p363.
+p363 :- not a363.
+ :- Subj4Course(X), Subj8Course(X), not p364.
+a364 :- not p364.
+p364 :- not a364.
+ :- Subj5Course(X), Subj7Course(X), not p365.
+a365 :- not p365.
+p365 :- not a365.
+ :- Subj11Department(X), Subj17Department(X), not p366.
+a366 :- not p366.
+p366 :- not a366.
+ :- Subj10Department(X), Subj18Department(X), not p367.
+a367 :- not p367.
+p367 :- not a367.
+ :- Subj12Department(X), Subj16Department(X), not p368.
+a368 :- not p368.
+p368 :- not a368.
+ :- Subj13Department(X), Subj15Department(X), not p369.
+a369 :- not p369.
+p369 :- not a369.
+ :- JournalArticle(X), TechnicalReport(X), not p370.
+a370 :- not p370.
+p370 :- not a370.
+ :- Subj19Course(X), Subj9Course(X), not p371.
+a371 :- not p371.
+p371 :- not a371.
+ :- Subj8Professor(X), Subj9Professor(X), not p372.
+a372 :- not p372.
+p372 :- not a372.
+ :- Subj20Department(X), Subj4Department(X), not p373.
+a373 :- not p373.
+p373 :- not a373.
+ :- Subj16Course(X), Subj1Course(X), not p374.
+a374 :- not p374.
+p374 :- not a374.
+ :- Subj15Course(X), Subj2Course(X), not p375.
+a375 :- not p375.
+p375 :- not a375.
+ :- Subj14Course(X), Subj3Course(X), not p376.
+a376 :- not p376.
+p376 :- not a376.
+ :- Subj13Course(X), Subj4Course(X), not p377.
+a377 :- not p377.
+p377 :- not a377.
+ :- Subj12Course(X), Subj5Course(X), not p378.
+a378 :- not p378.
+p378 :- not a378.
+ :- Subj10Course(X), Subj7Course(X), not p379.
+a379 :- not p379.
+p379 :- not a379.
+ :- Subj11Course(X), Subj6Course(X), not p380.
+a380 :- not p380.
+p380 :- not a380.
+ :- Subj11Professor(X), Subj2Professor(X), not p381.
+a381 :- not p381.
+p381 :- not a381.
+ :- Subj10Professor(X), Subj3Professor(X), not p382.
+a382 :- not p382.
+p382 :- not a382.
+ :- Subj12Professor(X), Subj1Professor(X), not p383.
+a383 :- not p383.
+p383 :- not a383.
+ :- Subj12Course(X), Subj19Course(X), not p384.
+a384 :- not p384.
+p384 :- not a384.
+ :- Subj13Course(X), Subj18Course(X), not p385.
+a385 :- not p385.
+p385 :- not a385.
+ :- Subj14Course(X), Subj17Course(X), not p386.
+a386 :- not p386.
+p386 :- not a386.
+ :- Subj15Course(X), Subj16Course(X), not p387.
+a387 :- not p387.
+p387 :- not a387.
+ :- PostDoc(X), Professor(X), not p388.
+a388 :- not p388.
+p388 :- not a388.
+ :- Subj20Professor(X), Subj4Professor(X), not p389.
+a389 :- not p389.
+p389 :- not a389.
+ :- Institute(X), Program(X), not p390.
+a390 :- not p390.
+p390 :- not a390.
+ :- Subj19Course(X), Subj20Course(X), not p391.
+a391 :- not p391.
+p391 :- not a391.
+ :- Subj5Course(X), Subj6Course(X), not p392.
+a392 :- not p392.
+p392 :- not a392.
+ :- Subj4Course(X), Subj7Course(X), not p393.
+a393 :- not p393.
+p393 :- not a393.
+ :- Subj3Course(X), Subj8Course(X), not p394.
+a394 :- not p394.
+p394 :- not a394.
+ :- Subj2Course(X), Subj9Course(X), not p395.
+a395 :- not p395.
+p395 :- not a395.
+ :- Subj10Course(X), Subj11Course(X), not p396.
+a396 :- not p396.
+p396 :- not a396.
+ :- Subj10Professor(X), Subj11Professor(X), not p397.
+a397 :- not p397.
+p397 :- not a397.
+ :- Subj17Course(X), Subj9Course(X), not p398.
+a398 :- not p398.
+p398 :- not a398.
+ :- Subj18Course(X), Subj8Course(X), not p399.
+a399 :- not p399.
+p399 :- not a399.
+ :- Subj19Course(X), Subj7Course(X), not p400.
+a400 :- not p400.
+p400 :- not a400.
+ :- Subj14Course(X), Subj19Course(X), not p401.
+a401 :- not p401.
+p401 :- not a401.
+ :- Subj15Course(X), Subj18Course(X), not p402.
+a402 :- not p402.
+p402 :- not a402.
+ :- Subj16Course(X), Subj17Course(X), not p403.
+a403 :- not p403.
+p403 :- not a403.
+ :- Book(X), Manual(X), not p404.
+a404 :- not p404.
+p404 :- not a404.
+ :- Department(X), ResearchGroup(X), not p405.
+a405 :- not p405.
+p405 :- not a405.
+ :- Subj20Department(X), Subj3Department(X), not p406.
+a406 :- not p406.
+p406 :- not a406.
+ :- Article(X), Manual(X), not p407.
+a407 :- not p407.
+p407 :- not a407.
+ :- Subj20Professor(X), Subj8Professor(X), not p408.
+a408 :- not p408.
+p408 :- not a408.
+ :- Manual(X), Specification(X), not p409.
+a409 :- not p409.
+p409 :- not a409.
+ :- Subj4Professor(X), Subj6Professor(X), not p410.
+a410 :- not p410.
+p410 :- not a410.
+ :- Subj3Professor(X), Subj7Professor(X), not p411.
+a411 :- not p411.
+p411 :- not a411.
+ :- Subj2Professor(X), Subj8Professor(X), not p412.
+a412 :- not p412.
+p412 :- not a412.
+ :- Subj1Professor(X), Subj9Professor(X), not p413.
+a413 :- not p413.
+p413 :- not a413.
+ :- Subj15Course(X), Subj20Course(X), not p414.
+a414 :- not p414.
+p414 :- not a414.
+ :- Subj3Professor(X), Subj9Professor(X), not p415.
+a415 :- not p415.
+p415 :- not a415.
+ :- Subj4Professor(X), Subj8Professor(X), not p416.
+a416 :- not p416.
+p416 :- not a416.
+ :- Subj5Professor(X), Subj7Professor(X), not p417.
+a417 :- not p417.
+p417 :- not a417.
+ :- Subj15Department(X), Subj19Department(X), not p418.
+a418 :- not p418.
+p418 :- not a418.
+ :- Subj16Department(X), Subj18Department(X), not p419.
+a419 :- not p419.
+p419 :- not a419.
+ :- Subj16Professor(X), Subj18Professor(X), not p420.
+a420 :- not p420.
+p420 :- not a420.
+ :- Subj15Professor(X), Subj19Professor(X), not p421.
+a421 :- not p421.
+p421 :- not a421.
+ :- Program(X), ResearchGroup(X), not p422.
+a422 :- not p422.
+p422 :- not a422.
+ :- Subj7Course(X), Subj9Course(X), not p423.
+a423 :- not p423.
+p423 :- not a423.
+ :- Department(X), Institute(X), not p424.
+a424 :- not p424.
+p424 :- not a424.
+ :- Subj15Professor(X), Subj20Professor(X), not p425.
+a425 :- not p425.
+p425 :- not a425.
+ :- AssociateProfessor(X), ExDean(X), not p426.
+a426 :- not p426.
+p426 :- not a426.
+ :- Subj6Course(X), Subj8Course(X), not p427.
+a427 :- not p427.
+p427 :- not a427.
+ :- Subj5Course(X), Subj9Course(X), not p428.
+a428 :- not p428.
+p428 :- not a428.
+ :- Subj11Department(X), Subj2Department(X), not p429.
+a429 :- not p429.
+p429 :- not a429.
+ :- Subj10Department(X), Subj3Department(X), not p430.
+a430 :- not p430.
+p430 :- not a430.
+ :- Subj12Department(X), Subj1Department(X), not p431.
+a431 :- not p431.
+p431 :- not a431.
+ :- AssistantProfessor(X), VisitingProfessor(X), not p432.
+a432 :- not p432.
+p432 :- not a432.
+ :- Subj11Professor(X), Subj16Professor(X), not p433.
+a433 :- not p433.
+p433 :- not a433.
+ :- Subj10Professor(X), Subj17Professor(X), not p434.
+a434 :- not p434.
+p434 :- not a434.
+ :- Subj12Professor(X), Subj15Professor(X), not p435.
+a435 :- not p435.
+p435 :- not a435.
+ :- Subj13Professor(X), Subj14Professor(X), not p436.
+a436 :- not p436.
+p436 :- not a436.
+ :- GraduateStudent(X), chair(X), not p437.
+a437 :- not p437.
+p437 :- not a437.
+ :- Subj1Course(X), Subj8Course(X), not p438.
+a438 :- not p438.
+p438 :- not a438.
+ :- Subj2Course(X), Subj7Course(X), not p439.
+a439 :- not p439.
+p439 :- not a439.
+ :- Subj3Course(X), Subj6Course(X), not p440.
+a440 :- not p440.
+p440 :- not a440.
+ :- Subj4Course(X), Subj5Course(X), not p441.
+a441 :- not p441.
+p441 :- not a441.
+ :- Subj16Department(X), Subj20Department(X), not p442.
+a442 :- not p442.
+p442 :- not a442.
+ :- Subj18Course(X), Subj20Course(X), not p443.
+a443 :- not p443.
+p443 :- not a443.
+ :- Subj20Professor(X), Subj6Professor(X), not p444.
+a444 :- not p444.
+p444 :- not a444.
+ :- Article(X), Specification(X), not p445.
+a445 :- not p445.
+p445 :- not a445.
+ :- Subj11Professor(X), Subj15Professor(X), not p446.
+a446 :- not p446.
+p446 :- not a446.
+ :- Subj10Professor(X), Subj16Professor(X), not p447.
+a447 :- not p447.
+p447 :- not a447.
+ :- Subj12Professor(X), Subj14Professor(X), not p448.
+a448 :- not p448.
+p448 :- not a448.
+ :- Subj20Department(X), Subj2Department(X), not p449.
+a449 :- not p449.
+p449 :- not a449.
+ :- Subj12Department(X), Subj19Department(X), not p450.
+a450 :- not p450.
+p450 :- not a450.
+ :- Subj13Department(X), Subj18Department(X), not p451.
+a451 :- not p451.
+p451 :- not a451.
+ :- Subj14Department(X), Subj17Department(X), not p452.
+a452 :- not p452.
+p452 :- not a452.
+ :- Subj15Department(X), Subj16Department(X), not p453.
+a453 :- not p453.
+p453 :- not a453.
+ :- Subj19Professor(X), Subj20Professor(X), not p454.
+a454 :- not p454.
+p454 :- not a454.
+ :- Subj15Professor(X), Subj7Professor(X), not p455.
+a455 :- not p455.
+p455 :- not a455.
+ :- Subj14Professor(X), Subj8Professor(X), not p456.
+a456 :- not p456.
+p456 :- not a456.
+ :- Subj19Professor(X), Subj3Professor(X), not p457.
+a457 :- not p457.
+p457 :- not a457.
+ :- Subj18Professor(X), Subj4Professor(X), not p458.
+a458 :- not p458.
+p458 :- not a458.
+ :- Subj17Professor(X), Subj5Professor(X), not p459.
+a459 :- not p459.
+p459 :- not a459.
+ :- Subj16Professor(X), Subj6Professor(X), not p460.
+a460 :- not p460.
+p460 :- not a460.
+ :- Subj13Professor(X), Subj9Professor(X), not p461.
+a461 :- not p461.
+p461 :- not a461.
+ :- ConferencePaper(X), JournalArticle(X), not p462.
+a462 :- not p462.
+p462 :- not a462.
+ :- ClericalStaff(X), SystemsStaff(X), not p463.
+a463 :- not p463.
+p463 :- not a463.
+ :- AssistantProfessor(X), AssociateProfessor(X), not p464.
+a464 :- not p464.
+p464 :- not a464.
+ :- Subj16Professor(X), Subj20Professor(X), not p465.
+a465 :- not p465.
+p465 :- not a465.
+ :- Subj13Course(X), Subj20Course(X), not p466.
+a466 :- not p466.
+p466 :- not a466.
+ :- Subj1Department(X), Subj7Department(X), not p467.
+a467 :- not p467.
+p467 :- not a467.
+ :- Subj2Department(X), Subj6Department(X), not p468.
+a468 :- not p468.
+p468 :- not a468.
+ :- Subj3Department(X), Subj5Department(X), not p469.
+a469 :- not p469.
+p469 :- not a469.
+ :- Subj20Professor(X), Subj3Professor(X), not p470.
+a470 :- not p470.
+p470 :- not a470.
+ :- Subj10Professor(X), Subj13Professor(X), not p471.
+a471 :- not p471.
+p471 :- not a471.
+ :- Subj11Professor(X), Subj12Professor(X), not p472.
+a472 :- not p472.
+p472 :- not a472.
+ :- Subj7Professor(X), Subj8Professor(X), not p473.
+a473 :- not p473.
+p473 :- not a473.
+ :- Subj6Professor(X), Subj9Professor(X), not p474.
+a474 :- not p474.
+p474 :- not a474.
+ :- Subj20Department(X), Subj5Department(X), not p475.
+a475 :- not p475.
+p475 :- not a475.
+ :- Director(X), Student(X), not p476.
+a476 :- not p476.
+p476 :- not a476.
+ :- Subj15Professor(X), Subj6Professor(X), not p477.
+a477 :- not p477.
+p477 :- not a477.
+ :- Subj14Professor(X), Subj7Professor(X), not p478.
+a478 :- not p478.
+p478 :- not a478.
+ :- Subj19Professor(X), Subj2Professor(X), not p479.
+a479 :- not p479.
+p479 :- not a479.
+ :- Subj18Professor(X), Subj3Professor(X), not p480.
+a480 :- not p480.
+p480 :- not a480.
+ :- Subj17Professor(X), Subj4Professor(X), not p481.
+a481 :- not p481.
+p481 :- not a481.
+ :- Subj16Professor(X), Subj5Professor(X), not p482.
+a482 :- not p482.
+p482 :- not a482.
+ :- Subj12Professor(X), Subj9Professor(X), not p483.
+a483 :- not p483.
+p483 :- not a483.
+ :- Subj13Professor(X), Subj8Professor(X), not p484.
+a484 :- not p484.
+p484 :- not a484.
+ :- Subj2Department(X), Subj4Department(X), not p485.
+a485 :- not p485.
+p485 :- not a485.
+ :- Subj1Department(X), Subj5Department(X), not p486.
+a486 :- not p486.
+p486 :- not a486.
+ :- Institute(X), University(X), not p487.
+a487 :- not p487.
+p487 :- not a487.
+ :- Subj1Department(X), Subj20Department(X), not p488.
+a488 :- not p488.
+p488 :- not a488.
+ :- Manual(X), Software(X), not p489.
+a489 :- not p489.
+p489 :- not a489.
+ :- Subj16Course(X), Subj5Course(X), not p490.
+a490 :- not p490.
+p490 :- not a490.
+ :- Subj15Course(X), Subj6Course(X), not p491.
+a491 :- not p491.
+p491 :- not a491.
+ :- Subj14Course(X), Subj7Course(X), not p492.
+a492 :- not p492.
+p492 :- not a492.
+ :- Subj13Course(X), Subj8Course(X), not p493.
+a493 :- not p493.
+p493 :- not a493.
+ :- Subj12Course(X), Subj9Course(X), not p494.
+a494 :- not p494.
+p494 :- not a494.
+ :- Subj17Course(X), Subj4Course(X), not p495.
+a495 :- not p495.
+p495 :- not a495.
+ :- Subj18Course(X), Subj3Course(X), not p496.
+a496 :- not p496.
+p496 :- not a496.
+ :- Subj19Course(X), Subj2Course(X), not p497.
+a497 :- not p497.
+p497 :- not a497.
+ :- Subj19Professor(X), Subj6Professor(X), not p498.
+a498 :- not p498.
+p498 :- not a498.
+ :- Subj18Professor(X), Subj7Professor(X), not p499.
+a499 :- not p499.
+p499 :- not a499.
+ :- Subj17Professor(X), Subj8Professor(X), not p500.
+a500 :- not p500.
+p500 :- not a500.
+ :- Subj16Professor(X), Subj9Professor(X), not p501.
+a501 :- not p501.
+p501 :- not a501.
+ :- Book(X), UnofficialPublication(X), not p502.
+a502 :- not p502.
+p502 :- not a502.
+ :- Subj13Department(X), Subj20Department(X), not p503.
+a503 :- not p503.
+p503 :- not a503.
+ :- Subj15Department(X), Subj8Department(X), not p504.
+a504 :- not p504.
+p504 :- not a504.
+ :- Subj14Department(X), Subj9Department(X), not p505.
+a505 :- not p505.
+p505 :- not a505.
+ :- Subj16Department(X), Subj7Department(X), not p506.
+a506 :- not p506.
+p506 :- not a506.
+ :- Subj17Department(X), Subj6Department(X), not p507.
+a507 :- not p507.
+p507 :- not a507.
+ :- Subj18Department(X), Subj5Department(X), not p508.
+a508 :- not p508.
+p508 :- not a508.
+ :- Subj19Department(X), Subj4Department(X), not p509.
+a509 :- not p509.
+p509 :- not a509.
+ :- Subj1Professor(X), Subj3Professor(X), not p510.
+a510 :- not p510.
+p510 :- not a510.
+ :- AssistantProfessor(X), ExDean(X), not p511.
+a511 :- not p511.
+p511 :- not a511.
+ :- Subj2Department(X), Subj3Department(X), not p512.
+a512 :- not p512.
+p512 :- not a512.
+ :- Subj1Department(X), Subj4Department(X), not p513.
+a513 :- not p513.
+p513 :- not a513.
+ :- Subj10Department(X), Subj20Department(X), not p514.
+a514 :- not p514.
+p514 :- not a514.
+ :- Subj19Course(X), Subj1Course(X), not p515.
+a515 :- not p515.
+p515 :- not a515.
+ :- Subj18Course(X), Subj2Course(X), not p516.
+a516 :- not p516.
+p516 :- not a516.
+ :- Subj17Course(X), Subj3Course(X), not p517.
+a517 :- not p517.
+p517 :- not a517.
+ :- Subj11Course(X), Subj9Course(X), not p518.
+a518 :- not p518.
+p518 :- not a518.
+ :- Subj12Course(X), Subj8Course(X), not p519.
+a519 :- not p519.
+p519 :- not a519.
+ :- Subj13Course(X), Subj7Course(X), not p520.
+a520 :- not p520.
+p520 :- not a520.
+ :- Subj14Course(X), Subj6Course(X), not p521.
+a521 :- not p521.
+p521 :- not a521.
+ :- Subj15Course(X), Subj5Course(X), not p522.
+a522 :- not p522.
+p522 :- not a522.
+ :- Subj16Course(X), Subj4Course(X), not p523.
+a523 :- not p523.
+p523 :- not a523.
+ :- Subj14Department(X), Subj20Department(X), not p524.
+a524 :- not p524.
+p524 :- not a524.
+ :- Subj19Professor(X), Subj9Professor(X), not p525.
+a525 :- not p525.
+p525 :- not a525.
+ :- Subj19Course(X), Subj6Course(X), not p526.
+a526 :- not p526.
+p526 :- not a526.
+ :- Subj18Course(X), Subj7Course(X), not p527.
+a527 :- not p527.
+p527 :- not a527.
+ :- Subj17Course(X), Subj8Course(X), not p528.
+a528 :- not p528.
+p528 :- not a528.
+ :- Subj16Course(X), Subj9Course(X), not p529.
+a529 :- not p529.
+p529 :- not a529.
+ :- Subj20Department(X), Subj6Department(X), not p530.
+a530 :- not p530.
+p530 :- not a530.
+ :- College(X), University(X), not p531.
+a531 :- not p531.
+p531 :- not a531.
+ :- Subj13Department(X), Subj1Department(X), not p532.
+a532 :- not p532.
+p532 :- not a532.
+ :- Subj12Department(X), Subj2Department(X), not p533.
+a533 :- not p533.
+p533 :- not a533.
+ :- Subj10Department(X), Subj4Department(X), not p534.
+a534 :- not p534.
+p534 :- not a534.
+ :- Subj11Department(X), Subj3Department(X), not p535.
+a535 :- not p535.
+p535 :- not a535.
+ :- Subj16Course(X), Subj3Course(X), not p536.
+a536 :- not p536.
+p536 :- not a536.
+ :- Subj15Course(X), Subj4Course(X), not p537.
+a537 :- not p537.
+p537 :- not a537.
+ :- Subj14Course(X), Subj5Course(X), not p538.
+a538 :- not p538.
+p538 :- not a538.
+ :- Subj13Course(X), Subj6Course(X), not p539.
+a539 :- not p539.
+p539 :- not a539.
+ :- Subj12Course(X), Subj7Course(X), not p540.
+a540 :- not p540.
+p540 :- not a540.
+ :- Subj10Course(X), Subj9Course(X), not p541.
+a541 :- not p541.
+p541 :- not a541.
+ :- Subj11Course(X), Subj8Course(X), not p542.
+a542 :- not p542.
+p542 :- not a542.
+ :- Subj17Course(X), Subj2Course(X), not p543.
+a543 :- not p543.
+p543 :- not a543.
+ :- Subj18Course(X), Subj1Course(X), not p544.
+a544 :- not p544.
+p544 :- not a544.
+ :- Subj19Professor(X), Subj8Professor(X), not p545.
+a545 :- not p545.
+p545 :- not a545.
+ :- Subj18Professor(X), Subj9Professor(X), not p546.
+a546 :- not p546.
+p546 :- not a546.
+ :- Manual(X), UnofficialPublication(X), not p547.
+a547 :- not p547.
+p547 :- not a547.
+ :- Exam(X), ExamRecord(X), not p548.
+a548 :- not p548.
+p548 :- not a548.
+ :- Subj10Course(X), Subj1Course(X), not p549.
+a549 :- not p549.
+p549 :- not a549.
+ :- Subj20Professor(X), Subj7Professor(X), not p550.
+a550 :- not p550.
+p550 :- not a550.
+ :- Subj13Department(X), Subj1Department(X), not p551.
+a551 :- not p551.
+p551 :- not a551.
+ :- Subj12Department(X), Subj2Department(X), not p552.
+a552 :- not p552.
+p552 :- not a552.
+ :- Subj10Department(X), Subj4Department(X), not p553.
+a553 :- not p553.
+p553 :- not a553.
+ :- Subj11Department(X), Subj3Department(X), not p554.
+a554 :- not p554.
+p554 :- not a554.
+ :- Subj16Course(X), Subj3Course(X), not p555.
+a555 :- not p555.
+p555 :- not a555.
+ :- Subj15Course(X), Subj4Course(X), not p556.
+a556 :- not p556.
+p556 :- not a556.
+ :- Subj14Course(X), Subj5Course(X), not p557.
+a557 :- not p557.
+p557 :- not a557.
+ :- Subj13Course(X), Subj6Course(X), not p558.
+a558 :- not p558.
+p558 :- not a558.
+ :- Subj12Course(X), Subj7Course(X), not p559.
+a559 :- not p559.
+p559 :- not a559.
+ :- Subj10Course(X), Subj9Course(X), not p560.
+a560 :- not p560.
+p560 :- not a560.
+ :- Subj11Course(X), Subj8Course(X), not p561.
+a561 :- not p561.
+p561 :- not a561.
+ :- Subj17Course(X), Subj2Course(X), not p562.
+a562 :- not p562.
+p562 :- not a562.
+ :- Subj18Course(X), Subj1Course(X), not p563.
+a563 :- not p563.
+p563 :- not a563.
+ :- Subj19Professor(X), Subj8Professor(X), not p564.
+a564 :- not p564.
+p564 :- not a564.
+ :- Subj18Professor(X), Subj9Professor(X), not p565.
+a565 :- not p565.
+p565 :- not a565.
+ :- Subj15Course(X), Subj19Course(X), not p566.
+a566 :- not p566.
+p566 :- not a566.
+ :- Subj16Course(X), Subj18Course(X), not p567.
+a567 :- not p567.
+p567 :- not a567.
+ :- Program(X), University(X), not p568.
+a568 :- not p568.
+p568 :- not a568.
+ :- Subj16Professor(X), Subj17Professor(X), not p569.
+a569 :- not p569.
+p569 :- not a569.
+ :- Subj14Professor(X), Subj19Professor(X), not p570.
+a570 :- not p570.
+p570 :- not a570.
+ :- Subj15Professor(X), Subj18Professor(X), not p571.
+a571 :- not p571.
+p571 :- not a571.
+ :- Subj10Professor(X), Subj12Professor(X), not p572.
+a572 :- not p572.
+p572 :- not a572.
+ :- Subj18Course(X), Subj9Course(X), not p573.
+a573 :- not p573.
+p573 :- not a573.
+ :- Subj19Course(X), Subj8Course(X), not p574.
+a574 :- not p574.
+p574 :- not a574.
+ :- Subj12Department(X), Subj20Department(X), not p575.
+a575 :- not p575.
+p575 :- not a575.
+ :- Subj7Department(X), Subj8Department(X), not p576.
+a576 :- not p576.
+p576 :- not a576.
+ :- Subj6Department(X), Subj9Department(X), not p577.
+a577 :- not p577.
+p577 :- not a577.
+ :- Subj11Professor(X), Subj19Professor(X), not p578.
+a578 :- not p578.
+p578 :- not a578.
+ :- Subj12Professor(X), Subj18Professor(X), not p579.
+a579 :- not p579.
+p579 :- not a579.
+ :- Subj13Professor(X), Subj17Professor(X), not p580.
+a580 :- not p580.
+p580 :- not a580.
+ :- Subj14Professor(X), Subj16Professor(X), not p581.
+a581 :- not p581.
+p581 :- not a581.
+ :- ResearchGroup(X), University(X), not p582.
+a582 :- not p582.
+p582 :- not a582.
+ :- Subj20Professor(X), Subj9Professor(X), not p583.
+a583 :- not p583.
+p583 :- not a583.
+ :- AssociateProfessor(X), Dean(X), not p584.
+a584 :- not p584.
+p584 :- not a584.
+ :- Subj15Professor(X), Subj2Professor(X), not p585.
+a585 :- not p585.
+p585 :- not a585.
+ :- Subj14Professor(X), Subj3Professor(X), not p586.
+a586 :- not p586.
+p586 :- not a586.
+ :- Subj13Professor(X), Subj4Professor(X), not p587.
+a587 :- not p587.
+p587 :- not a587.
+ :- Subj12Professor(X), Subj5Professor(X), not p588.
+a588 :- not p588.
+p588 :- not a588.
+ :- Subj10Professor(X), Subj7Professor(X), not p589.
+a589 :- not p589.
+p589 :- not a589.
+ :- Subj11Professor(X), Subj6Professor(X), not p590.
+a590 :- not p590.
+p590 :- not a590.
+ :- Subj16Professor(X), Subj1Professor(X), not p591.
+a591 :- not p591.
+p591 :- not a591.
+ :- Subj12Course(X), Subj1Course(X), not p592.
+a592 :- not p592.
+p592 :- not a592.
+ :- Subj10Course(X), Subj3Course(X), not p593.
+a593 :- not p593.
+p593 :- not a593.
+ :- Subj11Course(X), Subj2Course(X), not p594.
+a594 :- not p594.
+p594 :- not a594.
+ :- Organization(X), Person(X), not p595.
+a595 :- not p595.
+p595 :- not a595.
+ :- Subj10Professor(X), Subj2Professor(X), not p596.
+a596 :- not p596.
+p596 :- not a596.
+ :- Subj11Professor(X), Subj1Professor(X), not p597.
+a597 :- not p597.
+p597 :- not a597.
+ :- Subj12Professor(X), Subj13Professor(X), not p598.
+a598 :- not p598.
+p598 :- not a598.
+ :- Subj10Professor(X), Subj15Professor(X), not p599.
+a599 :- not p599.
+p599 :- not a599.
+ :- Subj11Professor(X), Subj14Professor(X), not p600.
+a600 :- not p600.
+p600 :- not a600.
+ :- Subj10Department(X), Subj13Department(X), not p601.
+a601 :- not p601.
+p601 :- not a601.
+ :- Subj11Department(X), Subj12Department(X), not p602.
+a602 :- not p602.
+p602 :- not a602.
+ :- Subj12Department(X), Subj5Department(X), not p603.
+a603 :- not p603.
+p603 :- not a603.
+ :- Subj10Department(X), Subj7Department(X), not p604.
+a604 :- not p604.
+p604 :- not a604.
+ :- Subj11Department(X), Subj6Department(X), not p605.
+a605 :- not p605.
+p605 :- not a605.
+ :- Subj16Department(X), Subj1Department(X), not p606.
+a606 :- not p606.
+p606 :- not a606.
+ :- Subj13Department(X), Subj4Department(X), not p607.
+a607 :- not p607.
+p607 :- not a607.
+ :- Subj14Department(X), Subj3Department(X), not p608.
+a608 :- not p608.
+p608 :- not a608.
+ :- Subj15Department(X), Subj2Department(X), not p609.
+a609 :- not p609.
+p609 :- not a609.
+ :- Subj17Department(X), Subj20Department(X), not p610.
+a610 :- not p610.
+p610 :- not a610.
+ :- Subj12Course(X), Subj14Course(X), not p611.
+a611 :- not p611.
+p611 :- not a611.
+ :- Subj11Course(X), Subj15Course(X), not p612.
+a612 :- not p612.
+p612 :- not a612.
+ :- Subj10Course(X), Subj16Course(X), not p613.
+a613 :- not p613.
+p613 :- not a613.
+ :- Subj19Department(X), Subj20Department(X), not p614.
+a614 :- not p614.
+p614 :- not a614.
+ :- Subj15Course(X), Subj8Course(X), not p615.
+a615 :- not p615.
+p615 :- not a615.
+ :- Subj14Course(X), Subj9Course(X), not p616.
+a616 :- not p616.
+p616 :- not a616.
+ :- Subj16Course(X), Subj7Course(X), not p617.
+a617 :- not p617.
+p617 :- not a617.
+ :- Subj17Course(X), Subj6Course(X), not p618.
+a618 :- not p618.
+p618 :- not a618.
+ :- Subj18Course(X), Subj5Course(X), not p619.
+a619 :- not p619.
+p619 :- not a619.
+ :- Subj19Course(X), Subj4Course(X), not p620.
+a620 :- not p620.
+p620 :- not a620.
+ :- Subj5Professor(X), Subj9Professor(X), not p621.
+a621 :- not p621.
+p621 :- not a621.
+ :- Subj6Professor(X), Subj8Professor(X), not p622.
+a622 :- not p622.
+p622 :- not a622.
+ :- Subj7Professor(X), Subj9Professor(X), not p623.
+a623 :- not p623.
+p623 :- not a623.
+ :- Subj15Course(X), Subj9Course(X), not p624.
+a624 :- not p624.
+p624 :- not a624.
+ :- Subj16Course(X), Subj8Course(X), not p625.
+a625 :- not p625.
+p625 :- not a625.
+ :- Subj17Course(X), Subj7Course(X), not p626.
+a626 :- not p626.
+p626 :- not a626.
+ :- Subj18Course(X), Subj6Course(X), not p627.
+a627 :- not p627.
+p627 :- not a627.
+ :- Subj19Course(X), Subj5Course(X), not p628.
+a628 :- not p628.
+p628 :- not a628.
+ :- Subj11Department(X), Subj20Department(X), not p629.
+a629 :- not p629.
+p629 :- not a629.
+ :- Subj17Course(X), Subj1Course(X), not p630.
+a630 :- not p630.
+p630 :- not a630.
+ :- Subj11Course(X), Subj7Course(X), not p631.
+a631 :- not p631.
+p631 :- not a631.
+ :- Subj10Course(X), Subj8Course(X), not p632.
+a632 :- not p632.
+p632 :- not a632.
+ :- Subj12Course(X), Subj6Course(X), not p633.
+a633 :- not p633.
+p633 :- not a633.
+ :- Subj13Course(X), Subj5Course(X), not p634.
+a634 :- not p634.
+p634 :- not a634.
+ :- Subj14Course(X), Subj4Course(X), not p635.
+a635 :- not p635.
+p635 :- not a635.
+ :- Subj15Course(X), Subj3Course(X), not p636.
+a636 :- not p636.
+p636 :- not a636.
+ :- Subj16Course(X), Subj2Course(X), not p637.
+a637 :- not p637.
+p637 :- not a637.
+ :- Subj1Professor(X), Subj7Professor(X), not p638.
+a638 :- not p638.
+p638 :- not a638.
+ :- Subj2Professor(X), Subj6Professor(X), not p639.
+a639 :- not p639.
+p639 :- not a639.
+ :- Subj3Professor(X), Subj5Professor(X), not p640.
+a640 :- not p640.
+p640 :- not a640.
+ :- Director(X), GraduateStudent(X), not p641.
+a641 :- not p641.
+p641 :- not a641.
+ :- Subj11Department(X), Subj13Department(X), not p642.
+a642 :- not p642.
+p642 :- not a642.
+ :- Subj10Department(X), Subj14Department(X), not p643.
+a643 :- not p643.
+p643 :- not a643.
+ :- Subj18Department(X), Subj20Department(X), not p644.
+a644 :- not p644.
+p644 :- not a644.
+ :- Subj13Professor(X), Subj19Professor(X), not p645.
+a645 :- not p645.
+p645 :- not a645.
+ :- Subj14Professor(X), Subj18Professor(X), not p646.
+a646 :- not p646.
+p646 :- not a646.
+ :- Subj15Professor(X), Subj17Professor(X), not p647.
+a647 :- not p647.
+p647 :- not a647.
+ :- Subj16Course(X), Subj20Course(X), not p648.
+a648 :- not p648.
+p648 :- not a648.
+ :- Subj11Professor(X), Subj5Professor(X), not p649.
+a649 :- not p649.
+p649 :- not a649.
+ :- Subj10Professor(X), Subj6Professor(X), not p650.
+a650 :- not p650.
+p650 :- not a650.
+ :- Subj12Professor(X), Subj4Professor(X), not p651.
+a651 :- not p651.
+p651 :- not a651.
+ :- Subj13Professor(X), Subj3Professor(X), not p652.
+a652 :- not p652.
+p652 :- not a652.
+ :- Subj14Professor(X), Subj2Professor(X), not p653.
+a653 :- not p653.
+p653 :- not a653.
+ :- Subj15Professor(X), Subj1Professor(X), not p654.
+a654 :- not p654.
+p654 :- not a654.
+ :- Department(X), University(X), not p655.
+a655 :- not p655.
+p655 :- not a655.
+ :- Subj17Department(X), Subj1Department(X), not p656.
+a656 :- not p656.
+p656 :- not a656.
+ :- Subj16Department(X), Subj2Department(X), not p657.
+a657 :- not p657.
+p657 :- not a657.
+ :- Subj11Department(X), Subj7Department(X), not p658.
+a658 :- not p658.
+p658 :- not a658.
+ :- Subj10Department(X), Subj8Department(X), not p659.
+a659 :- not p659.
+p659 :- not a659.
+ :- Subj12Department(X), Subj6Department(X), not p660.
+a660 :- not p660.
+p660 :- not a660.
+ :- Subj13Department(X), Subj5Department(X), not p661.
+a661 :- not p661.
+p661 :- not a661.
+ :- Subj14Department(X), Subj4Department(X), not p662.
+a662 :- not p662.
+p662 :- not a662.
+ :- Subj15Department(X), Subj3Department(X), not p663.
+a663 :- not p663.
+p663 :- not a663.
+ :- ExamRecord(X), Research(X), not p664.
+a664 :- not p664.
+p664 :- not a664.
+ :- Subj11Course(X), Subj20Course(X), not p665.
+a665 :- not p665.
+p665 :- not a665.
+Course(department11_university0_course34).

@@ -7,7 +7,14 @@
 //
 
 #include <iostream>
+#include <string>
+#include "translation.h"
+using namespace std;
 
 int main() {
+    string pFilePath = "";
+    string pFileName = "lubm-dlp";
+    translation tran(pFilePath, pFileName);
+    tran.trans();
     return 0;
 }
