@@ -13,8 +13,14 @@ using namespace std;
 
 int main() {
     string pFilePath = "";
-    string pFileName = "lubm-dlp";
+    string pFileName = "test";
+//    string pFileName = "lubm-dlp";
     translation tran(pFilePath, pFileName);
     tran.trans();
+    char cmdline[100];
+    strcpy(cmdline,"gringo ");
+    strcat(cmdline,pFileName.c_str());
+    strcat(cmdline,".lp | clasp 0");
+    system(cmdline);
     return 0;
 }

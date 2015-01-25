@@ -21,6 +21,8 @@ public class DLFileProcess {
 //			aboxFile.delete();
 //		}
 		dlpFile.createNewFile();
+		System.out.println(dlpFile.exists());
+
 		//aboxFile.createNewFile();
 		
 		BufferedReader reader = new BufferedReader(new FileReader(dlFile));
@@ -31,12 +33,21 @@ public class DLFileProcess {
 		int p_index = 0;
 		
 		while ((line = reader.readLine()) != null) {
+			Pattern pattern;
+			Matcher matcher;
+
 			if (isNextPart(line)) {
 				Process_State++;
 				if (Process_State == 2) {
 					BufferedReader n_reader = new BufferedReader(new FileReader(nlFile));
 					String n_line = null;
 					while ((n_line = n_reader.readLine()) != null) {
+						pattern = Pattern.compile("([A-W]|[Z])");
+						matcher = pattern.matcher(n_line);
+						while (matcher.find()) {
+							n_line = matcher.replaceFirst(matcher.group(1).toLowerCase());
+							matcher = pattern.matcher(n_line);
+						}
 						n_line = n_line.substring(0, n_line.length()-1) + ".\r\n";
 						dlpwriter.write(n_line);
 					}
@@ -54,13 +65,17 @@ public class DLFileProcess {
 				continue;
 			}				
 			
-			Pattern pattern;
-			Matcher matcher;
 			if (Process_State == 1) {
 				pattern = Pattern.compile("<(http://){1}\\S+#([A-Za-z0-9]*)>");
 				matcher = pattern.matcher(line);
 				while (matcher.find()) {
 					line = matcher.replaceFirst(matcher.group(2));
+					matcher = pattern.matcher(line);
+				}
+				pattern = Pattern.compile("([A-W]|[Z])");
+				matcher = pattern.matcher(line);
+				while (matcher.find()) {
+					line = matcher.replaceFirst(matcher.group(1).toLowerCase());
 					matcher = pattern.matcher(line);
 				}
 				pattern = Pattern.compile("<internal:all#([A-Za-z0-9]*)>");
@@ -69,7 +84,7 @@ public class DLFileProcess {
 					line = matcher.replaceFirst("internal_all_"+matcher.group(1));
 					matcher = pattern.matcher(line);
 				}
-				if (line.contains("atLeast")) {
+				if (line.contains("atleast")) {
 					String al[] = line.split(" ");
 					String pre_1 = al[3];
 					String pre_2 = al[4].split("\\)")[0];
@@ -86,6 +101,7 @@ public class DLFileProcess {
 					line = line.replace("owl:", "");
 				}
 				line = line + ".\r\n";
+				System.out.println(line);
 				dlpwriter.write(line);
 			} else if (Process_State == 2) {
 				pattern = Pattern.compile("<\\S+#([A-Za-z0-9]*)>");
@@ -106,6 +122,12 @@ public class DLFileProcess {
 					}
 					line = matcher.replaceAll(str);
 				}
+				pattern = Pattern.compile("([A-W]|[Z])");
+				matcher = pattern.matcher(line);
+				while (matcher.find()) {
+					line = matcher.replaceFirst(matcher.group(1).toLowerCase());
+					matcher = pattern.matcher(line);
+				}
 				pattern = Pattern.compile("\\((\\S+)\\)");
 				matcher = pattern.matcher(line);
 				if (matcher.find()) {
@@ -118,7 +140,6 @@ public class DLFileProcess {
 				dlpwriter.write(line);
 			}
 		}
-		dlpwriter.flush();
 		dlpwriter.close();
 		reader.close();
 	}

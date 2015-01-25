@@ -1,8 +1,0 @@
-a(f(X)) :- b(X), p1.
-:- a(f(X)), b(X), p2.
-a1 :- not p1.
-p1 :- not a1.
-a2 :- not p2.
-p2 :- not a2.
-b(a).
-b(b).

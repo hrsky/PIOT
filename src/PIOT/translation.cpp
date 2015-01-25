@@ -18,7 +18,7 @@ void translation::trans() {
   ifstream infile;
   ofstream outfile;
   infile.open(pFilePath+pFileName);
-  outfile.open(pFilePath+pFileName+"_");
+  outfile.open(pFilePath+pFileName+".lp");
   string line;
   char buff[1024];
   if (infile.is_open()) {
@@ -26,7 +26,9 @@ void translation::trans() {
       memset(buff,0,1024);
       infile.getline(buff,1204);
       line = buff;
+      cout << line.c_str() << endl;
       if (isRule(line)) {
+        cout << "1" << endl;
         string s = " not p";
         char buf[10];
         memset(buf,0,10);
@@ -38,7 +40,6 @@ void translation::trans() {
         line.erase(line.length()-1);
         line.append(s);
         line.append(choice_rule(p_index));
-        cout << line << endl;
         outfile << line;
         p_index++;
       } else {
@@ -64,5 +65,6 @@ bool translation::isRule(string line) {
   } else {
     isrule = false;
   }
+  cout << isrule << endl;
   return isrule;
 }

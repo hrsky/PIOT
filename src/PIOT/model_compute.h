@@ -7,8 +7,14 @@
 #include <iostream>
 #include <string>
 #define Max_Set_Num = 1000;
+
+struct Atom {
+  int pre;
+  int *t;
+}atom;
+
 struct Answer {
-  string atom;
+  atom atom;
   int count;
 } answer;
 
