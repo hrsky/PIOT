@@ -5,18 +5,17 @@
 #ifndef ANSWER_H
 #define ANSWER_H
 
-#include<iostream>
+#include <iostream>
+#include <vector>
 using namespace std;
 
 struct Atom {
     int pre;
-    int *t;
-    int count;
+    vector<int> t;
 };
 
 struct Answer {
-    Atom *a;
-    int count;
+    vector<Atom> a;
 };
 
 #endif

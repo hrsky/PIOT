@@ -14,8 +14,8 @@ using namespace std;
 class Result {
 public:
   Result(string pFilePath, string modelFileName);
-  Answer* compute_input();
-  Answer* get_answer();
+  vector<Answer> compute_input();
+  vector<Answer> get_answer();
   void print_ans_set();
   void access_atom(string line);
   bool isSat();
@@ -23,9 +23,8 @@ private:
   string pFilePath;
   string modelFileName;
   bool Sat;
-  map<int,string> pi;
-  Answer ans_set[MAX_SET_NUM];
-  int set_count;
+  map<string,int> pi;
+  vector<Answer> ans_set;
 };
 
 #endif

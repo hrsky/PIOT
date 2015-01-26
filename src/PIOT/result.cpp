@@ -6,6 +6,7 @@
 #include <map>
 #include <fstream>
 #include <cstring>
+#include <vector>
 #include "result.h"
 #include "answer.h"
 
@@ -16,10 +17,10 @@ Result::Result(string pFilePath, string modelFileName) {
   this->modelFileName = modelFileName;
   Sat = false;
   pi.clear();
-  set_count = 0;
+  ans_set.clear();
 }
 
-Answer* Result::compute_input() {
+vector<Answer> Result::compute_input() {
   ifstream infile;
   infile.open(pFilePath+modelFileName);
   char buff[1024];
@@ -32,14 +33,13 @@ Answer* Result::compute_input() {
       line = buff;
       char buf[30];
       memset(buf,0,30);
-      sprintf(buf,"Answer: %d",set_count+1);
+      sprintf(buf,"Answer: %lu",ans_set.size()+1);
       if (is_a_set) {
         access_atom(line);
       }
 
       if (strcmp(buff,buf) == 0) {
         is_a_set = true;
-        set_count++;
       } else {
         is_a_set = false;
       }
@@ -50,18 +50,6 @@ Answer* Result::compute_input() {
     }
   }
   return ans_set;
-}
-
-void Result::access_atom(string line) {
-  char buf[30];
-  bool state = 0;
-  for (int i = 0; i < line.length(); i++) {
-    cout << line.at(i) << endl;
-//    if (strcmp(line.at(i),"(") == 0 || strcmp(line.at(i)," ") == 0) {
-//      cout << line.at(i) << endl;
-//    }
-//    strcat(buf,line.at(i));
-  }
 }
 
 int split(const string& str, vector<string>& ret_, string sep = ",")
@@ -98,22 +86,68 @@ int split(const string& str, vector<string>& ret_, string sep = ",")
     return 0;
 }
 
-Answer* Result::get_answer() {
+void Result::access_atom(string line) {
+  char buf[30];
+  bool state = 0;
+  Answer ans;
+  vector<string> vec;
+  split(line, vec, " ");
+  vector<string>::iterator it;
+  for(it = vec.begin(); it != vec.end(); it++) {
+    Atom atom;
+    vector<string> pre;
+//    cout << *it << " ";
+    split(*it, pre, "(");
+    map<string, int>::iterator iter;
+    iter = pi.find(pre[0]);
+    if (iter == pi.end()) {
+      pi.insert(pair<string,int>(pre[0],pi.size()));
+      atom.pre = pi.size() - 1;
+    } else {
+      atom.pre = iter->second;
+    }
+    
+    if (pre.size() > 1) {
+      string iStr = it->substr(it->find_first_of("(")+1,it->find_last_of(")")-it->find_first_of("(")-1);
+      vector<string> itemp;
+      split(iStr, itemp, ",");
+      vector<string>::iterator item;
+      for (item = itemp.begin(); item != itemp.end(); item++) {
+        iter = pi.find(*item);
+        if (iter == pi.end()) {
+          pi.insert(pair<string,int>(*item,pi.size()));
+          atom.t.push_back(pi.size() - 1);
+        } else {
+          atom.t.push_back(iter->second);
+        }
+      }
+    }
+    ans.a.push_back(atom);
+  }
+//  cout << endl;
+  ans_set.push_back(ans);
+}
+
+vector<Answer> Result::get_answer() {
   return ans_set;
 }
 
 void Result::print_ans_set() {
-  for (int i = 0; i < set_count; i++) {
-    int atom_count = ans_set[i].count;
-    Atom* atemp = ans_set[i].a;
-    cout << "Set is :" << endl;
-    for (int j = 0; j < atom_count; j++) {
-      cout << pi[atemp[j].pre] << ": ";
-      int t_count = atemp[i].count;
-      for (int k = 0; k < t_count; k++) {
-        cout << pi[atemp[j].t[k]] << " ";
+  vector<Answer>::iterator ans;
+  for (ans = ans_set.begin(); ans != ans_set.end(); ans++) {
+    vector<Atom>::iterator atom;
+    for (atom = ans->a.begin(); atom != ans->a.end(); atom++) {
+      cout << atom->pre;
+      vector<int>::iterator i;
+      for (i = atom->t.begin(); i != atom->t.end(); i++) {
+        if (i == atom->t.begin()) {
+          cout << ": ";
+        }
+        cout << *i << " ";
       }
-      cout << endl;
+      if (atom+1 != ans->a.end()) {
+        cout << ",";
+      }
     }
     cout << endl;
   }

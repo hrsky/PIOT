@@ -29,5 +29,6 @@ int main() {
     
     Result result_manager(pFilePath,modelFileName);
     result_manager.compute_input();
+    result_manager.print_ans_set();
     return 0;
 }
