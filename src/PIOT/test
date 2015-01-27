@@ -1,6 +1,8 @@
 %% TBox
  a :- b.
- a :- c.
+   :- a, b.
+ d :- c.
+   :- d, c.
 
 %% ABox
 b.

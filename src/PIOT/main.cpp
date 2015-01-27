@@ -10,6 +10,7 @@
 #include <string>
 #include <stdlib.h>
 #include <fstream>
+#include <queue>
 #include "translation.h"
 #include "Result.h"
 
@@ -53,18 +54,24 @@ void compute_model(vector<string> tbox, vector<string> abox) {
 void repair(vector<string> tbox, vector<string> abox) {
     if (tbox.empty())
         return;
-    compute_model(tbox, abox);
-    if (state == 1 || state == 2) {
-        return;
-    }
-    vector<string>::iterator i;
-    for (i = tbox.begin(); i != tbox.end(); i++) {
-      vector<string> temp = tbox;
-      tbox.erase(i);
-      repair(tbox, abox);
-      if (state > 0)
-          return;
-      tbox = temp;
+    queue< vector<string> > q;
+    q.push(tbox);
+    while (!q.empty()) {
+        tbox = q.front();
+        compute_model(tbox, abox);
+        q.pop();
+        if (state == 1 || state == 2) {
+            break;
+        }
+        vector<string>::iterator i;
+        for (i = tbox.begin(); i != tbox.end(); i++) {
+            vector<string> temp = tbox;
+            tbox.erase(i);
+            q.push(tbox);
+            if (state > 0)
+                return;
+            tbox = temp;
+        }
     }
 }
 

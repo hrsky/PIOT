@@ -2,7 +2,7 @@ clasp version 3.1.0
 Reading from stdin
 Solving...
 Answer: 1
-b c a
+b c
 SATISFIABLE
 
 Models       : 1     
