@@ -9,6 +9,11 @@
 #include <vector>
 using namespace std;
 
+struct Pred {
+    int pindex;
+    int arity;
+};
+
 struct Atom {
     int pre;
     vector<int> t;
