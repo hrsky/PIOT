@@ -2,26 +2,10 @@ clasp version 3.1.0
 Reading from stdin
 Solving...
 Answer: 1
-b c p1 p2 p3 p4
-Answer: 2
-b c p1 a2 p3 p4
-Answer: 3
-b c p1 p2 a3 d p4
-Answer: 4
-b c p1 a2 a3 d p4
-Answer: 5
-b c p1 p2 p3 a4
-Answer: 6
-b c p1 a2 p3 a4
-Answer: 7
-b c a1 a p2 p3 p4
-Answer: 8
-b c a1 a p2 a3 d p4
-Answer: 9
-b c a1 a p2 p3 a4
+b c a
 SATISFIABLE
 
-Models       : 9     
+Models       : 1     
 Calls        : 1
 Time         : 0.000s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
 CPU Time     : 0.000s

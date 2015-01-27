@@ -18,11 +18,12 @@ public:
   vector<Answer> get_answer();
   void print_ans_set();
   void access_atom(string line);
-  bool isSat();
+  int isSat();
+  void reset();
 private:
   string pFilePath;
   string modelFileName;
-  bool Sat;
+  int Sat;
   map<string,int> pi;
   vector<Answer> ans_set;
 };

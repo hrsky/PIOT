@@ -12,13 +12,15 @@ translation::translation(string pFilePath, string pFileName) {
   this->pFileName = pFileName;
   this->pFilePath = pFilePath;
   p_index = 0;
+  tbox.clear();
+  abox.clear();
 }
 
 void translation::trans() {
   ifstream infile;
   ofstream outfile;
   infile.open(pFilePath+pFileName);
-  outfile.open(pFilePath+pFileName+".lp");
+  outfile.open(pFilePath+pFileName+".lp", ofstream::trunc);
   string line;
   char buff[1024];
   if (infile.is_open()) {
@@ -47,6 +49,46 @@ void translation::trans() {
       }
     }
   }
+  outfile.close();
+}
+
+bool isAbox(string line) {
+  bool isabox = true;
+  if (line.find("%") == 0) {
+    isabox = false;
+  } else {
+    isabox = true;
+  }
+  return isabox;
+}
+
+void translation::classify() {
+  ifstream infile;
+  infile.open(pFilePath+pFileName);
+  string str;
+  char buff[1024];
+  if (infile.is_open()) {
+    while(infile.good() && !infile.eof()) {
+      memset(buff,0,1024);
+      infile.getline(buff,1204);
+      str = buff;
+      if (isRule(str)) {
+        tbox.push_back(str);
+      } else {
+        if (isAbox(str)) {
+          abox.push_back(str);
+        }
+      }
+    }
+  }
+}
+
+vector<string> translation::get_tbox() {
+  return tbox;
+}
+
+vector<string> translation::get_abox() {
+  return abox;
 }
 
 string translation::choice_rule(int index) {
@@ -65,6 +107,5 @@ bool translation::isRule(string line) {
   } else {
     isrule = false;
   }
-  cout << isrule << endl;
   return isrule;
 }

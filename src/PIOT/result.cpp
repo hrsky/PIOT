@@ -15,7 +15,13 @@ using namespace std;
 Result::Result(string pFilePath, string modelFileName) {
   this->pFilePath = pFilePath;
   this->modelFileName = modelFileName;
-  Sat = false;
+  Sat = 0;
+  pi.clear();
+  ans_set.clear();
+}
+
+void Result::reset() {
+  Sat = 0;
   pi.clear();
   ans_set.clear();
 }
@@ -45,7 +51,11 @@ vector<Answer> Result::compute_input() {
       }
       strcpy(buf,"SATISFIABLE");
       if (strcmp(buff,buf) == 0) {
-        Sat = true;
+        Sat = 1;
+      }
+      strcpy(buf,"UNSATISFIABLE");
+      if (strcmp(buff,buf) == 0) {
+        Sat = 0;
       }
     }
   }
@@ -153,6 +163,6 @@ void Result::print_ans_set() {
   }
 }
 
-bool Result::isSat() {
+int Result::isSat() {
   return Sat;
 }

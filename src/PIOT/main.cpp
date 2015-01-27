@@ -8,27 +8,80 @@
 
 #include <iostream>
 #include <string>
+#include <stdlib.h>
+#include <fstream>
 #include "translation.h"
 #include "Result.h"
 
 using namespace std;
+int state = 0;
+string pFilePath = "";
+string pFileName = "test";
+string modelFileName = "result.txt";
 
-int main() {
-    string pFilePath = "";
-    string pFileName = "test";
-    string modelFileName = "result.txt";
-//    string pFileName = "lubm-dlp";
-    translation tran(pFilePath, pFileName);
-//    tran.trans();
+void compute_model(vector<string> tbox, vector<string> abox) {
+    ofstream outfile;
+    outfile.flush();
+    outfile.open(pFilePath+pFileName+".lp", ofstream::trunc);
+    vector<string>::iterator i;
+    for (i = tbox.begin(); i != tbox.end(); i++) {
+        outfile << *i << endl;
+    }
+    for (i = abox.begin(); i != abox.end(); i++) {
+        outfile << *i << endl;
+    }
+    outfile.close();
+    
     char cmdline[100];
     strcpy(cmdline,"gringo ");
     strcat(cmdline,pFileName.c_str());
     strcat(cmdline,".lp | clasp 0 > ");
     strcat(cmdline,modelFileName.c_str());
-    system(cmdline);
-    
+    state = system(cmdline);
+    for (vector<string>::iterator it = tbox.begin(); it != tbox.end(); it++) {
+        cout << *it << endl;
+    }
     Result result_manager(pFilePath,modelFileName);
+    result_manager.reset();
     result_manager.compute_input();
-    result_manager.print_ans_set();
+    
+    state = result_manager.isSat();
+    cout << state << endl;
+    return;
+}
+
+void repair(vector<string> tbox, vector<string> abox) {
+    if (tbox.empty())
+        return;
+    compute_model(tbox, abox);
+    if (state == 1 || state == 2) {
+        return;
+    }
+    vector<string>::iterator i;
+    for (i = tbox.begin(); i != tbox.end(); i++) {
+      vector<string> temp = tbox;
+      tbox.erase(i);
+      repair(tbox, abox);
+      if (state > 0)
+          return;
+      tbox = temp;
+    }
+}
+
+int main() {
+//    string pFileName = "lubm-dlp";
+    translation tran(pFilePath, pFileName);
+//    tran.trans();
+    
+    int del_count = 1;
+    vector<string> tbox, abox;
+    tran.classify();
+    tbox = tran.get_tbox();
+    abox = tran.get_abox();
+    repair(tbox, abox);
+//    while (del_count < tbox.size()) {
+//        
+//        del_count++;
+//    }
     return 0;
 }
