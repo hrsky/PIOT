@@ -60,7 +60,14 @@ void repair(vector<string> tbox, vector<string> abox) {
         tbox = q.front();
         compute_model(tbox, abox);
         q.pop();
-        if (state == 1 || state == 2) {
+        if (state == 1) {
+            //check query entail
+            if (1) //entail
+                break;
+            else
+                continue;
+        }
+        if (state == 2) {
             break;
         }
         vector<string>::iterator i;
