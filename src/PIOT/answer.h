@@ -9,19 +9,13 @@
 #include <vector>
 using namespace std;
 
-struct Pred {
-    int pindex;
-    int arity;
-};
-
 struct Atom {
-//    int pre;
-  Pred pre;
+  int pre;
   vector<int> t;
 };
 
 struct Answer {
-    vector<Atom> a;
+  vector<Atom> a;
 };
 
 #endif

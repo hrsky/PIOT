@@ -9,6 +9,7 @@
 #include <vector>
 #include "result.h"
 #include "answer.h"
+#include "Dict.h"
 
 using namespace std;
 
@@ -16,13 +17,11 @@ Result::Result(string pFilePath, string modelFileName) {
   this->pFilePath = pFilePath;
   this->modelFileName = modelFileName;
   Sat = 0;
-  pi.clear();
   ans_set.clear();
 }
 
 void Result::reset() {
   Sat = 0;
-  pi.clear();
   ans_set.clear();
 }
 
@@ -108,28 +107,15 @@ void Result::access_atom(string line) {
     vector<string> pre;
 //    cout << *it << " ";
     split(*it, pre, "(");
-    map<string, int>::iterator iter;
-    iter = pi.find(pre[0]);
-    if (iter == pi.end()) {
-      pi.insert(pair<string,int>(pre[0],pi.size()));
-      atom.pre = pi.size() - 1;
-    } else {
-      atom.pre = iter->second;
-    }
-
+    atom.pre = Dict::getInstance().addPre(pre[0]);
+    
     if (pre.size() > 1) {
       string iStr = it->substr(it->find_first_of("(")+1,it->find_last_of(")")-it->find_first_of("(")-1);
       vector<string> itemp;
       split(iStr, itemp, ",");
       vector<string>::iterator item;
       for (item = itemp.begin(); item != itemp.end(); item++) {
-        iter = pi.find(*item);
-        if (iter == pi.end()) {
-          pi.insert(pair<string,int>(*item,pi.size()));
-          atom.t.push_back(pi.size() - 1);
-        } else {
-          atom.t.push_back(iter->second);
-        }
+        atom.t.push_back(Dict::getInstance().addInd(*item));
       }
     }
     ans.a.push_back(atom);

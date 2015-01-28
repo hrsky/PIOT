@@ -1,3 +1,5 @@
+#ifndef DICT_H
+#define DICT_H
 #include <map>
 
 using namespace std;
@@ -38,3 +40,4 @@ class Dict {
 };
 
 
+#endif

@@ -8,11 +8,13 @@
 
 #include <iostream>
 #include <string>
+#include <cstring>
 #include <stdlib.h>
 #include <fstream>
 #include <queue>
 #include "translation.h"
 #include "Result.h"
+#include "query.h"
 
 using namespace std;
 int state = 0;
@@ -20,7 +22,7 @@ string pFilePath = "";
 string pFileName = "test";
 string modelFileName = "result.txt";
 
-void compute_model(vector<string> tbox, vector<string> abox) {
+Result compute_model(vector<string> tbox, vector<string> abox) {
     ofstream outfile;
     outfile.flush();
     outfile.open(pFilePath+pFileName+".lp", ofstream::trunc);
@@ -48,7 +50,7 @@ void compute_model(vector<string> tbox, vector<string> abox) {
     
     state = result_manager.isSat();
     cout << state << endl;
-    return;
+    return result_manager;
 }
 
 void repair(vector<string> tbox, vector<string> abox) {
@@ -56,13 +58,14 @@ void repair(vector<string> tbox, vector<string> abox) {
         return;
     queue< vector<string> > q;
     q.push(tbox);
+    Query query("a d");
     while (!q.empty()) {
         tbox = q.front();
-        compute_model(tbox, abox);
+        Result r = compute_model(tbox, abox);
         q.pop();
         if (state == 1) {
             //check query entail
-            if (1) //entail
+            if (query.entails(&r)) //entail
                 break;
             else
                 continue;

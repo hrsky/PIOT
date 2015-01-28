@@ -9,6 +9,7 @@
 #include <map>
 #include <string>
 #include "answer.h"
+#include "Dict.h"
 using namespace std;
 #define MAX_SET_NUM 1000
 class Result {
@@ -24,7 +25,6 @@ private:
   string pFilePath;
   string modelFileName;
   int Sat;
-  map<string,int> pi;
   vector<Answer> ans_set;
 };
 
