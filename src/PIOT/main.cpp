@@ -65,9 +65,10 @@ void repair(vector<string> tbox, vector<string> abox) {
         q.pop();
         if (state == 1) {
             //check query entail
-            if (query.entails(&r)) //entail
+            if (query.entails(&r)) { //entail
+                cout << "Success" << endl;
                 break;
-            else
+            } else
                 continue;
         }
         if (state == 2) {
