@@ -15,8 +15,9 @@ struct Pred {
 };
 
 struct Atom {
-    int pre;
-    vector<int> t;
+//    int pre;
+  Pred pre;
+  vector<int> t;
 };
 
 struct Answer {
