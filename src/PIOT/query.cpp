@@ -29,15 +29,15 @@ void split(string& s, string& de, vector<string>& re) {
 
 bool check_entailment(vector<Atom>& query, unsigned index) {
   if(index >= query.size()) return true;
-  Pred p = query[index].pre;
+  int p = query[index].pre;
   vector<int> t = query[index].t;
 
-  vector<Atom> atoms = models[p.pindex];
+  vector<Atom> atoms = models[p];
 
   for(unsigned i = 0; i < atoms.size(); i++) {
     vector<int> cv;
-    int c;
-    for(c = 0; c < p.arity; c++) {
+    size_t c;
+    for(c = 0; c < t.size(); c++) {
       if(t[c] >= 0 && t[c] != atoms[i].t[c]) break;
       if(t[c] < 0) {
         int v = abs(t[c]);
@@ -50,7 +50,7 @@ bool check_entailment(vector<Atom>& query, unsigned index) {
         }
       }
     }
-    if(c == p.arity) {
+    if(c == t.size()) {
       bool result = check_entailment(query, index + 1);
       if(result) return true;
 
@@ -70,9 +70,10 @@ int Query::addVariable(string& s) {
 }
 
 Query::Query(string query) {
-  string delim = ",";
+  string delim1 = ",";
+  string delim2 = " ";
   vector<string> atomstr;
-  split(query, delim, atomstr);
+  split(query, delim2, atomstr);
 
   for(size_t i = 0; i < atomstr.size(); i++) {
     string s = atomstr[i];
@@ -84,9 +85,8 @@ Query::Query(string query) {
     string vstring = s.substr(f, l - f);
     vector<string> vss;
     string delim = ",";
-    split(vstring, delim, vss);
-    a.pre.pindex = ip;
-    a.pre.arity = vss.size();
+    split(vstring, delim1, vss);
+    a.pre = ip;
 
     for(size_t i = 0; i < vss.size(); i++) {
       if(vss[i][0] > 'a') {
@@ -104,7 +104,7 @@ bool Query::entails(Result* result) {
   memset(varA, 0, sizeof(varA));
   Answer answer = (result->get_answer())[0];
   for(size_t i = 0;  i < answer.a.size(); i++) {
-    int p = answer.a[i].pre.pindex;
+    int p = answer.a[i].pre;
     models[p].push_back(answer.a[i]);
   }
 
