@@ -13,7 +13,7 @@
 #include <fstream>
 #include <queue>
 #include "translation.h"
-#include "Result.h"
+#include "result.h"
 #include "query.h"
 
 using namespace std;
@@ -34,7 +34,7 @@ Result compute_model(vector<string> tbox, vector<string> abox) {
         outfile << *i << endl;
     }
     outfile.close();
-    
+
     char cmdline[100];
     strcpy(cmdline,"gringo ");
     strcat(cmdline,pFileName.c_str());
@@ -47,7 +47,7 @@ Result compute_model(vector<string> tbox, vector<string> abox) {
     Result result_manager(pFilePath,modelFileName);
     result_manager.reset();
     result_manager.compute_input();
-    
+
     state = result_manager.isSat();
     cout << state << endl;
     return result_manager;
@@ -90,7 +90,7 @@ int main() {
 //    string pFileName = "lubm-dlp";
     translation tran(pFilePath, pFileName);
 //    tran.trans();
-    
+
     int del_count = 1;
     vector<string> tbox, abox;
     tran.classify();
@@ -98,7 +98,7 @@ int main() {
     abox = tran.get_abox();
     repair(tbox, abox);
 //    while (del_count < tbox.size()) {
-//        
+//
 //        del_count++;
 //    }
     return 0;

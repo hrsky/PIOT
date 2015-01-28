@@ -70,33 +70,44 @@ int Query::addVariable(string& s) {
 }
 
 Query::Query(string query) {
+  cout << "query string:" << query << endl;
   string delim1 = ",";
   string delim2 = " ";
   vector<string> atomstr;
   split(query, delim2, atomstr);
 
   for(size_t i = 0; i < atomstr.size(); i++) {
+    cout << "atomstr " << i << " " << atomstr[i] << endl;
     string s = atomstr[i];
     Atom a;
-    size_t f = s.find_first_not_of("(", 0);
-    size_t l = s.find_last_not_of(")", 0);
-    string sp = s.substr(0, f);
-    int ip = Dict::getInstance().addPre(sp);
-    string vstring = s.substr(f, l - f);
-    vector<string> vss;
-    string delim = ",";
-    split(vstring, delim1, vss);
-    a.pre = ip;
+    size_t f = s.find_first_of("(", 0);
+    size_t l = s.find_last_of(")", 0);
 
-    for(size_t i = 0; i < vss.size(); i++) {
-      if(vss[i][0] > 'a') {
-        a.t.push_back(Dict::getInstance().addInd(vss[i]));
-      }
-      else {
-        a.t.push_back(-1 * addVariable(vss[i]));
+    if(f == string::npos) {
+      a.pre = Dict::getInstance().addPre(s);
+    }
+    else {
+      string sp = s.substr(0, f);
+      int ip = Dict::getInstance().addPre(sp);
+      string vstring = s.substr(f + 1, l - f - 1);
+      vector<string> vss;
+      string delim = ",";
+      split(vstring, delim1, vss);
+      a.pre = ip;
+
+      for(size_t i = 0; i < vss.size(); i++) {
+        if(vss[i][0] > 'a') {
+          a.t.push_back(Dict::getInstance().addInd(vss[i]));
+        }
+        else {
+          a.t.push_back(-1 * addVariable(vss[i]));
+        }
       }
     }
+    this->_query.push_back(a);
   }
+  for(size_t i = 0; i < this->_query.size(); i++) cout << "query" << this->_query[i].pre << " ";
+  cout << endl;
 }
 
 bool Query::entails(Result* result) {
@@ -107,6 +118,5 @@ bool Query::entails(Result* result) {
     int p = answer.a[i].pre;
     models[p].push_back(answer.a[i]);
   }
-
   return check_entailment(this->_query, 0);
 }

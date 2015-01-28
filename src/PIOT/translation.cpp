@@ -6,6 +6,7 @@
 #include <string>
 #include <fstream>
 #include "translation.h"
+#include <cstring>
 using namespace std;
 
 translation::translation(string pFilePath, string pFileName) {
@@ -37,7 +38,7 @@ void translation::trans() {
         sprintf(buf, "%d", p_index);
         s += buf;
         s += ".\r\n";
-        
+
         line.replace(line.length()-2,1, ",");
         line.erase(line.length()-1);
         line.append(s);
