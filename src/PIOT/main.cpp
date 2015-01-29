@@ -19,7 +19,7 @@
 using namespace std;
 int state = 0;
 string pFilePath = "";
-string pFileName = "lubm-dlp";
+string pFileName = "test";
 string modelFileName = "result.txt";
 
 Result compute_model(vector<string> tbox, vector<string> abox) {
@@ -56,11 +56,17 @@ Result compute_model(vector<string> tbox, vector<string> abox) {
 void repair(vector<string> tbox, vector<string> abox) {
     if (tbox.empty())
         return;
+    int count = tbox.size();
+    int index = 0;
+    bool issat = false;
     queue< vector<string> > q;
     q.push(tbox);
-    Query query("student(X) teachingassistant(X)");
+    Query query("a d");
     while (!q.empty()) {
         tbox = q.front();
+        if (count - tbox.size() > 0) {
+            index = 0;
+        }
         Result r = compute_model(tbox, abox);
         q.pop();
         if (state == 1) {
@@ -69,20 +75,28 @@ void repair(vector<string> tbox, vector<string> abox) {
                 cout << "Success" << endl;
                 break;
             } else
-                continue;
+                issat = true;
         }
         if (state == 2) {
             break;
         }
         vector<string>::iterator i;
+        count = tbox.size();
+        int n_index = 0;
         for (i = tbox.begin(); i != tbox.end(); i++) {
+            n_index++;
+            if (n_index <= index)
+                continue;
+            if (issat) {
+                continue;
+            }
             vector<string> temp = tbox;
             tbox.erase(i);
             q.push(tbox);
-            if (state > 0)
-                return;
             tbox = temp;
         }
+        issat = false;
+        index++;
     }
 }
 
@@ -91,15 +105,11 @@ int main() {
     translation tran(pFilePath, pFileName);
 //    tran.trans();
 
-    int del_count = 1;
     vector<string> tbox, abox;
     tran.classify();
     tbox = tran.get_tbox();
     abox = tran.get_abox();
     repair(tbox, abox);
-//    while (del_count < tbox.size()) {
-//
-//        del_count++;
-//    }
+
     return 0;
 }
