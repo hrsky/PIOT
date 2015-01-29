@@ -19,7 +19,7 @@
 using namespace std;
 int state = 0;
 string pFilePath = "";
-string pFileName = "test";
+string pFileName = "lubm-dlp";
 string modelFileName = "result.txt";
 
 Result compute_model(vector<string> tbox, vector<string> abox) {
@@ -58,7 +58,7 @@ void repair(vector<string> tbox, vector<string> abox) {
         return;
     queue< vector<string> > q;
     q.push(tbox);
-    Query query("a d");
+    Query query("student(X) teachingassistant(X)");
     while (!q.empty()) {
         tbox = q.front();
         Result r = compute_model(tbox, abox);
