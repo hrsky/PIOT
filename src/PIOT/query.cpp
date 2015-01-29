@@ -77,7 +77,7 @@ Query::Query(string query) {
   split(query, delim2, atomstr);
 
   for(size_t i = 0; i < atomstr.size(); i++) {
-    cout << "atomstr " << i << " " << atomstr[i] << endl;
+    //cout << "atomstr " << i << " " << atomstr[i] << endl;
     string s = atomstr[i];
     Atom a;
     size_t f = s.find_first_of("(", 0);
@@ -96,7 +96,7 @@ Query::Query(string query) {
       a.pre = ip;
 
       for(size_t i = 0; i < vss.size(); i++) {
-        if(vss[i][0] > 'a') {
+        if(vss[i][0] >= 'a') {
           a.t.push_back(Dict::getInstance().addInd(vss[i]));
         }
         else {
@@ -106,8 +106,20 @@ Query::Query(string query) {
     }
     this->_query.push_back(a);
   }
-  for(size_t i = 0; i < this->_query.size(); i++) cout << "query" << this->_query[i].pre << " ";
-  cout << endl;
+  //for(size_t i = 0; i < this->_query.size(); i++) cout << "query" << this->_query[i].pre << " ";
+  //cout << endl;
+}
+
+void Query::printQuery() {
+  for(size_t i = 0; i < _query.size(); i++) {
+    Atom a = _query[i];
+    cout << "atom" << i << " " << a.pre << "(";
+    for(size_t t = 0; t < a.t.size(); t++) {
+      cout << a.t[t];
+      if(t < a.t.size() - 1) cout << ",";
+      else cout << ")" << endl;
+    }
+  }
 }
 
 bool Query::entails(Result* result) {

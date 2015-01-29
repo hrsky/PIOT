@@ -15,6 +15,7 @@ class Query {
     bool entails(Result* result);
     string get_query();
     string process_query();
+    void printQuery();
   private:
     vector<Atom> _query;
     map<string, int> varibles;
