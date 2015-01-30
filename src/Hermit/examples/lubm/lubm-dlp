@@ -95,7 +95,7 @@ teachingassistant(X) :- teachingassistantof(X,Y).
 administrativestaff(X) :- clericalstaff(X).
 research(Y) :- publicationresearch(X,Y).
 organization(X) :- college(X).
-publication(X) :- article(X).
+article(X) :- publication(X).
 professor(X) :- associateprofessor(X).
 person(Y) :- member(X,Y).
 course(X) :- graduatecourse(X).
@@ -125,545 +125,60 @@ internal_all_1(X) :- suborganizationof(X,Y), internal_all_5(Y).
 internal_all_5(X) :- internal_all_1(X).
 internal_all_1(X) :- internal_all_6(X).
 internal_all_5(X) :- thing(X).
- :- softwaredocumentation(X,Y), tenured(X,Y).
- :- affiliatedorganizationof(X,Y), member(X,Y).
- :- memberof(X,Y), researchproject(X,Y).
- :- hasfaculty(X,Y), teachingassistantof(X,Y).
- :- publicationauthor(X,Y), softwareversion(X,Y).
- :- listedcourse(X,Y), publicationauthor(X,Y).
- :- affiliatedorganizationof(X,Y), tenured(X,Y).
- :- hasfaculty(X,Y), member(X,Y).
- :- hasexamrecord(X,Y), tenured(X,Y).
- :- member(X,Y), takescourse(X,Y).
- :- member(X,Y), softwareversion(X,Y).
- :- hasalumnus(X,Y), member(X,Y).
- :- ispartofuniversity(X,Y), teacherof(X,Y).
- :- degreefrom(X,Y), teachingassistantof(X,Y).
- :- listedcourse(X,Y), softwaredocumentation(X,Y).
- :- orgpublication(X,Y), tenured(X,Y).
- :- memberof(X,Y), suborganizationof(X,Y).
- :- ispartofuniversity(X,Y), researchproject(X,Y).
- :- degreefrom(X,Y), memberof(X,Y).
- :- memberof(X,Y), orgpublication(X,Y).
- :- ispartofuniversity(X,Y), memberof(X,Y).
- :- hasexamrecord(X,Y), suborganizationof(X,Y).
- :- member(X,Y), publicationdate(X,Y).
- :- hasalumnus(X,Y), ispartofuniversity(X,Y).
- :- degreefrom(X,Y), member(X,Y).
- :- softwaredocumentation(X,Y), takescourse(X,Y).
- :- affiliatedorganizationof(X,Y), listedcourse(X,Y).
- :- suborganizationof(X,Y), teacherof(X,Y).
- :- hasalumnus(X,Y), tenured(X,Y).
- :- advisor(X,Y), member(X,Y).
- :- hasfaculty(X,Y), researchproject(X,Y).
- :- publicationauthor(X,Y), suborganizationof(X,Y).
- :- listedcourse(X,Y), researchproject(X,Y).
- :- advisor(X,Y), tenured(X,Y).
- :- degreefrom(X,Y), publicationauthor(X,Y).
- :- affiliatedorganizationof(X,Y), publicationdate(X,Y).
- :- softwaredocumentation(X,Y), suborganizationof(X,Y).
- :- publicationresearch(X,Y), researchproject(X,Y).
- :- affiliatedorganizationof(X,Y), teachingassistantof(X,Y).
- :- softwaredocumentation(X,Y), teacherof(X,Y).
- :- advisor(X,Y), softwaredocumentation(X,Y).
- :- advisor(X,Y), suborganizationof(X,Y).
- :- orgpublication(X,Y), publicationdate(X,Y).
- :- hasalumnus(X,Y), softwaredocumentation(X,Y).
- :- ispartofuniversity(X,Y), member(X,Y).
- :- ispartofuniversity(X,Y), listedcourse(X,Y).
- :- affiliatedorganizationof(X,Y), hasalumnus(X,Y).
- :- hasfaculty(X,Y), takescourse(X,Y).
- :- advisor(X,Y), researchproject(X,Y).
- :- memberof(X,Y), softwaredocumentation(X,Y).
- :- advisor(X,Y), listedcourse(X,Y).
- :- member(X,Y), researchproject(X,Y).
- :- orgpublication(X,Y), takescourse(X,Y).
- :- hasalumnus(X,Y), orgpublication(X,Y).
- :- advisor(X,Y), orgpublication(X,Y).
  :- takescourse(X,Y), teachingassistantof(X,Y).
- :- affiliatedorganizationof(X,Y), suborganizationof(X,Y).
- :- hasalumnus(X,Y), researchproject(X,Y).
- :- orgpublication(X,Y), suborganizationof(X,Y).
- :- ispartofuniversity(X,Y), softwaredocumentation(X,Y).
- :- teacherof(X,Y), teachingassistantof(X,Y).
- :- softwareversion(X,Y), tenured(X,Y).
- :- advisor(X,Y), softwareversion(X,Y).
- :- publicationresearch(X,Y), teachingassistantof(X,Y).
- :- member(X,Y), publicationauthor(X,Y).
- :- memberof(X,Y), softwareversion(X,Y).
- :- ispartofuniversity(X,Y), orgpublication(X,Y).
- :- advisor(X,Y), hasexamrecord(X,Y).
- :- softwareversion(X,Y), teacherof(X,Y).
- :- publicationauthor(X,Y), teacherof(X,Y).
- :- memberof(X,Y), tenured(X,Y).
- :- memberof(X,Y), publicationresearch(X,Y).
- :- publicationauthor(X,Y), researchproject(X,Y).
- :- publicationdate(X,Y), suborganizationof(X,Y).
- :- softwaredocumentation(X,Y), softwareversion(X,Y).
- :- publicationresearch(X,Y), tenured(X,Y).
- :- listedcourse(X,Y), orgpublication(X,Y).
- :- takescourse(X,Y), tenured(X,Y).
- :- publicationresearch(X,Y), takescourse(X,Y).
- :- softwareversion(X,Y), suborganizationof(X,Y).
- :- publicationdate(X,Y), teachingassistantof(X,Y).
- :- hasexamrecord(X,Y), teachingassistantof(X,Y).
- :- memberof(X,Y), teacherof(X,Y).
- :- publicationdate(X,Y), researchproject(X,Y).
- :- degreefrom(X,Y), ispartofuniversity(X,Y).
- :- listedcourse(X,Y), tenured(X,Y).
- :- advisor(X,Y), ispartofuniversity(X,Y).
- :- researchproject(X,Y), suborganizationof(X,Y).
- :- hasfaculty(X,Y), tenured(X,Y).
- :- affiliatedorganizationof(X,Y), ispartofuniversity(X,Y).
- :- researchproject(X,Y), takescourse(X,Y).
- :- affiliatedorganizationof(X,Y), softwareversion(X,Y).
- :- researchproject(X,Y), teacherof(X,Y).
- :- degreefrom(X,Y), suborganizationof(X,Y).
- :- hasexamrecord(X,Y), member(X,Y).
- :- hasalumnus(X,Y), publicationresearch(X,Y).
- :- ispartofuniversity(X,Y), teachingassistantof(X,Y).
- :- affiliatedorganizationof(X,Y), degreefrom(X,Y).
- :- publicationauthor(X,Y), publicationresearch(X,Y).
- :- degreefrom(X,Y), takescourse(X,Y).
- :- advisor(X,Y), affiliatedorganizationof(X,Y).
- :- listedcourse(X,Y), takescourse(X,Y).
- :- publicationauthor(X,Y), takescourse(X,Y).
- :- ispartofuniversity(X,Y), publicationresearch(X,Y).
- :- hasalumnus(X,Y), listedcourse(X,Y).
- :- ispartofuniversity(X,Y), takescourse(X,Y).
- :- orgpublication(X,Y), teachingassistantof(X,Y).
- :- advisor(X,Y), takescourse(X,Y).
- :- hasexamrecord(X,Y), takescourse(X,Y).
- :- orgpublication(X,Y), softwareversion(X,Y).
- :- hasexamrecord(X,Y), softwaredocumentation(X,Y).
- :- publicationauthor(X,Y), softwaredocumentation(X,Y).
- :- listedcourse(X,Y), memberof(X,Y).
- :- hasexamrecord(X,Y), softwareversion(X,Y).
- :- hasalumnus(X,Y), suborganizationof(X,Y).
- :- degreefrom(X,Y), listedcourse(X,Y).
- :- member(X,Y), memberof(X,Y).
- :- memberof(X,Y), publicationauthor(X,Y).
- :- hasfaculty(X,Y), publicationdate(X,Y).
- :- hasfaculty(X,Y), suborganizationof(X,Y).
- :- degreefrom(X,Y), orgpublication(X,Y).
- :- publicationresearch(X,Y), softwareversion(X,Y).
- :- orgpublication(X,Y), publicationauthor(X,Y).
- :- hasfaculty(X,Y), ispartofuniversity(X,Y).
- :- publicationauthor(X,Y), teachingassistantof(X,Y).
- :- hasalumnus(X,Y), publicationdate(X,Y).
- :- hasfaculty(X,Y), publicationresearch(X,Y).
- :- softwareversion(X,Y), takescourse(X,Y).
- :- degreefrom(X,Y), publicationresearch(X,Y).
- :- listedcourse(X,Y), publicationresearch(X,Y).
- :- member(X,Y), softwaredocumentation(X,Y).
- :- affiliatedorganizationof(X,Y), teacherof(X,Y).
- :- softwareversion(X,Y), teachingassistantof(X,Y).
- :- degreefrom(X,Y), publicationdate(X,Y).
- :- hasexamrecord(X,Y), memberof(X,Y).
- :- hasfaculty(X,Y), teacherof(X,Y).
- :- hasexamrecord(X,Y), ispartofuniversity(X,Y).
- :- advisor(X,Y), hasfaculty(X,Y).
- :- publicationdate(X,Y), softwareversion(X,Y).
- :- suborganizationof(X,Y), takescourse(X,Y).
- :- ispartofuniversity(X,Y), publicationdate(X,Y).
- :- researchproject(X,Y), tenured(X,Y).
- :- hasexamrecord(X,Y), listedcourse(X,Y).
- :- orgpublication(X,Y), researchproject(X,Y).
- :- listedcourse(X,Y), publicationdate(X,Y).
- :- hasexamrecord(X,Y), publicationdate(X,Y).
- :- degreefrom(X,Y), hasalumnus(X,Y).
- :- affiliatedorganizationof(X,Y), hasexamrecord(X,Y).
- :- teachingassistantof(X,Y), tenured(X,Y).
- :- hasalumnus(X,Y), teachingassistantof(X,Y).
- :- affiliatedorganizationof(X,Y), takescourse(X,Y).
- :- publicationdate(X,Y), publicationresearch(X,Y).
- :- affiliatedorganizationof(X,Y), hasfaculty(X,Y).
- :- publicationdate(X,Y), teacherof(X,Y).
- :- publicationdate(X,Y), tenured(X,Y).
- :- listedcourse(X,Y), member(X,Y).
- :- member(X,Y), suborganizationof(X,Y).
- :- orgpublication(X,Y), softwaredocumentation(X,Y).
- :- advisor(X,Y), degreefrom(X,Y).
- :- hasalumnus(X,Y), hasfaculty(X,Y).
- :- affiliatedorganizationof(X,Y), memberof(X,Y).
- :- suborganizationof(X,Y), teachingassistantof(X,Y).
- :- member(X,Y), teacherof(X,Y).
- :- degreefrom(X,Y), softwareversion(X,Y).
- :- takescourse(X,Y), teacherof(X,Y).
- :- hasexamrecord(X,Y), publicationresearch(X,Y).
- :- publicationresearch(X,Y), teacherof(X,Y).
- :- hasfaculty(X,Y), softwareversion(X,Y).
- :- hasalumnus(X,Y), teacherof(X,Y).
- :- hasfaculty(X,Y), softwaredocumentation(X,Y).
- :- publicationdate(X,Y), takescourse(X,Y).
- :- memberof(X,Y), publicationdate(X,Y).
- :- hasalumnus(X,Y), takescourse(X,Y).
- :- affiliatedorganizationof(X,Y), softwaredocumentation(X,Y).
- :- researchproject(X,Y), teachingassistantof(X,Y).
- :- ispartofuniversity(X,Y), suborganizationof(X,Y).
- :- degreefrom(X,Y), tenured(X,Y).
- :- advisor(X,Y), hasalumnus(X,Y).
- :- degreefrom(X,Y), teacherof(X,Y).
- :- hasfaculty(X,Y), publicationauthor(X,Y).
- :- publicationauthor(X,Y), publicationdate(X,Y).
- :- hasexamrecord(X,Y), researchproject(X,Y).
- :- orgpublication(X,Y), publicationresearch(X,Y).
- :- memberof(X,Y), teachingassistantof(X,Y).
- :- affiliatedorganizationof(X,Y), publicationauthor(X,Y).
- :- listedcourse(X,Y), teachingassistantof(X,Y).
- :- degreefrom(X,Y), hasfaculty(X,Y).
- :- affiliatedorganizationof(X,Y), researchproject(X,Y).
- :- advisor(X,Y), teachingassistantof(X,Y).
- :- listedcourse(X,Y), teacherof(X,Y).
- :- member(X,Y), tenured(X,Y).
- :- publicationresearch(X,Y), softwaredocumentation(X,Y).
- :- member(X,Y), publicationresearch(X,Y).
- :- hasfaculty(X,Y), memberof(X,Y).
- :- listedcourse(X,Y), suborganizationof(X,Y).
- :- hasalumnus(X,Y), hasexamrecord(X,Y).
- :- publicationresearch(X,Y), suborganizationof(X,Y).
- :- member(X,Y), orgpublication(X,Y).
- :- advisor(X,Y), publicationauthor(X,Y).
- :- member(X,Y), teachingassistantof(X,Y).
- :- advisor(X,Y), memberof(X,Y).
- :- hasfaculty(X,Y), listedcourse(X,Y).
- :- publicationauthor(X,Y), tenured(X,Y).
- :- degreefrom(X,Y), hasexamrecord(X,Y).
- :- hasexamrecord(X,Y), hasfaculty(X,Y).
- :- ispartofuniversity(X,Y), publicationauthor(X,Y).
- :- advisor(X,Y), publicationdate(X,Y).
- :- teacherof(X,Y), tenured(X,Y).
- :- researchproject(X,Y), softwareversion(X,Y).
- :- hasalumnus(X,Y), publicationauthor(X,Y).
- :- hasalumnus(X,Y), memberof(X,Y).
- :- listedcourse(X,Y), softwareversion(X,Y).
- :- hasalumnus(X,Y), softwareversion(X,Y).
- :- ispartofuniversity(X,Y), tenured(X,Y).
- :- hasfaculty(X,Y), orgpublication(X,Y).
- :- advisor(X,Y), publicationresearch(X,Y).
- :- degreefrom(X,Y), researchproject(X,Y).
- :- affiliatedorganizationof(X,Y), orgpublication(X,Y).
- :- ispartofuniversity(X,Y), softwareversion(X,Y).
- :- softwaredocumentation(X,Y), teachingassistantof(X,Y).
- :- publicationdate(X,Y), softwaredocumentation(X,Y).
- :- suborganizationof(X,Y), tenured(X,Y).
- :- degreefrom(X,Y), softwaredocumentation(X,Y).
- :- advisor(X,Y), teacherof(X,Y).
- :- orgpublication(X,Y), teacherof(X,Y).
- :- researchproject(X,Y), softwaredocumentation(X,Y).
- :- subj14course(X), subj20course(X).
- :- subj18professor(X), subj1professor(X).
- :- subj17professor(X), subj2professor(X).
- :- subj16professor(X), subj3professor(X).
- :- subj11professor(X), subj8professor(X).
- :- subj10professor(X), subj9professor(X).
- :- subj12professor(X), subj7professor(X).
- :- subj13professor(X), subj6professor(X).
- :- subj14professor(X), subj5professor(X).
- :- subj15professor(X), subj4professor(X).
- :- subj3course(X), subj9course(X).
- :- subj4course(X), subj8course(X).
- :- subj5course(X), subj7course(X).
- :- subj11department(X), subj17department(X).
- :- subj10department(X), subj18department(X).
- :- subj12department(X), subj16department(X).
- :- subj13department(X), subj15department(X).
- :- journalarticle(X), technicalreport(X).
- :- subj19course(X), subj9course(X).
- :- subj8professor(X), subj9professor(X).
- :- subj20department(X), subj4department(X).
- :- subj16course(X), subj1course(X).
- :- subj15course(X), subj2course(X).
- :- subj14course(X), subj3course(X).
- :- subj13course(X), subj4course(X).
- :- subj12course(X), subj5course(X).
- :- subj10course(X), subj7course(X).
- :- subj11course(X), subj6course(X).
- :- subj11professor(X), subj2professor(X).
- :- subj10professor(X), subj3professor(X).
- :- subj12professor(X), subj1professor(X).
- :- subj12course(X), subj19course(X).
- :- subj13course(X), subj18course(X).
- :- subj14course(X), subj17course(X).
- :- subj15course(X), subj16course(X).
- :- postdoc(X), professor(X).
- :- subj20professor(X), subj4professor(X).
- :- institute(X), program(X).
- :- subj19course(X), subj20course(X).
- :- subj5course(X), subj6course(X).
- :- subj4course(X), subj7course(X).
- :- subj3course(X), subj8course(X).
- :- subj2course(X), subj9course(X).
- :- subj10course(X), subj11course(X).
- :- subj10professor(X), subj11professor(X).
- :- subj17course(X), subj9course(X).
- :- subj18course(X), subj8course(X).
- :- subj19course(X), subj7course(X).
- :- subj14course(X), subj19course(X).
- :- subj15course(X), subj18course(X).
- :- subj16course(X), subj17course(X).
- :- book(X), manual(X).
- :- department(X), researchgroup(X).
- :- subj20department(X), subj3department(X).
- :- article(X), manual(X).
- :- subj20professor(X), subj8professor(X).
- :- manual(X), specification(X).
- :- subj4professor(X), subj6professor(X).
- :- subj3professor(X), subj7professor(X).
- :- subj2professor(X), subj8professor(X).
- :- subj1professor(X), subj9professor(X).
- :- subj15course(X), subj20course(X).
- :- subj3professor(X), subj9professor(X).
- :- subj4professor(X), subj8professor(X).
- :- subj5professor(X), subj7professor(X).
- :- subj15department(X), subj19department(X).
- :- subj16department(X), subj18department(X).
- :- subj16professor(X), subj18professor(X).
- :- subj15professor(X), subj19professor(X).
- :- program(X), researchgroup(X).
- :- subj7course(X), subj9course(X).
- :- department(X), institute(X).
- :- subj15professor(X), subj20professor(X).
- :- associateprofessor(X), exdean(X).
- :- subj6course(X), subj8course(X).
- :- subj5course(X), subj9course(X).
- :- subj11department(X), subj2department(X).
- :- subj10department(X), subj3department(X).
- :- subj12department(X), subj1department(X).
- :- assistantprofessor(X), visitingprofessor(X).
- :- subj11professor(X), subj16professor(X).
- :- subj10professor(X), subj17professor(X).
- :- subj12professor(X), subj15professor(X).
- :- subj13professor(X), subj14professor(X).
- :- graduatestudent(X), chair(X).
- :- subj1course(X), subj8course(X).
- :- subj2course(X), subj7course(X).
- :- subj3course(X), subj6course(X).
- :- subj4course(X), subj5course(X).
- :- subj16department(X), subj20department(X).
- :- subj18course(X), subj20course(X).
- :- subj20professor(X), subj6professor(X).
- :- article(X), specification(X).
- :- subj11professor(X), subj15professor(X).
- :- subj10professor(X), subj16professor(X).
- :- subj12professor(X), subj14professor(X).
- :- subj20department(X), subj2department(X).
- :- subj12department(X), subj19department(X).
- :- subj13department(X), subj18department(X).
- :- subj14department(X), subj17department(X).
- :- subj15department(X), subj16department(X).
- :- subj19professor(X), subj20professor(X).
- :- subj15professor(X), subj7professor(X).
- :- subj14professor(X), subj8professor(X).
- :- subj19professor(X), subj3professor(X).
- :- subj18professor(X), subj4professor(X).
- :- subj17professor(X), subj5professor(X).
- :- subj16professor(X), subj6professor(X).
- :- subj13professor(X), subj9professor(X).
- :- conferencepaper(X), journalarticle(X).
- :- clericalstaff(X), systemsstaff(X).
+ :- subj19professor(X), associateprofessor(X).
+ :- undergraduatestudent(X), researchassistant(X).
+ :- subj16student(X), graduatestudent(X). 
  :- assistantprofessor(X), associateprofessor(X).
- :- subj16professor(X), subj20professor(X).
- :- subj13course(X), subj20course(X).
- :- subj1department(X), subj7department(X).
- :- subj2department(X), subj6department(X).
- :- subj3department(X), subj5department(X).
- :- subj20professor(X), subj3professor(X).
- :- subj10professor(X), subj13professor(X).
- :- subj11professor(X), subj12professor(X).
- :- subj7professor(X), subj8professor(X).
- :- subj6professor(X), subj9professor(X).
- :- subj20department(X), subj5department(X).
- :- director(X), student(X).
- :- subj15professor(X), subj6professor(X).
- :- subj14professor(X), subj7professor(X).
- :- subj19professor(X), subj2professor(X).
- :- subj18professor(X), subj3professor(X).
- :- subj17professor(X), subj4professor(X).
- :- subj16professor(X), subj5professor(X).
- :- subj12professor(X), subj9professor(X).
- :- subj13professor(X), subj8professor(X).
- :- subj2department(X), subj4department(X).
- :- subj1department(X), subj5department(X).
- :- institute(X), university(X).
- :- subj1department(X), subj20department(X).
- :- manual(X), software(X).
- :- subj16course(X), subj5course(X).
- :- subj15course(X), subj6course(X).
- :- subj14course(X), subj7course(X).
- :- subj13course(X), subj8course(X).
- :- subj12course(X), subj9course(X).
- :- subj17course(X), subj4course(X).
- :- subj18course(X), subj3course(X).
- :- subj19course(X), subj2course(X).
- :- subj19professor(X), subj6professor(X).
- :- subj18professor(X), subj7professor(X).
- :- subj17professor(X), subj8professor(X).
- :- subj16professor(X), subj9professor(X).
- :- book(X), unofficialpublication(X).
- :- subj13department(X), subj20department(X).
- :- subj15department(X), subj8department(X).
- :- subj14department(X), subj9department(X).
- :- subj16department(X), subj7department(X).
- :- subj17department(X), subj6department(X).
- :- subj18department(X), subj5department(X).
- :- subj19department(X), subj4department(X).
- :- subj1professor(X), subj3professor(X).
- :- assistantprofessor(X), exdean(X).
- :- subj2department(X), subj3department(X).
- :- subj1department(X), subj4department(X).
- :- subj10department(X), subj20department(X).
- :- subj19course(X), subj1course(X).
- :- subj18course(X), subj2course(X).
- :- subj17course(X), subj3course(X).
- :- subj11course(X), subj9course(X).
- :- subj12course(X), subj8course(X).
- :- subj13course(X), subj7course(X).
- :- subj14course(X), subj6course(X).
- :- subj15course(X), subj5course(X).
- :- subj16course(X), subj4course(X).
- :- subj14department(X), subj20department(X).
- :- subj19professor(X), subj9professor(X).
- :- subj19course(X), subj6course(X).
- :- subj18course(X), subj7course(X).
- :- subj17course(X), subj8course(X).
- :- subj16course(X), subj9course(X).
- :- subj20department(X), subj6department(X).
- :- college(X), university(X).
- :- subj13department(X), subj1department(X).
- :- subj12department(X), subj2department(X).
- :- subj10department(X), subj4department(X).
- :- subj11department(X), subj3department(X).
- :- subj16course(X), subj3course(X).
- :- subj15course(X), subj4course(X).
- :- subj14course(X), subj5course(X).
- :- subj13course(X), subj6course(X).
- :- subj12course(X), subj7course(X).
- :- subj10course(X), subj9course(X).
- :- subj11course(X), subj8course(X).
- :- subj17course(X), subj2course(X).
- :- subj18course(X), subj1course(X).
- :- subj19professor(X), subj8professor(X).
- :- subj18professor(X), subj9professor(X).
- :- manual(X), unofficialpublication(X).
- :- exam(X), examrecord(X).
- :- subj10course(X), subj1course(X).
- :- subj20professor(X), subj7professor(X).
- :- subj13department(X), subj1department(X).
- :- subj12department(X), subj2department(X).
- :- subj10department(X), subj4department(X).
- :- subj11department(X), subj3department(X).
- :- subj16course(X), subj3course(X).
- :- subj15course(X), subj4course(X).
- :- subj14course(X), subj5course(X).
- :- subj13course(X), subj6course(X).
- :- subj12course(X), subj7course(X).
- :- subj10course(X), subj9course(X).
- :- subj11course(X), subj8course(X).
- :- subj17course(X), subj2course(X).
- :- subj18course(X), subj1course(X).
- :- subj19professor(X), subj8professor(X).
- :- subj18professor(X), subj9professor(X).
- :- subj15course(X), subj19course(X).
- :- subj16course(X), subj18course(X).
- :- program(X), university(X).
- :- subj16professor(X), subj17professor(X).
- :- subj14professor(X), subj19professor(X).
- :- subj15professor(X), subj18professor(X).
- :- subj10professor(X), subj12professor(X).
- :- subj18course(X), subj9course(X).
- :- subj19course(X), subj8course(X).
- :- subj12department(X), subj20department(X).
- :- subj7department(X), subj8department(X).
- :- subj6department(X), subj9department(X).
- :- subj11professor(X), subj19professor(X).
- :- subj12professor(X), subj18professor(X).
- :- subj13professor(X), subj17professor(X).
- :- subj14professor(X), subj16professor(X).
- :- researchgroup(X), university(X).
- :- subj20professor(X), subj9professor(X).
- :- associateprofessor(X), dean(X).
- :- subj15professor(X), subj2professor(X).
- :- subj14professor(X), subj3professor(X).
- :- subj13professor(X), subj4professor(X).
- :- subj12professor(X), subj5professor(X).
- :- subj10professor(X), subj7professor(X).
- :- subj11professor(X), subj6professor(X).
- :- subj16professor(X), subj1professor(X).
- :- subj12course(X), subj1course(X).
- :- subj10course(X), subj3course(X).
- :- subj11course(X), subj2course(X).
- :- organization(X), person(X).
- :- subj10professor(X), subj2professor(X).
- :- subj11professor(X), subj1professor(X).
- :- subj12professor(X), subj13professor(X).
- :- subj10professor(X), subj15professor(X).
- :- subj11professor(X), subj14professor(X).
- :- subj10department(X), subj13department(X).
- :- subj11department(X), subj12department(X).
- :- subj12department(X), subj5department(X).
- :- subj10department(X), subj7department(X).
- :- subj11department(X), subj6department(X).
- :- subj16department(X), subj1department(X).
- :- subj13department(X), subj4department(X).
- :- subj14department(X), subj3department(X).
- :- subj15department(X), subj2department(X).
- :- subj17department(X), subj20department(X).
- :- subj12course(X), subj14course(X).
- :- subj11course(X), subj15course(X).
- :- subj10course(X), subj16course(X).
- :- subj19department(X), subj20department(X).
- :- subj15course(X), subj8course(X).
- :- subj14course(X), subj9course(X).
- :- subj16course(X), subj7course(X).
- :- subj17course(X), subj6course(X).
- :- subj18course(X), subj5course(X).
- :- subj19course(X), subj4course(X).
- :- subj5professor(X), subj9professor(X).
- :- subj6professor(X), subj8professor(X).
- :- subj7professor(X), subj9professor(X).
- :- subj15course(X), subj9course(X).
- :- subj16course(X), subj8course(X).
- :- subj17course(X), subj7course(X).
- :- subj18course(X), subj6course(X).
- :- subj19course(X), subj5course(X).
- :- subj11department(X), subj20department(X).
- :- subj17course(X), subj1course(X).
- :- subj11course(X), subj7course(X).
- :- subj10course(X), subj8course(X).
- :- subj12course(X), subj6course(X).
- :- subj13course(X), subj5course(X).
- :- subj14course(X), subj4course(X).
- :- subj15course(X), subj3course(X).
- :- subj16course(X), subj2course(X).
- :- subj1professor(X), subj7professor(X).
- :- subj2professor(X), subj6professor(X).
- :- subj3professor(X), subj5professor(X).
- :- director(X), graduatestudent(X).
- :- subj11department(X), subj13department(X).
- :- subj10department(X), subj14department(X).
- :- subj18department(X), subj20department(X).
- :- subj13professor(X), subj19professor(X).
- :- subj14professor(X), subj18professor(X).
- :- subj15professor(X), subj17professor(X).
- :- subj16course(X), subj20course(X).
- :- subj11professor(X), subj5professor(X).
- :- subj10professor(X), subj6professor(X).
- :- subj12professor(X), subj4professor(X).
- :- subj13professor(X), subj3professor(X).
- :- subj14professor(X), subj2professor(X).
- :- subj15professor(X), subj1professor(X).
- :- department(X), university(X).
- :- subj17department(X), subj1department(X).
- :- subj16department(X), subj2department(X).
- :- subj11department(X), subj7department(X).
- :- subj10department(X), subj8department(X).
- :- subj12department(X), subj6department(X).
- :- subj13department(X), subj5department(X).
- :- subj14department(X), subj4department(X).
- :- subj15department(X), subj3department(X).
- :- examrecord(X), research(X).
- :- subj11course(X), subj20course(X).
+ :- subj11professor(X), associateprofessor(X).
+ :- clericalstaff(X), systemsstaff(X).
+ :- article(X), specification(X).
+ :- takescourse(X,Y), subj14student(X), undergraduatestudent(X).
+ :- teachingassistant(X), undergraduatestudent(X).
+ :- worksfor(X,Y), graduatestudent(X).
+ :- member(X,Y), softwareVersion(X,Y).
+ :- hasAlumnus(X,Y), member(X,Y).
+ :- isPartOfUniversity(X,Y), teacherOf(X,Y).
+ :- degreeFrom(X,Y), teachingAssistantOf(X,Y).
+ :- listedCourse(X,Y), softwareDocumentation(X,Y).
+ :- orgPublication(X,Y), tenured(X,Y).
+ :- memberOf(X,Y), subOrganizationOf(X,Y).
+ :- isPartOfUniversity(X,Y), researchProject(X,Y).
+ :- degreeFrom(X,Y), memberOf(X,Y).
+ :- memberOf(X,Y), orgPublication(X,Y).
+ :- isPartOfUniversity(X,Y), memberOf(X,Y).
+ :- hasExamRecord(X,Y), subOrganizationOf(X,Y).
+ :- member(X,Y), publicationDate(X,Y).
+ :- hasAlumnus(X,Y), isPartOfUniversity(X,Y).
+ :- degreeFrom(X,Y), member(X,Y).
+ :- softwareDocumentation(X,Y), takesCourse(X,Y).
+ :- affiliatedOrganizationOf(X,Y), listedCourse(X,Y).
+ :- subOrganizationOf(X,Y), teacherOf(X,Y).
+ :- hasAlumnus(X,Y), tenured(X,Y).
+ :- advisor(X,Y), member(X,Y).
+ :- hasFaculty(X,Y), researchProject(X,Y).
+ :- publicationAuthor(X,Y), subOrganizationOf(X,Y).
+ :- listedCourse(X,Y), researchProject(X,Y).
+ :- advisor(X,Y), tenured(X,Y).
+ :- degreeFrom(X,Y), publicationAuthor(X,Y).
+ :- affiliatedOrganizationOf(X,Y), publicationDate(X,Y).
+ :- softwareDocumentation(X,Y), subOrganizationOf(X,Y).
+ :- publicationResearch(X,Y), researchProject(X,Y).
+ :- affiliatedOrganizationOf(X,Y), teachingAssistantOf(X,Y).
+ :- softwareDocumentation(X,Y), teacherOf(X,Y).
+ :- advisor(X,Y), softwareDocumentation(X,Y).
+ :- advisor(X,Y), subOrganizationOf(X,Y).
+ :- orgPublication(X,Y), publicationDate(X,Y).
+ :- hasAlumnus(X,Y), softwareDocumentation(X,Y).
+ :- isPartOfUniversity(X,Y), member(X,Y).
+ :- isPartOfUniversity(X,Y), listedCourse(X,Y).
+ :- affiliatedOrganizationOf(X,Y), hasAlumnus(X,Y).
+ :- hasFaculty(X,Y), takesCourse(X,Y).
+ :- advisor(X,Y), researchProject(X,Y).
+ :- memberOf(X,Y), softwareDocumentation(X,Y).
+ :- advisor(X,Y), listedCourse(X,Y).
+ :- member(X,Y), researchProject(X,Y).
+ 
 graduatestudent(department1_university0_graduatestudent14).
 graduatestudent(department0_university0_graduatestudent75).
 subj16professor(department1_university0_assistantprofessor5).
@@ -1183,6 +698,7 @@ publication(department3_university0_assistantprofessor5_publication2).
 graduatestudent(department13_university0_graduatestudent77).
 subj9student(department11_university0_undergraduatestudent93).
 graduatecourse(department9_university0_graduatecourse1).
+assistantprofessor(department1_university0_assistantprofessor5).
 undergraduatestudent(department14_university0_undergraduatestudent19).
 undergraduatestudent(department8_university0_undergraduatestudent10).
 publication(department4_university0_associateprofessor12_publication6).
@@ -1304,7 +820,7 @@ subj2course(department10_university0_graduatecourse47).
 subj11student(department14_university0_undergraduatestudent165).
 undergraduatestudent(department2_university0_undergraduatestudent244).
 graduatestudent(department7_university0_graduatestudent74).
-publication(department10_university0_associateprofessor6_publication7).
+specification(department10_university0_associateprofessor6_publication7).
 subj4student(department13_university0_undergraduatestudent409).
 undergraduatestudent(department9_university0_undergraduatestudent230).
 publication(department10_university0_assistantprofessor0_publication1).
@@ -1534,7 +1050,7 @@ graduatestudent(department11_university0_graduatestudent39).
 subj11student(department3_university0_graduatestudent11).
 graduatecourse(department5_university0_graduatecourse27).
 publication(department11_university0_associateprofessor6_publication6).
-publication(department2_university0_fullprofessor0_publication12).
+specification(department2_university0_fullprofessor0_publication12).
 subj11student(department3_university0_undergraduatestudent203).
 subj9student(department11_university0_undergraduatestudent130).
 subj2student(department10_university0_graduatestudent57).
@@ -1607,6 +1123,7 @@ subj14student(department4_university0_undergraduatestudent100).
 publication(department3_university0_associateprofessor6_publication11).
 subj2student(department7_university0_graduatestudent25).
 assistantprofessor(department3_university0_assistantprofessor4).
+clericalstaff(department3_university0_assistantprofessor4).
 course(department4_university0_course55).
 subj11student(department3_university0_undergraduatestudent189).
 assistantprofessor(department5_university0_assistantprofessor0).
@@ -1885,6 +1402,8 @@ subj2student(department10_university0_graduatestudent82).
 teachingassistant(department3_university0_graduatestudent10).
 publication(department6_university0_fullprofessor5_publication9).
 assistantprofessor(department7_university0_assistantprofessor5).
+clericalstaff(department7_university0_assistantprofessor5).
+systemsstaff(department7_university0_assistantprofessor5).
 subj9student(department2_university0_graduatestudent97).
 undergraduatestudent(department8_university0_undergraduatestudent182).
 undergraduatestudent(department8_university0_undergraduatestudent289).
@@ -2025,7 +1544,7 @@ subj2student(department10_university0_undergraduatestudent300).
 graduatecourse(department11_university0_graduatecourse47).
 publication(department8_university0_fullprofessor3_publication16).
 undergraduatestudent(department0_university0_undergraduatestudent121).
-publication(department9_university0_fullprofessor2_publication17).
+specification(department9_university0_fullprofessor2_publication17).
 graduatecourse(department3_university0_graduatecourse47).
 graduatestudent(department2_university0_graduatestudent6).
 graduatestudent(department9_university0_graduatestudent48).
@@ -9312,7 +8831,7 @@ publication(department1_university0_associateprofessor4_publication1).
 undergraduatestudent(department11_university0_undergraduatestudent85).
 subj2student(department10_university0_graduatestudent3).
 subj4student(department13_university0_undergraduatestudent181).
-teachingassistant(department0_university0_graduatestudent143).
+teachingassistant(department13_university0_undergraduatestudent181).
 publication(department12_university0_associateprofessor7_publication8).
 undergraduatestudent(department2_university0_undergraduatestudent134).
 undergraduatestudent(department5_university0_undergraduatestudent293).
@@ -21794,7 +21313,7 @@ undergraduatestudent(department0_university0_undergraduatestudent9).
 publication(department10_university0_associateprofessor4_publication2).
 subj19student(department8_university0_undergraduatestudent16).
 subj16student(department1_university0_graduatestudent103).
-assistantprofessor(department1_university0_assistantprofessor5).
+associateprofessor(department1_university0_assistantprofessor5).
 subj19student(department5_university0_undergraduatestudent130).
 undergraduatestudent(department4_university0_undergraduatestudent267).
 undergraduatestudent(department7_university0_undergraduatestudent308).

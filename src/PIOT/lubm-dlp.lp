@@ -1,2001 +1,183 @@
-degreefrom(X,Y) :- doctoraldegreefrom(X,Y), not p0.
-a0 :- not p0.
-p0 :- not a0.
-memberof(X,Y) :- worksfor(X,Y), not p1.
-a1 :- not p1.
-p1 :- not a1.
-degreefrom(X,Y) :- mastersdegreefrom(X,Y), not p2.
-a2 :- not p2.
-p2 :- not a2.
-member(Y,X) :- memberof(X,Y), not p3.
-a3 :- not p3.
-p3 :- not a3.
-memberof(Y,X) :- member(X,Y), not p4.
-a4 :- not p4.
-p4 :- not a4.
-degreefrom(X,Y) :- undergraduatedegreefrom(X,Y), not p5.
-a5 :- not p5.
-p5 :- not a5.
-hasalumnus(Y,X) :- degreefrom(X,Y), not p6.
-a6 :- not p6.
-p6 :- not a6.
-degreefrom(Y,X) :- hasalumnus(X,Y), not p7.
-a7 :- not p7.
-p7 :- not a7.
-worksfor(X,Y) :- headof(X,Y), not p8.
-a8 :- not p8.
-p8 :- not a8.
-professor(X) :- tenured(X,Y), not p9.
-a9 :- not p9.
-p9 :- not a9.
-person(X) :- degreefrom(X,Y), not p10.
-a10 :- not p10.
-p10 :- not a10.
-faculty(X) :- professor(X), not p11.
-a11 :- not p11.
-p11 :- not a11.
-faculty(X) :- postdoc(X), not p12.
-a12 :- not p12.
-p12 :- not a12.
-professor(X) :- dean(X), not p13.
-a13 :- not p13.
-p13 :- not a13.
-publication(X) :- publicationdate(X,Y), not p14.
-a14 :- not p14.
-p14 :- not a14.
-person(X) :- title(X,Y), not p15.
-a15 :- not p15.
-p15 :- not a15.
-software(X) :- softwaredocumentation(X,Y), not p16.
-a16 :- not p16.
-p16 :- not a16.
-student(X) :- person(X), takescourse(X,Y), course(Y), not p17.
-a17 :- not p17.
-p17 :- not a17.
-takescourse(X,f(X)) :- student(X), not p18.
-a18 :- not p18.
-p18 :- not a18.
-course(f(X)) :- student(X), not p19.
-a19 :- not p19.
-p19 :- not a19.
-person(X) :- student(X), not p20.
-a20 :- not p20.
-p20 :- not a20.
-publication(X) :- publicationresearch(X,Y), not p21.
-a21 :- not p21.
-p21 :- not a21.
-chair(X) :- person(X), headof(X,Y), department(Y), not p22.
-a22 :- not p22.
-p22 :- not a22.
-headof(X,f(X)) :- chair(X), not p23.
-a23 :- not p23.
-p23 :- not a23.
-department(f(X)) :- chair(X), not p24.
-a24 :- not p24.
-p24 :- not a24.
-person(X) :- chair(X), not p25.
-a25 :- not p25.
-p25 :- not a25.
-publication(X) :- publicationauthor(X,Y), not p26.
-a26 :- not p26.
-p26 :- not a26.
-organization(X) :- affiliateof(X,Y), not p27.
-a27 :- not p27.
-p27 :- not a27.
-faculty(X) :- lecturer(X), not p28.
-a28 :- not p28.
-p28 :- not a28.
-university(Y) :- degreefrom(X,Y), not p29.
-a29 :- not p29.
-p29 :- not a29.
-university(Y) :- undergraduatedegreefrom(X,Y), not p30.
-a30 :- not p30.
-p30 :- not a30.
-person(Y) :- publicationauthor(X,Y), not p31.
-a31 :- not p31.
-p31 :- not a31.
-course(Y) :- teachingassistantof(X,Y), not p32.
-a32 :- not p32.
-p32 :- not a32.
-person(X) :- advisor(X,Y), not p33.
-a33 :- not p33.
-p33 :- not a33.
-university(X) :- hasalumnus(X,Y), not p34.
-a34 :- not p34.
-p34 :- not a34.
-professor(X) :- visitingprofessor(X), not p35.
-a35 :- not p35.
-p35 :- not a35.
-professor(X) :- assistantprofessor(X), not p36.
-a36 :- not p36.
-p36 :- not a36.
-organization(X) :- affiliatedorganizationof(X,Y), not p37.
-a37 :- not p37.
-p37 :- not a37.
-article(X) :- technicalreport(X), not p38.
-a38 :- not p38.
-p38 :- not a38.
-professor(Y) :- advisor(X,Y), not p39.
-a39 :- not p39.
-p39 :- not a39.
-publication(X) :- book(X), not p40.
-a40 :- not p40.
-p40 :- not a40.
-dean(X) :- headof(X,Y), college(Y), not p41.
-a41 :- not p41.
-p41 :- not a41.
-headof(X,f(X)) :- dean(X), not p42.
-a42 :- not p42.
-p42 :- not a42.
-college(f(X)) :- dean(X), not p43.
-a43 :- not p43.
-p43 :- not a43.
-internal_all_0(X) :- thing(X), not p44.
-a44 :- not p44.
-p44 :- not a44.
-publication(Y) :- orgpublication(X,Y), not p45.
-a45 :- not p45.
-p45 :- not a45.
-university(Y) :- mastersdegreefrom(X,Y), not p46.
-a46 :- not p46.
-p46 :- not a46.
-university(Y) :- doctoraldegreefrom(X,Y), not p47.
-a47 :- not p47.
-p47 :- not a47.
-article(X) :- journalarticle(X), not p48.
-a48 :- not p48.
-p48 :- not a48.
-course(Y) :- listedcourse(X,Y), not p49.
-a49 :- not p49.
-p49 :- not a49.
-course(Y) :- teacherof(X,Y), not p50.
-a50 :- not p50.
-p50 :- not a50.
-faculty(X) :- teacherof(X,Y), not p51.
-a51 :- not p51.
-p51 :- not a51.
-person(X) :- emailaddress(X,Y), not p52.
-a52 :- not p52.
-p52 :- not a52.
-organization(X) :- program(X), not p53.
-a53 :- not p53.
-p53 :- not a53.
-work(X) :- course(X), not p54.
-a54 :- not p54.
-p54 :- not a54.
-person(X) :- researchassistant(X), not p55.
-a55 :- not p55.
-p55 :- not a55.
-publication(X) :- unofficialpublication(X), not p56.
-a56 :- not p56.
-p56 :- not a56.
-person(X) :- graduatestudent(X), not p57.
-a57 :- not p57.
-p57 :- not a57.
-organization(Y) :- affiliatedorganizationof(X,Y), not p58.
-a58 :- not p58.
-p58 :- not a58.
-organization(X) :- university(X), not p59.
-a59 :- not p59.
-p59 :- not a59.
-student(X) :- undergraduatestudent(X), not p60.
-a60 :- not p60.
-p60 :- not a60.
-work(X) :- research(X), not p61.
-a61 :- not p61.
-p61 :- not a61.
-article(X) :- conferencepaper(X), not p62.
-a62 :- not p62.
-p62 :- not a62.
-worksfor(X,f(X)) :- researchassistant(X), not p63.
-a63 :- not p63.
-p63 :- not a63.
-researchgroup(f(X)) :- researchassistant(X), not p64.
-a64 :- not p64.
-p64 :- not a64.
-organization(X) :- researchgroup(X), not p65.
-a65 :- not p65.
-p65 :- not a65.
-professor(X) :- chair(X), not p66.
-a66 :- not p66.
-p66 :- not a66.
-director(X) :- person(X), headof(X,Y), program(Y), not p67.
-a67 :- not p67.
-p67 :- not a67.
-headof(X,f(X)) :- director(X), not p68.
-a68 :- not p68.
-p68 :- not a68.
-program(f(X)) :- director(X), not p69.
-a69 :- not p69.
-p69 :- not a69.
-person(X) :- director(X), not p70.
-a70 :- not p70.
-p70 :- not a70.
-employee(X) :- administrativestaff(X), not p71.
-a71 :- not p71.
-p71 :- not a71.
-employee(X) :- person(X), worksfor(X,Y), organization(Y), not p72.
-a72 :- not p72.
-p72 :- not a72.
-worksfor(X,f(X)) :- employee(X), not p73.
-a73 :- not p73.
-p73 :- not a73.
-organization(f(X)) :- employee(X), not p74.
-a74 :- not p74.
-p74 :- not a74.
-person(X) :- employee(X), not p75.
-a75 :- not p75.
-p75 :- not a75.
-organization(X) :- member(X,Y), not p76.
-a76 :- not p76.
-p76 :- not a76.
-administrativestaff(X) :- systemsstaff(X), not p77.
-a77 :- not p77.
-p77 :- not a77.
-researchgroup(X) :- researchproject(X,Y), not p78.
-a78 :- not p78.
-p78 :- not a78.
-organization(X) :- department(X), not p79.
-a79 :- not p79.
-p79 :- not a79.
-organization(X) :- internal_all_1(X), not p80.
-a80 :- not p80.
-p80 :- not a80.
-publication(Y) :- softwaredocumentation(X,Y), not p81.
-a81 :- not p81.
-p81 :- not a81.
-person(X) :- telephone(X,Y), not p82.
-a82 :- not p82.
-p82 :- not a82.
-organization(X) :- orgpublication(X,Y), not p83.
-a83 :- not p83.
-p83 :- not a83.
-person(X) :- doctoraldegreefrom(X,Y), not p84.
-a84 :- not p84.
-p84 :- not a84.
-organization(X) :- institute(X), not p85.
-a85 :- not p85.
-p85 :- not a85.
-person(Y) :- affiliateof(X,Y), not p86.
-a86 :- not p86.
-p86 :- not a86.
-schedule(X) :- listedcourse(X,Y), not p87.
-a87 :- not p87.
-p87 :- not a87.
-person(Y) :- hasalumnus(X,Y), not p88.
-a88 :- not p88.
-p88 :- not a88.
-publication(X) :- specification(X), not p89.
-a89 :- not p89.
-p89 :- not a89.
-publication(X) :- software(X), not p90.
-a90 :- not p90.
-p90 :- not a90.
-person(X) :- mastersdegreefrom(X,Y), not p91.
-a91 :- not p91.
-p91 :- not a91.
-person(X) :- undergraduatedegreefrom(X,Y), not p92.
-a92 :- not p92.
-p92 :- not a92.
-teachingassistant(X) :- teachingassistantof(X,Y), not p93.
-a93 :- not p93.
-p93 :- not a93.
-administrativestaff(X) :- clericalstaff(X), not p94.
-a94 :- not p94.
-p94 :- not a94.
-research(Y) :- publicationresearch(X,Y), not p95.
-a95 :- not p95.
-p95 :- not a95.
-organization(X) :- college(X), not p96.
-a96 :- not p96.
-p96 :- not a96.
-publication(X) :- article(X), not p97.
-a97 :- not p97.
-p97 :- not a97.
-professor(X) :- associateprofessor(X), not p98.
-a98 :- not p98.
-p98 :- not a98.
-person(Y) :- member(X,Y), not p99.
-a99 :- not p99.
-p99 :- not a99.
-course(X) :- graduatecourse(X), not p100.
-a100 :- not p100.
-p100 :- not a100.
-professor(X) :- fullprofessor(X), not p101.
-a101 :- not p101.
-p101 :- not a101.
-publication(X) :- manual(X), not p102.
-a102 :- not p102.
-p102 :- not a102.
-software(X) :- softwareversion(X,Y), not p103.
-a103 :- not p103.
-p103 :- not a103.
-teachingassistant(X) :- person(X), teachingassistantof(X,Y), course(Y), not p104.
-a104 :- not p104.
-p104 :- not a104.
-teachingassistantof(X,f(X)) :- teachingassistant(X), not p105.
-a105 :- not p105.
-p105 :- not a105.
-course(f(X)) :- teachingassistant(X), not p106.
-a106 :- not p106.
-p106 :- not a106.
-person(X) :- teachingassistant(X), not p107.
-a107 :- not p107.
-p107 :- not a107.
-person(X) :- age(X,Y), not p108.
-a108 :- not p108.
-p108 :- not a108.
-takescourse(X,f(X)) :- graduatestudent(X), not p109.
-a109 :- not p109.
-p109 :- not a109.
-graduatecourse(f(X)) :- graduatestudent(X), not p110.
-a110 :- not p110.
-p110 :- not a110.
-research(Y) :- researchproject(X,Y), not p111.
-a111 :- not p111.
-p111 :- not a111.
-employee(X) :- faculty(X), not p112.
-a112 :- not p112.
-p112 :- not a112.
-internal_all_4(Y) :- internal_all_3(X), suborganizationof(X,Y), not p113.
-a113 :- not p113.
-p113 :- not a113.
-internal_all_3(X) :- internal_all_4(X), not p114.
-a114 :- not p114.
-p114 :- not a114.
-internal_all_2(X) :- internal_all_4(X), not p115.
-a115 :- not p115.
-p115 :- not a115.
-internal_all_2(Y) :- internal_all_0(X), suborganizationof(X,Y), not p116.
-a116 :- not p116.
-p116 :- not a116.
-internal_all_0(X) :- internal_all_2(X), not p117.
-a117 :- not p117.
-p117 :- not a117.
-internal_all_3(X) :- internal_all_0(X), not p118.
-a118 :- not p118.
-p118 :- not a118.
-organization(X) :- internal_all_2(X), not p119.
-a119 :- not p119.
-p119 :- not a119.
-internal_all_6(X) :- suborganizationof(X,Y), internal_all_7(Y), not p120.
-a120 :- not p120.
-p120 :- not a120.
-internal_all_7(X) :- internal_all_6(X), not p121.
-a121 :- not p121.
-p121 :- not a121.
-internal_all_7(X) :- internal_all_5(X), not p122.
-a122 :- not p122.
-p122 :- not a122.
-internal_all_1(X) :- suborganizationof(X,Y), internal_all_5(Y), not p123.
-a123 :- not p123.
-p123 :- not a123.
-internal_all_5(X) :- internal_all_1(X), not p124.
-a124 :- not p124.
-p124 :- not a124.
-internal_all_1(X) :- internal_all_6(X), not p125.
-a125 :- not p125.
-p125 :- not a125.
-internal_all_5(X) :- thing(X), not p126.
-a126 :- not p126.
-p126 :- not a126.
- :- softwaredocumentation(X,Y), tenured(X,Y), not p127.
-a127 :- not p127.
-p127 :- not a127.
- :- affiliatedorganizationof(X,Y), member(X,Y), not p128.
-a128 :- not p128.
-p128 :- not a128.
- :- memberof(X,Y), researchproject(X,Y), not p129.
-a129 :- not p129.
-p129 :- not a129.
- :- hasfaculty(X,Y), teachingassistantof(X,Y), not p130.
-a130 :- not p130.
-p130 :- not a130.
- :- publicationauthor(X,Y), softwareversion(X,Y), not p131.
-a131 :- not p131.
-p131 :- not a131.
- :- listedcourse(X,Y), publicationauthor(X,Y), not p132.
-a132 :- not p132.
-p132 :- not a132.
- :- affiliatedorganizationof(X,Y), tenured(X,Y), not p133.
-a133 :- not p133.
-p133 :- not a133.
- :- hasfaculty(X,Y), member(X,Y), not p134.
-a134 :- not p134.
-p134 :- not a134.
- :- hasexamrecord(X,Y), tenured(X,Y), not p135.
-a135 :- not p135.
-p135 :- not a135.
- :- member(X,Y), takescourse(X,Y), not p136.
-a136 :- not p136.
-p136 :- not a136.
- :- member(X,Y), softwareversion(X,Y), not p137.
-a137 :- not p137.
-p137 :- not a137.
- :- hasalumnus(X,Y), member(X,Y), not p138.
-a138 :- not p138.
-p138 :- not a138.
- :- ispartofuniversity(X,Y), teacherof(X,Y), not p139.
-a139 :- not p139.
-p139 :- not a139.
- :- degreefrom(X,Y), teachingassistantof(X,Y), not p140.
-a140 :- not p140.
-p140 :- not a140.
- :- listedcourse(X,Y), softwaredocumentation(X,Y), not p141.
-a141 :- not p141.
-p141 :- not a141.
- :- orgpublication(X,Y), tenured(X,Y), not p142.
-a142 :- not p142.
-p142 :- not a142.
- :- memberof(X,Y), suborganizationof(X,Y), not p143.
-a143 :- not p143.
-p143 :- not a143.
- :- ispartofuniversity(X,Y), researchproject(X,Y), not p144.
-a144 :- not p144.
-p144 :- not a144.
- :- degreefrom(X,Y), memberof(X,Y), not p145.
-a145 :- not p145.
-p145 :- not a145.
- :- memberof(X,Y), orgpublication(X,Y), not p146.
-a146 :- not p146.
-p146 :- not a146.
- :- ispartofuniversity(X,Y), memberof(X,Y), not p147.
-a147 :- not p147.
-p147 :- not a147.
- :- hasexamrecord(X,Y), suborganizationof(X,Y), not p148.
-a148 :- not p148.
-p148 :- not a148.
- :- member(X,Y), publicationdate(X,Y), not p149.
-a149 :- not p149.
-p149 :- not a149.
- :- hasalumnus(X,Y), ispartofuniversity(X,Y), not p150.
-a150 :- not p150.
-p150 :- not a150.
- :- degreefrom(X,Y), member(X,Y), not p151.
-a151 :- not p151.
-p151 :- not a151.
- :- softwaredocumentation(X,Y), takescourse(X,Y), not p152.
-a152 :- not p152.
-p152 :- not a152.
- :- affiliatedorganizationof(X,Y), listedcourse(X,Y), not p153.
-a153 :- not p153.
-p153 :- not a153.
- :- suborganizationof(X,Y), teacherof(X,Y), not p154.
-a154 :- not p154.
-p154 :- not a154.
- :- hasalumnus(X,Y), tenured(X,Y), not p155.
-a155 :- not p155.
-p155 :- not a155.
- :- advisor(X,Y), member(X,Y), not p156.
-a156 :- not p156.
-p156 :- not a156.
- :- hasfaculty(X,Y), researchproject(X,Y), not p157.
-a157 :- not p157.
-p157 :- not a157.
- :- publicationauthor(X,Y), suborganizationof(X,Y), not p158.
-a158 :- not p158.
-p158 :- not a158.
- :- listedcourse(X,Y), researchproject(X,Y), not p159.
-a159 :- not p159.
-p159 :- not a159.
- :- advisor(X,Y), tenured(X,Y), not p160.
-a160 :- not p160.
-p160 :- not a160.
- :- degreefrom(X,Y), publicationauthor(X,Y), not p161.
-a161 :- not p161.
-p161 :- not a161.
- :- affiliatedorganizationof(X,Y), publicationdate(X,Y), not p162.
-a162 :- not p162.
-p162 :- not a162.
- :- softwaredocumentation(X,Y), suborganizationof(X,Y), not p163.
-a163 :- not p163.
-p163 :- not a163.
- :- publicationresearch(X,Y), researchproject(X,Y), not p164.
-a164 :- not p164.
-p164 :- not a164.
- :- affiliatedorganizationof(X,Y), teachingassistantof(X,Y), not p165.
-a165 :- not p165.
-p165 :- not a165.
- :- softwaredocumentation(X,Y), teacherof(X,Y), not p166.
-a166 :- not p166.
-p166 :- not a166.
- :- advisor(X,Y), softwaredocumentation(X,Y), not p167.
-a167 :- not p167.
-p167 :- not a167.
- :- advisor(X,Y), suborganizationof(X,Y), not p168.
-a168 :- not p168.
-p168 :- not a168.
- :- orgpublication(X,Y), publicationdate(X,Y), not p169.
-a169 :- not p169.
-p169 :- not a169.
- :- hasalumnus(X,Y), softwaredocumentation(X,Y), not p170.
-a170 :- not p170.
-p170 :- not a170.
- :- ispartofuniversity(X,Y), member(X,Y), not p171.
-a171 :- not p171.
-p171 :- not a171.
- :- ispartofuniversity(X,Y), listedcourse(X,Y), not p172.
-a172 :- not p172.
-p172 :- not a172.
- :- affiliatedorganizationof(X,Y), hasalumnus(X,Y), not p173.
-a173 :- not p173.
-p173 :- not a173.
- :- hasfaculty(X,Y), takescourse(X,Y), not p174.
-a174 :- not p174.
-p174 :- not a174.
- :- advisor(X,Y), researchproject(X,Y), not p175.
-a175 :- not p175.
-p175 :- not a175.
- :- memberof(X,Y), softwaredocumentation(X,Y), not p176.
-a176 :- not p176.
-p176 :- not a176.
- :- advisor(X,Y), listedcourse(X,Y), not p177.
-a177 :- not p177.
-p177 :- not a177.
- :- member(X,Y), researchproject(X,Y), not p178.
-a178 :- not p178.
-p178 :- not a178.
- :- orgpublication(X,Y), takescourse(X,Y), not p179.
-a179 :- not p179.
-p179 :- not a179.
- :- hasalumnus(X,Y), orgpublication(X,Y), not p180.
-a180 :- not p180.
-p180 :- not a180.
- :- advisor(X,Y), orgpublication(X,Y), not p181.
-a181 :- not p181.
-p181 :- not a181.
- :- takescourse(X,Y), teachingassistantof(X,Y), not p182.
-a182 :- not p182.
-p182 :- not a182.
- :- affiliatedorganizationof(X,Y), suborganizationof(X,Y), not p183.
-a183 :- not p183.
-p183 :- not a183.
- :- hasalumnus(X,Y), researchproject(X,Y), not p184.
-a184 :- not p184.
-p184 :- not a184.
- :- orgpublication(X,Y), suborganizationof(X,Y), not p185.
-a185 :- not p185.
-p185 :- not a185.
- :- ispartofuniversity(X,Y), softwaredocumentation(X,Y), not p186.
-a186 :- not p186.
-p186 :- not a186.
- :- teacherof(X,Y), teachingassistantof(X,Y), not p187.
-a187 :- not p187.
-p187 :- not a187.
- :- softwareversion(X,Y), tenured(X,Y), not p188.
-a188 :- not p188.
-p188 :- not a188.
- :- advisor(X,Y), softwareversion(X,Y), not p189.
-a189 :- not p189.
-p189 :- not a189.
- :- publicationresearch(X,Y), teachingassistantof(X,Y), not p190.
-a190 :- not p190.
-p190 :- not a190.
- :- member(X,Y), publicationauthor(X,Y), not p191.
-a191 :- not p191.
-p191 :- not a191.
- :- memberof(X,Y), softwareversion(X,Y), not p192.
-a192 :- not p192.
-p192 :- not a192.
- :- ispartofuniversity(X,Y), orgpublication(X,Y), not p193.
-a193 :- not p193.
-p193 :- not a193.
- :- advisor(X,Y), hasexamrecord(X,Y), not p194.
-a194 :- not p194.
-p194 :- not a194.
- :- softwareversion(X,Y), teacherof(X,Y), not p195.
-a195 :- not p195.
-p195 :- not a195.
- :- publicationauthor(X,Y), teacherof(X,Y), not p196.
-a196 :- not p196.
-p196 :- not a196.
- :- memberof(X,Y), tenured(X,Y), not p197.
-a197 :- not p197.
-p197 :- not a197.
- :- memberof(X,Y), publicationresearch(X,Y), not p198.
-a198 :- not p198.
-p198 :- not a198.
- :- publicationauthor(X,Y), researchproject(X,Y), not p199.
-a199 :- not p199.
-p199 :- not a199.
- :- publicationdate(X,Y), suborganizationof(X,Y), not p200.
-a200 :- not p200.
-p200 :- not a200.
- :- softwaredocumentation(X,Y), softwareversion(X,Y), not p201.
-a201 :- not p201.
-p201 :- not a201.
- :- publicationresearch(X,Y), tenured(X,Y), not p202.
-a202 :- not p202.
-p202 :- not a202.
- :- listedcourse(X,Y), orgpublication(X,Y), not p203.
-a203 :- not p203.
-p203 :- not a203.
- :- takescourse(X,Y), tenured(X,Y), not p204.
-a204 :- not p204.
-p204 :- not a204.
- :- publicationresearch(X,Y), takescourse(X,Y), not p205.
-a205 :- not p205.
-p205 :- not a205.
- :- softwareversion(X,Y), suborganizationof(X,Y), not p206.
-a206 :- not p206.
-p206 :- not a206.
- :- publicationdate(X,Y), teachingassistantof(X,Y), not p207.
-a207 :- not p207.
-p207 :- not a207.
- :- hasexamrecord(X,Y), teachingassistantof(X,Y), not p208.
-a208 :- not p208.
-p208 :- not a208.
- :- memberof(X,Y), teacherof(X,Y), not p209.
-a209 :- not p209.
-p209 :- not a209.
- :- publicationdate(X,Y), researchproject(X,Y), not p210.
-a210 :- not p210.
-p210 :- not a210.
- :- degreefrom(X,Y), ispartofuniversity(X,Y), not p211.
-a211 :- not p211.
-p211 :- not a211.
- :- listedcourse(X,Y), tenured(X,Y), not p212.
-a212 :- not p212.
-p212 :- not a212.
- :- advisor(X,Y), ispartofuniversity(X,Y), not p213.
-a213 :- not p213.
-p213 :- not a213.
- :- researchproject(X,Y), suborganizationof(X,Y), not p214.
-a214 :- not p214.
-p214 :- not a214.
- :- hasfaculty(X,Y), tenured(X,Y), not p215.
-a215 :- not p215.
-p215 :- not a215.
- :- affiliatedorganizationof(X,Y), ispartofuniversity(X,Y), not p216.
-a216 :- not p216.
-p216 :- not a216.
- :- researchproject(X,Y), takescourse(X,Y), not p217.
-a217 :- not p217.
-p217 :- not a217.
- :- affiliatedorganizationof(X,Y), softwareversion(X,Y), not p218.
-a218 :- not p218.
-p218 :- not a218.
- :- researchproject(X,Y), teacherof(X,Y), not p219.
-a219 :- not p219.
-p219 :- not a219.
- :- degreefrom(X,Y), suborganizationof(X,Y), not p220.
-a220 :- not p220.
-p220 :- not a220.
- :- hasexamrecord(X,Y), member(X,Y), not p221.
-a221 :- not p221.
-p221 :- not a221.
- :- hasalumnus(X,Y), publicationresearch(X,Y), not p222.
-a222 :- not p222.
-p222 :- not a222.
- :- ispartofuniversity(X,Y), teachingassistantof(X,Y), not p223.
-a223 :- not p223.
-p223 :- not a223.
- :- affiliatedorganizationof(X,Y), degreefrom(X,Y), not p224.
-a224 :- not p224.
-p224 :- not a224.
- :- publicationauthor(X,Y), publicationresearch(X,Y), not p225.
-a225 :- not p225.
-p225 :- not a225.
- :- degreefrom(X,Y), takescourse(X,Y), not p226.
-a226 :- not p226.
-p226 :- not a226.
- :- advisor(X,Y), affiliatedorganizationof(X,Y), not p227.
-a227 :- not p227.
-p227 :- not a227.
- :- listedcourse(X,Y), takescourse(X,Y), not p228.
-a228 :- not p228.
-p228 :- not a228.
- :- publicationauthor(X,Y), takescourse(X,Y), not p229.
-a229 :- not p229.
-p229 :- not a229.
- :- ispartofuniversity(X,Y), publicationresearch(X,Y), not p230.
-a230 :- not p230.
-p230 :- not a230.
- :- hasalumnus(X,Y), listedcourse(X,Y), not p231.
-a231 :- not p231.
-p231 :- not a231.
- :- ispartofuniversity(X,Y), takescourse(X,Y), not p232.
-a232 :- not p232.
-p232 :- not a232.
- :- orgpublication(X,Y), teachingassistantof(X,Y), not p233.
-a233 :- not p233.
-p233 :- not a233.
- :- advisor(X,Y), takescourse(X,Y), not p234.
-a234 :- not p234.
-p234 :- not a234.
- :- hasexamrecord(X,Y), takescourse(X,Y), not p235.
-a235 :- not p235.
-p235 :- not a235.
- :- orgpublication(X,Y), softwareversion(X,Y), not p236.
-a236 :- not p236.
-p236 :- not a236.
- :- hasexamrecord(X,Y), softwaredocumentation(X,Y), not p237.
-a237 :- not p237.
-p237 :- not a237.
- :- publicationauthor(X,Y), softwaredocumentation(X,Y), not p238.
-a238 :- not p238.
-p238 :- not a238.
- :- listedcourse(X,Y), memberof(X,Y), not p239.
-a239 :- not p239.
-p239 :- not a239.
- :- hasexamrecord(X,Y), softwareversion(X,Y), not p240.
-a240 :- not p240.
-p240 :- not a240.
- :- hasalumnus(X,Y), suborganizationof(X,Y), not p241.
-a241 :- not p241.
-p241 :- not a241.
- :- degreefrom(X,Y), listedcourse(X,Y), not p242.
-a242 :- not p242.
-p242 :- not a242.
- :- member(X,Y), memberof(X,Y), not p243.
-a243 :- not p243.
-p243 :- not a243.
- :- memberof(X,Y), publicationauthor(X,Y), not p244.
-a244 :- not p244.
-p244 :- not a244.
- :- hasfaculty(X,Y), publicationdate(X,Y), not p245.
-a245 :- not p245.
-p245 :- not a245.
- :- hasfaculty(X,Y), suborganizationof(X,Y), not p246.
-a246 :- not p246.
-p246 :- not a246.
- :- degreefrom(X,Y), orgpublication(X,Y), not p247.
-a247 :- not p247.
-p247 :- not a247.
- :- publicationresearch(X,Y), softwareversion(X,Y), not p248.
-a248 :- not p248.
-p248 :- not a248.
- :- orgpublication(X,Y), publicationauthor(X,Y), not p249.
-a249 :- not p249.
-p249 :- not a249.
- :- hasfaculty(X,Y), ispartofuniversity(X,Y), not p250.
-a250 :- not p250.
-p250 :- not a250.
- :- publicationauthor(X,Y), teachingassistantof(X,Y), not p251.
-a251 :- not p251.
-p251 :- not a251.
- :- hasalumnus(X,Y), publicationdate(X,Y), not p252.
-a252 :- not p252.
-p252 :- not a252.
- :- hasfaculty(X,Y), publicationresearch(X,Y), not p253.
-a253 :- not p253.
-p253 :- not a253.
- :- softwareversion(X,Y), takescourse(X,Y), not p254.
-a254 :- not p254.
-p254 :- not a254.
- :- degreefrom(X,Y), publicationresearch(X,Y), not p255.
-a255 :- not p255.
-p255 :- not a255.
- :- listedcourse(X,Y), publicationresearch(X,Y), not p256.
-a256 :- not p256.
-p256 :- not a256.
- :- member(X,Y), softwaredocumentation(X,Y), not p257.
-a257 :- not p257.
-p257 :- not a257.
- :- affiliatedorganizationof(X,Y), teacherof(X,Y), not p258.
-a258 :- not p258.
-p258 :- not a258.
- :- softwareversion(X,Y), teachingassistantof(X,Y), not p259.
-a259 :- not p259.
-p259 :- not a259.
- :- degreefrom(X,Y), publicationdate(X,Y), not p260.
-a260 :- not p260.
-p260 :- not a260.
- :- hasexamrecord(X,Y), memberof(X,Y), not p261.
-a261 :- not p261.
-p261 :- not a261.
- :- hasfaculty(X,Y), teacherof(X,Y), not p262.
-a262 :- not p262.
-p262 :- not a262.
- :- hasexamrecord(X,Y), ispartofuniversity(X,Y), not p263.
-a263 :- not p263.
-p263 :- not a263.
- :- advisor(X,Y), hasfaculty(X,Y), not p264.
-a264 :- not p264.
-p264 :- not a264.
- :- publicationdate(X,Y), softwareversion(X,Y), not p265.
-a265 :- not p265.
-p265 :- not a265.
- :- suborganizationof(X,Y), takescourse(X,Y), not p266.
-a266 :- not p266.
-p266 :- not a266.
- :- ispartofuniversity(X,Y), publicationdate(X,Y), not p267.
-a267 :- not p267.
-p267 :- not a267.
- :- researchproject(X,Y), tenured(X,Y), not p268.
-a268 :- not p268.
-p268 :- not a268.
- :- hasexamrecord(X,Y), listedcourse(X,Y), not p269.
-a269 :- not p269.
-p269 :- not a269.
- :- orgpublication(X,Y), researchproject(X,Y), not p270.
-a270 :- not p270.
-p270 :- not a270.
- :- listedcourse(X,Y), publicationdate(X,Y), not p271.
-a271 :- not p271.
-p271 :- not a271.
- :- hasexamrecord(X,Y), publicationdate(X,Y), not p272.
-a272 :- not p272.
-p272 :- not a272.
- :- degreefrom(X,Y), hasalumnus(X,Y), not p273.
-a273 :- not p273.
-p273 :- not a273.
- :- affiliatedorganizationof(X,Y), hasexamrecord(X,Y), not p274.
-a274 :- not p274.
-p274 :- not a274.
- :- teachingassistantof(X,Y), tenured(X,Y), not p275.
-a275 :- not p275.
-p275 :- not a275.
- :- hasalumnus(X,Y), teachingassistantof(X,Y), not p276.
-a276 :- not p276.
-p276 :- not a276.
- :- affiliatedorganizationof(X,Y), takescourse(X,Y), not p277.
-a277 :- not p277.
-p277 :- not a277.
- :- publicationdate(X,Y), publicationresearch(X,Y), not p278.
-a278 :- not p278.
-p278 :- not a278.
- :- affiliatedorganizationof(X,Y), hasfaculty(X,Y), not p279.
-a279 :- not p279.
-p279 :- not a279.
- :- publicationdate(X,Y), teacherof(X,Y), not p280.
-a280 :- not p280.
-p280 :- not a280.
- :- publicationdate(X,Y), tenured(X,Y), not p281.
-a281 :- not p281.
-p281 :- not a281.
- :- listedcourse(X,Y), member(X,Y), not p282.
-a282 :- not p282.
-p282 :- not a282.
- :- member(X,Y), suborganizationof(X,Y), not p283.
-a283 :- not p283.
-p283 :- not a283.
- :- orgpublication(X,Y), softwaredocumentation(X,Y), not p284.
-a284 :- not p284.
-p284 :- not a284.
- :- advisor(X,Y), degreefrom(X,Y), not p285.
-a285 :- not p285.
-p285 :- not a285.
- :- hasalumnus(X,Y), hasfaculty(X,Y), not p286.
-a286 :- not p286.
-p286 :- not a286.
- :- affiliatedorganizationof(X,Y), memberof(X,Y), not p287.
-a287 :- not p287.
-p287 :- not a287.
- :- suborganizationof(X,Y), teachingassistantof(X,Y), not p288.
-a288 :- not p288.
-p288 :- not a288.
- :- member(X,Y), teacherof(X,Y), not p289.
-a289 :- not p289.
-p289 :- not a289.
- :- degreefrom(X,Y), softwareversion(X,Y), not p290.
-a290 :- not p290.
-p290 :- not a290.
- :- takescourse(X,Y), teacherof(X,Y), not p291.
-a291 :- not p291.
-p291 :- not a291.
- :- hasexamrecord(X,Y), publicationresearch(X,Y), not p292.
-a292 :- not p292.
-p292 :- not a292.
- :- publicationresearch(X,Y), teacherof(X,Y), not p293.
-a293 :- not p293.
-p293 :- not a293.
- :- hasfaculty(X,Y), softwareversion(X,Y), not p294.
-a294 :- not p294.
-p294 :- not a294.
- :- hasalumnus(X,Y), teacherof(X,Y), not p295.
-a295 :- not p295.
-p295 :- not a295.
- :- hasfaculty(X,Y), softwaredocumentation(X,Y), not p296.
-a296 :- not p296.
-p296 :- not a296.
- :- publicationdate(X,Y), takescourse(X,Y), not p297.
-a297 :- not p297.
-p297 :- not a297.
- :- memberof(X,Y), publicationdate(X,Y), not p298.
-a298 :- not p298.
-p298 :- not a298.
- :- hasalumnus(X,Y), takescourse(X,Y), not p299.
-a299 :- not p299.
-p299 :- not a299.
- :- affiliatedorganizationof(X,Y), softwaredocumentation(X,Y), not p300.
-a300 :- not p300.
-p300 :- not a300.
- :- researchproject(X,Y), teachingassistantof(X,Y), not p301.
-a301 :- not p301.
-p301 :- not a301.
- :- ispartofuniversity(X,Y), suborganizationof(X,Y), not p302.
-a302 :- not p302.
-p302 :- not a302.
- :- degreefrom(X,Y), tenured(X,Y), not p303.
-a303 :- not p303.
-p303 :- not a303.
- :- advisor(X,Y), hasalumnus(X,Y), not p304.
-a304 :- not p304.
-p304 :- not a304.
- :- degreefrom(X,Y), teacherof(X,Y), not p305.
-a305 :- not p305.
-p305 :- not a305.
- :- hasfaculty(X,Y), publicationauthor(X,Y), not p306.
-a306 :- not p306.
-p306 :- not a306.
- :- publicationauthor(X,Y), publicationdate(X,Y), not p307.
-a307 :- not p307.
-p307 :- not a307.
- :- hasexamrecord(X,Y), researchproject(X,Y), not p308.
-a308 :- not p308.
-p308 :- not a308.
- :- orgpublication(X,Y), publicationresearch(X,Y), not p309.
-a309 :- not p309.
-p309 :- not a309.
- :- memberof(X,Y), teachingassistantof(X,Y), not p310.
-a310 :- not p310.
-p310 :- not a310.
- :- affiliatedorganizationof(X,Y), publicationauthor(X,Y), not p311.
-a311 :- not p311.
-p311 :- not a311.
- :- listedcourse(X,Y), teachingassistantof(X,Y), not p312.
-a312 :- not p312.
-p312 :- not a312.
- :- degreefrom(X,Y), hasfaculty(X,Y), not p313.
-a313 :- not p313.
-p313 :- not a313.
- :- affiliatedorganizationof(X,Y), researchproject(X,Y), not p314.
-a314 :- not p314.
-p314 :- not a314.
- :- advisor(X,Y), teachingassistantof(X,Y), not p315.
-a315 :- not p315.
-p315 :- not a315.
- :- listedcourse(X,Y), teacherof(X,Y), not p316.
-a316 :- not p316.
-p316 :- not a316.
- :- member(X,Y), tenured(X,Y), not p317.
-a317 :- not p317.
-p317 :- not a317.
- :- publicationresearch(X,Y), softwaredocumentation(X,Y), not p318.
-a318 :- not p318.
-p318 :- not a318.
- :- member(X,Y), publicationresearch(X,Y), not p319.
-a319 :- not p319.
-p319 :- not a319.
- :- hasfaculty(X,Y), memberof(X,Y), not p320.
-a320 :- not p320.
-p320 :- not a320.
- :- listedcourse(X,Y), suborganizationof(X,Y), not p321.
-a321 :- not p321.
-p321 :- not a321.
- :- hasalumnus(X,Y), hasexamrecord(X,Y), not p322.
-a322 :- not p322.
-p322 :- not a322.
- :- publicationresearch(X,Y), suborganizationof(X,Y), not p323.
-a323 :- not p323.
-p323 :- not a323.
- :- member(X,Y), orgpublication(X,Y), not p324.
-a324 :- not p324.
-p324 :- not a324.
- :- advisor(X,Y), publicationauthor(X,Y), not p325.
-a325 :- not p325.
-p325 :- not a325.
- :- member(X,Y), teachingassistantof(X,Y), not p326.
-a326 :- not p326.
-p326 :- not a326.
- :- advisor(X,Y), memberof(X,Y), not p327.
-a327 :- not p327.
-p327 :- not a327.
- :- hasfaculty(X,Y), listedcourse(X,Y), not p328.
-a328 :- not p328.
-p328 :- not a328.
- :- publicationauthor(X,Y), tenured(X,Y), not p329.
-a329 :- not p329.
-p329 :- not a329.
- :- degreefrom(X,Y), hasexamrecord(X,Y), not p330.
-a330 :- not p330.
-p330 :- not a330.
- :- hasexamrecord(X,Y), hasfaculty(X,Y), not p331.
-a331 :- not p331.
-p331 :- not a331.
- :- ispartofuniversity(X,Y), publicationauthor(X,Y), not p332.
-a332 :- not p332.
-p332 :- not a332.
- :- advisor(X,Y), publicationdate(X,Y), not p333.
-a333 :- not p333.
-p333 :- not a333.
- :- teacherof(X,Y), tenured(X,Y), not p334.
-a334 :- not p334.
-p334 :- not a334.
- :- researchproject(X,Y), softwareversion(X,Y), not p335.
-a335 :- not p335.
-p335 :- not a335.
- :- hasalumnus(X,Y), publicationauthor(X,Y), not p336.
-a336 :- not p336.
-p336 :- not a336.
- :- hasalumnus(X,Y), memberof(X,Y), not p337.
-a337 :- not p337.
-p337 :- not a337.
- :- listedcourse(X,Y), softwareversion(X,Y), not p338.
-a338 :- not p338.
-p338 :- not a338.
- :- hasalumnus(X,Y), softwareversion(X,Y), not p339.
-a339 :- not p339.
-p339 :- not a339.
- :- ispartofuniversity(X,Y), tenured(X,Y), not p340.
-a340 :- not p340.
-p340 :- not a340.
- :- hasfaculty(X,Y), orgpublication(X,Y), not p341.
-a341 :- not p341.
-p341 :- not a341.
- :- advisor(X,Y), publicationresearch(X,Y), not p342.
-a342 :- not p342.
-p342 :- not a342.
- :- degreefrom(X,Y), researchproject(X,Y), not p343.
-a343 :- not p343.
-p343 :- not a343.
- :- affiliatedorganizationof(X,Y), orgpublication(X,Y), not p344.
-a344 :- not p344.
-p344 :- not a344.
- :- ispartofuniversity(X,Y), softwareversion(X,Y), not p345.
-a345 :- not p345.
-p345 :- not a345.
- :- softwaredocumentation(X,Y), teachingassistantof(X,Y), not p346.
-a346 :- not p346.
-p346 :- not a346.
- :- publicationdate(X,Y), softwaredocumentation(X,Y), not p347.
-a347 :- not p347.
-p347 :- not a347.
- :- suborganizationof(X,Y), tenured(X,Y), not p348.
-a348 :- not p348.
-p348 :- not a348.
- :- degreefrom(X,Y), softwaredocumentation(X,Y), not p349.
-a349 :- not p349.
-p349 :- not a349.
- :- advisor(X,Y), teacherof(X,Y), not p350.
-a350 :- not p350.
-p350 :- not a350.
- :- orgpublication(X,Y), teacherof(X,Y), not p351.
-a351 :- not p351.
-p351 :- not a351.
- :- researchproject(X,Y), softwaredocumentation(X,Y), not p352.
-a352 :- not p352.
-p352 :- not a352.
- :- subj14course(X), subj20course(X), not p353.
-a353 :- not p353.
-p353 :- not a353.
- :- subj18professor(X), subj1professor(X), not p354.
-a354 :- not p354.
-p354 :- not a354.
- :- subj17professor(X), subj2professor(X), not p355.
-a355 :- not p355.
-p355 :- not a355.
- :- subj16professor(X), subj3professor(X), not p356.
-a356 :- not p356.
-p356 :- not a356.
- :- subj11professor(X), subj8professor(X), not p357.
-a357 :- not p357.
-p357 :- not a357.
- :- subj10professor(X), subj9professor(X), not p358.
-a358 :- not p358.
-p358 :- not a358.
- :- subj12professor(X), subj7professor(X), not p359.
-a359 :- not p359.
-p359 :- not a359.
- :- subj13professor(X), subj6professor(X), not p360.
-a360 :- not p360.
-p360 :- not a360.
- :- subj14professor(X), subj5professor(X), not p361.
-a361 :- not p361.
-p361 :- not a361.
- :- subj15professor(X), subj4professor(X), not p362.
-a362 :- not p362.
-p362 :- not a362.
- :- subj3course(X), subj9course(X), not p363.
-a363 :- not p363.
-p363 :- not a363.
- :- subj4course(X), subj8course(X), not p364.
-a364 :- not p364.
-p364 :- not a364.
- :- subj5course(X), subj7course(X), not p365.
-a365 :- not p365.
-p365 :- not a365.
- :- subj11department(X), subj17department(X), not p366.
-a366 :- not p366.
-p366 :- not a366.
- :- subj10department(X), subj18department(X), not p367.
-a367 :- not p367.
-p367 :- not a367.
- :- subj12department(X), subj16department(X), not p368.
-a368 :- not p368.
-p368 :- not a368.
- :- subj13department(X), subj15department(X), not p369.
-a369 :- not p369.
-p369 :- not a369.
- :- journalarticle(X), technicalreport(X), not p370.
-a370 :- not p370.
-p370 :- not a370.
- :- subj19course(X), subj9course(X), not p371.
-a371 :- not p371.
-p371 :- not a371.
- :- subj8professor(X), subj9professor(X), not p372.
-a372 :- not p372.
-p372 :- not a372.
- :- subj20department(X), subj4department(X), not p373.
-a373 :- not p373.
-p373 :- not a373.
- :- subj16course(X), subj1course(X), not p374.
-a374 :- not p374.
-p374 :- not a374.
- :- subj15course(X), subj2course(X), not p375.
-a375 :- not p375.
-p375 :- not a375.
- :- subj14course(X), subj3course(X), not p376.
-a376 :- not p376.
-p376 :- not a376.
- :- subj13course(X), subj4course(X), not p377.
-a377 :- not p377.
-p377 :- not a377.
- :- subj12course(X), subj5course(X), not p378.
-a378 :- not p378.
-p378 :- not a378.
- :- subj10course(X), subj7course(X), not p379.
-a379 :- not p379.
-p379 :- not a379.
- :- subj11course(X), subj6course(X), not p380.
-a380 :- not p380.
-p380 :- not a380.
- :- subj11professor(X), subj2professor(X), not p381.
-a381 :- not p381.
-p381 :- not a381.
- :- subj10professor(X), subj3professor(X), not p382.
-a382 :- not p382.
-p382 :- not a382.
- :- subj12professor(X), subj1professor(X), not p383.
-a383 :- not p383.
-p383 :- not a383.
- :- subj12course(X), subj19course(X), not p384.
-a384 :- not p384.
-p384 :- not a384.
- :- subj13course(X), subj18course(X), not p385.
-a385 :- not p385.
-p385 :- not a385.
- :- subj14course(X), subj17course(X), not p386.
-a386 :- not p386.
-p386 :- not a386.
- :- subj15course(X), subj16course(X), not p387.
-a387 :- not p387.
-p387 :- not a387.
- :- postdoc(X), professor(X), not p388.
-a388 :- not p388.
-p388 :- not a388.
- :- subj20professor(X), subj4professor(X), not p389.
-a389 :- not p389.
-p389 :- not a389.
- :- institute(X), program(X), not p390.
-a390 :- not p390.
-p390 :- not a390.
- :- subj19course(X), subj20course(X), not p391.
-a391 :- not p391.
-p391 :- not a391.
- :- subj5course(X), subj6course(X), not p392.
-a392 :- not p392.
-p392 :- not a392.
- :- subj4course(X), subj7course(X), not p393.
-a393 :- not p393.
-p393 :- not a393.
- :- subj3course(X), subj8course(X), not p394.
-a394 :- not p394.
-p394 :- not a394.
- :- subj2course(X), subj9course(X), not p395.
-a395 :- not p395.
-p395 :- not a395.
- :- subj10course(X), subj11course(X), not p396.
-a396 :- not p396.
-p396 :- not a396.
- :- subj10professor(X), subj11professor(X), not p397.
-a397 :- not p397.
-p397 :- not a397.
- :- subj17course(X), subj9course(X), not p398.
-a398 :- not p398.
-p398 :- not a398.
- :- subj18course(X), subj8course(X), not p399.
-a399 :- not p399.
-p399 :- not a399.
- :- subj19course(X), subj7course(X), not p400.
-a400 :- not p400.
-p400 :- not a400.
- :- subj14course(X), subj19course(X), not p401.
-a401 :- not p401.
-p401 :- not a401.
- :- subj15course(X), subj18course(X), not p402.
-a402 :- not p402.
-p402 :- not a402.
- :- subj16course(X), subj17course(X), not p403.
-a403 :- not p403.
-p403 :- not a403.
- :- book(X), manual(X), not p404.
-a404 :- not p404.
-p404 :- not a404.
- :- department(X), researchgroup(X), not p405.
-a405 :- not p405.
-p405 :- not a405.
- :- subj20department(X), subj3department(X), not p406.
-a406 :- not p406.
-p406 :- not a406.
- :- article(X), manual(X), not p407.
-a407 :- not p407.
-p407 :- not a407.
- :- subj20professor(X), subj8professor(X), not p408.
-a408 :- not p408.
-p408 :- not a408.
- :- manual(X), specification(X), not p409.
-a409 :- not p409.
-p409 :- not a409.
- :- subj4professor(X), subj6professor(X), not p410.
-a410 :- not p410.
-p410 :- not a410.
- :- subj3professor(X), subj7professor(X), not p411.
-a411 :- not p411.
-p411 :- not a411.
- :- subj2professor(X), subj8professor(X), not p412.
-a412 :- not p412.
-p412 :- not a412.
- :- subj1professor(X), subj9professor(X), not p413.
-a413 :- not p413.
-p413 :- not a413.
- :- subj15course(X), subj20course(X), not p414.
-a414 :- not p414.
-p414 :- not a414.
- :- subj3professor(X), subj9professor(X), not p415.
-a415 :- not p415.
-p415 :- not a415.
- :- subj4professor(X), subj8professor(X), not p416.
-a416 :- not p416.
-p416 :- not a416.
- :- subj5professor(X), subj7professor(X), not p417.
-a417 :- not p417.
-p417 :- not a417.
- :- subj15department(X), subj19department(X), not p418.
-a418 :- not p418.
-p418 :- not a418.
- :- subj16department(X), subj18department(X), not p419.
-a419 :- not p419.
-p419 :- not a419.
- :- subj16professor(X), subj18professor(X), not p420.
-a420 :- not p420.
-p420 :- not a420.
- :- subj15professor(X), subj19professor(X), not p421.
-a421 :- not p421.
-p421 :- not a421.
- :- program(X), researchgroup(X), not p422.
-a422 :- not p422.
-p422 :- not a422.
- :- subj7course(X), subj9course(X), not p423.
-a423 :- not p423.
-p423 :- not a423.
- :- department(X), institute(X), not p424.
-a424 :- not p424.
-p424 :- not a424.
- :- subj15professor(X), subj20professor(X), not p425.
-a425 :- not p425.
-p425 :- not a425.
- :- associateprofessor(X), exdean(X), not p426.
-a426 :- not p426.
-p426 :- not a426.
- :- subj6course(X), subj8course(X), not p427.
-a427 :- not p427.
-p427 :- not a427.
- :- subj5course(X), subj9course(X), not p428.
-a428 :- not p428.
-p428 :- not a428.
- :- subj11department(X), subj2department(X), not p429.
-a429 :- not p429.
-p429 :- not a429.
- :- subj10department(X), subj3department(X), not p430.
-a430 :- not p430.
-p430 :- not a430.
- :- subj12department(X), subj1department(X), not p431.
-a431 :- not p431.
-p431 :- not a431.
- :- assistantprofessor(X), visitingprofessor(X), not p432.
-a432 :- not p432.
-p432 :- not a432.
- :- subj11professor(X), subj16professor(X), not p433.
-a433 :- not p433.
-p433 :- not a433.
- :- subj10professor(X), subj17professor(X), not p434.
-a434 :- not p434.
-p434 :- not a434.
- :- subj12professor(X), subj15professor(X), not p435.
-a435 :- not p435.
-p435 :- not a435.
- :- subj13professor(X), subj14professor(X), not p436.
-a436 :- not p436.
-p436 :- not a436.
- :- graduatestudent(X), chair(X), not p437.
-a437 :- not p437.
-p437 :- not a437.
- :- subj1course(X), subj8course(X), not p438.
-a438 :- not p438.
-p438 :- not a438.
- :- subj2course(X), subj7course(X), not p439.
-a439 :- not p439.
-p439 :- not a439.
- :- subj3course(X), subj6course(X), not p440.
-a440 :- not p440.
-p440 :- not a440.
- :- subj4course(X), subj5course(X), not p441.
-a441 :- not p441.
-p441 :- not a441.
- :- subj16department(X), subj20department(X), not p442.
-a442 :- not p442.
-p442 :- not a442.
- :- subj18course(X), subj20course(X), not p443.
-a443 :- not p443.
-p443 :- not a443.
- :- subj20professor(X), subj6professor(X), not p444.
-a444 :- not p444.
-p444 :- not a444.
- :- article(X), specification(X), not p445.
-a445 :- not p445.
-p445 :- not a445.
- :- subj11professor(X), subj15professor(X), not p446.
-a446 :- not p446.
-p446 :- not a446.
- :- subj10professor(X), subj16professor(X), not p447.
-a447 :- not p447.
-p447 :- not a447.
- :- subj12professor(X), subj14professor(X), not p448.
-a448 :- not p448.
-p448 :- not a448.
- :- subj20department(X), subj2department(X), not p449.
-a449 :- not p449.
-p449 :- not a449.
- :- subj12department(X), subj19department(X), not p450.
-a450 :- not p450.
-p450 :- not a450.
- :- subj13department(X), subj18department(X), not p451.
-a451 :- not p451.
-p451 :- not a451.
- :- subj14department(X), subj17department(X), not p452.
-a452 :- not p452.
-p452 :- not a452.
- :- subj15department(X), subj16department(X), not p453.
-a453 :- not p453.
-p453 :- not a453.
- :- subj19professor(X), subj20professor(X), not p454.
-a454 :- not p454.
-p454 :- not a454.
- :- subj15professor(X), subj7professor(X), not p455.
-a455 :- not p455.
-p455 :- not a455.
- :- subj14professor(X), subj8professor(X), not p456.
-a456 :- not p456.
-p456 :- not a456.
- :- subj19professor(X), subj3professor(X), not p457.
-a457 :- not p457.
-p457 :- not a457.
- :- subj18professor(X), subj4professor(X), not p458.
-a458 :- not p458.
-p458 :- not a458.
- :- subj17professor(X), subj5professor(X), not p459.
-a459 :- not p459.
-p459 :- not a459.
- :- subj16professor(X), subj6professor(X), not p460.
-a460 :- not p460.
-p460 :- not a460.
- :- subj13professor(X), subj9professor(X), not p461.
-a461 :- not p461.
-p461 :- not a461.
- :- conferencepaper(X), journalarticle(X), not p462.
-a462 :- not p462.
-p462 :- not a462.
- :- clericalstaff(X), systemsstaff(X), not p463.
-a463 :- not p463.
-p463 :- not a463.
- :- assistantprofessor(X), associateprofessor(X), not p464.
-a464 :- not p464.
-p464 :- not a464.
- :- subj16professor(X), subj20professor(X), not p465.
-a465 :- not p465.
-p465 :- not a465.
- :- subj13course(X), subj20course(X), not p466.
-a466 :- not p466.
-p466 :- not a466.
- :- subj1department(X), subj7department(X), not p467.
-a467 :- not p467.
-p467 :- not a467.
- :- subj2department(X), subj6department(X), not p468.
-a468 :- not p468.
-p468 :- not a468.
- :- subj3department(X), subj5department(X), not p469.
-a469 :- not p469.
-p469 :- not a469.
- :- subj20professor(X), subj3professor(X), not p470.
-a470 :- not p470.
-p470 :- not a470.
- :- subj10professor(X), subj13professor(X), not p471.
-a471 :- not p471.
-p471 :- not a471.
- :- subj11professor(X), subj12professor(X), not p472.
-a472 :- not p472.
-p472 :- not a472.
- :- subj7professor(X), subj8professor(X), not p473.
-a473 :- not p473.
-p473 :- not a473.
- :- subj6professor(X), subj9professor(X), not p474.
-a474 :- not p474.
-p474 :- not a474.
- :- subj20department(X), subj5department(X), not p475.
-a475 :- not p475.
-p475 :- not a475.
- :- director(X), student(X), not p476.
-a476 :- not p476.
-p476 :- not a476.
- :- subj15professor(X), subj6professor(X), not p477.
-a477 :- not p477.
-p477 :- not a477.
- :- subj14professor(X), subj7professor(X), not p478.
-a478 :- not p478.
-p478 :- not a478.
- :- subj19professor(X), subj2professor(X), not p479.
-a479 :- not p479.
-p479 :- not a479.
- :- subj18professor(X), subj3professor(X), not p480.
-a480 :- not p480.
-p480 :- not a480.
- :- subj17professor(X), subj4professor(X), not p481.
-a481 :- not p481.
-p481 :- not a481.
- :- subj16professor(X), subj5professor(X), not p482.
-a482 :- not p482.
-p482 :- not a482.
- :- subj12professor(X), subj9professor(X), not p483.
-a483 :- not p483.
-p483 :- not a483.
- :- subj13professor(X), subj8professor(X), not p484.
-a484 :- not p484.
-p484 :- not a484.
- :- subj2department(X), subj4department(X), not p485.
-a485 :- not p485.
-p485 :- not a485.
- :- subj1department(X), subj5department(X), not p486.
-a486 :- not p486.
-p486 :- not a486.
- :- institute(X), university(X), not p487.
-a487 :- not p487.
-p487 :- not a487.
- :- subj1department(X), subj20department(X), not p488.
-a488 :- not p488.
-p488 :- not a488.
- :- manual(X), software(X), not p489.
-a489 :- not p489.
-p489 :- not a489.
- :- subj16course(X), subj5course(X), not p490.
-a490 :- not p490.
-p490 :- not a490.
- :- subj15course(X), subj6course(X), not p491.
-a491 :- not p491.
-p491 :- not a491.
- :- subj14course(X), subj7course(X), not p492.
-a492 :- not p492.
-p492 :- not a492.
- :- subj13course(X), subj8course(X), not p493.
-a493 :- not p493.
-p493 :- not a493.
- :- subj12course(X), subj9course(X), not p494.
-a494 :- not p494.
-p494 :- not a494.
- :- subj17course(X), subj4course(X), not p495.
-a495 :- not p495.
-p495 :- not a495.
- :- subj18course(X), subj3course(X), not p496.
-a496 :- not p496.
-p496 :- not a496.
- :- subj19course(X), subj2course(X), not p497.
-a497 :- not p497.
-p497 :- not a497.
- :- subj19professor(X), subj6professor(X), not p498.
-a498 :- not p498.
-p498 :- not a498.
- :- subj18professor(X), subj7professor(X), not p499.
-a499 :- not p499.
-p499 :- not a499.
- :- subj17professor(X), subj8professor(X), not p500.
-a500 :- not p500.
-p500 :- not a500.
- :- subj16professor(X), subj9professor(X), not p501.
-a501 :- not p501.
-p501 :- not a501.
- :- book(X), unofficialpublication(X), not p502.
-a502 :- not p502.
-p502 :- not a502.
- :- subj13department(X), subj20department(X), not p503.
-a503 :- not p503.
-p503 :- not a503.
- :- subj15department(X), subj8department(X), not p504.
-a504 :- not p504.
-p504 :- not a504.
- :- subj14department(X), subj9department(X), not p505.
-a505 :- not p505.
-p505 :- not a505.
- :- subj16department(X), subj7department(X), not p506.
-a506 :- not p506.
-p506 :- not a506.
- :- subj17department(X), subj6department(X), not p507.
-a507 :- not p507.
-p507 :- not a507.
- :- subj18department(X), subj5department(X), not p508.
-a508 :- not p508.
-p508 :- not a508.
- :- subj19department(X), subj4department(X), not p509.
-a509 :- not p509.
-p509 :- not a509.
- :- subj1professor(X), subj3professor(X), not p510.
-a510 :- not p510.
-p510 :- not a510.
- :- assistantprofessor(X), exdean(X), not p511.
-a511 :- not p511.
-p511 :- not a511.
- :- subj2department(X), subj3department(X), not p512.
-a512 :- not p512.
-p512 :- not a512.
- :- subj1department(X), subj4department(X), not p513.
-a513 :- not p513.
-p513 :- not a513.
- :- subj10department(X), subj20department(X), not p514.
-a514 :- not p514.
-p514 :- not a514.
- :- subj19course(X), subj1course(X), not p515.
-a515 :- not p515.
-p515 :- not a515.
- :- subj18course(X), subj2course(X), not p516.
-a516 :- not p516.
-p516 :- not a516.
- :- subj17course(X), subj3course(X), not p517.
-a517 :- not p517.
-p517 :- not a517.
- :- subj11course(X), subj9course(X), not p518.
-a518 :- not p518.
-p518 :- not a518.
- :- subj12course(X), subj8course(X), not p519.
-a519 :- not p519.
-p519 :- not a519.
- :- subj13course(X), subj7course(X), not p520.
-a520 :- not p520.
-p520 :- not a520.
- :- subj14course(X), subj6course(X), not p521.
-a521 :- not p521.
-p521 :- not a521.
- :- subj15course(X), subj5course(X), not p522.
-a522 :- not p522.
-p522 :- not a522.
- :- subj16course(X), subj4course(X), not p523.
-a523 :- not p523.
-p523 :- not a523.
- :- subj14department(X), subj20department(X), not p524.
-a524 :- not p524.
-p524 :- not a524.
- :- subj19professor(X), subj9professor(X), not p525.
-a525 :- not p525.
-p525 :- not a525.
- :- subj19course(X), subj6course(X), not p526.
-a526 :- not p526.
-p526 :- not a526.
- :- subj18course(X), subj7course(X), not p527.
-a527 :- not p527.
-p527 :- not a527.
- :- subj17course(X), subj8course(X), not p528.
-a528 :- not p528.
-p528 :- not a528.
- :- subj16course(X), subj9course(X), not p529.
-a529 :- not p529.
-p529 :- not a529.
- :- subj20department(X), subj6department(X), not p530.
-a530 :- not p530.
-p530 :- not a530.
- :- college(X), university(X), not p531.
-a531 :- not p531.
-p531 :- not a531.
- :- subj13department(X), subj1department(X), not p532.
-a532 :- not p532.
-p532 :- not a532.
- :- subj12department(X), subj2department(X), not p533.
-a533 :- not p533.
-p533 :- not a533.
- :- subj10department(X), subj4department(X), not p534.
-a534 :- not p534.
-p534 :- not a534.
- :- subj11department(X), subj3department(X), not p535.
-a535 :- not p535.
-p535 :- not a535.
- :- subj16course(X), subj3course(X), not p536.
-a536 :- not p536.
-p536 :- not a536.
- :- subj15course(X), subj4course(X), not p537.
-a537 :- not p537.
-p537 :- not a537.
- :- subj14course(X), subj5course(X), not p538.
-a538 :- not p538.
-p538 :- not a538.
- :- subj13course(X), subj6course(X), not p539.
-a539 :- not p539.
-p539 :- not a539.
- :- subj12course(X), subj7course(X), not p540.
-a540 :- not p540.
-p540 :- not a540.
- :- subj10course(X), subj9course(X), not p541.
-a541 :- not p541.
-p541 :- not a541.
- :- subj11course(X), subj8course(X), not p542.
-a542 :- not p542.
-p542 :- not a542.
- :- subj17course(X), subj2course(X), not p543.
-a543 :- not p543.
-p543 :- not a543.
- :- subj18course(X), subj1course(X), not p544.
-a544 :- not p544.
-p544 :- not a544.
- :- subj19professor(X), subj8professor(X), not p545.
-a545 :- not p545.
-p545 :- not a545.
- :- subj18professor(X), subj9professor(X), not p546.
-a546 :- not p546.
-p546 :- not a546.
- :- manual(X), unofficialpublication(X), not p547.
-a547 :- not p547.
-p547 :- not a547.
- :- exam(X), examrecord(X), not p548.
-a548 :- not p548.
-p548 :- not a548.
- :- subj10course(X), subj1course(X), not p549.
-a549 :- not p549.
-p549 :- not a549.
- :- subj20professor(X), subj7professor(X), not p550.
-a550 :- not p550.
-p550 :- not a550.
- :- subj13department(X), subj1department(X), not p551.
-a551 :- not p551.
-p551 :- not a551.
- :- subj12department(X), subj2department(X), not p552.
-a552 :- not p552.
-p552 :- not a552.
- :- subj10department(X), subj4department(X), not p553.
-a553 :- not p553.
-p553 :- not a553.
- :- subj11department(X), subj3department(X), not p554.
-a554 :- not p554.
-p554 :- not a554.
- :- subj16course(X), subj3course(X), not p555.
-a555 :- not p555.
-p555 :- not a555.
- :- subj15course(X), subj4course(X), not p556.
-a556 :- not p556.
-p556 :- not a556.
- :- subj14course(X), subj5course(X), not p557.
-a557 :- not p557.
-p557 :- not a557.
- :- subj13course(X), subj6course(X), not p558.
-a558 :- not p558.
-p558 :- not a558.
- :- subj12course(X), subj7course(X), not p559.
-a559 :- not p559.
-p559 :- not a559.
- :- subj10course(X), subj9course(X), not p560.
-a560 :- not p560.
-p560 :- not a560.
- :- subj11course(X), subj8course(X), not p561.
-a561 :- not p561.
-p561 :- not a561.
- :- subj17course(X), subj2course(X), not p562.
-a562 :- not p562.
-p562 :- not a562.
- :- subj18course(X), subj1course(X), not p563.
-a563 :- not p563.
-p563 :- not a563.
- :- subj19professor(X), subj8professor(X), not p564.
-a564 :- not p564.
-p564 :- not a564.
- :- subj18professor(X), subj9professor(X), not p565.
-a565 :- not p565.
-p565 :- not a565.
- :- subj15course(X), subj19course(X), not p566.
-a566 :- not p566.
-p566 :- not a566.
- :- subj16course(X), subj18course(X), not p567.
-a567 :- not p567.
-p567 :- not a567.
- :- program(X), university(X), not p568.
-a568 :- not p568.
-p568 :- not a568.
- :- subj16professor(X), subj17professor(X), not p569.
-a569 :- not p569.
-p569 :- not a569.
- :- subj14professor(X), subj19professor(X), not p570.
-a570 :- not p570.
-p570 :- not a570.
- :- subj15professor(X), subj18professor(X), not p571.
-a571 :- not p571.
-p571 :- not a571.
- :- subj10professor(X), subj12professor(X), not p572.
-a572 :- not p572.
-p572 :- not a572.
- :- subj18course(X), subj9course(X), not p573.
-a573 :- not p573.
-p573 :- not a573.
- :- subj19course(X), subj8course(X), not p574.
-a574 :- not p574.
-p574 :- not a574.
- :- subj12department(X), subj20department(X), not p575.
-a575 :- not p575.
-p575 :- not a575.
- :- subj7department(X), subj8department(X), not p576.
-a576 :- not p576.
-p576 :- not a576.
- :- subj6department(X), subj9department(X), not p577.
-a577 :- not p577.
-p577 :- not a577.
- :- subj11professor(X), subj19professor(X), not p578.
-a578 :- not p578.
-p578 :- not a578.
- :- subj12professor(X), subj18professor(X), not p579.
-a579 :- not p579.
-p579 :- not a579.
- :- subj13professor(X), subj17professor(X), not p580.
-a580 :- not p580.
-p580 :- not a580.
- :- subj14professor(X), subj16professor(X), not p581.
-a581 :- not p581.
-p581 :- not a581.
- :- researchgroup(X), university(X), not p582.
-a582 :- not p582.
-p582 :- not a582.
- :- subj20professor(X), subj9professor(X), not p583.
-a583 :- not p583.
-p583 :- not a583.
- :- associateprofessor(X), dean(X), not p584.
-a584 :- not p584.
-p584 :- not a584.
- :- subj15professor(X), subj2professor(X), not p585.
-a585 :- not p585.
-p585 :- not a585.
- :- subj14professor(X), subj3professor(X), not p586.
-a586 :- not p586.
-p586 :- not a586.
- :- subj13professor(X), subj4professor(X), not p587.
-a587 :- not p587.
-p587 :- not a587.
- :- subj12professor(X), subj5professor(X), not p588.
-a588 :- not p588.
-p588 :- not a588.
- :- subj10professor(X), subj7professor(X), not p589.
-a589 :- not p589.
-p589 :- not a589.
- :- subj11professor(X), subj6professor(X), not p590.
-a590 :- not p590.
-p590 :- not a590.
- :- subj16professor(X), subj1professor(X), not p591.
-a591 :- not p591.
-p591 :- not a591.
- :- subj12course(X), subj1course(X), not p592.
-a592 :- not p592.
-p592 :- not a592.
- :- subj10course(X), subj3course(X), not p593.
-a593 :- not p593.
-p593 :- not a593.
- :- subj11course(X), subj2course(X), not p594.
-a594 :- not p594.
-p594 :- not a594.
- :- organization(X), person(X), not p595.
-a595 :- not p595.
-p595 :- not a595.
- :- subj10professor(X), subj2professor(X), not p596.
-a596 :- not p596.
-p596 :- not a596.
- :- subj11professor(X), subj1professor(X), not p597.
-a597 :- not p597.
-p597 :- not a597.
- :- subj12professor(X), subj13professor(X), not p598.
-a598 :- not p598.
-p598 :- not a598.
- :- subj10professor(X), subj15professor(X), not p599.
-a599 :- not p599.
-p599 :- not a599.
- :- subj11professor(X), subj14professor(X), not p600.
-a600 :- not p600.
-p600 :- not a600.
- :- subj10department(X), subj13department(X), not p601.
-a601 :- not p601.
-p601 :- not a601.
- :- subj11department(X), subj12department(X), not p602.
-a602 :- not p602.
-p602 :- not a602.
- :- subj12department(X), subj5department(X), not p603.
-a603 :- not p603.
-p603 :- not a603.
- :- subj10department(X), subj7department(X), not p604.
-a604 :- not p604.
-p604 :- not a604.
- :- subj11department(X), subj6department(X), not p605.
-a605 :- not p605.
-p605 :- not a605.
- :- subj16department(X), subj1department(X), not p606.
-a606 :- not p606.
-p606 :- not a606.
- :- subj13department(X), subj4department(X), not p607.
-a607 :- not p607.
-p607 :- not a607.
- :- subj14department(X), subj3department(X), not p608.
-a608 :- not p608.
-p608 :- not a608.
- :- subj15department(X), subj2department(X), not p609.
-a609 :- not p609.
-p609 :- not a609.
- :- subj17department(X), subj20department(X), not p610.
-a610 :- not p610.
-p610 :- not a610.
- :- subj12course(X), subj14course(X), not p611.
-a611 :- not p611.
-p611 :- not a611.
- :- subj11course(X), subj15course(X), not p612.
-a612 :- not p612.
-p612 :- not a612.
- :- subj10course(X), subj16course(X), not p613.
-a613 :- not p613.
-p613 :- not a613.
- :- subj19department(X), subj20department(X), not p614.
-a614 :- not p614.
-p614 :- not a614.
- :- subj15course(X), subj8course(X), not p615.
-a615 :- not p615.
-p615 :- not a615.
- :- subj14course(X), subj9course(X), not p616.
-a616 :- not p616.
-p616 :- not a616.
- :- subj16course(X), subj7course(X), not p617.
-a617 :- not p617.
-p617 :- not a617.
- :- subj17course(X), subj6course(X), not p618.
-a618 :- not p618.
-p618 :- not a618.
- :- subj18course(X), subj5course(X), not p619.
-a619 :- not p619.
-p619 :- not a619.
- :- subj19course(X), subj4course(X), not p620.
-a620 :- not p620.
-p620 :- not a620.
- :- subj5professor(X), subj9professor(X), not p621.
-a621 :- not p621.
-p621 :- not a621.
- :- subj6professor(X), subj8professor(X), not p622.
-a622 :- not p622.
-p622 :- not a622.
- :- subj7professor(X), subj9professor(X), not p623.
-a623 :- not p623.
-p623 :- not a623.
- :- subj15course(X), subj9course(X), not p624.
-a624 :- not p624.
-p624 :- not a624.
- :- subj16course(X), subj8course(X), not p625.
-a625 :- not p625.
-p625 :- not a625.
- :- subj17course(X), subj7course(X), not p626.
-a626 :- not p626.
-p626 :- not a626.
- :- subj18course(X), subj6course(X), not p627.
-a627 :- not p627.
-p627 :- not a627.
- :- subj19course(X), subj5course(X), not p628.
-a628 :- not p628.
-p628 :- not a628.
- :- subj11department(X), subj20department(X), not p629.
-a629 :- not p629.
-p629 :- not a629.
- :- subj17course(X), subj1course(X), not p630.
-a630 :- not p630.
-p630 :- not a630.
- :- subj11course(X), subj7course(X), not p631.
-a631 :- not p631.
-p631 :- not a631.
- :- subj10course(X), subj8course(X), not p632.
-a632 :- not p632.
-p632 :- not a632.
- :- subj12course(X), subj6course(X), not p633.
-a633 :- not p633.
-p633 :- not a633.
- :- subj13course(X), subj5course(X), not p634.
-a634 :- not p634.
-p634 :- not a634.
- :- subj14course(X), subj4course(X), not p635.
-a635 :- not p635.
-p635 :- not a635.
- :- subj15course(X), subj3course(X), not p636.
-a636 :- not p636.
-p636 :- not a636.
- :- subj16course(X), subj2course(X), not p637.
-a637 :- not p637.
-p637 :- not a637.
- :- subj1professor(X), subj7professor(X), not p638.
-a638 :- not p638.
-p638 :- not a638.
- :- subj2professor(X), subj6professor(X), not p639.
-a639 :- not p639.
-p639 :- not a639.
- :- subj3professor(X), subj5professor(X), not p640.
-a640 :- not p640.
-p640 :- not a640.
- :- director(X), graduatestudent(X), not p641.
-a641 :- not p641.
-p641 :- not a641.
- :- subj11department(X), subj13department(X), not p642.
-a642 :- not p642.
-p642 :- not a642.
- :- subj10department(X), subj14department(X), not p643.
-a643 :- not p643.
-p643 :- not a643.
- :- subj18department(X), subj20department(X), not p644.
-a644 :- not p644.
-p644 :- not a644.
- :- subj13professor(X), subj19professor(X), not p645.
-a645 :- not p645.
-p645 :- not a645.
- :- subj14professor(X), subj18professor(X), not p646.
-a646 :- not p646.
-p646 :- not a646.
- :- subj15professor(X), subj17professor(X), not p647.
-a647 :- not p647.
-p647 :- not a647.
- :- subj16course(X), subj20course(X), not p648.
-a648 :- not p648.
-p648 :- not a648.
- :- subj11professor(X), subj5professor(X), not p649.
-a649 :- not p649.
-p649 :- not a649.
- :- subj10professor(X), subj6professor(X), not p650.
-a650 :- not p650.
-p650 :- not a650.
- :- subj12professor(X), subj4professor(X), not p651.
-a651 :- not p651.
-p651 :- not a651.
- :- subj13professor(X), subj3professor(X), not p652.
-a652 :- not p652.
-p652 :- not a652.
- :- subj14professor(X), subj2professor(X), not p653.
-a653 :- not p653.
-p653 :- not a653.
- :- subj15professor(X), subj1professor(X), not p654.
-a654 :- not p654.
-p654 :- not a654.
- :- department(X), university(X), not p655.
-a655 :- not p655.
-p655 :- not a655.
- :- subj17department(X), subj1department(X), not p656.
-a656 :- not p656.
-p656 :- not a656.
- :- subj16department(X), subj2department(X), not p657.
-a657 :- not p657.
-p657 :- not a657.
- :- subj11department(X), subj7department(X), not p658.
-a658 :- not p658.
-p658 :- not a658.
- :- subj10department(X), subj8department(X), not p659.
-a659 :- not p659.
-p659 :- not a659.
- :- subj12department(X), subj6department(X), not p660.
-a660 :- not p660.
-p660 :- not a660.
- :- subj13department(X), subj5department(X), not p661.
-a661 :- not p661.
-p661 :- not a661.
- :- subj14department(X), subj4department(X), not p662.
-a662 :- not p662.
-p662 :- not a662.
- :- subj15department(X), subj3department(X), not p663.
-a663 :- not p663.
-p663 :- not a663.
- :- examrecord(X), research(X), not p664.
-a664 :- not p664.
-p664 :- not a664.
- :- subj11course(X), subj20course(X), not p665.
-a665 :- not p665.
-p665 :- not a665.
+degreefrom(X,Y) :- doctoraldegreefrom(X,Y).
+memberof(X,Y) :- worksfor(X,Y).
+degreefrom(X,Y) :- mastersdegreefrom(X,Y).
+member(Y,X) :- memberof(X,Y).
+memberof(Y,X) :- member(X,Y).
+degreefrom(X,Y) :- undergraduatedegreefrom(X,Y).
+hasalumnus(Y,X) :- degreefrom(X,Y).
+degreefrom(Y,X) :- hasalumnus(X,Y).
+worksfor(X,Y) :- headof(X,Y).
+professor(X) :- tenured(X,Y).
+person(X) :- degreefrom(X,Y).
+faculty(X) :- professor(X).
+faculty(X) :- postdoc(X).
+professor(X) :- dean(X).
+publication(X) :- publicationdate(X,Y).
+person(X) :- title(X,Y).
+software(X) :- softwaredocumentation(X,Y).
+student(X) :- person(X), takescourse(X,Y), course(Y).
+takescourse(X,f(X)) :- student(X).
+course(f(X)) :- student(X).
+person(X) :- student(X).
+publication(X) :- publicationresearch(X,Y).
+chair(X) :- person(X), headof(X,Y), department(Y).
+headof(X,f(X)) :- chair(X).
+department(f(X)) :- chair(X).
+publication(X) :- publicationauthor(X,Y).
+organization(X) :- affiliateof(X,Y).
+faculty(X) :- lecturer(X).
+university(Y) :- degreefrom(X,Y).
+university(Y) :- undergraduatedegreefrom(X,Y).
+person(Y) :- publicationauthor(X,Y).
+course(Y) :- teachingassistantof(X,Y).
+person(X) :- advisor(X,Y).
+university(X) :- hasalumnus(X,Y).
+professor(X) :- visitingprofessor(X).
+professor(X) :- assistantprofessor(X).
+organization(X) :- affiliatedorganizationof(X,Y).
+article(X) :- technicalreport(X).
+professor(Y) :- advisor(X,Y).
+publication(X) :- book(X).
+dean(X) :- headof(X,Y), college(Y).
+headof(X,f(X)) :- dean(X).
+college(f(X)) :- dean(X).
+internal_all_0(X) :- thing(X).
+publication(Y) :- orgpublication(X,Y).
+university(Y) :- mastersdegreefrom(X,Y).
+university(Y) :- doctoraldegreefrom(X,Y).
+article(X) :- journalarticle(X).
+course(Y) :- listedcourse(X,Y).
+course(Y) :- teacherof(X,Y).
+faculty(X) :- teacherof(X,Y).
+person(X) :- emailaddress(X,Y).
+organization(X) :- program(X).
+work(X) :- course(X).
+person(X) :- researchassistant(X).
+publication(X) :- unofficialpublication(X).
+person(X) :- graduatestudent(X).
+organization(Y) :- affiliatedorganizationof(X,Y).
+organization(X) :- university(X).
+student(X) :- undergraduatestudent(X).
+work(X) :- research(X).
+article(X) :- conferencepaper(X).
+worksfor(X,f(X)) :- researchassistant(X).
+researchgroup(f(X)) :- researchassistant(X).
+organization(X) :- researchgroup(X).
+professor(X) :- chair(X).
+director(X) :- person(X), headof(X,Y), program(Y).
+headof(X,f(X)) :- director(X).
+program(f(X)) :- director(X).
+person(X) :- director(X).
+employee(X) :- administrativestaff(X).
+employee(X) :- person(X), worksfor(X,Y), organization(Y).
+worksfor(X,f(X)) :- employee(X).
+organization(f(X)) :- employee(X).
+person(X) :- employee(X).
+organization(X) :- member(X,Y).
+administrativestaff(X) :- systemsstaff(X).
+researchgroup(X) :- researchproject(X,Y).
+organization(X) :- department(X).
+organization(X) :- internal_all_1(X).
+publication(Y) :- softwaredocumentation(X,Y).
+person(X) :- telephone(X,Y).
+organization(X) :- orgpublication(X,Y).
+person(X) :- doctoraldegreefrom(X,Y).
+organization(X) :- institute(X).
+person(Y) :- affiliateof(X,Y).
+schedule(X) :- listedcourse(X,Y).
+person(Y) :- hasalumnus(X,Y).
+publication(X) :- specification(X).
+publication(X) :- software(X).
+person(X) :- mastersdegreefrom(X,Y).
+person(X) :- undergraduatedegreefrom(X,Y).
+teachingassistant(X) :- teachingassistantof(X,Y).
+administrativestaff(X) :- clericalstaff(X).
+research(Y) :- publicationresearch(X,Y).
+organization(X) :- college(X).
+article(X) :- publication(X).
+professor(X) :- associateprofessor(X).
+person(Y) :- member(X,Y).
+course(X) :- graduatecourse(X).
+professor(X) :- fullprofessor(X).
+publication(X) :- manual(X).
+software(X) :- softwareversion(X,Y).
+teachingassistant(X) :- person(X), teachingassistantof(X,Y), course(Y).
+teachingassistantof(X,f(X)) :- teachingassistant(X).
+course(f(X)) :- teachingassistant(X).
+person(X) :- teachingassistant(X).
+person(X) :- age(X,Y).
+takescourse(X,f(X)) :- graduatestudent(X).
+graduatecourse(f(X)) :- graduatestudent(X).
+research(Y) :- researchproject(X,Y).
+employee(X) :- faculty(X).
+internal_all_4(Y) :- internal_all_3(X), suborganizationof(X,Y).
+internal_all_3(X) :- internal_all_4(X).
+internal_all_2(X) :- internal_all_4(X).
+internal_all_2(Y) :- internal_all_0(X), suborganizationof(X,Y).
+internal_all_0(X) :- internal_all_2(X).
+internal_all_3(X) :- internal_all_0(X).
+organization(X) :- internal_all_2(X).
+internal_all_6(X) :- suborganizationof(X,Y), internal_all_7(Y).
+internal_all_7(X) :- internal_all_6(X).
+internal_all_7(X) :- internal_all_5(X).
+internal_all_1(X) :- suborganizationof(X,Y), internal_all_5(Y).
+internal_all_5(X) :- internal_all_1(X).
+internal_all_1(X) :- internal_all_6(X).
+internal_all_5(X) :- thing(X).
+ :- takescourse(X,Y), teachingassistantof(X,Y).
+ :- subj19professor(X), associateprofessor(X).
+ :- undergraduatestudent(X), researchassistant(X).
+ :- subj16student(X), graduatestudent(X). 
+ :- assistantprofessor(X), associateprofessor(X).
+ :- subj11professor(X), associateprofessor(X).
+ :- clericalstaff(X), systemsstaff(X).
+ :- article(X), specification(X).
+ :- takescourse(X,Y), subj14student(X), undergraduatestudent(X).
+ :- teachingassistant(X), undergraduatestudent(X).
+ :- worksfor(X,Y), graduatestudent(X).
+ :- member(X,Y), softwareVersion(X,Y).
+ :- hasAlumnus(X,Y), member(X,Y).
+ :- isPartOfUniversity(X,Y), teacherOf(X,Y).
+ :- degreeFrom(X,Y), teachingAssistantOf(X,Y).
+ :- listedCourse(X,Y), softwareDocumentation(X,Y).
+ :- orgPublication(X,Y), tenured(X,Y).
+ :- memberOf(X,Y), subOrganizationOf(X,Y).
+ :- isPartOfUniversity(X,Y), researchProject(X,Y).
+ :- degreeFrom(X,Y), memberOf(X,Y).
+ :- memberOf(X,Y), orgPublication(X,Y).
+ :- isPartOfUniversity(X,Y), memberOf(X,Y).
+ :- hasExamRecord(X,Y), subOrganizationOf(X,Y).
+ :- member(X,Y), publicationDate(X,Y).
+ :- hasAlumnus(X,Y), isPartOfUniversity(X,Y).
+ :- degreeFrom(X,Y), member(X,Y).
+ :- softwareDocumentation(X,Y), takesCourse(X,Y).
+ :- affiliatedOrganizationOf(X,Y), listedCourse(X,Y).
+ :- subOrganizationOf(X,Y), teacherOf(X,Y).
+ :- hasAlumnus(X,Y), tenured(X,Y).
+ :- advisor(X,Y), member(X,Y).
+ :- hasFaculty(X,Y), researchProject(X,Y).
+ :- publicationAuthor(X,Y), subOrganizationOf(X,Y).
+ :- listedCourse(X,Y), researchProject(X,Y).
+ :- advisor(X,Y), tenured(X,Y).
+ :- degreeFrom(X,Y), publicationAuthor(X,Y).
+ :- affiliatedOrganizationOf(X,Y), publicationDate(X,Y).
+ :- softwareDocumentation(X,Y), subOrganizationOf(X,Y).
+ :- publicationResearch(X,Y), researchProject(X,Y).
+ :- affiliatedOrganizationOf(X,Y), teachingAssistantOf(X,Y).
+ :- softwareDocumentation(X,Y), teacherOf(X,Y).
+ :- advisor(X,Y), softwareDocumentation(X,Y).
+ :- advisor(X,Y), subOrganizationOf(X,Y).
+ :- orgPublication(X,Y), publicationDate(X,Y).
+ :- hasAlumnus(X,Y), softwareDocumentation(X,Y).
+ :- isPartOfUniversity(X,Y), member(X,Y).
+ :- isPartOfUniversity(X,Y), listedCourse(X,Y).
+ :- affiliatedOrganizationOf(X,Y), hasAlumnus(X,Y).
+ :- hasFaculty(X,Y), takesCourse(X,Y).
+ :- advisor(X,Y), researchProject(X,Y).
+ :- memberOf(X,Y), softwareDocumentation(X,Y).
+ :- advisor(X,Y), listedCourse(X,Y).
+ :- member(X,Y), researchProject(X,Y).
+ 
 graduatestudent(department1_university0_graduatestudent14).
 graduatestudent(department0_university0_graduatestudent75).
 subj16professor(department1_university0_assistantprofessor5).
@@ -2515,6 +697,7 @@ publication(department3_university0_assistantprofessor5_publication2).
 graduatestudent(department13_university0_graduatestudent77).
 subj9student(department11_university0_undergraduatestudent93).
 graduatecourse(department9_university0_graduatecourse1).
+assistantprofessor(department1_university0_assistantprofessor5).
 undergraduatestudent(department14_university0_undergraduatestudent19).
 undergraduatestudent(department8_university0_undergraduatestudent10).
 publication(department4_university0_associateprofessor12_publication6).
@@ -2636,7 +819,7 @@ subj2course(department10_university0_graduatecourse47).
 subj11student(department14_university0_undergraduatestudent165).
 undergraduatestudent(department2_university0_undergraduatestudent244).
 graduatestudent(department7_university0_graduatestudent74).
-publication(department10_university0_associateprofessor6_publication7).
+specification(department10_university0_associateprofessor6_publication7).
 subj4student(department13_university0_undergraduatestudent409).
 undergraduatestudent(department9_university0_undergraduatestudent230).
 publication(department10_university0_assistantprofessor0_publication1).
@@ -2866,7 +1049,7 @@ graduatestudent(department11_university0_graduatestudent39).
 subj11student(department3_university0_graduatestudent11).
 graduatecourse(department5_university0_graduatecourse27).
 publication(department11_university0_associateprofessor6_publication6).
-publication(department2_university0_fullprofessor0_publication12).
+specification(department2_university0_fullprofessor0_publication12).
 subj11student(department3_university0_undergraduatestudent203).
 subj9student(department11_university0_undergraduatestudent130).
 subj2student(department10_university0_graduatestudent57).
@@ -2939,6 +1122,7 @@ subj14student(department4_university0_undergraduatestudent100).
 publication(department3_university0_associateprofessor6_publication11).
 subj2student(department7_university0_graduatestudent25).
 assistantprofessor(department3_university0_assistantprofessor4).
+clericalstaff(department3_university0_assistantprofessor4).
 course(department4_university0_course55).
 subj11student(department3_university0_undergraduatestudent189).
 assistantprofessor(department5_university0_assistantprofessor0).
@@ -3217,6 +1401,8 @@ subj2student(department10_university0_graduatestudent82).
 teachingassistant(department3_university0_graduatestudent10).
 publication(department6_university0_fullprofessor5_publication9).
 assistantprofessor(department7_university0_assistantprofessor5).
+clericalstaff(department7_university0_assistantprofessor5).
+systemsstaff(department7_university0_assistantprofessor5).
 subj9student(department2_university0_graduatestudent97).
 undergraduatestudent(department8_university0_undergraduatestudent182).
 undergraduatestudent(department8_university0_undergraduatestudent289).
@@ -3357,7 +1543,7 @@ subj2student(department10_university0_undergraduatestudent300).
 graduatecourse(department11_university0_graduatecourse47).
 publication(department8_university0_fullprofessor3_publication16).
 undergraduatestudent(department0_university0_undergraduatestudent121).
-publication(department9_university0_fullprofessor2_publication17).
+specification(department9_university0_fullprofessor2_publication17).
 graduatecourse(department3_university0_graduatecourse47).
 graduatestudent(department2_university0_graduatestudent6).
 graduatestudent(department9_university0_graduatestudent48).
@@ -10644,7 +8830,7 @@ publication(department1_university0_associateprofessor4_publication1).
 undergraduatestudent(department11_university0_undergraduatestudent85).
 subj2student(department10_university0_graduatestudent3).
 subj4student(department13_university0_undergraduatestudent181).
-teachingassistant(department0_university0_graduatestudent143).
+teachingassistant(department13_university0_undergraduatestudent181).
 publication(department12_university0_associateprofessor7_publication8).
 undergraduatestudent(department2_university0_undergraduatestudent134).
 undergraduatestudent(department5_university0_undergraduatestudent293).
@@ -23126,7 +21312,7 @@ undergraduatestudent(department0_university0_undergraduatestudent9).
 publication(department10_university0_associateprofessor4_publication2).
 subj19student(department8_university0_undergraduatestudent16).
 subj16student(department1_university0_graduatestudent103).
-assistantprofessor(department1_university0_assistantprofessor5).
+associateprofessor(department1_university0_assistantprofessor5).
 subj19student(department5_university0_undergraduatestudent130).
 undergraduatestudent(department4_university0_undergraduatestudent267).
 undergraduatestudent(department7_university0_undergraduatestudent308).
