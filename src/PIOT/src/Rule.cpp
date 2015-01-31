@@ -1,6 +1,6 @@
 #include "Rule.h"
 
-Rule::Rule(int i, string s, int w = 1, int pri = 1) {
+Rule::Rule(int i, string s, int w, int pri) {
   this->index = i;
   this->ruleString = s;
   this->weight = w;

@@ -15,23 +15,31 @@
 #include "translation.h"
 #include "result.h"
 #include "query.h"
+#include <time.h>
 
 using namespace std;
 int state = 0;
-string pFilePath = "";
-string pFileName = "test";
-string modelFileName = "result.txt";
+int input_type = 0;
 
-Result compute_model(vector<string> tbox, vector<string> abox) {
+statistics stat;
+string pFilePath = "../examples/lubm/";
+string pFileName = "lubm-dlp";
+//string pFilePath = "../examples/test/";
+//string pFileName = "test";
+string resultPath = "../result/" + pFileName + "/";
+string modelFileName = resultPath + "model_result.txt";
+string statFileName = resultPath + "statistics.txt";
+
+
+Result compute_model(vector<Rule> tbox, vector<string> abox) {
     ofstream outfile;
     outfile.flush();
     outfile.open(pFilePath+pFileName+".lp", ofstream::trunc);
-    vector<string>::iterator i;
-    for (i = tbox.begin(); i != tbox.end(); i++) {
-        outfile << *i << endl;
+    for (vector<Rule>::iterator i = tbox.begin(); i != tbox.end(); i++) {
+        outfile << i->ruleString << endl;
     }
-    for (i = abox.begin(); i != abox.end(); i++) {
-        outfile << *i << endl;
+    for (vector<string>::iterator it = abox.begin(); it != abox.end(); it++) {
+        outfile << *it << endl;
     }
     outfile.close();
 
@@ -41,8 +49,8 @@ Result compute_model(vector<string> tbox, vector<string> abox) {
     strcat(cmdline,".lp | clasp 0 > ");
     strcat(cmdline,modelFileName.c_str());
     state = system(cmdline);
-    for (vector<string>::iterator it = tbox.begin(); it != tbox.end(); it++) {
-        cout << *it << endl;
+    for (vector<Rule>::iterator i = tbox.begin(); i != tbox.end(); i++) {
+        cout << i->ruleString << endl;
     }
     Result result_manager(pFilePath,modelFileName);
     result_manager.reset();
@@ -53,13 +61,13 @@ Result compute_model(vector<string> tbox, vector<string> abox) {
     return result_manager;
 }
 
-void repair(vector<string> tbox, vector<string> abox) {
+void repair(vector<Rule> tbox, vector<string> abox) {
     if (tbox.empty())
         return;
     int count = tbox.size();
     int index = 0;
     bool issat = false;
-    queue< vector<string> > q;
+    queue< vector<Rule> > q;
     q.push(tbox);
     Query query("a d");
     while (!q.empty()) {
@@ -80,7 +88,7 @@ void repair(vector<string> tbox, vector<string> abox) {
         if (state == 2) {
             break;
         }
-        vector<string>::iterator i;
+        vector<Rule>::iterator i;
         count = tbox.size();
         int n_index = 0;
         for (i = tbox.begin(); i != tbox.end(); i++) {
@@ -90,7 +98,7 @@ void repair(vector<string> tbox, vector<string> abox) {
             if (issat) {
                 continue;
             }
-            vector<string> temp = tbox;
+            vector<Rule> temp = tbox;
             tbox.erase(i);
             q.push(tbox);
             tbox = temp;
@@ -100,16 +108,23 @@ void repair(vector<string> tbox, vector<string> abox) {
     }
 }
 
-int main() {
-//    string pFileName = "lubm-dlp";
-    translation tran(pFilePath, pFileName);
-//    tran.trans();
 
-    vector<string> tbox, abox;
-    tran.classify();
+int main() {
+    translation tran(pFilePath, pFileName);
+    stat.input_type = input_type;
+    
+    vector<Rule> tbox;
+    vector<string> abox;
+    
+//    tran.trans(2);
+//    tran.trans(3);
+    clock_t start_time=clock();
+    tran.classify(input_type);
+    clock_t end_time=clock();
+    
     tbox = tran.get_tbox();
     abox = tran.get_abox();
-    repair(tbox, abox);
+//    repair(tbox, abox);
 
     return 0;
 }

@@ -26,3 +26,9 @@
 *.exe
 *.out
 *.app
+
+/src/PIOT/src/cal
+/src/PIOT/examples/lubm/lubm-dlp.lp
+/src/PIOT/result/result.txt
+/src/PIOT/examples/test/test.lp
+
