@@ -27,7 +27,7 @@ void Result::reset() {
 
 vector<Answer> Result::compute_input() {
   ifstream infile;
-  infile.open(pFilePath+modelFileName);
+  infile.open(modelFileName);
   char buff[1024];
   string line;
   bool is_a_set = false;
@@ -96,8 +96,6 @@ int split(const string& str, vector<string>& ret_, string sep = ",")
 }
 
 void Result::access_atom(string line) {
-  char buf[30];
-  bool state = 0;
   Answer ans;
   vector<string> vec;
   split(line, vec, " ");
