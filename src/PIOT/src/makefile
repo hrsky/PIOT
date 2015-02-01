@@ -4,10 +4,10 @@ CLASP_INCLUDE = .
 CCFLAGS = -Wall -O3 -funroll-loops -fomit-frame-pointer -static 
 
 MOBJS = ConsistentSet.o main.o query.o result.o\
-		        Rule.o translation.o
+		        Rule.o translation.o RepairComputer.o
 
 HFILES = answer.h ConsistentSet.h Dict.h query.h result.h\
-		         Rule.h translation.h
+		         Rule.h translation.h RepairComputer.h
 
 .cpp.o :
 	  $(CCC) $(CCFLAGS) -c $<

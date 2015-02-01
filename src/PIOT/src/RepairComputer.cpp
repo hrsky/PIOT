@@ -20,9 +20,9 @@ struct cset {
   cset(vector<int>& s, int l):set(s),layer(l),start(0){}
 };
 
-RepairComputer::RepairComputer(vector<int>& rs):rules(rs){}
+RepairComputer::RepairComputer(vector<int>& rs, map<int,string> &tb, vector<string> &ab, string mfilename):rules(rs),tbox(tb),abox(ab),modelFileName(mfilename){}
 
-RepairComputer::RepairComputer(vector< vector<int> >& prs):prefRules(prs){}
+RepairComputer::RepairComputer(vector< vector<int> >& prs, map<int,string> &tb, vector<string> &ab, string mfilename):prefRules(prs),tbox(tb),abox(ab),modelFileName(mfilename){}
 
 bool RepairComputer::qIncMax(Query& query) {
   bool cut[MAXRULESIZE];
@@ -37,10 +37,10 @@ bool RepairComputer::qIncMax(Query& query) {
 
     if(cut[qi.ri]) continue;
 
-    Result res;
+    Result res(modelFileName);
 
     if(this->isConsistent(qi.set, res)) {
-      if(!query.entails(res)) return false;
+      if(!query.entails(&res)) return false;
       cut[qi.ri] = true;
       continue;
     }
@@ -54,13 +54,14 @@ bool RepairComputer::qIncMax(Query& query) {
       q.push(tqi);
     }
   }
+  return true;
 }
 
 int RepairComputer::bfsPriSubset(Query& query, vector< vector<int> > pset, int priority) {
   if(priority >= (int)pset.size()) {
-    Result res;
+    Result res(modelFileName);
     bool consistent = this->isConsistent(pset, res);
-    if(!query.entails(res)) return -1;
+    if(!query.entails(&res)) return -1;
 
     if(consistent) return 1;
     else return 0;
@@ -123,10 +124,10 @@ bool RepairComputer::qCardMax(Query& query) {
 
     if(qi.layer > depth) break;
 
-    Result res;
+    Result res(modelFileName);
 
     if(this->isConsistent(qi.set, res)) {
-      if(!query.entails(res)) return false;
+      if(!query.entails(&res)) return false;
       depth = qi.layer;
       continue;
     }
@@ -142,14 +143,15 @@ bool RepairComputer::qCardMax(Query& query) {
       q.push(tqi);
     }
   }
+  return true;
 }
 
 int RepairComputer::cardPriMaxSubset(Query& query, vector< vector<int> > pset, int priority) {
   if(priority >= (int)pset.size()) {
-    Result res;
+    Result res(modelFileName);
     bool consistent = this->isConsistent(pset, res);
 
-    if(consistent && !query.entails(res)) return -1;
+    if(consistent && !query.entails(&res)) return -1;
 
     if(consistent) return 1;
     else return 0;
@@ -197,4 +199,74 @@ int RepairComputer::cardPriMaxSubset(Query& query, vector< vector<int> > pset, i
 bool RepairComputer::qPreCardMax(Query& q) {
   if(this->cardPriMaxSubset(q, this->prefRules, 0) == 1) return true;
   else return false;
+}
+
+bool RepairComputer::isConsistent(vector<int>& rules, Result& result) {
+  ofstream outfile;
+  outfile.flush();
+  outfile.open(modelFileName+".lp", ofstream::trunc);
+  int index = 0;
+  for (vector<int>::iterator i = rules.begin(); i != rules.end(); i++) {
+    index = *i;
+    if (index == 0) {
+      continue;
+    }
+    outfile << tbox[index] << endl;
+    cout << tbox[index] << endl;
+  }
+  for (vector<string>::iterator it = abox.begin(); it != abox.end(); it++) {
+    outfile << *it << endl;
+  }
+  outfile.close();
+
+  char cmdline[100];
+  strcpy(cmdline,"gringo ");
+  strcat(cmdline,(modelFileName).c_str());
+  strcat(cmdline,".lp | clasp 0 > ");
+  strcat(cmdline,modelFileName.c_str());
+  system(cmdline);
+    
+  result.reset();
+  result.compute_input();
+    
+  int state = result.isSat();
+  if (state == 1)
+      return true;
+  return false;
+}
+
+bool RepairComputer::isConsistent(vector< vector<int> >& rules, Result& result) {
+  ofstream outfile;
+  outfile.flush();
+  outfile.open(modelFileName+".lp", ofstream::trunc);
+  int index = 0;
+  for (vector< vector<int> >::iterator i = rules.begin(); i != rules.end(); i++) {
+    for (vector<int>::iterator j = i->begin(); j != i->end(); j++) {
+      index = *j;
+      if (index == 0) {
+        continue;
+      }
+      outfile << tbox[index] << endl;
+      cout << tbox[index] << endl;
+    }
+  }
+  for (vector<string>::iterator it = abox.begin(); it != abox.end(); it++) {
+    outfile << *it << endl;
+  }
+  outfile.close();
+    
+  char cmdline[100];
+  strcpy(cmdline,"gringo ");
+  strcat(cmdline,(modelFileName).c_str());
+  strcat(cmdline,".lp | clasp 0 > ");
+  strcat(cmdline,modelFileName.c_str());
+  system(cmdline);
+    
+  result.reset();
+  result.compute_input();
+    
+  int state = result.isSat();
+  if (state == 1)
+    return true;
+  return false;
 }

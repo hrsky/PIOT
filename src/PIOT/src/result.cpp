@@ -13,8 +13,7 @@
 
 using namespace std;
 
-Result::Result(string pFilePath, string modelFileName) {
-  this->pFilePath = pFilePath;
+Result::Result(string modelFileName) {
   this->modelFileName = modelFileName;
   Sat = 0;
   ans_set.clear();

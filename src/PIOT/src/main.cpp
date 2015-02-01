@@ -11,27 +11,29 @@
 #include <cstring>
 #include <stdlib.h>
 #include <fstream>
-#include <queue>
+#include <map>
 #include "translation.h"
 #include "result.h"
 #include "query.h"
+#include "RepairComputer.h"
 #include <time.h>
 
 using namespace std;
 int state = 0;
 int input_type = 0;
 
-string pFilePath = "../examples/lubm/";
-string pFileName = "lubm";
-string resultPath = "../result/lubm/";
-//string pFilePath = "../examples/test/";
-//string pFileName = "test";
-//string resultPath = "../result/test/";
-string modelFileName = resultPath + "model_result.txt";
+//string pFilePath = "../examples/lubm/";
+//string pFileName = "lubm";
+//string resultPath = "../result/lubm/";
+string pFilePath = "../examples/test/";
+string pFileName = "test";
+string resultPath = "../result/test/";
+string modelFileName = resultPath + "model";
 string statFileName = resultPath + "statistics.txt";
 
 statistics stat(statFileName);
 
+/*
 void initial() {
     ifstream infile;
     infile.open(modelFileName);
@@ -127,6 +129,7 @@ void repair(vector<Rule> tbox, vector<string> abox) {
     stat.write_total_statistics();
 }
 
+*/
 
 int main() {
     translation tran(pFilePath, pFileName);
@@ -144,9 +147,49 @@ int main() {
 
     tbox = tran.get_tbox();
     abox = tran.get_abox();
+    
+    map<int, string> tb;
+    
+    if (input_type == 3) {
+        int priority = -111;
+        vector< vector<int> > rules;
+        vector<int> r;
+        for (vector<Rule>::iterator i = tbox.begin(); i != tbox.end(); i++) {
+            for (vector<Rule>::iterator j = i+1; j != tbox.end(); j++) {
+                if (i->priority < j->priority) {
+                    Rule temp(*i);
+                    *i = *j;
+                    *j = temp;
+                }
+            }
+        }
+        for (vector<Rule>::iterator i = tbox.begin(); i != tbox.end(); i++) {
+            if (i->priority != priority && priority != -111) {
+                rules.push_back(r);
+                r.clear();
+                priority = i->priority;
+            }
+            tb.insert(pair<int,string>(tb.size()+1,i->ruleString));
+            r.push_back(tb.size()+1);
+        }
+        rules.push_back(r);
+    } else if (input_type == 0) {
+        vector<int> rules;
+        for (vector<Rule>::iterator i = tbox.begin(); i != tbox.end(); i++) {
+            tb.insert(pair<int,string>(tb.size()+1,i->ruleString));
+            rules.push_back(tb.size()+1);
+        }
+        RepairComputer repair(rules, tb, abox, modelFileName);
+        Query query("a d");
+        if (repair.qIncMax(query)) {
+            cout << "Found!" << endl;
+        } else {
+            cout << "Not Found!" << endl;
+        }
+    }
+    
     stat.tbox_size = tbox.size();
     stat.abox_size = abox.size();
-    repair(tbox, abox);
 
     return 0;
 }

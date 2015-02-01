@@ -14,7 +14,7 @@ using namespace std;
 #define MAX_SET_NUM 1000
 class Result {
 public:
-  Result(string pFilePath, string modelFileName);
+  Result(string modelFileName);
   vector<Answer> compute_input();
   vector<Answer> get_answer();
   void print_ans_set();
@@ -22,7 +22,6 @@ public:
   int isSat();
   void reset();
 private:
-  string pFilePath;
   string modelFileName;
   int Sat;
   vector<Answer> ans_set;

@@ -2,15 +2,16 @@
 #define REPAIRCOMPUTER_H
 
 #include <vector>
+#include <map>
 #include "result.h"
 #include "query.h"
-
+#include <string>
 using namespace std;
 
 class RepairComputer {
   public:
-    RepairComputer(vector<int>&);
-    RepairComputer(vector< vector<int> >&);
+    RepairComputer(vector<int>&, map<int,string> &, vector<string> &, string);
+    RepairComputer(vector< vector<int> >&, map<int,string> &, vector<string> &, string);
 
     void incMax();
     void prefIncMax();
@@ -24,7 +25,10 @@ class RepairComputer {
   private:
     vector<int> rules;
     vector< vector<int> > prefRules;
-
+    map<int,string> tbox;
+    vector<string> abox;
+    string modelFileName;
+    
     bool isConsistent(vector<int>&, Result&);
     bool isConsistent(vector< vector<int> >&, Result&);
 
