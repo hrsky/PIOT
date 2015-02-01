@@ -79,6 +79,8 @@ bool isAbox(string line) {
   bool isabox = true;
   if (line.find("%") == 0) {
     isabox = false;
+  } else if (line.find(".") == line.npos){
+    isabox = false;
   } else {
     isabox = true;
   }
