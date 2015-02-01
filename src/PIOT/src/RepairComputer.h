@@ -13,6 +13,7 @@ class RepairComputer {
   public:
     RepairComputer(vector<int>&, map<int,string> &, vector<string> &, string, statistics*);
     RepairComputer(vector< vector<int> >&, map<int,string> &, vector<string> &, string, statistics*);
+    RepairComputer(map<int, vector<int> >&);
 
     void incMax();
     void prefIncMax();
@@ -23,14 +24,17 @@ class RepairComputer {
     bool qPrefIncMax(Query&);
     bool qCardMax(Query&);
     bool qPreCardMax(Query&);
+    bool qWeightMax(Query&);
   private:
     vector<int> rules;
     vector< vector<int> > prefRules;
+    map<int, vector<int> > weightRules;
+
     map<int,string> tbox;
     vector<string> abox;
     string modelFileName;
     statistics* stat;
-    
+
     bool isConsistent(vector<int>&, Result&);
     bool isConsistent(vector< vector<int> >&, Result&);
 

@@ -25,6 +25,8 @@ RepairComputer::RepairComputer(vector<int>& rs, map<int,string> &tb, vector<stri
 
 RepairComputer::RepairComputer(vector< vector<int> >& prs, map<int,string> &tb, vector<string> &ab, string mfilename, statistics* s):prefRules(prs),tbox(tb),abox(ab),modelFileName(mfilename),stat(s){}
 
+RepairComputer::RepairComputer(map<int, vector<int> >& wrs):weightRules(wrs){}
+
 bool RepairComputer::qIncMax(Query& query) {
   bool cut[MAXRULESIZE];
   memset(cut, false, sizeof(cut));
@@ -35,11 +37,11 @@ bool RepairComputer::qIncMax(Query& query) {
   while(!q.empty()) {
     qset qi = q.front();
     q.pop();
-      
+
     if(cut[qi.ri]) continue;
 
     Result res(modelFileName);
-      
+
     clock_t com_start_time=clock();
     clock_t com_end_time;
     stat->find_count++;
@@ -47,12 +49,12 @@ bool RepairComputer::qIncMax(Query& query) {
       com_end_time=clock();
       stat->compute_time = static_cast<double>(com_end_time-com_start_time)/CLOCKS_PER_SEC;
       stat->write_every_time_stat(1);
-        
+
       if(!query.entails(&res)) return false;
       cut[qi.ri] = true;
       continue;
     }
-      
+
     stat->curr_count = 0;
     for(size_t i = qi.start; i < qi.set.size(); i++) {
       if(qi.set[i] == 0) continue;
@@ -98,13 +100,13 @@ int RepairComputer::bfsPriSubset(Query& query, vector< vector<int> > pset, int p
     if(cut[qi.ri]) continue;
 
     pset[priority] = qi.set;
-      
+
     clock_t com_start_time=clock();
     clock_t com_end_time;
     stat->find_count++;
-      
+
     int scode = bfsPriSubset(query, pset, priority + 1);
-    
+
     com_end_time=clock();
     stat->compute_time = static_cast<double>(com_end_time-com_start_time)/CLOCKS_PER_SEC;
     if (scode == -1 || scode == 1) {
@@ -158,7 +160,7 @@ bool RepairComputer::qCardMax(Query& query) {
     clock_t com_start_time=clock();
     clock_t com_end_time;
     stat->find_count++;
-      
+
     if(this->isConsistent(qi.set, res)) {
       com_end_time = clock();
       stat->compute_time = static_cast<double>(com_end_time-com_start_time)/CLOCKS_PER_SEC;
@@ -185,6 +187,7 @@ bool RepairComputer::qCardMax(Query& query) {
     stat->compute_time = static_cast<double>(com_end_time-com_start_time)/CLOCKS_PER_SEC;
     stat->write_every_time_stat(0);
   }
+
   return true;
 }
 
@@ -216,7 +219,7 @@ int RepairComputer::cardPriMaxSubset(Query& query, vector< vector<int> > pset, i
     clock_t com_start_time=clock();
     clock_t com_end_time;
     stat->find_count++;
-      
+
     int scode = bfsPriSubset(query, pset, priority + 1);
 
     com_end_time=clock();
@@ -281,10 +284,10 @@ bool RepairComputer::isConsistent(vector<int>& rules, Result& result) {
   strcat(cmdline,".lp | clasp 0 > ");
   strcat(cmdline,modelFileName.c_str());
   system(cmdline);
-    
+
   result.reset();
   result.compute_input();
-    
+
   int state = result.isSat();
   if (state == 1)
       return true;
@@ -310,7 +313,7 @@ bool RepairComputer::isConsistent(vector< vector<int> >& rules, Result& result) 
     outfile << *it << endl;
   }
   outfile.close();
-    
+
   char cmdline[100];
   strcpy(cmdline,"gringo ");
   strcat(cmdline,(modelFileName).c_str());
@@ -320,9 +323,64 @@ bool RepairComputer::isConsistent(vector< vector<int> >& rules, Result& result) 
 
   result.reset();
   result.compute_input();
-    
+
   int state = result.isSat();
   if (state == 1)
     return true;
   return false;
+}
+
+struct wset {
+  vector<int> set;
+  int start;
+  int mWeight;
+
+  wset(vector<int>& s, int st):set(s),start(st),mWeight(0){}
+};
+
+bool RepairComputer::qWeightMax(Query& query) {
+  int ruleweights[MAXRULESIZE];
+  memset(ruleweights, 0, sizeof(ruleweights));
+
+  vector<int> rules;
+
+  int is = 0;
+  for(map<int, vector<int> >::iterator it = this->weightRules.begin(); it != this->weightRules.end();
+      it++) {
+    for(size_t i = 0; i < it->second.size(); i++) {
+      rules.push_back(it->second[i]);
+      ruleweights[is + i] = it->first;
+    }
+    is += it->second.size();
+  }
+
+  queue<wset> q;
+  q.push(wset(rules, 0));
+
+  int minMWeight = -1;
+  while(!q.empty()) {
+    wset qi = q.front();
+    q.pop();
+
+    if(minMWeight != -1 && qi.mWeight > minMWeight) continue;
+
+    Result res;
+    bool consistent = this->isConsistent(qi.set, res);
+    if(consistent) {
+      if(!query.entails(&res)) return false;
+      minMWeight = qi.mWeight;
+      continue;
+    }
+
+    for(size_t i = qi.start; i < qi.set.size(); i++) {
+      if(qi.set[i] == 0) continue;
+      wset tqi = qi;
+      tqi.start = i + 1;
+      tqi.mWeight += ruleweights[i];
+      tqi.set[i] = 0;
+      q.push(tqi);
+    }
+  }
+
+  return true;
 }
