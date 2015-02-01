@@ -1,7 +1,7 @@
 .SUFFIXES: .cpp
 CCC = g++
 CLASP_INCLUDE = .
-CCFLAGS = -Wall -O3 -funroll-loops -fomit-frame-pointer -static 
+CCFLAGS = -std=c++11 -Wall -O3 -funroll-loops -fomit-frame-pointer -static
 
 MOBJS = ConsistentSet.o main.o query.o result.o\
 		        Rule.o translation.o RepairComputer.o
@@ -22,4 +22,4 @@ cleanall:
 	  rm *.o cal
 
 clean:
-	  rm *.o 
+	  rm *.o
