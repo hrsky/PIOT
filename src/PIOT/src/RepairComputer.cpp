@@ -24,6 +24,8 @@ RepairComputer::RepairComputer(vector<int>& rs):rules(rs){}
 
 RepairComputer::RepairComputer(vector< vector<int> >& prs):prefRules(prs){}
 
+RepairComputer::RepairComputer(map<int, vector<int> >& wrs):weightRules(wrs){}
+
 bool RepairComputer::qIncMax(Query& query) {
   bool cut[MAXRULESIZE];
   memset(cut, false, sizeof(cut));
@@ -54,6 +56,8 @@ bool RepairComputer::qIncMax(Query& query) {
       q.push(tqi);
     }
   }
+
+  return true;
 }
 
 int RepairComputer::bfsPriSubset(Query& query, vector< vector<int> > pset, int priority) {
@@ -142,6 +146,8 @@ bool RepairComputer::qCardMax(Query& query) {
       q.push(tqi);
     }
   }
+
+  return true;
 }
 
 int RepairComputer::cardPriMaxSubset(Query& query, vector< vector<int> > pset, int priority) {
@@ -197,4 +203,59 @@ int RepairComputer::cardPriMaxSubset(Query& query, vector< vector<int> > pset, i
 bool RepairComputer::qPreCardMax(Query& q) {
   if(this->cardPriMaxSubset(q, this->prefRules, 0) == 1) return true;
   else return false;
+}
+
+struct wset {
+  vector<int> set;
+  int start;
+  int mWeight;
+
+  wset(vector<int>& s, int st):set(s),start(st),mWeight(0){}
+};
+
+bool RepairComputer::qWeightMax(Query& query) {
+  int ruleweights[MAXRULESIZE];
+  memset(ruleweights, 0, sizeof(ruleweights));
+
+  vector<int> rules;
+
+  int is = 0;
+  for(map<int, vector<int> >::iterator it = this->weightRules.begin(); it != this->weightRules.end();
+      it++) {
+    for(size_t i = 0; i < it->second.size(); i++) {
+      rules.push_back(it->second[i]);
+      ruleweights[is + i] = it->first;
+    }
+    is += it->second.size();
+  }
+
+  queue<wset> q;
+  q.push(wset(rules, 0));
+
+  int minMWeight = -1;
+  while(!q.empty()) {
+    wset qi = q.front();
+    q.pop();
+
+    if(minMWeight != -1 && qi.mWeight > minMWeight) continue;
+
+    Result res;
+    bool consistent = this->isConsistent(qi.set, res);
+    if(consistent) {
+      if(!query.entails(&res)) return false;
+      minMWeight = qi.mWeight;
+      continue;
+    }
+
+    for(size_t i = qi.start; i < qi.set.size(); i++) {
+      if(qi.set[i] == 0) continue;
+      wset tqi = qi;
+      tqi.start = i + 1;
+      tqi.mWeight += ruleweights[i];
+      tqi.set[i] = 0;
+      q.push(tqi);
+    }
+  }
+
+  return true;
 }
