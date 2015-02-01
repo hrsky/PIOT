@@ -20,18 +20,19 @@
 
 using namespace std;
 int state = 0;
-int input_type = 0;
+
+//0:IncMax, 1:CardMax, 2:WeightMac, 3:PrefIncMax, 4:PrefCardMax
+int input_type = 3;
 
 //string pFilePath = "../examples/lubm/";
 //string pFileName = "lubm";
 //string resultPath = "../result/lubm/";
 string pFilePath = "../examples/test/";
-string pFileName = "test";
+string pFileName = "test-with-priority";
 string resultPath = "../result/test/";
 string modelFileName = resultPath + "model";
 string statFileName = resultPath + "statistics.txt";
-
-statistics stat(statFileName);
+Query query("b");
 
 /*
 void initial() {
@@ -133,6 +134,8 @@ void repair(vector<Rule> tbox, vector<string> abox) {
 
 int main() {
     translation tran(pFilePath, pFileName);
+    statistics stat(statFileName);
+    
     stat.input_type = input_type;
     
     vector<Rule> tbox;
@@ -142,15 +145,30 @@ int main() {
 //    tran.trans(3);
     clock_t start_time=clock();
     tran.classify(input_type);
-    clock_t end_time=clock();
-    stat.classify_time = static_cast<double>(end_time-start_time)/CLOCKS_PER_SEC;
 
     tbox = tran.get_tbox();
     abox = tran.get_abox();
+    stat.tbox_size = tbox.size();
+    stat.abox_size = abox.size();
     
     map<int, string> tb;
-    
-    if (input_type == 3) {
+    bool isFound = false;
+    if (input_type == 0 || input_type == 1) {
+        vector<int> rules;
+        for (vector<Rule>::iterator i = tbox.begin(); i != tbox.end(); i++) {
+            tb.insert(pair<int,string>(tb.size()+1,i->ruleString));
+            rules.push_back(tb.size()+1);
+        }
+        clock_t end_time=clock();
+        stat.classify_time = static_cast<double>(end_time-start_time)/CLOCKS_PER_SEC;
+        RepairComputer repair(rules, tb, abox, modelFileName,&stat);
+        start_time=clock();
+        if (input_type == 0) {
+            isFound = repair.qIncMax(query);
+        } else {
+            isFound = repair.qCardMax(query);
+        }
+    } else if (input_type == 3 || input_type == 4) {
         int priority = -111;
         vector< vector<int> > rules;
         vector<int> r;
@@ -173,23 +191,27 @@ int main() {
             r.push_back(tb.size()+1);
         }
         rules.push_back(r);
-    } else if (input_type == 0) {
-        vector<int> rules;
-        for (vector<Rule>::iterator i = tbox.begin(); i != tbox.end(); i++) {
-            tb.insert(pair<int,string>(tb.size()+1,i->ruleString));
-            rules.push_back(tb.size()+1);
-        }
-        RepairComputer repair(rules, tb, abox, modelFileName);
-        Query query("a d");
-        if (repair.qIncMax(query)) {
-            cout << "Found!" << endl;
+        clock_t end_time=clock();
+        stat.classify_time = static_cast<double>(end_time-start_time)/CLOCKS_PER_SEC;
+        start_time=clock();
+        
+        RepairComputer repair(rules, tb, abox, modelFileName,&stat);
+        if (input_type == 3) {
+            isFound = repair.qPrefIncMax(query);
         } else {
-            cout << "Not Found!" << endl;
+            isFound = repair.qPreCardMax(query);
         }
     }
     
-    stat.tbox_size = tbox.size();
-    stat.abox_size = abox.size();
-
+    if (isFound) {
+        cout << "Found!" << endl;
+        stat.is_find = true;
+    } else {
+        cout << "Not Found!" << endl;
+    }
+    clock_t end_time=clock();
+    stat.repair_time = static_cast<double>(end_time-start_time)/CLOCKS_PER_SEC;
+    stat.write_total_statistics();
+    
     return 0;
 }

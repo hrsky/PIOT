@@ -10,6 +10,7 @@
 #include <string>
 #include <sstream>
 #include <fstream>
+#include <time.h>
 
 using namespace std;
 
@@ -34,6 +35,8 @@ public:
   int input_type;
   bool is_find;
   ofstream outfile;
+  clock_t start_time;
+  
   statistics(string statFileName) {
     classify_time = 0;
     repair_time = 0;
@@ -44,6 +47,7 @@ public:
     compute_time = 0;
     input_type = 0;
     is_find = false;
+    start_time=clock();
     outfile.open(statFileName, ofstream::trunc);
   }
   void write_total_statistics() {
@@ -91,7 +95,7 @@ public:
     outfile.close();
   }
 
-  void write_every_time_stat(int state, double curr_time) {
+  void write_every_time_stat(int state) {
     stringstream str;
     string temp;
     str << find_count;
@@ -112,8 +116,9 @@ public:
       toWrite += "IsSatisfied: True.\r\n";
     else
       toWrite += "IsSatisfied: False.\r\n";
-      
-    str << curr_time;
+    
+    clock_t end_time=clock();
+    str << static_cast<double>(end_time-start_time)/CLOCKS_PER_SEC;
     str >> temp;
     str.clear();
     toWrite += "The program has been running " + temp + "s.\r\n";

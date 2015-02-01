@@ -1,6 +1,7 @@
 #include "RepairComputer.h"
 #include <cstring>
 #include <queue>
+#include <time.h>
 
 #define MAXRULESIZE 500
 
@@ -20,9 +21,9 @@ struct cset {
   cset(vector<int>& s, int l):set(s),layer(l),start(0){}
 };
 
-RepairComputer::RepairComputer(vector<int>& rs, map<int,string> &tb, vector<string> &ab, string mfilename):rules(rs),tbox(tb),abox(ab),modelFileName(mfilename){}
+RepairComputer::RepairComputer(vector<int>& rs, map<int,string> &tb, vector<string> &ab, string mfilename, statistics* s):rules(rs),tbox(tb),abox(ab),modelFileName(mfilename),stat(s){}
 
-RepairComputer::RepairComputer(vector< vector<int> >& prs, map<int,string> &tb, vector<string> &ab, string mfilename):prefRules(prs),tbox(tb),abox(ab),modelFileName(mfilename){}
+RepairComputer::RepairComputer(vector< vector<int> >& prs, map<int,string> &tb, vector<string> &ab, string mfilename, statistics* s):prefRules(prs),tbox(tb),abox(ab),modelFileName(mfilename),stat(s){}
 
 bool RepairComputer::qIncMax(Query& query) {
   bool cut[MAXRULESIZE];
@@ -34,25 +35,38 @@ bool RepairComputer::qIncMax(Query& query) {
   while(!q.empty()) {
     qset qi = q.front();
     q.pop();
-
+      
     if(cut[qi.ri]) continue;
 
     Result res(modelFileName);
-
+      
+    clock_t com_start_time=clock();
+    clock_t com_end_time;
+    stat->find_count++;
     if(this->isConsistent(qi.set, res)) {
+      com_end_time=clock();
+      stat->compute_time = static_cast<double>(com_end_time-com_start_time)/CLOCKS_PER_SEC;
+      stat->write_every_time_stat(1);
+        
       if(!query.entails(&res)) return false;
       cut[qi.ri] = true;
       continue;
     }
-
+      
+    stat->curr_count = 0;
     for(size_t i = qi.start; i < qi.set.size(); i++) {
       if(qi.set[i] == 0) continue;
       qset tqi = qi;
       tqi.set[i] = 0;
       tqi.ri = i;
       tqi.start = i + 1;
+      stat->curr_count++;
       q.push(tqi);
     }
+    com_end_time=clock();
+    stat->compute_time = static_cast<double>(com_end_time-com_start_time)/CLOCKS_PER_SEC;
+    stat->write_every_time_stat(0);
+
   }
   return true;
 }
@@ -61,7 +75,8 @@ int RepairComputer::bfsPriSubset(Query& query, vector< vector<int> > pset, int p
   if(priority >= (int)pset.size()) {
     Result res(modelFileName);
     bool consistent = this->isConsistent(pset, res);
-    if(!query.entails(&res)) return -1;
+
+    if(consistent && !query.entails(&res)) return -1;
 
     if(consistent) return 1;
     else return 0;
@@ -83,8 +98,20 @@ int RepairComputer::bfsPriSubset(Query& query, vector< vector<int> > pset, int p
     if(cut[qi.ri]) continue;
 
     pset[priority] = qi.set;
-
+      
+    clock_t com_start_time=clock();
+    clock_t com_end_time;
+    stat->find_count++;
+      
     int scode = bfsPriSubset(query, pset, priority + 1);
+    
+    com_end_time=clock();
+    stat->compute_time = static_cast<double>(com_end_time-com_start_time)/CLOCKS_PER_SEC;
+    if (scode == -1 || scode == 1) {
+      stat->write_every_time_stat(1);
+    } else {
+      stat->write_every_time_stat(scode);
+    }
 
     if(scode == -1) return -1;
 
@@ -94,12 +121,14 @@ int RepairComputer::bfsPriSubset(Query& query, vector< vector<int> > pset, int p
       continue;
     }
 
+    stat->curr_count = 0;
     for(size_t i = qi.start; i < qi.set.size(); i++) {
       if(qi.set[i] == 0) continue;
       qset tqi = qi;
       tqi.set[i] = 0;
       tqi.ri = i;
       tqi.start = i + 1;
+      stat->curr_count++;
       q.push(tqi);
     }
   }
@@ -126,7 +155,15 @@ bool RepairComputer::qCardMax(Query& query) {
 
     Result res(modelFileName);
 
+    clock_t com_start_time=clock();
+    clock_t com_end_time;
+    stat->find_count++;
+      
     if(this->isConsistent(qi.set, res)) {
+      com_end_time = clock();
+      stat->compute_time = static_cast<double>(com_end_time-com_start_time)/CLOCKS_PER_SEC;
+      stat->write_every_time_stat(1);
+
       if(!query.entails(&res)) return false;
       depth = qi.layer;
       continue;
@@ -134,14 +171,19 @@ bool RepairComputer::qCardMax(Query& query) {
 
     if(qi.layer >= depth) continue;
 
+    stat->curr_count = 0;
     for(size_t i = qi.start; i < qi.set.size(); i++) {
       if(qi.set[i] == 0) continue;
       cset tqi = qi;
       tqi.set[i] = 0;
       tqi.start = i + 1;
       tqi.layer++;
+      stat->curr_count++;
       q.push(tqi);
     }
+    com_end_time=clock();
+    stat->compute_time = static_cast<double>(com_end_time-com_start_time)/CLOCKS_PER_SEC;
+    stat->write_every_time_stat(0);
   }
   return true;
 }
@@ -171,7 +213,19 @@ int RepairComputer::cardPriMaxSubset(Query& query, vector< vector<int> > pset, i
     if(qi.layer > depth) break;
     pset[priority] = qi.set;
 
+    clock_t com_start_time=clock();
+    clock_t com_end_time;
+    stat->find_count++;
+      
     int scode = bfsPriSubset(query, pset, priority + 1);
+
+    com_end_time=clock();
+    stat->compute_time = static_cast<double>(com_end_time-com_start_time)/CLOCKS_PER_SEC;
+    if (scode == -1 || scode == 1) {
+      stat->write_every_time_stat(1);
+    } else {
+      stat->write_every_time_stat(scode);
+    }
 
     if(scode == -1) return -1;
 
@@ -183,12 +237,14 @@ int RepairComputer::cardPriMaxSubset(Query& query, vector< vector<int> > pset, i
 
     if(qi.layer >= depth) continue;
 
+    stat->curr_count = 0;
     for(size_t i = qi.start; i < qi.set.size(); i++) {
       if(qi.set[i] == 0) continue;
       cset tqi = qi;
       tqi.set[i] = 0;
       tqi.layer++;
       tqi.start = i + 1;
+      stat->curr_count++;
       q.push(tqi);
     }
   }
@@ -261,7 +317,7 @@ bool RepairComputer::isConsistent(vector< vector<int> >& rules, Result& result) 
   strcat(cmdline,".lp | clasp 0 > ");
   strcat(cmdline,modelFileName.c_str());
   system(cmdline);
-    
+
   result.reset();
   result.compute_input();
     
