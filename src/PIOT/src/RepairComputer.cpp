@@ -343,6 +343,7 @@ bool RepairComputer::qWeightMax(Query& query) {
   memset(ruleweights, 0, sizeof(ruleweights));
 
   vector<int> rules;
+  vector<int> weightSize;
 
   int is = 0;
   for(map<int, vector<int> >::iterator it = this->weightRules.begin(); it != this->weightRules.end();
@@ -351,35 +352,45 @@ bool RepairComputer::qWeightMax(Query& query) {
       rules.push_back(it->second[i]);
       ruleweights[is + i] = it->first;
     }
+    if(it != this->weightRules.begin())
+      weightSize.push_back(weightSize.back() + it->second.size());
+    else
+      weightSize.push_back(it->second.size());
+
     is += it->second.size();
   }
 
-  queue<wset> q;
-  q.push(wset(rules, 0));
+  for(size_t st = 0; st < weightSize.size(); st++) {
+    queue<wset> q;
+    q.push(wset(rules, 0));
 
-  int minMWeight = -1;
-  while(!q.empty()) {
-    wset qi = q.front();
-    q.pop();
+    bool hasConsistent = false;
+    int minMWeight = -1;
+    while(!q.empty()) {
+      wset qi = q.front();
+      q.pop();
 
-    if(minMWeight != -1 && qi.mWeight > minMWeight) continue;
+      if(minMWeight != -1 && qi.mWeight > minMWeight) continue;
 
-    Result res;
-    bool consistent = this->isConsistent(qi.set, res);
-    if(consistent) {
-      if(!query.entails(&res)) return false;
-      minMWeight = qi.mWeight;
-      continue;
+      Result res;
+      bool consistent = this->isConsistent(qi.set, res);
+      if(consistent) {
+        if(!query.entails(&res)) return false;
+        minMWeight = qi.mWeight;
+        hasConsistent = true;
+        continue;
+      }
+
+      for(int i = qi.start; i < weightSize[st]; i++) {
+        if(qi.set[i] == 0) continue;
+        wset tqi = qi;
+        tqi.start = i + 1;
+        tqi.mWeight += ruleweights[i];
+        tqi.set[i] = 0;
+        q.push(tqi);
+      }
     }
-
-    for(size_t i = qi.start; i < qi.set.size(); i++) {
-      if(qi.set[i] == 0) continue;
-      wset tqi = qi;
-      tqi.start = i + 1;
-      tqi.mWeight += ruleweights[i];
-      tqi.set[i] = 0;
-      q.push(tqi);
-    }
+    if(hasConsistent) break;
   }
 
   return true;
