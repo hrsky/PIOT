@@ -5,7 +5,7 @@ External Seed=0 Interal Seed=0
 
 CLASS INSTANCE# TOTAL-SO-FAR
 ----------------------------
-University 258 258
+University 271 271
 Department 1 1
 Faculty 0 0
 Professor 0 0
@@ -18,37 +18,37 @@ UndergraduateStudent 532 532
 GraduateStudent 146 146
 TeachingAssistant 29 29
 ResearchAssistant 39 39
-Course 62 62
-GraduateCourse 58 58
-Publication 458 458
+Course 61 61
+GraduateCourse 57 57
+Publication 470 470
 Chair 0 0
 Research 0 0
 ResearchGroup 10 10
 
-TOTAL: 1634
-TOTAL SO FAR: 1634
+TOTAL: 1657
+TOTAL SO FAR: 1657
 
 PROPERTY INSTANCE# TOTAL-SO-FAR
 -------------------------------
-name 1299 1299
-takesCourse 1782 1782
-teacherOf 113 113
-undergraduateDegreeFrom 180 180
-mastersDegreeFrom 38 38
-doctoralDegreeFrom 38 38
-advisor 243 243
-memberOf 641 641
-publicationAuthor 835 835
+name 1309 1309
+takesCourse 1869 1869
+teacherOf 118 118
+undergraduateDegreeFrom 187 187
+mastersDegreeFrom 41 41
+doctoralDegreeFrom 41 41
+advisor 241 241
+memberOf 678 678
+publicationAuthor 839 839
 headOf 1 1
 teachingAssistantOf 29 29
 researchInterest 34 34
 emailAddress 719 719
 telephone 719 719
 subOrganizationOf 11 11
-worksFor 38 38
+worksFor 41 41
 
-TOTAL: 6720
-TOTAL SO FAR: 6720
+TOTAL: 6877
+TOTAL SO FAR: 6877
 
 ---------------------------------------------------------------
 /Users/horace/Downloads/EUGen_1)/lubm/../lubm/University0_1.owl
@@ -57,50 +57,50 @@ External Seed=0 Interal Seed=0
 
 CLASS INSTANCE# TOTAL-SO-FAR
 ----------------------------
-University 228 486
+University 211 482
 Department 1 2
 Faculty 0 0
 Professor 0 0
-FullProfessor 7 17
-AssociateProfessor 14 28
-AssistantProfessor 11 21
+FullProfessor 10 20
+AssociateProfessor 10 24
+AssistantProfessor 9 19
 Lecturer 5 12
 Student 0 0
-UndergraduateStudent 337 869
-GraduateStudent 127 273
-TeachingAssistant 27 56
-ResearchAssistant 34 73
-Course 51 113
-GraduateCourse 52 110
-Publication 405 863
+UndergraduateStudent 347 879
+GraduateStudent 108 254
+TeachingAssistant 26 55
+ResearchAssistant 35 74
+Course 44 105
+GraduateCourse 51 108
+Publication 393 863
 Chair 0 0
 Research 0 0
-ResearchGroup 14 24
+ResearchGroup 17 27
 
-TOTAL: 1313
-TOTAL SO FAR: 2947
+TOTAL: 1267
+TOTAL SO FAR: 2924
 
 PROPERTY INSTANCE# TOTAL-SO-FAR
 -------------------------------
-name 1010 2309
-takesCourse 1226 3008
-teacherOf 102 215
-undergraduateDegreeFrom 154 334
-mastersDegreeFrom 37 75
-doctoralDegreeFrom 36 74
-advisor 188 431
-memberOf 447 1088
-publicationAuthor 717 1552
+name 978 2287
+takesCourse 1257 3126
+teacherOf 95 213
+undergraduateDegreeFrom 142 329
+mastersDegreeFrom 34 75
+doctoralDegreeFrom 34 75
+advisor 173 414
+memberOf 455 1133
+publicationAuthor 640 1479
 headOf 1 2
-teachingAssistantOf 27 56
-researchInterest 32 66
-emailAddress 501 1220
-telephone 501 1220
-subOrganizationOf 15 26
-worksFor 34 72
+teachingAssistantOf 26 55
+researchInterest 29 63
+emailAddress 489 1208
+telephone 489 1208
+subOrganizationOf 18 29
+worksFor 34 75
 
-TOTAL: 5028
-TOTAL SO FAR: 11748
+TOTAL: 4894
+TOTAL SO FAR: 11771
 
 ---------------------------------------------------------------
 /Users/horace/Downloads/EUGen_1)/lubm/../lubm/University0_2.owl
@@ -109,50 +109,50 @@ External Seed=0 Interal Seed=0
 
 CLASS INSTANCE# TOTAL-SO-FAR
 ----------------------------
-University 249 735
+University 226 708
 Department 1 3
 Faculty 0 0
 Professor 0 0
-FullProfessor 10 27
-AssociateProfessor 12 40
-AssistantProfessor 8 29
-Lecturer 7 19
+FullProfessor 8 28
+AssociateProfessor 11 35
+AssistantProfessor 11 30
+Lecturer 5 17
 Student 0 0
-UndergraduateStudent 362 1231
-GraduateStudent 146 419
-TeachingAssistant 33 89
-ResearchAssistant 45 118
-Course 54 167
-GraduateCourse 59 169
-Publication 403 1266
+UndergraduateStudent 290 1169
+GraduateStudent 120 374
+TeachingAssistant 30 85
+ResearchAssistant 32 106
+Course 52 157
+GraduateCourse 53 161
+Publication 407 1270
 Chair 0 0
 Research 0 0
-ResearchGroup 10 34
+ResearchGroup 15 42
 
-TOTAL: 1399
-TOTAL SO FAR: 4346
+TOTAL: 1261
+TOTAL SO FAR: 4185
 
 PROPERTY INSTANCE# TOTAL-SO-FAR
 -------------------------------
-name 1062 3371
-takesCourse 1275 4283
-teacherOf 110 325
-undergraduateDegreeFrom 178 512
+name 958 3245
+takesCourse 1090 4216
+teacherOf 105 318
+undergraduateDegreeFrom 155 484
 mastersDegreeFrom 35 110
-doctoralDegreeFrom 35 109
-advisor 208 639
-memberOf 485 1573
-publicationAuthor 748 2300
+doctoralDegreeFrom 35 110
+advisor 176 590
+memberOf 410 1543
+publicationAuthor 711 2190
 headOf 1 3
-teachingAssistantOf 33 89
-researchInterest 30 96
-emailAddress 545 1765
-telephone 545 1765
-subOrganizationOf 11 37
-worksFor 37 109
+teachingAssistantOf 30 85
+researchInterest 30 93
+emailAddress 445 1653
+telephone 445 1653
+subOrganizationOf 16 45
+worksFor 35 110
 
-TOTAL: 5338
-TOTAL SO FAR: 17086
+TOTAL: 4677
+TOTAL SO FAR: 16448
 
 ---------------------------------------------------------------
 /Users/horace/Downloads/EUGen_1)/lubm/../lubm/University0_3.owl
@@ -161,50 +161,50 @@ External Seed=0 Interal Seed=0
 
 CLASS INSTANCE# TOTAL-SO-FAR
 ----------------------------
-University 227 962
+University 231 939
 Department 1 4
 Faculty 0 0
 Professor 0 0
-FullProfessor 9 36
-AssociateProfessor 10 50
-AssistantProfessor 10 39
-Lecturer 5 24
+FullProfessor 8 36
+AssociateProfessor 13 48
+AssistantProfessor 9 39
+Lecturer 6 23
 Student 0 0
-UndergraduateStudent 377 1608
-GraduateStudent 133 552
-TeachingAssistant 28 117
-ResearchAssistant 38 156
-Course 47 214
-GraduateCourse 55 224
-Publication 350 1616
+UndergraduateStudent 335 1504
+GraduateStudent 122 496
+TeachingAssistant 24 109
+ResearchAssistant 38 144
+Course 52 209
+GraduateCourse 50 211
+Publication 410 1680
 Chair 0 0
 Research 0 0
-ResearchGroup 18 52
+ResearchGroup 16 58
 
-TOTAL: 1308
-TOTAL SO FAR: 5654
+TOTAL: 1315
+TOTAL SO FAR: 5500
 
 PROPERTY INSTANCE# TOTAL-SO-FAR
 -------------------------------
-name 997 4368
-takesCourse 1328 5611
-teacherOf 99 424
-undergraduateDegreeFrom 160 672
-mastersDegreeFrom 33 143
-doctoralDegreeFrom 33 142
-advisor 208 847
-memberOf 479 2052
-publicationAuthor 692 2992
+name 1006 4251
+takesCourse 1245 5461
+teacherOf 102 420
+undergraduateDegreeFrom 158 642
+mastersDegreeFrom 36 146
+doctoralDegreeFrom 36 146
+advisor 187 777
+memberOf 457 2000
+publicationAuthor 685 2875
 headOf 1 4
-teachingAssistantOf 28 117
-researchInterest 29 125
-emailAddress 544 2309
-telephone 544 2309
-subOrganizationOf 19 56
-worksFor 33 142
+teachingAssistantOf 24 109
+researchInterest 30 123
+emailAddress 493 2146
+telephone 493 2146
+subOrganizationOf 17 62
+worksFor 36 146
 
-TOTAL: 5227
-TOTAL SO FAR: 22313
+TOTAL: 5006
+TOTAL SO FAR: 21454
 
 ---------------------------------------------------------------
 /Users/horace/Downloads/EUGen_1)/lubm/../lubm/University0_4.owl
@@ -213,50 +213,50 @@ External Seed=0 Interal Seed=0
 
 CLASS INSTANCE# TOTAL-SO-FAR
 ----------------------------
-University 240 1202
+University 273 1212
 Department 1 5
 Faculty 0 0
 Professor 0 0
 FullProfessor 10 46
-AssociateProfessor 14 64
-AssistantProfessor 9 48
-Lecturer 6 30
+AssociateProfessor 11 59
+AssistantProfessor 11 50
+Lecturer 7 30
 Student 0 0
-UndergraduateStudent 498 2106
-GraduateStudent 132 684
-TeachingAssistant 28 145
-ResearchAssistant 37 193
-Course 58 272
-GraduateCourse 57 281
-Publication 447 2063
+UndergraduateStudent 328 1832
+GraduateStudent 155 651
+TeachingAssistant 35 144
+ResearchAssistant 49 193
+Course 59 268
+GraduateCourse 59 270
+Publication 428 2108
 Chair 0 0
 Research 0 0
-ResearchGroup 11 63
+ResearchGroup 12 70
 
-TOTAL: 1548
-TOTAL SO FAR: 7202
+TOTAL: 1438
+TOTAL SO FAR: 6938
 
 PROPERTY INSTANCE# TOTAL-SO-FAR
 -------------------------------
-name 1232 5600
-takesCourse 1640 7251
-teacherOf 112 536
-undergraduateDegreeFrom 166 838
-mastersDegreeFrom 35 178
-doctoralDegreeFrom 38 180
-advisor 224 1071
-memberOf 599 2651
-publicationAuthor 781 3773
+name 1069 5320
+takesCourse 1281 6742
+teacherOf 118 538
+undergraduateDegreeFrom 194 836
+mastersDegreeFrom 39 185
+doctoralDegreeFrom 39 185
+advisor 221 998
+memberOf 483 2483
+publicationAuthor 823 3698
 headOf 1 5
-teachingAssistantOf 28 145
-researchInterest 33 158
-emailAddress 669 2978
-telephone 669 2978
-subOrganizationOf 12 68
-worksFor 36 178
+teachingAssistantOf 35 144
+researchInterest 32 155
+emailAddress 522 2668
+telephone 522 2668
+subOrganizationOf 13 75
+worksFor 39 185
 
-TOTAL: 6275
-TOTAL SO FAR: 28588
+TOTAL: 5431
+TOTAL SO FAR: 26885
 
 ---------------------------------------------------------------
 /Users/horace/Downloads/EUGen_1)/lubm/../lubm/University0_5.owl
@@ -265,50 +265,50 @@ External Seed=0 Interal Seed=0
 
 CLASS INSTANCE# TOTAL-SO-FAR
 ----------------------------
-University 213 1415
+University 211 1423
 Department 1 6
 Faculty 0 0
 Professor 0 0
-FullProfessor 7 53
-AssociateProfessor 12 76
-AssistantProfessor 10 58
-Lecturer 6 36
+FullProfessor 8 54
+AssociateProfessor 10 69
+AssistantProfessor 8 58
+Lecturer 5 35
 Student 0 0
-UndergraduateStudent 403 2509
-GraduateStudent 114 798
-TeachingAssistant 24 169
-ResearchAssistant 32 225
-Course 54 326
-GraduateCourse 54 335
-Publication 375 2438
+UndergraduateStudent 297 2129
+GraduateStudent 117 768
+TeachingAssistant 26 170
+ResearchAssistant 38 231
+Course 48 316
+GraduateCourse 51 321
+Publication 369 2477
 Chair 0 0
 Research 0 0
-ResearchGroup 11 74
+ResearchGroup 14 84
 
-TOTAL: 1316
-TOTAL SO FAR: 8518
+TOTAL: 1203
+TOTAL SO FAR: 8141
 
 PROPERTY INSTANCE# TOTAL-SO-FAR
 -------------------------------
-name 1036 6636
-takesCourse 1348 8599
-teacherOf 102 638
-undergraduateDegreeFrom 145 983
-mastersDegreeFrom 34 212
-doctoralDegreeFrom 33 213
-advisor 190 1261
-memberOf 483 3134
-publicationAuthor 660 4433
+name 914 6234
+takesCourse 1128 7870
+teacherOf 99 637
+undergraduateDegreeFrom 148 984
+mastersDegreeFrom 31 216
+doctoralDegreeFrom 31 216
+advisor 180 1178
+memberOf 414 2897
+publicationAuthor 648 4346
 headOf 1 6
-teachingAssistantOf 24 169
-researchInterest 29 187
-emailAddress 552 3530
-telephone 552 3530
-subOrganizationOf 12 80
-worksFor 34 212
+teachingAssistantOf 26 170
+researchInterest 26 181
+emailAddress 445 3113
+telephone 445 3113
+subOrganizationOf 15 90
+worksFor 31 216
 
-TOTAL: 5235
-TOTAL SO FAR: 33823
+TOTAL: 4582
+TOTAL SO FAR: 31467
 
 ---------------------------------------------------------------
 /Users/horace/Downloads/EUGen_1)/lubm/../lubm/University0_6.owl
@@ -317,50 +317,50 @@ External Seed=0 Interal Seed=0
 
 CLASS INSTANCE# TOTAL-SO-FAR
 ----------------------------
-University 198 1613
+University 239 1662
 Department 1 7
 Faculty 0 0
 Professor 0 0
-FullProfessor 7 60
-AssociateProfessor 13 89
-AssistantProfessor 8 66
-Lecturer 5 41
+FullProfessor 9 63
+AssociateProfessor 11 80
+AssistantProfessor 11 69
+Lecturer 6 41
 Student 0 0
-UndergraduateStudent 331 2840
-GraduateStudent 112 910
-TeachingAssistant 24 193
-ResearchAssistant 28 253
-Course 53 379
-GraduateCourse 52 387
-Publication 377 2815
+UndergraduateStudent 378 2507
+GraduateStudent 127 895
+TeachingAssistant 26 196
+ResearchAssistant 37 268
+Course 62 378
+GraduateCourse 59 380
+Publication 408 2885
 Chair 0 0
 Research 0 0
-ResearchGroup 16 90
+ResearchGroup 12 96
 
-TOTAL: 1225
-TOTAL SO FAR: 9743
+TOTAL: 1386
+TOTAL SO FAR: 9527
 
 PROPERTY INSTANCE# TOTAL-SO-FAR
 -------------------------------
-name 959 7595
-takesCourse 1128 9727
-teacherOf 98 736
-undergraduateDegreeFrom 139 1122
-mastersDegreeFrom 31 243
-doctoralDegreeFrom 27 240
-advisor 164 1425
-memberOf 427 3561
-publicationAuthor 662 5095
+name 1072 7306
+takesCourse 1408 9278
+teacherOf 121 758
+undergraduateDegreeFrom 164 1148
+mastersDegreeFrom 37 253
+doctoralDegreeFrom 37 253
+advisor 204 1382
+memberOf 505 3402
+publicationAuthor 721 5067
 headOf 1 7
-teachingAssistantOf 24 193
-researchInterest 28 215
-emailAddress 476 4006
-telephone 476 4006
-subOrganizationOf 17 97
-worksFor 32 244
+teachingAssistantOf 26 196
+researchInterest 31 212
+emailAddress 542 3655
+telephone 542 3655
+subOrganizationOf 13 103
+worksFor 37 253
 
-TOTAL: 4689
-TOTAL SO FAR: 38512
+TOTAL: 5461
+TOTAL SO FAR: 36928
 
 ---------------------------------------------------------------
 /Users/horace/Downloads/EUGen_1)/lubm/../lubm/University0_7.owl
@@ -369,50 +369,50 @@ External Seed=0 Interal Seed=0
 
 CLASS INSTANCE# TOTAL-SO-FAR
 ----------------------------
-University 223 1836
+University 253 1915
 Department 1 8
 Faculty 0 0
 Professor 0 0
-FullProfessor 8 68
-AssociateProfessor 13 102
-AssistantProfessor 9 75
-Lecturer 5 46
+FullProfessor 8 71
+AssociateProfessor 11 91
+AssistantProfessor 11 80
+Lecturer 7 48
 Student 0 0
-UndergraduateStudent 406 3246
-GraduateStudent 129 1039
-TeachingAssistant 29 222
-ResearchAssistant 32 285
-Course 55 434
-GraduateCourse 53 440
-Publication 389 3204
+UndergraduateStudent 327 2834
+GraduateStudent 141 1036
+TeachingAssistant 32 228
+ResearchAssistant 40 308
+Course 54 432
+GraduateCourse 59 439
+Publication 406 3291
 Chair 0 0
 Research 0 0
-ResearchGroup 12 102
+ResearchGroup 15 111
 
-TOTAL: 1364
-TOTAL SO FAR: 11107
+TOTAL: 1365
+TOTAL SO FAR: 10892
 
 PROPERTY INSTANCE# TOTAL-SO-FAR
 -------------------------------
-name 1068 8663
-takesCourse 1394 11121
-teacherOf 105 841
-undergraduateDegreeFrom 155 1277
-mastersDegreeFrom 33 276
-doctoralDegreeFrom 34 274
-advisor 203 1628
-memberOf 511 4072
-publicationAuthor 720 5815
+name 1025 8331
+takesCourse 1274 10552
+teacherOf 113 871
+undergraduateDegreeFrom 178 1326
+mastersDegreeFrom 37 290
+doctoralDegreeFrom 37 290
+advisor 220 1602
+memberOf 468 3870
+publicationAuthor 750 5817
 headOf 1 8
-teachingAssistantOf 29 222
-researchInterest 30 245
-emailAddress 570 4576
-telephone 570 4576
-subOrganizationOf 13 110
-worksFor 32 276
+teachingAssistantOf 32 228
+researchInterest 30 242
+emailAddress 505 4160
+telephone 505 4160
+subOrganizationOf 16 119
+worksFor 37 290
 
-TOTAL: 5468
-TOTAL SO FAR: 43980
+TOTAL: 5228
+TOTAL SO FAR: 42156
 
 ---------------------------------------------------------------
 /Users/horace/Downloads/EUGen_1)/lubm/../lubm/University0_8.owl
@@ -421,50 +421,50 @@ External Seed=0 Interal Seed=0
 
 CLASS INSTANCE# TOTAL-SO-FAR
 ----------------------------
-University 216 2052
+University 240 2155
 Department 1 9
 Faculty 0 0
 Professor 0 0
-FullProfessor 8 76
-AssociateProfessor 13 115
-AssistantProfessor 8 83
-Lecturer 5 51
+FullProfessor 9 80
+AssociateProfessor 10 101
+AssistantProfessor 10 90
+Lecturer 6 54
 Student 0 0
-UndergraduateStudent 475 3721
-GraduateStudent 129 1168
-TeachingAssistant 25 247
-ResearchAssistant 36 321
-Course 53 487
-GraduateCourse 52 492
-Publication 378 3582
+UndergraduateStudent 350 3184
+GraduateStudent 134 1170
+TeachingAssistant 29 257
+ResearchAssistant 35 343
+Course 52 484
+GraduateCourse 52 491
+Publication 384 3675
 Chair 0 0
 Research 0 0
-ResearchGroup 12 114
+ResearchGroup 17 128
 
-TOTAL: 1411
-TOTAL SO FAR: 12518
+TOTAL: 1329
+TOTAL SO FAR: 12221
 
 PROPERTY INSTANCE# TOTAL-SO-FAR
 -------------------------------
-name 1122 9785
-takesCourse 1606 12727
-teacherOf 103 944
-undergraduateDegreeFrom 151 1428
-mastersDegreeFrom 32 308
-doctoralDegreeFrom 32 306
-advisor 226 1854
-memberOf 560 4632
-publicationAuthor 714 6529
+name 1008 9339
+takesCourse 1324 11876
+teacherOf 104 975
+undergraduateDegreeFrom 169 1495
+mastersDegreeFrom 35 325
+doctoralDegreeFrom 35 325
+advisor 204 1806
+memberOf 484 4354
+publicationAuthor 774 6591
 headOf 1 9
-teachingAssistantOf 25 247
-researchInterest 29 274
-emailAddress 638 5214
-telephone 638 5214
-subOrganizationOf 13 123
-worksFor 32 308
+teachingAssistantOf 29 257
+researchInterest 29 271
+emailAddress 519 4679
+telephone 519 4679
+subOrganizationOf 18 137
+worksFor 35 325
 
-TOTAL: 5922
-TOTAL SO FAR: 49902
+TOTAL: 5287
+TOTAL SO FAR: 47443
 
 ---------------------------------------------------------------
 /Users/horace/Downloads/EUGen_1)/lubm/../lubm/University0_9.owl
@@ -473,50 +473,50 @@ External Seed=0 Interal Seed=0
 
 CLASS INSTANCE# TOTAL-SO-FAR
 ----------------------------
-University 210 2262
+University 267 2422
 Department 1 10
 Faculty 0 0
 Professor 0 0
-FullProfessor 9 85
-AssociateProfessor 11 126
-AssistantProfessor 8 91
-Lecturer 5 56
+FullProfessor 10 90
+AssociateProfessor 13 114
+AssistantProfessor 9 99
+Lecturer 6 60
 Student 0 0
-UndergraduateStudent 403 4124
-GraduateStudent 124 1292
-TeachingAssistant 30 277
-ResearchAssistant 37 358
-Course 46 533
-GraduateCourse 50 542
-Publication 403 3985
+UndergraduateStudent 523 3707
+GraduateStudent 152 1322
+TeachingAssistant 37 294
+ResearchAssistant 39 382
+Course 54 538
+GraduateCourse 62 553
+Publication 437 4112
 Chair 0 0
 Research 0 0
-ResearchGroup 19 133
+ResearchGroup 15 143
 
-TOTAL: 1356
-TOTAL SO FAR: 13874
+TOTAL: 1625
+TOTAL SO FAR: 13846
 
 PROPERTY INSTANCE# TOTAL-SO-FAR
 -------------------------------
-name 1060 10845
-takesCourse 1369 14096
-teacherOf 93 1037
-undergraduateDegreeFrom 146 1574
-mastersDegreeFrom 33 341
-doctoralDegreeFrom 30 336
-advisor 190 2044
-memberOf 497 5129
-publicationAuthor 691 7220
+name 1267 10606
+takesCourse 1845 13721
+teacherOf 116 1091
+undergraduateDegreeFrom 190 1685
+mastersDegreeFrom 38 363
+doctoralDegreeFrom 38 363
+advisor 257 2063
+memberOf 675 5029
+publicationAuthor 762 7353
 headOf 1 10
-teachingAssistantOf 30 277
-researchInterest 28 302
-emailAddress 560 5774
-telephone 560 5774
-subOrganizationOf 20 143
-worksFor 31 339
+teachingAssistantOf 37 294
+researchInterest 32 303
+emailAddress 713 5392
+telephone 713 5392
+subOrganizationOf 16 153
+worksFor 38 363
 
-TOTAL: 5339
-TOTAL SO FAR: 55241
+TOTAL: 6738
+TOTAL SO FAR: 54181
 
 ----------------------------------------------------------------
 /Users/horace/Downloads/EUGen_1)/lubm/../lubm/University0_10.owl
@@ -525,50 +525,50 @@ External Seed=0 Interal Seed=0
 
 CLASS INSTANCE# TOTAL-SO-FAR
 ----------------------------
-University 236 2498
+University 257 2679
 Department 1 11
 Faculty 0 0
 Professor 0 0
-FullProfessor 10 95
-AssociateProfessor 12 138
-AssistantProfessor 9 100
-Lecturer 7 63
+FullProfessor 8 98
+AssociateProfessor 14 128
+AssistantProfessor 9 108
+Lecturer 6 66
 Student 0 0
-UndergraduateStudent 405 4529
-GraduateStudent 132 1424
-TeachingAssistant 30 307
-ResearchAssistant 44 402
-Course 54 587
-GraduateCourse 56 598
-Publication 444 4429
+UndergraduateStudent 411 4118
+GraduateStudent 145 1467
+TeachingAssistant 29 323
+ResearchAssistant 43 425
+Course 51 589
+GraduateCourse 61 614
+Publication 425 4537
 Chair 0 0
 Research 0 0
-ResearchGroup 16 149
+ResearchGroup 10 153
 
-TOTAL: 1456
-TOTAL SO FAR: 15330
+TOTAL: 1470
+TOTAL SO FAR: 15316
 
 PROPERTY INSTANCE# TOTAL-SO-FAR
 -------------------------------
-name 1130 11975
-takesCourse 1416 15512
-teacherOf 106 1143
-undergraduateDegreeFrom 162 1736
-mastersDegreeFrom 36 377
-doctoralDegreeFrom 37 373
-advisor 198 2242
-memberOf 512 5641
-publicationAuthor 777 7997
+name 1131 11737
+takesCourse 1525 15246
+teacherOf 112 1203
+undergraduateDegreeFrom 182 1867
+mastersDegreeFrom 37 400
+doctoralDegreeFrom 37 400
+advisor 224 2287
+memberOf 556 5585
+publicationAuthor 827 8180
 headOf 1 11
-teachingAssistantOf 30 307
-researchInterest 31 333
-emailAddress 575 6349
-telephone 575 6349
-subOrganizationOf 17 160
-worksFor 36 375
+teachingAssistantOf 29 323
+researchInterest 31 334
+emailAddress 593 5985
+telephone 593 5985
+subOrganizationOf 11 164
+worksFor 37 400
 
-TOTAL: 5639
-TOTAL SO FAR: 60880
+TOTAL: 5926
+TOTAL SO FAR: 60107
 
 ----------------------------------------------------------------
 /Users/horace/Downloads/EUGen_1)/lubm/../lubm/University0_11.owl
@@ -577,50 +577,50 @@ External Seed=0 Interal Seed=0
 
 CLASS INSTANCE# TOTAL-SO-FAR
 ----------------------------
-University 209 2707
+University 257 2936
 Department 1 12
 Faculty 0 0
 Professor 0 0
-FullProfessor 7 102
-AssociateProfessor 13 151
-AssistantProfessor 8 108
-Lecturer 7 70
+FullProfessor 7 105
+AssociateProfessor 14 142
+AssistantProfessor 9 117
+Lecturer 7 73
 Student 0 0
-UndergraduateStudent 288 4817
-GraduateStudent 117 1541
-TeachingAssistant 25 332
-ResearchAssistant 31 433
-Course 54 641
-GraduateCourse 51 649
-Publication 376 4805
+UndergraduateStudent 467 4585
+GraduateStudent 145 1612
+TeachingAssistant 36 359
+ResearchAssistant 43 468
+Course 59 648
+GraduateCourse 56 670
+Publication 401 4938
 Chair 0 0
 Research 0 0
-ResearchGroup 19 168
+ResearchGroup 14 167
 
-TOTAL: 1206
-TOTAL SO FAR: 16536
+TOTAL: 1516
+TOTAL SO FAR: 16832
 
 PROPERTY INSTANCE# TOTAL-SO-FAR
 -------------------------------
-name 922 12897
-takesCourse 1032 16544
-teacherOf 102 1245
-undergraduateDegreeFrom 144 1880
-mastersDegreeFrom 32 409
-doctoralDegreeFrom 32 405
-advisor 169 2411
-memberOf 374 6015
-publicationAuthor 680 8677
+name 1166 12903
+takesCourse 1667 16913
+teacherOf 115 1318
+undergraduateDegreeFrom 182 2049
+mastersDegreeFrom 37 437
+doctoralDegreeFrom 37 437
+advisor 250 2537
+memberOf 612 6197
+publicationAuthor 778 8958
 headOf 1 12
-teachingAssistantOf 25 332
-researchInterest 28 361
-emailAddress 440 6789
-telephone 440 6789
-subOrganizationOf 20 180
-worksFor 32 407
+teachingAssistantOf 36 359
+researchInterest 30 364
+emailAddress 649 6634
+telephone 649 6634
+subOrganizationOf 15 179
+worksFor 37 437
 
-TOTAL: 4473
-TOTAL SO FAR: 65353
+TOTAL: 6261
+TOTAL SO FAR: 66368
 
 ----------------------------------------------------------------
 /Users/horace/Downloads/EUGen_1)/lubm/../lubm/University0_12.owl
@@ -629,50 +629,50 @@ External Seed=0 Interal Seed=0
 
 CLASS INSTANCE# TOTAL-SO-FAR
 ----------------------------
-University 209 2916
+University 249 3185
 Department 1 13
 Faculty 0 0
 Professor 0 0
-FullProfessor 9 111
-AssociateProfessor 10 161
-AssistantProfessor 9 117
-Lecturer 5 75
+FullProfessor 8 113
+AssociateProfessor 12 154
+AssistantProfessor 11 128
+Lecturer 7 80
 Student 0 0
-UndergraduateStudent 332 5149
-GraduateStudent 120 1661
-TeachingAssistant 29 361
-ResearchAssistant 31 464
-Course 46 687
-GraduateCourse 48 697
-Publication 359 5164
+UndergraduateStudent 496 5081
+GraduateStudent 134 1746
+TeachingAssistant 29 388
+ResearchAssistant 33 501
+Course 57 705
+GraduateCourse 59 729
+Publication 389 5327
 Chair 0 0
 Research 0 0
-ResearchGroup 13 181
+ResearchGroup 19 186
 
-TOTAL: 1221
-TOTAL SO FAR: 17757
+TOTAL: 1504
+TOTAL SO FAR: 18336
 
 PROPERTY INSTANCE# TOTAL-SO-FAR
 -------------------------------
-name 939 13836
-takesCourse 1145 17689
-teacherOf 91 1336
-undergraduateDegreeFrom 142 2022
-mastersDegreeFrom 33 442
-doctoralDegreeFrom 33 438
-advisor 174 2585
-memberOf 427 6442
-publicationAuthor 667 9344
+name 1174 14077
+takesCourse 1789 18702
+teacherOf 116 1434
+undergraduateDegreeFrom 172 2221
+mastersDegreeFrom 38 475
+doctoralDegreeFrom 38 475
+advisor 221 2758
+memberOf 630 6827
+publicationAuthor 736 9694
 headOf 1 13
-teachingAssistantOf 29 361
-researchInterest 28 389
-emailAddress 485 7274
-telephone 485 7274
-subOrganizationOf 14 194
-worksFor 31 438
+teachingAssistantOf 29 388
+researchInterest 31 395
+emailAddress 668 7302
+telephone 668 7302
+subOrganizationOf 20 199
+worksFor 38 475
 
-TOTAL: 4724
-TOTAL SO FAR: 70077
+TOTAL: 6369
+TOTAL SO FAR: 72737
 
 ----------------------------------------------------------------
 /Users/horace/Downloads/EUGen_1)/lubm/../lubm/University0_13.owl
@@ -681,50 +681,50 @@ External Seed=0 Interal Seed=0
 
 CLASS INSTANCE# TOTAL-SO-FAR
 ----------------------------
-University 233 3149
+University 215 3400
 Department 1 14
 Faculty 0 0
 Professor 0 0
-FullProfessor 9 120
-AssociateProfessor 12 173
-AssistantProfessor 9 126
-Lecturer 7 82
+FullProfessor 7 120
+AssociateProfessor 10 164
+AssistantProfessor 9 137
+Lecturer 7 87
 Student 0 0
-UndergraduateStudent 427 5576
-GraduateStudent 133 1794
-TeachingAssistant 32 393
-ResearchAssistant 40 504
-Course 58 745
-GraduateCourse 57 754
-Publication 411 5575
+UndergraduateStudent 322 5403
+GraduateStudent 115 1861
+TeachingAssistant 24 412
+ResearchAssistant 38 539
+Course 55 760
+GraduateCourse 50 779
+Publication 362 5689
 Chair 0 0
 Research 0 0
-ResearchGroup 10 191
+ResearchGroup 12 198
 
-TOTAL: 1439
-TOTAL SO FAR: 19196
+TOTAL: 1227
+TOTAL SO FAR: 19563
 
 PROPERTY INSTANCE# TOTAL-SO-FAR
 -------------------------------
-name 1124 14960
-takesCourse 1438 19127
-teacherOf 110 1446
-undergraduateDegreeFrom 162 2184
-mastersDegreeFrom 34 476
-doctoralDegreeFrom 36 474
-advisor 201 2786
-memberOf 540 6982
-publicationAuthor 732 10076
+name 938 15015
+takesCourse 1209 19911
+teacherOf 105 1539
+undergraduateDegreeFrom 148 2369
+mastersDegreeFrom 33 508
+doctoralDegreeFrom 33 508
+advisor 175 2933
+memberOf 437 7264
+publicationAuthor 641 10335
 headOf 1 14
-teachingAssistantOf 32 393
-researchInterest 30 419
-emailAddress 597 7871
-telephone 597 7871
-subOrganizationOf 11 205
-worksFor 34 472
+teachingAssistantOf 24 412
+researchInterest 26 421
+emailAddress 470 7772
+telephone 470 7772
+subOrganizationOf 13 212
+worksFor 33 508
 
-TOTAL: 5679
-TOTAL SO FAR: 75756
+TOTAL: 4756
+TOTAL SO FAR: 77493
 
 ----------------------------------------------------------------
 /Users/horace/Downloads/EUGen_1)/lubm/../lubm/University0_14.owl
@@ -733,48 +733,48 @@ External Seed=0 Interal Seed=0
 
 CLASS INSTANCE# TOTAL-SO-FAR
 ----------------------------
-University 211 3360
+University 191 3591
 Department 1 15
 Faculty 0 0
 Professor 0 0
-FullProfessor 8 128
-AssociateProfessor 13 186
-AssistantProfessor 8 134
-Lecturer 6 88
+FullProfessor 7 127
+AssociateProfessor 10 174
+AssistantProfessor 8 145
+Lecturer 5 92
 Student 0 0
-UndergraduateStudent 373 5949
-GraduateStudent 118 1912
-TeachingAssistant 26 419
-ResearchAssistant 31 535
-Course 51 796
-GraduateCourse 57 811
-Publication 364 5939
+UndergraduateStudent 398 5801
+GraduateStudent 100 1961
+TeachingAssistant 20 432
+ResearchAssistant 31 570
+Course 49 809
+GraduateCourse 44 823
+Publication 306 5995
 Chair 0 0
 Research 0 0
-ResearchGroup 19 210
+ResearchGroup 17 215
 
-TOTAL: 1286
-TOTAL SO FAR: 20482
+TOTAL: 1187
+TOTAL SO FAR: 20750
 
 PROPERTY INSTANCE# TOTAL-SO-FAR
 -------------------------------
-name 999 15959
-takesCourse 1282 20409
-teacherOf 98 1544
-undergraduateDegreeFrom 142 2326
-mastersDegreeFrom 33 509
-doctoralDegreeFrom 35 509
-advisor 209 2995
-memberOf 466 7448
-publicationAuthor 659 10735
+name 928 15943
+takesCourse 1370 21281
+teacherOf 93 1632
+undergraduateDegreeFrom 130 2499
+mastersDegreeFrom 30 538
+doctoralDegreeFrom 30 538
+advisor 173 3106
+memberOf 498 7762
+publicationAuthor 565 10900
 headOf 1 15
-teachingAssistantOf 26 419
-researchInterest 29 448
-emailAddress 526 8397
-telephone 526 8397
-subOrganizationOf 20 225
-worksFor 34 506
+teachingAssistantOf 20 432
+researchInterest 25 446
+emailAddress 528 8300
+telephone 528 8300
+subOrganizationOf 18 230
+worksFor 30 538
 
-TOTAL: 5085
-TOTAL SO FAR: 80841
+TOTAL: 4967
+TOTAL SO FAR: 82460
 

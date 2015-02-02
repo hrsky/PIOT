@@ -13,7 +13,7 @@ class RepairComputer {
   public:
     RepairComputer(vector<int>&, map<int,string> &, vector<string> &, string, statistics*);
     RepairComputer(vector< vector<int> >&, map<int,string> &, vector<string> &, string, statistics*);
-    RepairComputer(map<int, vector<int> >&);
+    RepairComputer(map<int, vector<int> >&, map<int,string> &, vector<string> &, string, statistics*);
 
     void incMax();
     void prefIncMax();

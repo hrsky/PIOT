@@ -24,15 +24,15 @@ int state = 0;
 //0:IncMax, 1:CardMax, 2:WeightMac, 3:PrefIncMax, 4:PrefCardMax
 int input_type = 3;
 
-//string pFilePath = "../examples/lubm/";
-//string pFileName = "lubm";
-//string resultPath = "../result/lubm/";
-string pFilePath = "../examples/test/";
-string pFileName = "test-with-priority";
-string resultPath = "../result/test/";
+string pFilePath = "../examples/lubm/";
+string pFileName = "lubm-with-priority";
+string resultPath = "../result/lubm/";
+//string pFilePath = "../examples/test/";
+//string pFileName = "test-with-priority";
+//string resultPath = "../result/test/";
 string modelFileName = resultPath + "model";
 string statFileName = resultPath + "statistics.txt";
-Query query("b");
+Query query("student(X)");
 
 /*
 void initial() {
@@ -201,6 +201,35 @@ int main() {
         } else {
             isFound = repair.qPreCardMax(query);
         }
+    } else if (input_type == 2) {
+        vector<int> r;
+        map<int, vector<int> > rules;
+        for (vector<Rule>::iterator i = tbox.begin(); i != tbox.end(); i++) {
+            for (vector<Rule>::iterator j = i+1; j != tbox.end(); j++) {
+                if (i->weight > j->weight) {
+                    Rule temp(*i);
+                    *i = *j;
+                    *j = temp;
+                }
+            }
+        }
+        int weight = tbox.begin()->weight;
+        for (vector<Rule>::iterator i = tbox.begin(); i != tbox.end(); i++) {
+            if (i->weight != weight) {
+                rules.insert(pair<int, vector<int> >(weight, r));
+                r.clear();
+                weight = i->weight;
+            }
+            tb.insert(pair<int,string>(tb.size()+1,i->ruleString));
+            r.push_back(tb.size()+1);
+        }
+        rules.insert(pair<int, vector<int> >(weight, r));
+        clock_t end_time=clock();
+        stat.classify_time = static_cast<double>(end_time-start_time)/CLOCKS_PER_SEC;
+        start_time=clock();
+        
+        RepairComputer repair(rules, tb, abox, modelFileName, &stat);
+        isFound = repair.qWeightMax(query);
     }
     
     if (isFound) {

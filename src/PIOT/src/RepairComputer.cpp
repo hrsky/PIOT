@@ -9,8 +9,9 @@ struct qset {
   vector<int> set;
   int start;
   int ri;
-
-  qset(vector<int>& s, int i):set(s),start(i),ri(0){}
+    
+  int layer;
+  qset(vector<int>& s, int i):set(s),start(i),ri(0),layer(0){}
 };
 
 struct cset {
@@ -25,7 +26,7 @@ RepairComputer::RepairComputer(vector<int>& rs, map<int,string> &tb, vector<stri
 
 RepairComputer::RepairComputer(vector< vector<int> >& prs, map<int,string> &tb, vector<string> &ab, string mfilename, statistics* s):prefRules(prs),tbox(tb),abox(ab),modelFileName(mfilename),stat(s){}
 
-RepairComputer::RepairComputer(map<int, vector<int> >& wrs):weightRules(wrs){}
+RepairComputer::RepairComputer(map<int, vector<int> >& wrs, map<int,string> &tb, vector<string> &ab, string mfilename, statistics* s):weightRules(wrs),tbox(tb),abox(ab),modelFileName(mfilename),stat(s){}
 
 bool RepairComputer::qIncMax(Query& query) {
   bool cut[MAXRULESIZE];
@@ -37,7 +38,7 @@ bool RepairComputer::qIncMax(Query& query) {
   while(!q.empty()) {
     qset qi = q.front();
     q.pop();
-
+    stat->curr_count = qi.layer;
     if(cut[qi.ri]) continue;
 
     Result res(modelFileName);
@@ -55,14 +56,13 @@ bool RepairComputer::qIncMax(Query& query) {
       continue;
     }
 
-    stat->curr_count = 0;
     for(size_t i = qi.start; i < qi.set.size(); i++) {
       if(qi.set[i] == 0) continue;
       qset tqi = qi;
       tqi.set[i] = 0;
       tqi.ri = i;
       tqi.start = i + 1;
-      stat->curr_count++;
+      tqi.layer++;
       q.push(tqi);
     }
     com_end_time=clock();
@@ -96,7 +96,7 @@ int RepairComputer::bfsPriSubset(Query& query, vector< vector<int> > pset, int p
   while(!q.empty()) {
     qset qi = q.front();
     q.pop();
-
+    stat->curr_count = qi.layer;
     if(cut[qi.ri]) continue;
 
     pset[priority] = qi.set;
@@ -123,14 +123,13 @@ int RepairComputer::bfsPriSubset(Query& query, vector< vector<int> > pset, int p
       continue;
     }
 
-    stat->curr_count = 0;
     for(size_t i = qi.start; i < qi.set.size(); i++) {
       if(qi.set[i] == 0) continue;
       qset tqi = qi;
       tqi.set[i] = 0;
       tqi.ri = i;
       tqi.start = i + 1;
-      stat->curr_count++;
+      tqi.layer++;
       q.push(tqi);
     }
   }
@@ -152,7 +151,7 @@ bool RepairComputer::qCardMax(Query& query) {
   while(!q.empty()) {
     cset qi = q.front();
     q.pop();
-
+    stat->curr_count = qi.layer;
     if(qi.layer > depth) break;
 
     Result res(modelFileName);
@@ -173,14 +172,12 @@ bool RepairComputer::qCardMax(Query& query) {
 
     if(qi.layer >= depth) continue;
 
-    stat->curr_count = 0;
     for(size_t i = qi.start; i < qi.set.size(); i++) {
       if(qi.set[i] == 0) continue;
       cset tqi = qi;
       tqi.set[i] = 0;
       tqi.start = i + 1;
       tqi.layer++;
-      stat->curr_count++;
       q.push(tqi);
     }
     com_end_time=clock();
@@ -212,7 +209,7 @@ int RepairComputer::cardPriMaxSubset(Query& query, vector< vector<int> > pset, i
   while(!q.empty()) {
     cset qi = q.front();
     q.pop();
-
+    stat->curr_count = qi.layer;
     if(qi.layer > depth) break;
     pset[priority] = qi.set;
 
@@ -240,14 +237,12 @@ int RepairComputer::cardPriMaxSubset(Query& query, vector< vector<int> > pset, i
 
     if(qi.layer >= depth) continue;
 
-    stat->curr_count = 0;
     for(size_t i = qi.start; i < qi.set.size(); i++) {
       if(qi.set[i] == 0) continue;
       cset tqi = qi;
       tqi.set[i] = 0;
       tqi.layer++;
       tqi.start = i + 1;
-      stat->curr_count++;
       q.push(tqi);
     }
   }
@@ -271,7 +266,6 @@ bool RepairComputer::isConsistent(vector<int>& rules, Result& result) {
       continue;
     }
     outfile << tbox[index] << endl;
-    cout << tbox[index] << endl;
   }
   for (vector<string>::iterator it = abox.begin(); it != abox.end(); it++) {
     outfile << *it << endl;
@@ -279,9 +273,9 @@ bool RepairComputer::isConsistent(vector<int>& rules, Result& result) {
   outfile.close();
 
   char cmdline[100];
-  strcpy(cmdline,"gringo ");
+  strcpy(cmdline,"clingo ");
   strcat(cmdline,(modelFileName).c_str());
-  strcat(cmdline,".lp | clasp 0 > ");
+  strcat(cmdline,".lp > ");
   strcat(cmdline,modelFileName.c_str());
   system(cmdline);
 
@@ -306,7 +300,6 @@ bool RepairComputer::isConsistent(vector< vector<int> >& rules, Result& result) 
         continue;
       }
       outfile << tbox[index] << endl;
-      cout << tbox[index] << endl;
     }
   }
   for (vector<string>::iterator it = abox.begin(); it != abox.end(); it++) {
@@ -315,9 +308,9 @@ bool RepairComputer::isConsistent(vector< vector<int> >& rules, Result& result) 
   outfile.close();
 
   char cmdline[100];
-  strcpy(cmdline,"gringo ");
+  strcpy(cmdline,"clingo ");
   strcat(cmdline,(modelFileName).c_str());
-  strcat(cmdline,".lp | clasp 0 > ");
+  strcat(cmdline,".lp > ");
   strcat(cmdline,modelFileName.c_str());
   system(cmdline);
 
@@ -334,8 +327,9 @@ struct wset {
   vector<int> set;
   int start;
   int mWeight;
-
-  wset(vector<int>& s, int st):set(s),start(st),mWeight(0){}
+    
+  int layer;
+  wset(vector<int>& s, int st):set(s),start(st),mWeight(0),layer(0){}
 };
 
 bool RepairComputer::qWeightMax(Query& query) {
@@ -369,17 +363,29 @@ bool RepairComputer::qWeightMax(Query& query) {
     while(!q.empty()) {
       wset qi = q.front();
       q.pop();
-
+    
+      stat->curr_count = qi.layer;
       if(minMWeight != -1 && qi.mWeight > minMWeight) continue;
 
-      Result res;
+      clock_t com_start_time=clock();
+      clock_t com_end_time;
+      stat->find_count++;
+        
+      Result res(modelFileName);
       bool consistent = this->isConsistent(qi.set, res);
       if(consistent) {
+        com_end_time=clock();
+        stat->compute_time = static_cast<double>(com_end_time-com_start_time)/CLOCKS_PER_SEC;
+        stat->write_every_time_stat(1);
         if(!query.entails(&res)) return false;
         minMWeight = qi.mWeight;
         hasConsistent = true;
         continue;
       }
+
+      com_end_time=clock();
+      stat->compute_time = static_cast<double>(com_end_time-com_start_time)/CLOCKS_PER_SEC;
+      stat->write_every_time_stat(0);
 
       for(int i = qi.start; i < weightSize[st]; i++) {
         if(qi.set[i] == 0) continue;
@@ -387,6 +393,7 @@ bool RepairComputer::qWeightMax(Query& query) {
         tqi.start = i + 1;
         tqi.mWeight += ruleweights[i];
         tqi.set[i] = 0;
+        tqi.layer++;
         q.push(tqi);
       }
     }

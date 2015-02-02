@@ -106,7 +106,7 @@ public:
     str << curr_count;
     str >> temp;
     str.clear();
-    toWrite += "Tbox Size: " + temp + ".\r\n";
+    toWrite += "Deleted Tbox Size: " + temp + ".\r\n";
     
     str << compute_time;
     str >> temp;
@@ -118,7 +118,7 @@ public:
       toWrite += "IsSatisfied: False.\r\n";
     
     clock_t end_time=clock();
-    str << static_cast<double>(end_time-start_time)/CLOCKS_PER_SEC;
+    str << (static_cast<double>(end_time-start_time)/CLOCKS_PER_SEC);
     str >> temp;
     str.clear();
     toWrite += "The program has been running " + temp + "s.\r\n";
