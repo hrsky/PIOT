@@ -22,7 +22,7 @@ using namespace std;
 int state = 0;
 
 //0:IncMax, 1:CardMax, 2:WeightMac, 3:PrefIncMax, 4:PrefCardMax
-int input_type = 3;
+int input_type = 4;
 
 string pFilePath = "../examples/lubm/";
 string pFileName = "lubm-with-priority";
@@ -162,16 +162,14 @@ int main() {
         clock_t end_time=clock();
         stat.classify_time = static_cast<double>(end_time-start_time)/CLOCKS_PER_SEC;
         RepairComputer repair(rules, tb, abox, modelFileName,&stat);
-        start_time=clock();
+
         if (input_type == 0) {
             isFound = repair.qIncMax(query);
         } else {
             isFound = repair.qCardMax(query);
         }
     } else if (input_type == 3 || input_type == 4) {
-        int priority = -111;
         vector< vector<int> > rules;
-        vector<int> r;
         for (vector<Rule>::iterator i = tbox.begin(); i != tbox.end(); i++) {
             for (vector<Rule>::iterator j = i+1; j != tbox.end(); j++) {
                 if (i->priority < j->priority) {
@@ -181,8 +179,10 @@ int main() {
                 }
             }
         }
+        vector<int> r;
+        int priority = tbox.begin()->priority;
         for (vector<Rule>::iterator i = tbox.begin(); i != tbox.end(); i++) {
-            if (i->priority != priority && priority != -111) {
+            if (i->priority != priority) {
                 rules.push_back(r);
                 r.clear();
                 priority = i->priority;
@@ -191,9 +191,9 @@ int main() {
             r.push_back(tb.size()+1);
         }
         rules.push_back(r);
+        cout << rules.size() << endl;
         clock_t end_time=clock();
         stat.classify_time = static_cast<double>(end_time-start_time)/CLOCKS_PER_SEC;
-        start_time=clock();
         
         RepairComputer repair(rules, tb, abox, modelFileName,&stat);
         if (input_type == 3) {
@@ -226,7 +226,6 @@ int main() {
         rules.insert(pair<int, vector<int> >(weight, r));
         clock_t end_time=clock();
         stat.classify_time = static_cast<double>(end_time-start_time)/CLOCKS_PER_SEC;
-        start_time=clock();
         
         RepairComputer repair(rules, tb, abox, modelFileName, &stat);
         isFound = repair.qWeightMax(query);

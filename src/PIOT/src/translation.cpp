@@ -104,7 +104,7 @@ void translation::classify(int input_type) {
           memset(buff,0,1024);
           infile.getline(buff,1204);
           r.weight = atoi(buff);
-        } else if (input_type == 3) {
+        } else if (input_type == 3 || input_type == 4) {
           memset(buff,0,1024);
           infile.getline(buff,1204);
           r.priority = atoi(buff);

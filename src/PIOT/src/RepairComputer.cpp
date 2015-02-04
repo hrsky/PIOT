@@ -75,13 +75,31 @@ bool RepairComputer::qIncMax(Query& query) {
 
 int RepairComputer::bfsPriSubset(Query& query, vector< vector<int> > pset, int priority) {
   if(priority >= (int)pset.size()) {
+    stat->find_count++;
     Result res(modelFileName);
+    clock_t com_start_time=clock();
+    clock_t com_end_time;
     bool consistent = this->isConsistent(pset, res);
 
-    if(consistent && !query.entails(&res)) return -1;
-
-    if(consistent) return 1;
-    else return 0;
+    if(consistent && !query.entails(&res)) {
+      com_end_time=clock();
+      stat->compute_time = static_cast<double>(com_end_time-com_start_time)/CLOCKS_PER_SEC;
+      stat->write_every_time_stat(1);
+      return -1;
+    }
+      
+    if(consistent) {
+      com_end_time=clock();
+      stat->compute_time = static_cast<double>(com_end_time-com_start_time)/CLOCKS_PER_SEC;
+      stat->write_every_time_stat(1);
+      return 1;
+    }
+    else {
+      com_end_time=clock();
+      stat->compute_time = static_cast<double>(com_end_time-com_start_time)/CLOCKS_PER_SEC;
+      stat->write_every_time_stat(0);
+      return 0;
+    }
   }
 
   queue<qset> q;
@@ -101,20 +119,8 @@ int RepairComputer::bfsPriSubset(Query& query, vector< vector<int> > pset, int p
 
     pset[priority] = qi.set;
 
-    clock_t com_start_time=clock();
-    clock_t com_end_time;
-    stat->find_count++;
-
     int scode = bfsPriSubset(query, pset, priority + 1);
-
-    com_end_time=clock();
-    stat->compute_time = static_cast<double>(com_end_time-com_start_time)/CLOCKS_PER_SEC;
-    if (scode == -1 || scode == 1) {
-      stat->write_every_time_stat(1);
-    } else {
-      stat->write_every_time_stat(scode);
-    }
-
+    
     if(scode == -1) return -1;
 
     if(scode == 1) {
@@ -191,12 +197,31 @@ bool RepairComputer::qCardMax(Query& query) {
 int RepairComputer::cardPriMaxSubset(Query& query, vector< vector<int> > pset, int priority) {
   if(priority >= (int)pset.size()) {
     Result res(modelFileName);
+    stat->find_count++;
+    
+    clock_t com_start_time=clock();
+    clock_t com_end_time;
     bool consistent = this->isConsistent(pset, res);
-
-    if(consistent && !query.entails(&res)) return -1;
-
-    if(consistent) return 1;
-    else return 0;
+      
+    if(consistent && !query.entails(&res)) {
+      com_end_time=clock();
+      stat->compute_time = static_cast<double>(com_end_time-com_start_time)/CLOCKS_PER_SEC;
+      stat->write_every_time_stat(1);
+      return -1;
+    }
+      
+    if(consistent) {
+      com_end_time=clock();
+      stat->compute_time = static_cast<double>(com_end_time-com_start_time)/CLOCKS_PER_SEC;
+      stat->write_every_time_stat(1);
+      return 1;
+    }
+    else {
+      com_end_time=clock();
+      stat->compute_time = static_cast<double>(com_end_time-com_start_time)/CLOCKS_PER_SEC;
+      stat->write_every_time_stat(0);
+      return 0;
+    }
   }
 
   queue<cset> q;
@@ -213,19 +238,7 @@ int RepairComputer::cardPriMaxSubset(Query& query, vector< vector<int> > pset, i
     if(qi.layer > depth) break;
     pset[priority] = qi.set;
 
-    clock_t com_start_time=clock();
-    clock_t com_end_time;
-    stat->find_count++;
-
     int scode = bfsPriSubset(query, pset, priority + 1);
-
-    com_end_time=clock();
-    stat->compute_time = static_cast<double>(com_end_time-com_start_time)/CLOCKS_PER_SEC;
-    if (scode == -1 || scode == 1) {
-      stat->write_every_time_stat(1);
-    } else {
-      stat->write_every_time_stat(scode);
-    }
 
     if(scode == -1) return -1;
 
