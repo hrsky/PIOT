@@ -18,7 +18,7 @@ public:
   vector<Answer> compute_input();
   vector<Answer> get_answer();
   void print_ans_set();
-  void access_atom(string line);
+  void access_atom(string line, Answer *ans);
   int isSat();
   void reset();
 private:

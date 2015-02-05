@@ -24,9 +24,9 @@ int state = 0;
 //0:IncMax, 1:CardMax, 2:WeightMac, 3:PrefIncMax, 4:PrefCardMax
 int input_type = 4;
 
-string pFilePath = "../examples/lubm/";
+string pFilePath = "../examples/lubm-30000/";
 string pFileName = "lubm-with-priority";
-string resultPath = "../result/lubm/";
+string resultPath = "../result/lubm-30000/";
 //string pFilePath = "../examples/test/";
 //string pFileName = "test-with-priority";
 //string resultPath = "../result/test/";

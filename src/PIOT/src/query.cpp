@@ -77,11 +77,10 @@ Query::Query(string query) {
   split(query, delim2, atomstr);
 
   for(size_t i = 0; i < atomstr.size(); i++) {
-    //cout << "atomstr " << i << " " << atomstr[i] << endl;
+    cout << "atomstr " << i << " " << atomstr[i] << endl;
     string s = atomstr[i];
     Atom a;
     size_t f = s.find_first_of("(", 0);
-    size_t l = s.find_last_of(")", 0);
 
     if(f == string::npos) {
       a.pre = Dict::getInstance().addPre(s);
@@ -89,7 +88,7 @@ Query::Query(string query) {
     else {
       string sp = s.substr(0, f);
       int ip = Dict::getInstance().addPre(sp);
-      string vstring = s.substr(f + 1, l - f - 1);
+      string vstring = s.substr(s.find_first_of("(") + 1, s.find_last_of(")") - s.find_first_of("(") - 1);
       vector<string> vss;
       string delim = ",";
       split(vstring, delim1, vss);
@@ -106,8 +105,8 @@ Query::Query(string query) {
     }
     this->_query.push_back(a);
   }
-  //for(size_t i = 0; i < this->_query.size(); i++) cout << "query" << this->_query[i].pre << " ";
-  //cout << endl;
+  for(size_t i = 0; i < this->_query.size(); i++) cout << "query" << this->_query[i].pre << " ";
+  cout << endl;
 }
 
 void Query::printQuery() {

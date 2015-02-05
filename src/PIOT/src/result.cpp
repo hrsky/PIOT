@@ -27,33 +27,72 @@ void Result::reset() {
 vector<Answer> Result::compute_input() {
   ifstream infile;
   infile.open(modelFileName);
-  char buff[1024];
   string line;
+  char buff[1024];
+  char buf[30];
   bool is_a_set = false;
+  Answer *ans = new Answer();
   if (infile.is_open()) {
     while (infile.good() && !infile.eof()) {
       memset(buff,0,1024);
-      infile.getline(buff,1024);
-      line = buff;
-      char buf[30];
-      memset(buf,0,30);
-      sprintf(buf,"Answer: %lu",ans_set.size()+1);
+      line.clear();
+      
       if (is_a_set) {
-        access_atom(line);
-      }
+        infile >> line;
+        sprintf(buf,"Answer: %lu",ans_set.size()+2);
+        if (strcmp(line.c_str(),buf) == 0) {
+          is_a_set = true;
+          ans_set.push_back(*ans);
+          ans = new Answer();
+          continue;
+        }
 
-      if (strcmp(buff,buf) == 0) {
-        is_a_set = true;
-      } else {
-        is_a_set = false;
-      }
-      strcpy(buf,"SATISFIABLE");
-      if (strcmp(buff,buf) == 0) {
+        memset(buf,0,30);
+        strcpy(buf,"SATISFIABLE");
+        if (strcmp(line.c_str(),buf) == 0) {
+          is_a_set = false;
+          ans_set.push_back(*ans);
+          ans = new Answer();
+          Sat = 1;
+          continue;
+        }
+
+        memset(buf,0,30);
+        strcpy(buf,"UNSATISFIABLE");
+        if (strcmp(line.c_str(),buf) == 0) {
+          is_a_set = false;
+          ans_set.push_back(*ans);
+          ans = new Answer();
+          Sat = 0;
+          continue;
+        }
+
+        access_atom(line,ans);
         Sat = 1;
-      }
-      strcpy(buf,"UNSATISFIABLE");
-      if (strcmp(buff,buf) == 0) {
-        Sat = 0;
+      } else {
+        infile.getline(buff,1024);
+        line = buff;
+        memset(buf,0,30);
+        sprintf(buf,"Answer: %lu",ans_set.size()+1);
+          
+        if (strcmp(buff,buf) == 0) {
+          is_a_set = true;
+        } else {
+          is_a_set = false;
+        }
+          
+        memset(buf,0,30);
+        strcpy(buf,"SATISFIABLE");
+        if (strcmp(buff,buf) == 0) {
+          is_a_set = false;
+          Sat = 1;
+        }
+          
+        memset(buf,0,30);
+        strcpy(buf,"UNSATISFIABLE");
+        if (strcmp(buff,buf) == 0) {
+          Sat = 0;
+        }
       }
     }
   }
@@ -94,8 +133,7 @@ int split(const string& str, vector<string>& ret_, string sep = ",")
   return 0;
 }
 
-void Result::access_atom(string line) {
-  Answer ans;
+void Result::access_atom(string line, Answer *ans) {
   vector<string> vec;
   split(line, vec, " ");
   vector<string>::iterator it;
@@ -105,20 +143,20 @@ void Result::access_atom(string line) {
 //    cout << *it << " ";
     split(*it, pre, "(");
     atom.pre = Dict::getInstance().addPre(pre[0]);
-    
+    //    cout << pre[0] << " ";
     if (pre.size() > 1) {
       string iStr = it->substr(it->find_first_of("(")+1,it->find_last_of(")")-it->find_first_of("(")-1);
       vector<string> itemp;
       split(iStr, itemp, ",");
       vector<string>::iterator item;
       for (item = itemp.begin(); item != itemp.end(); item++) {
+//        cout << *item << " ";
         atom.t.push_back(Dict::getInstance().addInd(*item));
       }
     }
-    ans.a.push_back(atom);
+    ans->a.push_back(atom);
+//    cout << endl;
   }
-//  cout << endl;
-  ans_set.push_back(ans);
 }
 
 vector<Answer> Result::get_answer() {
