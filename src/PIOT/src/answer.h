@@ -35,7 +35,7 @@ public:
   int input_type;
   bool is_find;
   ofstream outfile;
-  clock_t start_time;
+  time_t start_time;
   
   statistics(string statFileName) {
     classify_time = 0;
@@ -47,7 +47,7 @@ public:
     compute_time = 0;
     input_type = 0;
     is_find = false;
-    start_time=clock();
+    start_time=time(NULL);
     outfile.open(statFileName, ofstream::trunc);
   }
   void write_total_statistics() {
@@ -117,8 +117,8 @@ public:
     else
       toWrite += "IsSatisfied: False.\r\n";
     
-    clock_t end_time=clock();
-    str << (static_cast<double>(end_time-start_time)/CLOCKS_PER_SEC);
+    time_t end_time=time(NULL);
+    str << difftime(end_time,start_time);
     str >> temp;
     str.clear();
     toWrite += "The program has been running " + temp + "s.\r\n";

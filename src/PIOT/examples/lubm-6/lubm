@@ -1,0 +1,58 @@
+memberof(X,Y) :- worksfor(X,Y).
+member(Y,X) :- memberof(X,Y).
+memberof(Y,X) :- member(X,Y).
+hasalumnus(Y,X) :- degreefrom(X,Y).
+degreefrom(Y,X) :- hasalumnus(X,Y).
+worksfor(X,Y) :- headof(X,Y).
+person(X) :- degreefrom(X,Y).
+faculty(X) :- professor(X).
+professor(X) :- dean(X).
+student(X) :- person(X), takescourse(X,Y), course(Y).
+employee(X) :- person(X), worksfor(X,Y), not student(X). 
+takescourse(X,f(X)) :- student(X).
+course(f(X)) :- student(X).
+person(X) :- student(X).
+faculty(X) :- lecturer(X).
+university(Y) :- degreefrom(X,Y).
+course(Y) :- teachingassistantof(X,Y).
+university(X) :- hasalumnus(X,Y).
+professor(X) :- assistantprofessor(X).
+dean(X) :- headof(X,Y), college(Y).
+headof(X,f(X)) :- dean(X).
+college(f(X)) :- dean(X).
+work(X) :- course(X).
+person(X) :- researchassistant(X).
+person(X) :- graduatestudent(X).
+student(X) :- undergraduatestudent(X).
+worksfor(X,f(X)) :- researchassistant(X), not professor(X).
+researchgroup(f(X)) :- researchassistant(X).
+employee(X) :- person(X), worksfor(X,Y).
+worksfor(X,f(X)) :- employee(X).
+person(X) :- employee(X).
+person(Y) :- hasalumnus(X,Y).
+teachingassistant(X) :- teachingassistantof(X,Y).
+professor(X) :- associateprofessor(X).
+person(Y) :- member(X,Y).
+course(X) :- graduatecourse(X).
+professor(X) :- fullprofessor(X).
+teachingassistant(X) :- person(X), teachingassistantof(X,Y), course(Y).
+teachingassistantof(X,f(X)) :- teachingassistant(X).
+course(f(X)) :- teachingassistant(X).
+person(X) :- teachingassistant(X).
+worksfor(X,f(X)) :- teachingassistant(X), not student(X).
+takescourse(X,f(X)) :- graduatestudent(X).
+graduatecourse(f(X)) :- graduatestudent(X).
+ :- undergraduatestudent(X), researchassistant(X).
+ :- assistantprofessor(X), associateprofessor(X).
+ :- teachingassistant(X), undergraduatestudent(X). 
+ :- worksfor(X,Y), graduatestudent(X).
+ :- professor(X), student(X).
+ :- dean(X), student(X).
+ :- dean(X), associateprofessor(X).
+ :- worksfor(X,Y), assistantprofessor(Y). 
+dean(david).
+student(david).
+associateprofessor(amy).
+person(tom).
+worksfor(tom, amy).
+researchassistant(tom).

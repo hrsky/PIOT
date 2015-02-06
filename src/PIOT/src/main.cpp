@@ -22,11 +22,11 @@ using namespace std;
 int state = 0;
 
 //0:IncMax, 1:CardMax, 2:WeightMac, 3:PrefIncMax, 4:PrefCardMax
-int input_type = 4;
+int input_type = 3;
 
-string pFilePath = "../examples/lubm-30000/";
+string pFilePath = "../examples/lubm-full/";
 string pFileName = "lubm-with-priority";
-string resultPath = "../result/lubm-30000/";
+string resultPath = "../result/lubm-full/";
 //string pFilePath = "../examples/test/";
 //string pFileName = "test-with-priority";
 //string resultPath = "../result/test/";
@@ -143,7 +143,7 @@ int main() {
     
 //    tran.trans(2);
 //    tran.trans(3);
-    clock_t start_time=clock();
+    time_t start_time=time(NULL);
     tran.classify(input_type);
 
     tbox = tran.get_tbox();
@@ -159,8 +159,8 @@ int main() {
             tb.insert(pair<int,string>(tb.size()+1,i->ruleString));
             rules.push_back(tb.size()+1);
         }
-        clock_t end_time=clock();
-        stat.classify_time = static_cast<double>(end_time-start_time)/CLOCKS_PER_SEC;
+        time_t end_time=time(NULL);
+        stat.classify_time =  difftime(end_time,start_time);
         RepairComputer repair(rules, tb, abox, modelFileName,&stat);
 
         if (input_type == 0) {
@@ -192,8 +192,8 @@ int main() {
         }
         rules.push_back(r);
         cout << rules.size() << endl;
-        clock_t end_time=clock();
-        stat.classify_time = static_cast<double>(end_time-start_time)/CLOCKS_PER_SEC;
+        time_t end_time=time(NULL);
+        stat.classify_time =  difftime(end_time,start_time);
         
         RepairComputer repair(rules, tb, abox, modelFileName,&stat);
         if (input_type == 3) {
@@ -224,8 +224,8 @@ int main() {
             r.push_back(tb.size()+1);
         }
         rules.insert(pair<int, vector<int> >(weight, r));
-        clock_t end_time=clock();
-        stat.classify_time = static_cast<double>(end_time-start_time)/CLOCKS_PER_SEC;
+        time_t end_time=time(NULL);
+        stat.classify_time =  difftime(end_time,start_time);
         
         RepairComputer repair(rules, tb, abox, modelFileName, &stat);
         isFound = repair.qWeightMax(query);
@@ -237,9 +237,9 @@ int main() {
     } else {
         cout << "Not Found!" << endl;
     }
-    clock_t end_time=clock();
-    stat.repair_time = static_cast<double>(end_time-start_time)/CLOCKS_PER_SEC;
+    time_t end_time=time(NULL);
+    stat.repair_time =  difftime(end_time,start_time);
     stat.write_total_statistics();
-    
+
     return 0;
 }

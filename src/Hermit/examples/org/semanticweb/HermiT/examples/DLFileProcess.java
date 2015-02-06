@@ -101,7 +101,6 @@ public class DLFileProcess {
 					line = line.replace("owl:", "");
 				}
 				line = line + ".\r\n";
-				System.out.println(line);
 				dlpwriter.write(line);
 			} else if (Process_State == 2) {
 				pattern = Pattern.compile("<\\S+#([A-Za-z0-9]*)>");
@@ -109,18 +108,56 @@ public class DLFileProcess {
 				if (matcher.find()) {
 					line = matcher.replaceFirst(matcher.group(1));
 				}
-				pattern = Pattern.compile("<(http://www.){1}(\\S+\\.)+(edu){1}(/\\S+)*>");
-				matcher = pattern.matcher(line);
-				StringBuffer replacedStr = new StringBuffer();
-				if (matcher.find()) {
-					replacedStr.append(matcher.group(2));
-					String str = replacedStr.toString().replace(".", "_");
-					str = str.subSequence(0, str.length()-1).toString();
-					if (matcher.group(4) != null) {
-						str = str + matcher.group(4);
-						str = str.replace("/", "_");
+				if (line.contains(",")) {
+					pattern = Pattern.compile("<(http://www.){1}(\\S+\\.)+(edu){1}(/\\S+)*>,");
+					matcher = pattern.matcher(line);
+					StringBuffer replacedStr = new StringBuffer();
+					if (matcher.find()) {
+						replacedStr.append(matcher.group(2));
+						String str = replacedStr.toString().replace(".", "_");
+						str = str.subSequence(0, str.length()-1).toString();
+						if (matcher.group(4) != null) {
+							str = str + matcher.group(4) + ",";
+							str = str.replace("/", "_");
+						}
+						line = matcher.replaceAll(str);
 					}
-					line = matcher.replaceAll(str);
+					pattern = Pattern.compile("<(http://www.){1}(\\S+\\.)+(edu){1}(/\\S+)*>");
+					matcher = pattern.matcher(line);
+					replacedStr = new StringBuffer();
+					if (matcher.find()) {
+						replacedStr.append(matcher.group(2));
+						String str = replacedStr.toString().replace(".", "_");
+						str = str.subSequence(0, str.length()-1).toString();
+						if (matcher.group(4) != null) {
+							str = str + matcher.group(4);
+							str = str.replace("/", "_");
+						}
+						line = matcher.replaceAll(str);
+					}
+				} else {
+					pattern = Pattern.compile("<(http://www.){1}(\\S+\\.)+(edu){1}(/\\S+)*>");
+					matcher = pattern.matcher(line);
+					StringBuffer replacedStr = new StringBuffer();
+					if (matcher.find()) {
+						replacedStr.append(matcher.group(2));
+						String str = replacedStr.toString().replace(".", "_");
+						str = str.subSequence(0, str.length()-1).toString();
+						if (matcher.group(4) != null) {
+							str = str + matcher.group(4);
+							str = str.replace("/", "_");
+						}
+						line = matcher.replaceAll(str);
+					}
+				}
+				if (line.contains("@\"^^")) {
+					pattern = Pattern.compile("\"(\\S+)@\\\"\\^\\^([A-Za-z0-9]*):([A-Za-z0-9]*)");
+					matcher = pattern.matcher(line);
+					while (matcher.find()) {
+						String str = matcher.group(1)+ "_" + matcher.group(2) + "_" + matcher.group(3);
+						line = matcher.replaceFirst(str.toLowerCase());
+						matcher = pattern.matcher(line);
+					}
 				}
 				pattern = Pattern.compile("([A-W]|[Z])");
 				matcher = pattern.matcher(line);
@@ -134,8 +171,14 @@ public class DLFileProcess {
 					line = matcher.replaceAll("("+matcher.group(1).toLowerCase()+")");
 				}
 				if (line.contains(":")) {
-					line.replace(":", "_");
+					line = line.replaceAll(":", "_");
 				}
+				if (line.contains("@")) {
+					line = line.replaceAll("@", "_");
+				}
+
+				line = line.replaceAll("\\.", "_");
+
 				line = line.substring(2, line.length()) + ".\r\n";
 				dlpwriter.write(line);
 			}

@@ -1,0 +1,104 @@
+memberof(X,Y) :- worksfor(X,Y).
+2
+member(Y,X) :- memberof(X,Y).
+1
+memberof(Y,X) :- member(X,Y).
+2
+hasalumnus(Y,X) :- degreefrom(X,Y).
+2
+degreefrom(Y,X) :- hasalumnus(X,Y).
+1
+worksfor(X,Y) :- headof(X,Y).
+1
+person(X) :- degreefrom(X,Y).
+2
+faculty(X) :- professor(X).
+1
+professor(X) :- dean(X).
+2
+student(X) :- person(X), takescourse(X,Y), course(Y).
+1
+employee(X) :- person(X), worksfor(X,Y), not student(X). 
+1
+takescourse(X,f(X)) :- student(X).
+2
+course(f(X)) :- student(X).
+2
+person(X) :- student(X).
+2
+faculty(X) :- lecturer(X).
+1
+university(Y) :- degreefrom(X,Y).
+2
+course(Y) :- teachingassistantof(X,Y).
+1
+university(X) :- hasalumnus(X,Y).
+2
+professor(X) :- assistantprofessor(X).
+1
+dean(X) :- headof(X,Y), college(Y).
+1
+headof(X,f(X)) :- dean(X).
+2
+college(f(X)) :- dean(X).
+1
+work(X) :- course(X).
+2
+person(X) :- researchassistant(X).
+2
+person(X) :- graduatestudent(X).
+1
+student(X) :- undergraduatestudent(X).
+2
+worksfor(X,f(X)) :- researchassistant(X), not professor(X).
+1
+researchgroup(f(X)) :- researchassistant(X).
+1
+employee(X) :- person(X), worksfor(X,Y).
+2
+worksfor(X,f(X)) :- employee(X).
+1
+person(X) :- employee(X).
+2
+person(Y) :- hasalumnus(X,Y).
+2
+teachingassistant(X) :- teachingassistantof(X,Y).
+2
+professor(X) :- associateprofessor(X).
+1
+person(Y) :- member(X,Y).
+1
+course(X) :- graduatecourse(X).
+1
+professor(X) :- fullprofessor(X).
+1
+teachingassistant(X) :- person(X), teachingassistantof(X,Y), course(Y).
+1
+teachingassistantof(X,f(X)) :- teachingassistant(X).
+2
+course(f(X)) :- teachingassistant(X).
+1
+person(X) :- teachingassistant(X).
+2
+worksfor(X,f(X)) :- teachingassistant(X), not student(X).
+2
+takescourse(X,f(X)) :- graduatestudent(X).
+2
+graduatecourse(f(X)) :- graduatestudent(X).
+1
+ :- undergraduatestudent(X), researchassistant(X).
+0
+ :- assistantprofessor(X), associateprofessor(X).
+1
+ :- teachingassistant(X), undergraduatestudent(X). 
+0
+ :- worksfor(X,Y), graduatestudent(X).
+0
+ :- professor(X), student(X).
+0
+ :- dean(X), student(X).
+0
+ :- dean(X), associateprofessor(X).
+0
+ :- worksfor(X,Y), assistantprofessor(Y). 
+0

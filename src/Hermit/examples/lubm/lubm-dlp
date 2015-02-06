@@ -61,7 +61,7 @@ organization(X) :- university(X).
 student(X) :- undergraduatestudent(X).
 work(X) :- research(X).
 article(X) :- conferencepaper(X).
-worksfor(X,f(X)) :- researchassistant(X), not professor(X).
+worksfor(X,f(X)) :- researchassistant(X).
 researchgroup(f(X)) :- researchassistant(X).
 organization(X) :- researchgroup(X).
 professor(X) :- chair(X).
@@ -70,9 +70,8 @@ headof(X,f(X)) :- director(X).
 program(f(X)) :- director(X).
 person(X) :- director(X).
 employee(X) :- administrativestaff(X).
-employee(X) :- person(X), worksfor(X,Y), not student(X). 
+employee(X) :- person(X), worksfor(X,Y), organization(Y).
 worksfor(X,f(X)) :- employee(X).
-worksfor(X,f(X)) :- teachingassistant(X), not student(X).
 organization(f(X)) :- employee(X).
 person(X) :- employee(X).
 organization(X) :- member(X,Y).
@@ -126,14 +125,59 @@ internal_all_1(X) :- suborganizationof(X,Y), internal_all_5(Y).
 internal_all_5(X) :- internal_all_1(X).
 internal_all_1(X) :- internal_all_6(X).
 internal_all_5(X) :- thing(X).
+ :- takescourse(X,Y), teachingassistantof(X,Y).
+ :- subj19professor(X), associateprofessor(X).
  :- undergraduatestudent(X), researchassistant(X).
+ :- subj16student(X), graduatestudent(X)..
  :- assistantprofessor(X), associateprofessor(X).
- :- teachingassistant(X), undergraduatestudent(X). 
+ :- subj11professor(X), associateprofessor(X).
+ :- clericalstaff(X), systemsstaff(X).
+ :- article(X), specification(X).
+ :- takescourse(X,Y), subj14student(X), undergraduatestudent(X).
+ :- teachingassistant(X), undergraduatestudent(X).
  :- worksfor(X,Y), graduatestudent(X).
- :- professor(X), student(X).
- :- dean(X), student(X).
- :- dean(X), associateprofessor(X).
- :- worksfor(X,Y), assistantprofessor(Y). 
+ :- member(X,Y), softwareversion(X,Y).
+ :- hasalumnus(X,Y), member(X,Y).
+ :- ispartofuniversity(X,Y), teacherof(X,Y).
+ :- degreefrom(X,Y), teachingassistantof(X,Y).
+ :- listedcourse(X,Y), softwaredocumentation(X,Y).
+ :- orgpublication(X,Y), tenured(X,Y).
+ :- memberof(X,Y), suborganizationof(X,Y).
+ :- ispartofuniversity(X,Y), researchproject(X,Y).
+ :- degreefrom(X,Y), memberof(X,Y).
+ :- memberof(X,Y), orgpublication(X,Y).
+ :- ispartofuniversity(X,Y), memberof(X,Y).
+ :- hasexamrecord(X,Y), suborganizationof(X,Y).
+ :- member(X,Y), publicationdate(X,Y).
+ :- hasalumnus(X,Y), ispartofuniversity(X,Y).
+ :- degreefrom(X,Y), member(X,Y).
+ :- softwaredocumentation(X,Y), takescourse(X,Y).
+ :- affiliatedorganizationof(X,Y), listedcourse(X,Y).
+ :- suborganizationof(X,Y), teacherof(X,Y).
+ :- hasalumnus(X,Y), tenured(X,Y).
+ :- advisor(X,Y), member(X,Y).
+ :- hasfaculty(X,Y), researchproject(X,Y).
+ :- publicationauthor(X,Y), suborganizationof(X,Y).
+ :- listedcourse(X,Y), researchproject(X,Y).
+ :- advisor(X,Y), tenured(X,Y).
+ :- degreefrom(X,Y), publicationauthor(X,Y).
+ :- affiliatedorganizationof(X,Y), publicationdate(X,Y).
+ :- softwaredocumentation(X,Y), suborganizationof(X,Y).
+ :- publicationresearch(X,Y), researchproject(X,Y).
+ :- affiliatedorganizationof(X,Y), teachingassistantof(X,Y).
+ :- softwaredocumentation(X,Y), teacherof(X,Y).
+ :- advisor(X,Y), softwaredocumentation(X,Y).
+ :- advisor(X,Y), suborganizationof(X,Y).
+ :- orgpublication(X,Y), publicationdate(X,Y).
+ :- hasalumnus(X,Y), softwaredocumentation(X,Y).
+ :- ispartofuniversity(X,Y), member(X,Y).
+ :- ispartofuniversity(X,Y), listedcourse(X,Y).
+ :- affiliatedorganizationof(X,Y), hasalumnus(X,Y).
+ :- hasfaculty(X,Y), takescourse(X,Y).
+ :- advisor(X,Y), researchproject(X,Y).
+ :- memberof(X,Y), softwaredocumentation(X,Y).
+ :- advisor(X,Y), listedcourse(X,Y).
+ :- member(X,Y), researchproject(X,Y).
 undergraduatestudent(department2_university0_undergraduatestudent138).
 subj2student(department1_university0_undergraduatestudent28).
 undergraduatestudent(department13_university0_undergraduatestudent317).

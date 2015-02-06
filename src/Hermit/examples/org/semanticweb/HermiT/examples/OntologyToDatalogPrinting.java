@@ -22,7 +22,7 @@ public class OntologyToDatalogPrinting {
         // Now, we create the file from which the ontology will be loaded.
     	// Here the ontology is stored in a file locally in the ontologies subfolder
     	// of the examples folder.
-        String source_url = "examples/lubm/";
+        String source_url = "examples/lubm-full/";
         File inputOntologyFile = new File(source_url+"univ-bench.owl");
         OWLOntology Tbox = manager.loadOntologyFromOntologyDocument(inputOntologyFile);
         for (int i = 0; i < 15; i++) {
