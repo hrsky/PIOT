@@ -161,8 +161,9 @@ int main(int argc, char** argv) {
         vector<Rule> tbox;
         vector<string> abox;
         
-        //    tran.trans(2);
-        //    tran.trans(3);
+//        tran.trans(2);
+//        tran.trans(3);
+        
         time_t start_time=time(NULL);
         tran.classify(input_type);
         

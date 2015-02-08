@@ -1,5 +1,5 @@
 student(X) course(Y) takescourse(X,Y)
 publication(X)
-student(X) takescourse(X,Y)
+publication(X) publicationauthor(X,Y)
 student(X) takescourse(X,Z) course(Z) teacherof(Y,Z) faculty(Y) worksfor(Y,U) department(U) memberof(X,U)
 publication(X) publicationauthor(X,Y) professor(Y) publicationauthor(X,Z) student(Z)

@@ -273,3 +273,13 @@ organooxygen(X) :- hasAtom(X,Y1), c(Y1), hasAtom(X,Y2), o(Y2), bond(Y1,Y2), bond
 
 % molecules that contain at least one (possibly acyl) carbon connected with a non-carbon atom
 heteroOrganic(X) :- hasAtom(X,Y1), c(Y1), hasAtom(X,Y2), not c(Y2),  not h(Y2), bond(Y1,Y2), bond(Y2,Y1).
+
+:- organooxygen(X), heteroOrganic(X).
+:- monoatomic(X), atLeast2Carbons(X).
+:- exactly1Carbon(X), atLeast2Carbons(X).
+:- organophosphorus(X), monoatomic(X).
+:- nobleGasMolEntity(X), carbonMolEntity(X).
+:- hasBenzeneRing(X), exactly2Carbons(X).
+:- exactly4Carbons(X), hasBenzeneRing(X).
+:- nobleGasMolEntity(X), chromiumGroupMolEntity(X).
+:- polyatomic(X), nobleGasMolEntity(X).

@@ -1,0 +1,3 @@
+o(X)
+c(X) single(X,Y) o(Y)
+molecule(X) hasAtom(X,Y) c(Y) hasAtom(X,U) double(U,Y) double(Y,U)
