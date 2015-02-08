@@ -1,0 +1,276 @@
+degreefrom(X,Y) :- doctoraldegreefrom(X,Y).
+7
+memberof(X,Y) :- worksfor(X,Y).
+5
+degreefrom(X,Y) :- mastersdegreefrom(X,Y).
+10
+member(Y,X) :- memberof(X,Y).
+3
+memberof(Y,X) :- member(X,Y).
+3
+degreefrom(X,Y) :- undergraduatedegreefrom(X,Y).
+9
+hasalumnus(Y,X) :- degreefrom(X,Y).
+3
+degreefrom(Y,X) :- hasalumnus(X,Y).
+10
+worksfor(X,Y) :- headof(X,Y).
+5
+professor(X) :- tenured(X,Y).
+5
+person(X) :- degreefrom(X,Y).
+3
+faculty(X) :- professor(X).
+5
+faculty(X) :- postdoc(X).
+7
+professor(X) :- dean(X).
+6
+publication(X) :- publicationdate(X,Y).
+4
+person(X) :- title(X,Y).
+6
+software(X) :- softwaredocumentation(X,Y).
+9
+student(X) :- person(X), takescourse(X,Y), course(Y).
+8
+takescourse(X,f(X)) :- student(X).
+4
+course(f(X)) :- student(X).
+8
+person(X) :- student(X).
+4
+publication(X) :- publicationresearch(X,Y).
+8
+chair(X) :- person(X), headof(X,Y), department(Y).
+9
+headof(X,f(X)) :- chair(X).
+9
+department(f(X)) :- chair(X).
+4
+person(X) :- chair(X).
+4
+publication(X) :- publicationauthor(X,Y).
+6
+organization(X) :- affiliateof(X,Y).
+6
+faculty(X) :- lecturer(X).
+9
+university(Y) :- degreefrom(X,Y).
+5
+university(Y) :- undergraduatedegreefrom(X,Y).
+6
+person(Y) :- publicationauthor(X,Y).
+9
+course(Y) :- teachingassistantof(X,Y).
+10
+person(X) :- advisor(X,Y).
+10
+university(X) :- hasalumnus(X,Y).
+8
+professor(X) :- visitingprofessor(X).
+9
+professor(X) :- assistantprofessor(X).
+6
+organization(X) :- affiliatedorganizationof(X,Y).
+7
+article(X) :- technicalreport(X).
+3
+professor(Y) :- advisor(X,Y).
+8
+publication(X) :- book(X).
+4
+dean(X) :- headof(X,Y), college(Y).
+5
+headof(X,f(X)) :- dean(X).
+5
+college(f(X)) :- dean(X).
+3
+internal_all_0(X) :- thing(X).
+7
+publication(Y) :- orgpublication(X,Y).
+3
+university(Y) :- mastersdegreefrom(X,Y).
+5
+university(Y) :- doctoraldegreefrom(X,Y).
+9
+undergraduatestudent(X) :- researchassistant(X).
+0
+article(X) :- journalarticle(X).
+7
+course(Y) :- listedcourse(X,Y).
+9
+course(Y) :- teacherof(X,Y).
+7
+faculty(X) :- teacherof(X,Y).
+4
+person(X) :- emailaddress(X,Y).
+4
+organization(X) :- program(X).
+9
+work(X) :- course(X).
+6
+person(X) :- researchassistant(X).
+5
+publication(X) :- unofficialpublication(X).
+8
+person(X) :- graduatestudent(X).
+5
+organization(Y) :- affiliatedorganizationof(X,Y).
+3
+organization(X) :- university(X).
+7
+student(X) :- undergraduatestudent(X).
+8
+work(X) :- research(X).
+7
+article(X) :- conferencepaper(X).
+3
+worksfor(X,f(X)) :- researchassistant(X), not professor(X).
+7
+researchgroup(f(X)) :- researchassistant(X).
+2
+organization(X) :- researchgroup(X).
+9
+professor(X) :- chair(X).
+6
+director(X) :- person(X), headof(X,Y), program(Y).
+10
+headof(X,f(X)) :- director(X).
+2
+program(f(X)) :- director(X).
+2
+person(X) :- director(X).
+5
+employee(X) :- administrativestaff(X).
+4
+employee(X) :- person(X), worksfor(X,Y), not student(X). 
+6
+worksfor(X,f(X)) :- employee(X).
+10
+worksfor(X,f(X)) :- teachingassistant(X), not student(X).
+6
+organization(f(X)) :- employee(X).
+8
+person(X) :- employee(X).
+10
+organization(X) :- member(X,Y).
+8
+administrativestaff(X) :- systemsstaff(X).
+5
+researchgroup(X) :- researchproject(X,Y).
+8
+organization(X) :- department(X).
+6
+organization(X) :- internal_all_1(X).
+9
+publication(Y) :- softwaredocumentation(X,Y).
+7
+person(X) :- telephone(X,Y).
+7
+organization(X) :- orgpublication(X,Y).
+7
+person(X) :- doctoraldegreefrom(X,Y).
+7
+organization(X) :- institute(X).
+4
+person(Y) :- affiliateof(X,Y).
+6
+schedule(X) :- listedcourse(X,Y).
+6
+person(Y) :- hasalumnus(X,Y).
+4
+publication(X) :- specification(X).
+8
+publication(X) :- software(X).
+8
+person(X) :- mastersdegreefrom(X,Y).
+5
+person(X) :- undergraduatedegreefrom(X,Y).
+5
+teachingassistant(X) :- teachingassistantof(X,Y).
+5
+administrativestaff(X) :- clericalstaff(X).
+5
+research(Y) :- publicationresearch(X,Y).
+4
+organization(X) :- college(X).
+7
+publication(X) :- article(X).
+5
+professor(X) :- associateprofessor(X).
+8
+person(Y) :- member(X,Y).
+4
+course(X) :- graduatecourse(X).
+10
+professor(X) :- fullprofessor(X).
+6
+publication(X) :- manual(X).
+10
+software(X) :- softwareversion(X,Y).
+5
+teachingassistant(X) :- person(X), teachingassistantof(X,Y), course(Y).
+6
+teachingassistantof(X,f(X)) :- teachingassistant(X).
+10
+course(f(X)) :- teachingassistant(X).
+9
+person(X) :- teachingassistant(X).
+7
+person(X) :- age(X,Y).
+8
+takescourse(X,f(X)) :- graduatestudent(X).
+7
+graduatecourse(f(X)) :- graduatestudent(X).
+9
+research(Y) :- researchproject(X,Y).
+9
+employee(X) :- faculty(X).
+9
+internal_all_4(Y) :- internal_all_3(X), suborganizationof(X,Y).
+8
+internal_all_3(X) :- internal_all_4(X).
+8
+internal_all_2(X) :- internal_all_4(X).
+6
+internal_all_2(Y) :- internal_all_0(X), suborganizationof(X,Y).
+6
+internal_all_0(X) :- internal_all_2(X).
+7
+internal_all_3(X) :- internal_all_0(X).
+10
+organization(X) :- internal_all_2(X).
+4
+internal_all_6(X) :- suborganizationof(X,Y), internal_all_7(Y).
+6
+internal_all_7(X) :- internal_all_6(X).
+7
+internal_all_7(X) :- internal_all_5(X).
+8
+internal_all_1(X) :- suborganizationof(X,Y), internal_all_5(Y).
+5
+internal_all_5(X) :- internal_all_1(X).
+9
+internal_all_1(X) :- internal_all_6(X).
+9
+internal_all_5(X) :- thing(X).
+7
+ :- undergraduatestudent(X), researchassistant(X).
+0
+ :- assistantprofessor(X), associateprofessor(X).
+0
+ :- teachingassistant(X), undergraduatestudent(X). 
+1
+ :- worksfor(X,Y), graduatestudent(X).
+0
+ :- professor(X), student(X).
+0
+ :- dean(X), student(X).
+2
+ :- dean(X), associateprofessor(X).
+1
+ :- worksfor(X,Y), assistantprofessor(Y). 
+0
+ :- software(X), publication(X).
+0

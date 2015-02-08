@@ -29,6 +29,12 @@ class Dict {
       predicate.insert(pair<string, int>(s, predicate.size() + 1));
       return predicate.size();
     };
+    void reset() {
+      ps = 0;
+      is = 0;
+      predicate.clear();
+      individual.clear();
+    }
     int addInd(string& s) {
       map<string, int>::iterator it = individual.find(s);
       if(it != individual.end()) {

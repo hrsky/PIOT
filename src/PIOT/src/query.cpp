@@ -33,7 +33,7 @@ bool check_entailment(vector<Atom>& query, unsigned index) {
   vector<int> t = query[index].t;
 
   vector<Atom> atoms = models[p];
-
+    cout << "query check" << endl;
   for(unsigned i = 0; i < atoms.size(); i++) {
     vector<int> cv;
     size_t c;

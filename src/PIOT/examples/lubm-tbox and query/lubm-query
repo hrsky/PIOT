@@ -1,0 +1,6 @@
+student(X) course(Y) takescourse(X,Y)
+graduatestudent(X) university(Y) department(Z) memberof(X,Z) suborganizationof(Z,Y) undergraduatedegreefrom(X,Y)
+publication(X)
+student(X) takescourse(X,department6_university0_course47)
+student(X) takescourse(X,Z) course(Z) teacherof(Y,Z) faculty(Y) worksfor(Y,U) department(U) memberof(X,U)
+publication(X) publicationauthor(X,Y) professor(Y) publicationauthor(X,Z) student(Z)

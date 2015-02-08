@@ -12,7 +12,7 @@
 using namespace std;
 class translation {
 public:
-  translation(string pFilePath, string pFileName);
+  translation(string pFilePath, string pFileName, string resultPath);
   void trans(int output_type);  //translate the program to pi(p) and return the pi(p)'s filename
   string choice_rule(int index); //generate the choice rule.
   bool isRule(string line); //determine whehther the line is a rule.
@@ -22,6 +22,7 @@ public:
 private:
   string pFileName;
   string pFilePath;
+  string resultPath;
   int p_index;
   vector<Rule> tbox;
   vector<string> abox;

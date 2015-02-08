@@ -26,20 +26,22 @@ struct Answer {
 class statistics {
 public:
   double classify_time;
-  double repair_time;
   int tbox_size;
   int abox_size;
   int curr_count;
   int find_count;
+  double found_query_time;
   double compute_time;
   int input_type;
   bool is_find;
   ofstream outfile;
   time_t start_time;
+  double total_time;
   
   statistics(string statFileName) {
     classify_time = 0;
-    repair_time = 0;
+    found_query_time = 0;
+    total_time = 0;
     tbox_size = 0;
     abox_size = 0;
     curr_count = 0;
@@ -49,6 +51,13 @@ public:
     is_find = false;
     start_time=time(NULL);
     outfile.open(statFileName, ofstream::trunc);
+  }
+  void find_query() {
+    if (found_query_time == 0) {
+      is_find = 1;
+      time_t end_time=time(NULL);
+      found_query_time = difftime(end_time,start_time);
+    }
   }
   void write_total_statistics() {
     stringstream str;
@@ -77,6 +86,10 @@ public:
     
     if (is_find) {
       toWrite += "query has been found and repair success.\r\n";
+      str << found_query_time;
+      str >> temp;
+      str.clear();
+      toWrite += "Find Query Time is: " + temp + "s.\r\n";
     } else {
       toWrite += "query has not been found.\r\n";
     }
@@ -85,12 +98,17 @@ public:
     str >> temp;
     str.clear();
     toWrite += "Classify Time: " + temp + "s.\r\n";
-      
-    str << repair_time;
+    
+    time_t end_time=time(NULL);
+    total_time = difftime(end_time,start_time);
+    str << total_time;
     str >> temp;
     str.clear();
-    toWrite += "Repair Time: " + temp + "s.\r\n";
+    toWrite += "Total Time: " + temp + "s.\r\n";
 
+    if (total_time > 3600){
+      toWrite += "Time out and repair has not been completed.\r\n";
+    }
     outfile << toWrite << endl;
     outfile.close();
   }
@@ -118,7 +136,8 @@ public:
       toWrite += "IsSatisfied: False.\r\n";
     
     time_t end_time=time(NULL);
-    str << difftime(end_time,start_time);
+    total_time = difftime(end_time,start_time);
+    str << total_time;
     str >> temp;
     str.clear();
     toWrite += "The program has been running " + temp + "s.\r\n";

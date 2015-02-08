@@ -13,9 +13,10 @@
 
 using namespace std;
 
-translation::translation(string pFilePath, string pFileName) {
+translation::translation(string pFilePath, string pFileName, string resultPath) {
   this->pFileName = pFileName;
   this->pFilePath = pFilePath;
+  this->resultPath = resultPath;
   p_index = 0;
   tbox.clear();
   abox.clear();
@@ -91,6 +92,10 @@ void translation::classify(int input_type) {
   ifstream infile;
   infile.open(pFilePath+pFileName);
   string str;
+  ofstream outfile;
+  outfile.flush();
+  outfile.open(resultPath + "abox", ofstream::trunc);
+
   char buff[1024];
   p_index = 0;
   if (infile.is_open()) {
@@ -113,11 +118,13 @@ void translation::classify(int input_type) {
         p_index++;
       } else {
         if (isAbox(str)) {
+          outfile << str << endl;
           abox.push_back(str);
         }
       }
     }
   }
+  outfile.close();
 }
 
 vector<Rule> translation::get_tbox() {

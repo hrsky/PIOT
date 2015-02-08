@@ -96,6 +96,7 @@ vector<Answer> Result::compute_input() {
       }
     }
   }
+    cout << "Result Success" << Sat << endl;
   return ans_set;
 }
 
