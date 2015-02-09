@@ -78,7 +78,6 @@ bool RepairComputer::qIncMax(Query& query) {
     com_end_time=clock();
     stat->compute_time = static_cast<double>(com_end_time-com_start_time)/CLOCKS_PER_SEC;
     stat->write_every_time_stat(0);
-
   }
   return true;
 }
@@ -304,11 +303,7 @@ bool RepairComputer::isConsistent(vector<int>& rules, Result& result) {
     }
     outfile << tbox[index] << endl;
   }
-  for (vector<string>::iterator it = abox.begin(); it != abox.end(); it++) {
-    outfile << *it << endl;
-  }
-  outfile.close();
-
+    
   string cmdline = "clingo " + tboxFileName + " " + aboxFileName + " > " + modelFileName;
   system(cmdline.c_str());
 
@@ -335,12 +330,10 @@ bool RepairComputer::isConsistent(vector< vector<int> >& rules, Result& result) 
         continue;
       }
       outfile << tbox[index] << endl;
+      cout << index << " ";
     }
   }
-  for (vector<string>::iterator it = abox.begin(); it != abox.end(); it++) {
-    outfile << *it << endl;
-  }
-  outfile.close();
+    cout << endl;
 
   string cmdline = "clingo " + tboxFileName + " " + aboxFileName + " > " + modelFileName;
   system(cmdline.c_str());

@@ -145,7 +145,7 @@ int main(int argc, char** argv) {
         getline(infile,q);
         cout << q << endl;
         Query query(q);
-
+//        Query query("bat(X)");
         stringstream s;
         string temp;
         s << q_num;
@@ -178,7 +178,7 @@ int main(int argc, char** argv) {
             vector<int> rules;
             for (vector<Rule>::iterator i = tbox.begin(); i != tbox.end(); i++) {
                 tb.insert(pair<int,string>(tb.size()+1,i->ruleString));
-                rules.push_back(tb.size()+1);
+                rules.push_back(tb.size());
             }
             time_t end_time=time(NULL);
             stat.classify_time =  difftime(end_time,start_time);
@@ -209,7 +209,7 @@ int main(int argc, char** argv) {
                     priority = i->priority;
                 }
                 tb.insert(pair<int,string>(tb.size()+1,i->ruleString));
-                r.push_back(tb.size()+1);
+                r.push_back(tb.size());
             }
             rules.push_back(r);
             cout << rules.size() << endl;
@@ -242,7 +242,7 @@ int main(int argc, char** argv) {
                     weight = i->weight;
                 }
                 tb.insert(pair<int,string>(tb.size()+1,i->ruleString));
-                r.push_back(tb.size()+1);
+                r.push_back(tb.size());
             }
             rules.insert(pair<int, vector<int> >(weight, r));
             time_t end_time=time(NULL);

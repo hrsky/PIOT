@@ -2,7 +2,7 @@
 # coding=utf-8
 import os
 import subprocess
-inputFilePathDic = ["/lubm-30000/", "/lubm-u1/", "/lubm-u2/", "/lubm-u5", "/lubm-30000-2", "/lubm-u1-2/", "lubm-u2-2", "lubm-u5-2"];
+inputFilePathDic = ["/lubm-30000/", "/lubm-u1/", "/lubm-u2/", "/lubm-u5/", "/lubm-30000-2/", "/lubm-u1-2/", "/lubm-u2-2/", "/lubm-u5-2/"];
 queryFileName = "../examples/lubm-query";
 def command_line():
   for i in range(0,5):
@@ -17,6 +17,7 @@ def command_line():
       else:
         cmd += "lubm";
       cmd += " ../result" + inputFilePath + " " + queryFileName;
+      print(cmd);
       os.system(cmd);
       cmd = temp;
 command_line()

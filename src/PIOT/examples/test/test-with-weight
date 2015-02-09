@@ -1,14 +1,21 @@
 %% TBox
- a :- b.
-4
-   :- a, b.
-3
- d :- c.
-10
-   :- d, c.
+canfly(X) :- bat(X).
+2
+livein(X,f(X)) :- bat(X).
 5
+cave(f(X)) :- bat(X).
+5
+cavecreature(X) :- livein(X,Y), cave(Y).
+6
+cannotfly(X) :- mammal(X), not canfly(X).
+2
+bird(X) :- canfly(X).
+1
+:- bird(X), cavecreature(X).
+4
+:- bird(X), mammal(X).
+6
 
 %% ABox
-b.
-c.
-
+bat(a).
+mammal(b).
