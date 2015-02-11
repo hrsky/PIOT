@@ -163,7 +163,7 @@ int main(int argc, char** argv) {
         
 //        tran.trans(2);
 //        tran.trans(3);
-        
+
         time_t start_time=time(NULL);
         tran.classify(input_type);
         
@@ -247,12 +247,12 @@ int main(int argc, char** argv) {
             rules.insert(pair<int, vector<int> >(weight, r));
             time_t end_time=time(NULL);
             stat.classify_time =  difftime(end_time,start_time);
-            
+
             RepairComputer repair(rules, tb, resultPath, &stat);
             isFound = repair.qWeightMax(query);
         }
         
-        if (isFound) {
+        if (stat.is_find) {
             cout << "Found!" << endl;
         } else {
             cout << "Not Found!" << endl;

@@ -1,0 +1,3398 @@
+molecule(X) :- chebi_10790(X).
+c(f_chebi_10790_1(X)) :- chebi_10790(X).
+o(f_chebi_10790_2(X)) :- chebi_10790(X).
+n(f_chebi_10790_3(X)) :- chebi_10790(X).
+n(f_chebi_10790_4(X)) :- chebi_10790(X).
+c(f_chebi_10790_5(X)) :- chebi_10790(X).
+n(f_chebi_10790_6(X)) :- chebi_10790(X).
+c(f_chebi_10790_7(X)) :- chebi_10790(X).
+o(f_chebi_10790_8(X)) :- chebi_10790(X).
+n(f_chebi_10790_9(X)) :- chebi_10790(X).
+h(f_chebi_10790_10(X)) :- chebi_10790(X).
+h(f_chebi_10790_11(X)) :- chebi_10790(X).
+h(f_chebi_10790_12(X)) :- chebi_10790(X).
+h(f_chebi_10790_13(X)) :- chebi_10790(X).
+h(f_chebi_10790_14(X)) :- chebi_10790(X).
+h(f_chebi_10790_15(X)) :- chebi_10790(X).
+h(f_chebi_10790_16(X)) :- chebi_10790(X).
+h(f_chebi_10790_17(X)) :- chebi_10790(X).
+hasAtom(X,f_chebi_10790_1(X)) :- chebi_10790(X).
+hasAtom(X,f_chebi_10790_2(X)) :- chebi_10790(X).
+hasAtom(X,f_chebi_10790_3(X)) :- chebi_10790(X).
+hasAtom(X,f_chebi_10790_4(X)) :- chebi_10790(X).
+hasAtom(X,f_chebi_10790_5(X)) :- chebi_10790(X).
+hasAtom(X,f_chebi_10790_6(X)) :- chebi_10790(X).
+hasAtom(X,f_chebi_10790_7(X)) :- chebi_10790(X).
+hasAtom(X,f_chebi_10790_8(X)) :- chebi_10790(X).
+hasAtom(X,f_chebi_10790_9(X)) :- chebi_10790(X).
+double(f_chebi_10790_2(X),f_chebi_10790_1(X)) :- chebi_10790(X).
+double(f_chebi_10790_1(X),f_chebi_10790_2(X)) :- chebi_10790(X).
+single(f_chebi_10790_3(X),f_chebi_10790_1(X)) :- chebi_10790(X).
+single(f_chebi_10790_1(X),f_chebi_10790_3(X)) :- chebi_10790(X).
+single(f_chebi_10790_4(X),f_chebi_10790_1(X)) :- chebi_10790(X).
+single(f_chebi_10790_1(X),f_chebi_10790_4(X)) :- chebi_10790(X).
+single(f_chebi_10790_5(X),f_chebi_10790_3(X)) :- chebi_10790(X).
+single(f_chebi_10790_3(X),f_chebi_10790_5(X)) :- chebi_10790(X).
+single(f_chebi_10790_6(X),f_chebi_10790_5(X)) :- chebi_10790(X).
+single(f_chebi_10790_5(X),f_chebi_10790_6(X)) :- chebi_10790(X).
+single(f_chebi_10790_7(X),f_chebi_10790_6(X)) :- chebi_10790(X).
+single(f_chebi_10790_6(X),f_chebi_10790_7(X)) :- chebi_10790(X).
+double(f_chebi_10790_8(X),f_chebi_10790_7(X)) :- chebi_10790(X).
+double(f_chebi_10790_7(X),f_chebi_10790_8(X)) :- chebi_10790(X).
+single(f_chebi_10790_9(X),f_chebi_10790_7(X)) :- chebi_10790(X).
+single(f_chebi_10790_7(X),f_chebi_10790_9(X)) :- chebi_10790(X).
+single(f_chebi_10790_2(X),f_chebi_10790_10(X)) :- chebi_10790(X).
+single(f_chebi_10790_10(X),f_chebi_10790_2(X)) :- chebi_10790(X).
+hasAtom(X,f_chebi_10790_10(X)) :- chebi_10790(X).
+single(f_chebi_10790_3(X),f_chebi_10790_11(X)) :- chebi_10790(X).
+single(f_chebi_10790_11(X),f_chebi_10790_3(X)) :- chebi_10790(X).
+hasAtom(X,f_chebi_10790_11(X)) :- chebi_10790(X).
+single(f_chebi_10790_3(X),f_chebi_10790_12(X)) :- chebi_10790(X).
+single(f_chebi_10790_12(X),f_chebi_10790_3(X)) :- chebi_10790(X).
+hasAtom(X,f_chebi_10790_12(X)) :- chebi_10790(X).
+single(f_chebi_10790_4(X),f_chebi_10790_13(X)) :- chebi_10790(X).
+single(f_chebi_10790_13(X),f_chebi_10790_4(X)) :- chebi_10790(X).
+hasAtom(X,f_chebi_10790_13(X)) :- chebi_10790(X).
+single(f_chebi_10790_4(X),f_chebi_10790_14(X)) :- chebi_10790(X).
+single(f_chebi_10790_14(X),f_chebi_10790_4(X)) :- chebi_10790(X).
+hasAtom(X,f_chebi_10790_14(X)) :- chebi_10790(X).
+single(f_chebi_10790_5(X),f_chebi_10790_15(X)) :- chebi_10790(X).
+single(f_chebi_10790_15(X),f_chebi_10790_5(X)) :- chebi_10790(X).
+hasAtom(X,f_chebi_10790_15(X)) :- chebi_10790(X).
+single(f_chebi_10790_8(X),f_chebi_10790_16(X)) :- chebi_10790(X).
+single(f_chebi_10790_16(X),f_chebi_10790_8(X)) :- chebi_10790(X).
+hasAtom(X,f_chebi_10790_16(X)) :- chebi_10790(X).
+single(f_chebi_10790_8(X),f_chebi_10790_17(X)) :- chebi_10790(X).
+single(f_chebi_10790_17(X),f_chebi_10790_8(X)) :- chebi_10790(X).
+hasAtom(X,f_chebi_10790_17(X)) :- chebi_10790(X).
+chebi_10790(c_chebi_10790).
+molecule(X) :- chebi_11553(X).
+c(f_chebi_11553_1(X)) :- chebi_11553(X).
+c(f_chebi_11553_2(X)) :- chebi_11553(X).
+c(f_chebi_11553_3(X)) :- chebi_11553(X).
+o(f_chebi_11553_4(X)) :- chebi_11553(X).
+minus1(f_chebi_11553_4(X)) :- chebi_11553(X).
+c(f_chebi_11553_5(X)) :- chebi_11553(X).
+o(f_chebi_11553_6(X)) :- chebi_11553(X).
+c(f_chebi_11553_7(X)) :- chebi_11553(X).
+o(f_chebi_11553_8(X)) :- chebi_11553(X).
+o(f_chebi_11553_9(X)) :- chebi_11553(X).
+o(f_chebi_11553_10(X)) :- chebi_11553(X).
+h(f_chebi_11553_11(X)) :- chebi_11553(X).
+h(f_chebi_11553_12(X)) :- chebi_11553(X).
+h(f_chebi_11553_13(X)) :- chebi_11553(X).
+h(f_chebi_11553_14(X)) :- chebi_11553(X).
+h(f_chebi_11553_15(X)) :- chebi_11553(X).
+h(f_chebi_11553_16(X)) :- chebi_11553(X).
+h(f_chebi_11553_17(X)) :- chebi_11553(X).
+hasAtom(X,f_chebi_11553_1(X)) :- chebi_11553(X).
+hasAtom(X,f_chebi_11553_2(X)) :- chebi_11553(X).
+hasAtom(X,f_chebi_11553_3(X)) :- chebi_11553(X).
+hasAtom(X,f_chebi_11553_4(X)) :- chebi_11553(X).
+hasAtom(X,f_chebi_11553_5(X)) :- chebi_11553(X).
+hasAtom(X,f_chebi_11553_6(X)) :- chebi_11553(X).
+hasAtom(X,f_chebi_11553_7(X)) :- chebi_11553(X).
+hasAtom(X,f_chebi_11553_8(X)) :- chebi_11553(X).
+hasAtom(X,f_chebi_11553_9(X)) :- chebi_11553(X).
+hasAtom(X,f_chebi_11553_10(X)) :- chebi_11553(X).
+single(f_chebi_11553_2(X),f_chebi_11553_1(X)) :- chebi_11553(X).
+single(f_chebi_11553_1(X),f_chebi_11553_2(X)) :- chebi_11553(X).
+double(f_chebi_11553_2(X),f_chebi_11553_9(X)) :- chebi_11553(X).
+double(f_chebi_11553_9(X),f_chebi_11553_2(X)) :- chebi_11553(X).
+single(f_chebi_11553_3(X),f_chebi_11553_2(X)) :- chebi_11553(X).
+single(f_chebi_11553_2(X),f_chebi_11553_3(X)) :- chebi_11553(X).
+double(f_chebi_11553_3(X),f_chebi_11553_8(X)) :- chebi_11553(X).
+double(f_chebi_11553_8(X),f_chebi_11553_3(X)) :- chebi_11553(X).
+single(f_chebi_11553_3(X),f_chebi_11553_4(X)) :- chebi_11553(X).
+single(f_chebi_11553_4(X),f_chebi_11553_3(X)) :- chebi_11553(X).
+single(f_chebi_11553_5(X),f_chebi_11553_6(X)) :- chebi_11553(X).
+single(f_chebi_11553_6(X),f_chebi_11553_5(X)) :- chebi_11553(X).
+single(f_chebi_11553_7(X),f_chebi_11553_5(X)) :- chebi_11553(X).
+single(f_chebi_11553_5(X),f_chebi_11553_7(X)) :- chebi_11553(X).
+single(f_chebi_11553_7(X),f_chebi_11553_1(X)) :- chebi_11553(X).
+single(f_chebi_11553_1(X),f_chebi_11553_7(X)) :- chebi_11553(X).
+single(f_chebi_11553_7(X),f_chebi_11553_10(X)) :- chebi_11553(X).
+single(f_chebi_11553_10(X),f_chebi_11553_7(X)) :- chebi_11553(X).
+single(X,f_chebi_11553_11(X)) :- chebi_11553(X).
+single(f_chebi_11553_11(X),X) :- chebi_11553(X).
+hasAtom(X,f_chebi_11553_11(X)) :- chebi_11553(X).
+single(X,f_chebi_11553_12(X)) :- chebi_11553(X).
+single(f_chebi_11553_12(X),X) :- chebi_11553(X).
+hasAtom(X,f_chebi_11553_12(X)) :- chebi_11553(X).
+single(f_chebi_11553_4(X),f_chebi_11553_13(X)) :- chebi_11553(X).
+single(f_chebi_11553_13(X),f_chebi_11553_4(X)) :- chebi_11553(X).
+hasAtom(X,f_chebi_11553_13(X)) :- chebi_11553(X).
+single(f_chebi_11553_4(X),f_chebi_11553_14(X)) :- chebi_11553(X).
+single(f_chebi_11553_14(X),f_chebi_11553_4(X)) :- chebi_11553(X).
+hasAtom(X,f_chebi_11553_14(X)) :- chebi_11553(X).
+single(f_chebi_11553_5(X),f_chebi_11553_15(X)) :- chebi_11553(X).
+single(f_chebi_11553_15(X),f_chebi_11553_5(X)) :- chebi_11553(X).
+hasAtom(X,f_chebi_11553_15(X)) :- chebi_11553(X).
+single(f_chebi_11553_6(X),f_chebi_11553_16(X)) :- chebi_11553(X).
+single(f_chebi_11553_16(X),f_chebi_11553_6(X)) :- chebi_11553(X).
+hasAtom(X,f_chebi_11553_16(X)) :- chebi_11553(X).
+single(f_chebi_11553_9(X),f_chebi_11553_17(X)) :- chebi_11553(X).
+single(f_chebi_11553_17(X),f_chebi_11553_9(X)) :- chebi_11553(X).
+hasAtom(X,f_chebi_11553_17(X)) :- chebi_11553(X).
+chebi_11553(c_chebi_11553).
+molecule(X) :- chebi_11426(X).
+c(f_chebi_11426_1(X)) :- chebi_11426(X).
+c(f_chebi_11426_2(X)) :- chebi_11426(X).
+s(f_chebi_11426_3(X)) :- chebi_11426(X).
+c(f_chebi_11426_4(X)) :- chebi_11426(X).
+c(f_chebi_11426_5(X)) :- chebi_11426(X).
+o(f_chebi_11426_6(X)) :- chebi_11426(X).
+o(f_chebi_11426_7(X)) :- chebi_11426(X).
+o(f_chebi_11426_8(X)) :- chebi_11426(X).
+o(f_chebi_11426_9(X)) :- chebi_11426(X).
+minus1(f_chebi_11426_9(X)) :- chebi_11426(X).
+c(f_chebi_11426_10(X)) :- chebi_11426(X).
+c(f_chebi_11426_11(X)) :- chebi_11426(X).
+o(f_chebi_11426_12(X)) :- chebi_11426(X).
+h(f_chebi_11426_13(X)) :- chebi_11426(X).
+h(f_chebi_11426_14(X)) :- chebi_11426(X).
+h(f_chebi_11426_15(X)) :- chebi_11426(X).
+h(f_chebi_11426_16(X)) :- chebi_11426(X).
+h(f_chebi_11426_17(X)) :- chebi_11426(X).
+hasAtom(X,f_chebi_11426_1(X)) :- chebi_11426(X).
+hasAtom(X,f_chebi_11426_2(X)) :- chebi_11426(X).
+hasAtom(X,f_chebi_11426_3(X)) :- chebi_11426(X).
+hasAtom(X,f_chebi_11426_4(X)) :- chebi_11426(X).
+hasAtom(X,f_chebi_11426_5(X)) :- chebi_11426(X).
+hasAtom(X,f_chebi_11426_6(X)) :- chebi_11426(X).
+hasAtom(X,f_chebi_11426_7(X)) :- chebi_11426(X).
+hasAtom(X,f_chebi_11426_8(X)) :- chebi_11426(X).
+hasAtom(X,f_chebi_11426_9(X)) :- chebi_11426(X).
+hasAtom(X,f_chebi_11426_10(X)) :- chebi_11426(X).
+hasAtom(X,f_chebi_11426_11(X)) :- chebi_11426(X).
+hasAtom(X,f_chebi_11426_12(X)) :- chebi_11426(X).
+double(f_chebi_11426_1(X),f_chebi_11426_2(X)) :- chebi_11426(X).
+double(f_chebi_11426_2(X),f_chebi_11426_1(X)) :- chebi_11426(X).
+single(f_chebi_11426_1(X),f_chebi_11426_3(X)) :- chebi_11426(X).
+single(f_chebi_11426_3(X),f_chebi_11426_1(X)) :- chebi_11426(X).
+single(f_chebi_11426_1(X),f_chebi_11426_4(X)) :- chebi_11426(X).
+single(f_chebi_11426_4(X),f_chebi_11426_1(X)) :- chebi_11426(X).
+single(f_chebi_11426_2(X),f_chebi_11426_5(X)) :- chebi_11426(X).
+single(f_chebi_11426_5(X),f_chebi_11426_2(X)) :- chebi_11426(X).
+single(f_chebi_11426_2(X),f_chebi_11426_6(X)) :- chebi_11426(X).
+single(f_chebi_11426_6(X),f_chebi_11426_2(X)) :- chebi_11426(X).
+double(f_chebi_11426_3(X),f_chebi_11426_7(X)) :- chebi_11426(X).
+double(f_chebi_11426_7(X),f_chebi_11426_3(X)) :- chebi_11426(X).
+double(f_chebi_11426_3(X),f_chebi_11426_8(X)) :- chebi_11426(X).
+double(f_chebi_11426_8(X),f_chebi_11426_3(X)) :- chebi_11426(X).
+single(f_chebi_11426_3(X),f_chebi_11426_9(X)) :- chebi_11426(X).
+single(f_chebi_11426_9(X),f_chebi_11426_3(X)) :- chebi_11426(X).
+double(f_chebi_11426_4(X),f_chebi_11426_10(X)) :- chebi_11426(X).
+double(f_chebi_11426_10(X),f_chebi_11426_4(X)) :- chebi_11426(X).
+double(f_chebi_11426_5(X),f_chebi_11426_11(X)) :- chebi_11426(X).
+double(f_chebi_11426_11(X),f_chebi_11426_5(X)) :- chebi_11426(X).
+single(f_chebi_11426_5(X),f_chebi_11426_12(X)) :- chebi_11426(X).
+single(f_chebi_11426_12(X),f_chebi_11426_5(X)) :- chebi_11426(X).
+single(f_chebi_11426_10(X),f_chebi_11426_11(X)) :- chebi_11426(X).
+single(f_chebi_11426_11(X),f_chebi_11426_10(X)) :- chebi_11426(X).
+single(f_chebi_11426_3(X),f_chebi_11426_13(X)) :- chebi_11426(X).
+single(f_chebi_11426_13(X),f_chebi_11426_3(X)) :- chebi_11426(X).
+hasAtom(X,f_chebi_11426_13(X)) :- chebi_11426(X).
+single(f_chebi_11426_5(X),f_chebi_11426_14(X)) :- chebi_11426(X).
+single(f_chebi_11426_14(X),f_chebi_11426_5(X)) :- chebi_11426(X).
+hasAtom(X,f_chebi_11426_14(X)) :- chebi_11426(X).
+single(f_chebi_11426_9(X),f_chebi_11426_15(X)) :- chebi_11426(X).
+single(f_chebi_11426_15(X),f_chebi_11426_9(X)) :- chebi_11426(X).
+hasAtom(X,f_chebi_11426_15(X)) :- chebi_11426(X).
+single(f_chebi_11426_10(X),f_chebi_11426_16(X)) :- chebi_11426(X).
+single(f_chebi_11426_16(X),f_chebi_11426_10(X)) :- chebi_11426(X).
+hasAtom(X,f_chebi_11426_16(X)) :- chebi_11426(X).
+single(f_chebi_11426_11(X),f_chebi_11426_17(X)) :- chebi_11426(X).
+single(f_chebi_11426_17(X),f_chebi_11426_11(X)) :- chebi_11426(X).
+hasAtom(X,f_chebi_11426_17(X)) :- chebi_11426(X).
+chebi_11426(c_chebi_11426).
+molecule(X) :- chebi_10100(X).
+c(f_chebi_10100_1(X)) :- chebi_10100(X).
+c(f_chebi_10100_2(X)) :- chebi_10100(X).
+c(f_chebi_10100_3(X)) :- chebi_10100(X).
+c(f_chebi_10100_4(X)) :- chebi_10100(X).
+c(f_chebi_10100_5(X)) :- chebi_10100(X).
+c(f_chebi_10100_6(X)) :- chebi_10100(X).
+c(f_chebi_10100_7(X)) :- chebi_10100(X).
+c(f_chebi_10100_8(X)) :- chebi_10100(X).
+c(f_chebi_10100_9(X)) :- chebi_10100(X).
+c(f_chebi_10100_10(X)) :- chebi_10100(X).
+c(f_chebi_10100_11(X)) :- chebi_10100(X).
+c(f_chebi_10100_12(X)) :- chebi_10100(X).
+c(f_chebi_10100_13(X)) :- chebi_10100(X).
+c(f_chebi_10100_14(X)) :- chebi_10100(X).
+c(f_chebi_10100_15(X)) :- chebi_10100(X).
+c(f_chebi_10100_16(X)) :- chebi_10100(X).
+c(f_chebi_10100_17(X)) :- chebi_10100(X).
+c(f_chebi_10100_18(X)) :- chebi_10100(X).
+o(f_chebi_10100_19(X)) :- chebi_10100(X).
+n(f_chebi_10100_20(X)) :- chebi_10100(X).
+c(f_chebi_10100_21(X)) :- chebi_10100(X).
+o(f_chebi_10100_22(X)) :- chebi_10100(X).
+o(f_chebi_10100_23(X)) :- chebi_10100(X).
+c(f_chebi_10100_24(X)) :- chebi_10100(X).
+c(f_chebi_10100_25(X)) :- chebi_10100(X).
+n(f_chebi_10100_26(X)) :- chebi_10100(X).
+c(f_chebi_10100_27(X)) :- chebi_10100(X).
+n(f_chebi_10100_28(X)) :- chebi_10100(X).
+c(f_chebi_10100_29(X)) :- chebi_10100(X).
+o(f_chebi_10100_30(X)) :- chebi_10100(X).
+c(f_chebi_10100_31(X)) :- chebi_10100(X).
+c(f_chebi_10100_32(X)) :- chebi_10100(X).
+c(f_chebi_10100_33(X)) :- chebi_10100(X).
+c(f_chebi_10100_34(X)) :- chebi_10100(X).
+c(f_chebi_10100_35(X)) :- chebi_10100(X).
+o(f_chebi_10100_36(X)) :- chebi_10100(X).
+c(f_chebi_10100_37(X)) :- chebi_10100(X).
+c(f_chebi_10100_38(X)) :- chebi_10100(X).
+c(f_chebi_10100_39(X)) :- chebi_10100(X).
+s(f_chebi_10100_40(X)) :- chebi_10100(X).
+o(f_chebi_10100_41(X)) :- chebi_10100(X).
+h(f_chebi_10100_42(X)) :- chebi_10100(X).
+h(f_chebi_10100_43(X)) :- chebi_10100(X).
+h(f_chebi_10100_44(X)) :- chebi_10100(X).
+h(f_chebi_10100_45(X)) :- chebi_10100(X).
+h(f_chebi_10100_46(X)) :- chebi_10100(X).
+h(f_chebi_10100_47(X)) :- chebi_10100(X).
+h(f_chebi_10100_48(X)) :- chebi_10100(X).
+h(f_chebi_10100_49(X)) :- chebi_10100(X).
+h(f_chebi_10100_50(X)) :- chebi_10100(X).
+h(f_chebi_10100_51(X)) :- chebi_10100(X).
+h(f_chebi_10100_52(X)) :- chebi_10100(X).
+h(f_chebi_10100_53(X)) :- chebi_10100(X).
+h(f_chebi_10100_54(X)) :- chebi_10100(X).
+h(f_chebi_10100_55(X)) :- chebi_10100(X).
+h(f_chebi_10100_56(X)) :- chebi_10100(X).
+h(f_chebi_10100_57(X)) :- chebi_10100(X).
+h(f_chebi_10100_58(X)) :- chebi_10100(X).
+h(f_chebi_10100_59(X)) :- chebi_10100(X).
+h(f_chebi_10100_60(X)) :- chebi_10100(X).
+h(f_chebi_10100_61(X)) :- chebi_10100(X).
+h(f_chebi_10100_62(X)) :- chebi_10100(X).
+h(f_chebi_10100_63(X)) :- chebi_10100(X).
+h(f_chebi_10100_64(X)) :- chebi_10100(X).
+h(f_chebi_10100_65(X)) :- chebi_10100(X).
+h(f_chebi_10100_66(X)) :- chebi_10100(X).
+h(f_chebi_10100_67(X)) :- chebi_10100(X).
+h(f_chebi_10100_68(X)) :- chebi_10100(X).
+h(f_chebi_10100_69(X)) :- chebi_10100(X).
+h(f_chebi_10100_70(X)) :- chebi_10100(X).
+h(f_chebi_10100_71(X)) :- chebi_10100(X).
+h(f_chebi_10100_72(X)) :- chebi_10100(X).
+h(f_chebi_10100_73(X)) :- chebi_10100(X).
+h(f_chebi_10100_74(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_1(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_2(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_3(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_4(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_5(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_6(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_7(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_8(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_9(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_10(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_11(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_12(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_13(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_14(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_15(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_16(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_17(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_18(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_19(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_20(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_21(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_22(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_23(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_24(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_25(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_26(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_27(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_28(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_29(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_30(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_31(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_32(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_33(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_34(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_35(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_36(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_37(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_38(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_39(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_40(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_41(X)) :- chebi_10100(X).
+double(f_chebi_10100_2(X),f_chebi_10100_1(X)) :- chebi_10100(X).
+double(f_chebi_10100_1(X),f_chebi_10100_2(X)) :- chebi_10100(X).
+single(f_chebi_10100_3(X),f_chebi_10100_1(X)) :- chebi_10100(X).
+single(f_chebi_10100_1(X),f_chebi_10100_3(X)) :- chebi_10100(X).
+single(f_chebi_10100_28(X),f_chebi_10100_3(X)) :- chebi_10100(X).
+single(f_chebi_10100_3(X),f_chebi_10100_28(X)) :- chebi_10100(X).
+double(f_chebi_10100_4(X),f_chebi_10100_3(X)) :- chebi_10100(X).
+double(f_chebi_10100_3(X),f_chebi_10100_4(X)) :- chebi_10100(X).
+single(f_chebi_10100_5(X),f_chebi_10100_2(X)) :- chebi_10100(X).
+single(f_chebi_10100_2(X),f_chebi_10100_5(X)) :- chebi_10100(X).
+single(f_chebi_10100_26(X),f_chebi_10100_5(X)) :- chebi_10100(X).
+single(f_chebi_10100_5(X),f_chebi_10100_26(X)) :- chebi_10100(X).
+double(f_chebi_10100_6(X),f_chebi_10100_5(X)) :- chebi_10100(X).
+double(f_chebi_10100_5(X),f_chebi_10100_6(X)) :- chebi_10100(X).
+single(f_chebi_10100_6(X),f_chebi_10100_4(X)) :- chebi_10100(X).
+single(f_chebi_10100_4(X),f_chebi_10100_6(X)) :- chebi_10100(X).
+single(f_chebi_10100_6(X),f_chebi_10100_24(X)) :- chebi_10100(X).
+single(f_chebi_10100_24(X),f_chebi_10100_6(X)) :- chebi_10100(X).
+single(f_chebi_10100_9(X),f_chebi_10100_7(X)) :- chebi_10100(X).
+single(f_chebi_10100_7(X),f_chebi_10100_9(X)) :- chebi_10100(X).
+double(f_chebi_10100_8(X),f_chebi_10100_7(X)) :- chebi_10100(X).
+double(f_chebi_10100_7(X),f_chebi_10100_8(X)) :- chebi_10100(X).
+single(f_chebi_10100_38(X),f_chebi_10100_8(X)) :- chebi_10100(X).
+single(f_chebi_10100_8(X),f_chebi_10100_38(X)) :- chebi_10100(X).
+single(f_chebi_10100_40(X),f_chebi_10100_8(X)) :- chebi_10100(X).
+single(f_chebi_10100_8(X),f_chebi_10100_40(X)) :- chebi_10100(X).
+double(f_chebi_10100_10(X),f_chebi_10100_9(X)) :- chebi_10100(X).
+double(f_chebi_10100_9(X),f_chebi_10100_10(X)) :- chebi_10100(X).
+single(f_chebi_10100_11(X),f_chebi_10100_10(X)) :- chebi_10100(X).
+single(f_chebi_10100_10(X),f_chebi_10100_11(X)) :- chebi_10100(X).
+double(f_chebi_10100_11(X),f_chebi_10100_38(X)) :- chebi_10100(X).
+double(f_chebi_10100_38(X),f_chebi_10100_11(X)) :- chebi_10100(X).
+single(f_chebi_10100_12(X),f_chebi_10100_20(X)) :- chebi_10100(X).
+single(f_chebi_10100_20(X),f_chebi_10100_12(X)) :- chebi_10100(X).
+single(f_chebi_10100_13(X),f_chebi_10100_12(X)) :- chebi_10100(X).
+single(f_chebi_10100_12(X),f_chebi_10100_13(X)) :- chebi_10100(X).
+double(f_chebi_10100_19(X),f_chebi_10100_12(X)) :- chebi_10100(X).
+double(f_chebi_10100_12(X),f_chebi_10100_19(X)) :- chebi_10100(X).
+single(f_chebi_10100_13(X),f_chebi_10100_21(X)) :- chebi_10100(X).
+single(f_chebi_10100_21(X),f_chebi_10100_13(X)) :- chebi_10100(X).
+double(f_chebi_10100_17(X),f_chebi_10100_13(X)) :- chebi_10100(X).
+double(f_chebi_10100_13(X),f_chebi_10100_17(X)) :- chebi_10100(X).
+double(f_chebi_10100_15(X),f_chebi_10100_14(X)) :- chebi_10100(X).
+double(f_chebi_10100_14(X),f_chebi_10100_15(X)) :- chebi_10100(X).
+single(f_chebi_10100_16(X),f_chebi_10100_14(X)) :- chebi_10100(X).
+single(f_chebi_10100_14(X),f_chebi_10100_16(X)) :- chebi_10100(X).
+single(f_chebi_10100_25(X),f_chebi_10100_14(X)) :- chebi_10100(X).
+single(f_chebi_10100_14(X),f_chebi_10100_25(X)) :- chebi_10100(X).
+single(f_chebi_10100_17(X),f_chebi_10100_15(X)) :- chebi_10100(X).
+single(f_chebi_10100_15(X),f_chebi_10100_17(X)) :- chebi_10100(X).
+double(f_chebi_10100_16(X),f_chebi_10100_21(X)) :- chebi_10100(X).
+double(f_chebi_10100_21(X),f_chebi_10100_16(X)) :- chebi_10100(X).
+single(f_chebi_10100_22(X),f_chebi_10100_16(X)) :- chebi_10100(X).
+single(f_chebi_10100_16(X),f_chebi_10100_22(X)) :- chebi_10100(X).
+single(f_chebi_10100_18(X),f_chebi_10100_22(X)) :- chebi_10100(X).
+single(f_chebi_10100_22(X),f_chebi_10100_18(X)) :- chebi_10100(X).
+single(f_chebi_10100_20(X),f_chebi_10100_40(X)) :- chebi_10100(X).
+single(f_chebi_10100_40(X),f_chebi_10100_20(X)) :- chebi_10100(X).
+double(f_chebi_10100_23(X),f_chebi_10100_40(X)) :- chebi_10100(X).
+double(f_chebi_10100_40(X),f_chebi_10100_23(X)) :- chebi_10100(X).
+single(f_chebi_10100_25(X),f_chebi_10100_24(X)) :- chebi_10100(X).
+single(f_chebi_10100_24(X),f_chebi_10100_25(X)) :- chebi_10100(X).
+double(f_chebi_10100_35(X),f_chebi_10100_24(X)) :- chebi_10100(X).
+double(f_chebi_10100_24(X),f_chebi_10100_35(X)) :- chebi_10100(X).
+single(f_chebi_10100_35(X),f_chebi_10100_26(X)) :- chebi_10100(X).
+single(f_chebi_10100_26(X),f_chebi_10100_35(X)) :- chebi_10100(X).
+single(f_chebi_10100_27(X),f_chebi_10100_26(X)) :- chebi_10100(X).
+single(f_chebi_10100_26(X),f_chebi_10100_27(X)) :- chebi_10100(X).
+single(f_chebi_10100_29(X),f_chebi_10100_28(X)) :- chebi_10100(X).
+single(f_chebi_10100_28(X),f_chebi_10100_29(X)) :- chebi_10100(X).
+single(f_chebi_10100_30(X),f_chebi_10100_29(X)) :- chebi_10100(X).
+single(f_chebi_10100_29(X),f_chebi_10100_30(X)) :- chebi_10100(X).
+double(f_chebi_10100_36(X),f_chebi_10100_29(X)) :- chebi_10100(X).
+double(f_chebi_10100_29(X),f_chebi_10100_36(X)) :- chebi_10100(X).
+single(f_chebi_10100_31(X),f_chebi_10100_30(X)) :- chebi_10100(X).
+single(f_chebi_10100_30(X),f_chebi_10100_31(X)) :- chebi_10100(X).
+single(f_chebi_10100_32(X),f_chebi_10100_31(X)) :- chebi_10100(X).
+single(f_chebi_10100_31(X),f_chebi_10100_32(X)) :- chebi_10100(X).
+single(f_chebi_10100_37(X),f_chebi_10100_31(X)) :- chebi_10100(X).
+single(f_chebi_10100_31(X),f_chebi_10100_37(X)) :- chebi_10100(X).
+single(f_chebi_10100_33(X),f_chebi_10100_32(X)) :- chebi_10100(X).
+single(f_chebi_10100_32(X),f_chebi_10100_33(X)) :- chebi_10100(X).
+single(f_chebi_10100_34(X),f_chebi_10100_33(X)) :- chebi_10100(X).
+single(f_chebi_10100_33(X),f_chebi_10100_34(X)) :- chebi_10100(X).
+single(f_chebi_10100_34(X),f_chebi_10100_37(X)) :- chebi_10100(X).
+single(f_chebi_10100_37(X),f_chebi_10100_34(X)) :- chebi_10100(X).
+single(f_chebi_10100_38(X),f_chebi_10100_39(X)) :- chebi_10100(X).
+single(f_chebi_10100_39(X),f_chebi_10100_38(X)) :- chebi_10100(X).
+double(f_chebi_10100_40(X),f_chebi_10100_41(X)) :- chebi_10100(X).
+double(f_chebi_10100_41(X),f_chebi_10100_40(X)) :- chebi_10100(X).
+single(X,f_chebi_10100_42(X)) :- chebi_10100(X).
+single(f_chebi_10100_42(X),X) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_42(X)) :- chebi_10100(X).
+single(f_chebi_10100_1(X),f_chebi_10100_43(X)) :- chebi_10100(X).
+single(f_chebi_10100_43(X),f_chebi_10100_1(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_43(X)) :- chebi_10100(X).
+single(f_chebi_10100_3(X),f_chebi_10100_44(X)) :- chebi_10100(X).
+single(f_chebi_10100_44(X),f_chebi_10100_3(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_44(X)) :- chebi_10100(X).
+single(f_chebi_10100_6(X),f_chebi_10100_45(X)) :- chebi_10100(X).
+single(f_chebi_10100_45(X),f_chebi_10100_6(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_45(X)) :- chebi_10100(X).
+single(f_chebi_10100_8(X),f_chebi_10100_46(X)) :- chebi_10100(X).
+single(f_chebi_10100_46(X),f_chebi_10100_8(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_46(X)) :- chebi_10100(X).
+single(f_chebi_10100_9(X),f_chebi_10100_47(X)) :- chebi_10100(X).
+single(f_chebi_10100_47(X),f_chebi_10100_9(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_47(X)) :- chebi_10100(X).
+single(f_chebi_10100_10(X),f_chebi_10100_48(X)) :- chebi_10100(X).
+single(f_chebi_10100_48(X),f_chebi_10100_10(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_48(X)) :- chebi_10100(X).
+single(f_chebi_10100_14(X),f_chebi_10100_49(X)) :- chebi_10100(X).
+single(f_chebi_10100_49(X),f_chebi_10100_14(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_49(X)) :- chebi_10100(X).
+single(f_chebi_10100_16(X),f_chebi_10100_50(X)) :- chebi_10100(X).
+single(f_chebi_10100_50(X),f_chebi_10100_16(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_50(X)) :- chebi_10100(X).
+single(f_chebi_10100_17(X),f_chebi_10100_51(X)) :- chebi_10100(X).
+single(f_chebi_10100_51(X),f_chebi_10100_17(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_51(X)) :- chebi_10100(X).
+single(f_chebi_10100_17(X),f_chebi_10100_52(X)) :- chebi_10100(X).
+single(f_chebi_10100_52(X),f_chebi_10100_17(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_52(X)) :- chebi_10100(X).
+single(f_chebi_10100_17(X),f_chebi_10100_53(X)) :- chebi_10100(X).
+single(f_chebi_10100_53(X),f_chebi_10100_17(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_53(X)) :- chebi_10100(X).
+single(f_chebi_10100_19(X),f_chebi_10100_54(X)) :- chebi_10100(X).
+single(f_chebi_10100_54(X),f_chebi_10100_19(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_54(X)) :- chebi_10100(X).
+single(f_chebi_10100_20(X),f_chebi_10100_55(X)) :- chebi_10100(X).
+single(f_chebi_10100_55(X),f_chebi_10100_20(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_55(X)) :- chebi_10100(X).
+single(f_chebi_10100_24(X),f_chebi_10100_56(X)) :- chebi_10100(X).
+single(f_chebi_10100_56(X),f_chebi_10100_24(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_56(X)) :- chebi_10100(X).
+single(f_chebi_10100_24(X),f_chebi_10100_57(X)) :- chebi_10100(X).
+single(f_chebi_10100_57(X),f_chebi_10100_24(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_57(X)) :- chebi_10100(X).
+single(f_chebi_10100_26(X),f_chebi_10100_58(X)) :- chebi_10100(X).
+single(f_chebi_10100_58(X),f_chebi_10100_26(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_58(X)) :- chebi_10100(X).
+single(f_chebi_10100_26(X),f_chebi_10100_59(X)) :- chebi_10100(X).
+single(f_chebi_10100_59(X),f_chebi_10100_26(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_59(X)) :- chebi_10100(X).
+single(f_chebi_10100_26(X),f_chebi_10100_60(X)) :- chebi_10100(X).
+single(f_chebi_10100_60(X),f_chebi_10100_26(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_60(X)) :- chebi_10100(X).
+single(f_chebi_10100_27(X),f_chebi_10100_61(X)) :- chebi_10100(X).
+single(f_chebi_10100_61(X),f_chebi_10100_27(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_61(X)) :- chebi_10100(X).
+single(f_chebi_10100_30(X),f_chebi_10100_62(X)) :- chebi_10100(X).
+single(f_chebi_10100_62(X),f_chebi_10100_30(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_62(X)) :- chebi_10100(X).
+single(f_chebi_10100_31(X),f_chebi_10100_63(X)) :- chebi_10100(X).
+single(f_chebi_10100_63(X),f_chebi_10100_31(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_63(X)) :- chebi_10100(X).
+single(f_chebi_10100_31(X),f_chebi_10100_64(X)) :- chebi_10100(X).
+single(f_chebi_10100_64(X),f_chebi_10100_31(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_64(X)) :- chebi_10100(X).
+single(f_chebi_10100_32(X),f_chebi_10100_65(X)) :- chebi_10100(X).
+single(f_chebi_10100_65(X),f_chebi_10100_32(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_65(X)) :- chebi_10100(X).
+single(f_chebi_10100_32(X),f_chebi_10100_66(X)) :- chebi_10100(X).
+single(f_chebi_10100_66(X),f_chebi_10100_32(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_66(X)) :- chebi_10100(X).
+single(f_chebi_10100_33(X),f_chebi_10100_67(X)) :- chebi_10100(X).
+single(f_chebi_10100_67(X),f_chebi_10100_33(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_67(X)) :- chebi_10100(X).
+single(f_chebi_10100_33(X),f_chebi_10100_68(X)) :- chebi_10100(X).
+single(f_chebi_10100_68(X),f_chebi_10100_33(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_68(X)) :- chebi_10100(X).
+single(f_chebi_10100_34(X),f_chebi_10100_69(X)) :- chebi_10100(X).
+single(f_chebi_10100_69(X),f_chebi_10100_34(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_69(X)) :- chebi_10100(X).
+single(f_chebi_10100_36(X),f_chebi_10100_70(X)) :- chebi_10100(X).
+single(f_chebi_10100_70(X),f_chebi_10100_36(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_70(X)) :- chebi_10100(X).
+single(f_chebi_10100_36(X),f_chebi_10100_71(X)) :- chebi_10100(X).
+single(f_chebi_10100_71(X),f_chebi_10100_36(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_71(X)) :- chebi_10100(X).
+single(f_chebi_10100_38(X),f_chebi_10100_72(X)) :- chebi_10100(X).
+single(f_chebi_10100_72(X),f_chebi_10100_38(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_72(X)) :- chebi_10100(X).
+single(f_chebi_10100_38(X),f_chebi_10100_73(X)) :- chebi_10100(X).
+single(f_chebi_10100_73(X),f_chebi_10100_38(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_73(X)) :- chebi_10100(X).
+single(f_chebi_10100_38(X),f_chebi_10100_74(X)) :- chebi_10100(X).
+single(f_chebi_10100_74(X),f_chebi_10100_38(X)) :- chebi_10100(X).
+hasAtom(X,f_chebi_10100_74(X)) :- chebi_10100(X).
+chebi_10100(c_chebi_10100).
+molecule(X) :- chebi_11060(X).
+c(f_chebi_11060_1(X)) :- chebi_11060(X).
+c(f_chebi_11060_2(X)) :- chebi_11060(X).
+o(f_chebi_11060_3(X)) :- chebi_11060(X).
+minus1(f_chebi_11060_3(X)) :- chebi_11060(X).
+c(f_chebi_11060_4(X)) :- chebi_11060(X).
+c(f_chebi_11060_5(X)) :- chebi_11060(X).
+o(f_chebi_11060_6(X)) :- chebi_11060(X).
+c(f_chebi_11060_7(X)) :- chebi_11060(X).
+o(f_chebi_11060_8(X)) :- chebi_11060(X).
+c(f_chebi_11060_9(X)) :- chebi_11060(X).
+n(f_chebi_11060_10(X)) :- chebi_11060(X).
+plus1(f_chebi_11060_10(X)) :- chebi_11060(X).
+c(f_chebi_11060_11(X)) :- chebi_11060(X).
+h(f_chebi_11060_12(X)) :- chebi_11060(X).
+h(f_chebi_11060_13(X)) :- chebi_11060(X).
+h(f_chebi_11060_14(X)) :- chebi_11060(X).
+h(f_chebi_11060_15(X)) :- chebi_11060(X).
+h(f_chebi_11060_16(X)) :- chebi_11060(X).
+h(f_chebi_11060_17(X)) :- chebi_11060(X).
+h(f_chebi_11060_18(X)) :- chebi_11060(X).
+h(f_chebi_11060_19(X)) :- chebi_11060(X).
+h(f_chebi_11060_20(X)) :- chebi_11060(X).
+h(f_chebi_11060_21(X)) :- chebi_11060(X).
+h(f_chebi_11060_22(X)) :- chebi_11060(X).
+h(f_chebi_11060_23(X)) :- chebi_11060(X).
+h(f_chebi_11060_24(X)) :- chebi_11060(X).
+h(f_chebi_11060_25(X)) :- chebi_11060(X).
+h(f_chebi_11060_26(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_1(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_2(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_3(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_4(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_5(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_6(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_7(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_8(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_9(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_10(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_11(X)) :- chebi_11060(X).
+single(f_chebi_11060_7(X),f_chebi_11060_1(X)) :- chebi_11060(X).
+single(f_chebi_11060_1(X),f_chebi_11060_7(X)) :- chebi_11060(X).
+single(f_chebi_11060_10(X),f_chebi_11060_1(X)) :- chebi_11060(X).
+single(f_chebi_11060_1(X),f_chebi_11060_10(X)) :- chebi_11060(X).
+single(f_chebi_11060_2(X),f_chebi_11060_7(X)) :- chebi_11060(X).
+single(f_chebi_11060_7(X),f_chebi_11060_2(X)) :- chebi_11060(X).
+single(f_chebi_11060_5(X),f_chebi_11060_2(X)) :- chebi_11060(X).
+single(f_chebi_11060_2(X),f_chebi_11060_5(X)) :- chebi_11060(X).
+single(f_chebi_11060_4(X),f_chebi_11060_10(X)) :- chebi_11060(X).
+single(f_chebi_11060_10(X),f_chebi_11060_4(X)) :- chebi_11060(X).
+single(f_chebi_11060_3(X),f_chebi_11060_5(X)) :- chebi_11060(X).
+single(f_chebi_11060_5(X),f_chebi_11060_3(X)) :- chebi_11060(X).
+double(f_chebi_11060_5(X),f_chebi_11060_6(X)) :- chebi_11060(X).
+double(f_chebi_11060_6(X),f_chebi_11060_5(X)) :- chebi_11060(X).
+single(f_chebi_11060_7(X),f_chebi_11060_8(X)) :- chebi_11060(X).
+single(f_chebi_11060_8(X),f_chebi_11060_7(X)) :- chebi_11060(X).
+single(f_chebi_11060_10(X),f_chebi_11060_9(X)) :- chebi_11060(X).
+single(f_chebi_11060_9(X),f_chebi_11060_10(X)) :- chebi_11060(X).
+single(f_chebi_11060_10(X),f_chebi_11060_11(X)) :- chebi_11060(X).
+single(f_chebi_11060_11(X),f_chebi_11060_10(X)) :- chebi_11060(X).
+single(X,f_chebi_11060_12(X)) :- chebi_11060(X).
+single(f_chebi_11060_12(X),X) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_12(X)) :- chebi_11060(X).
+single(X,f_chebi_11060_13(X)) :- chebi_11060(X).
+single(f_chebi_11060_13(X),X) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_13(X)) :- chebi_11060(X).
+single(f_chebi_11060_1(X),f_chebi_11060_14(X)) :- chebi_11060(X).
+single(f_chebi_11060_14(X),f_chebi_11060_1(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_14(X)) :- chebi_11060(X).
+single(f_chebi_11060_1(X),f_chebi_11060_15(X)) :- chebi_11060(X).
+single(f_chebi_11060_15(X),f_chebi_11060_1(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_15(X)) :- chebi_11060(X).
+single(f_chebi_11060_3(X),f_chebi_11060_16(X)) :- chebi_11060(X).
+single(f_chebi_11060_16(X),f_chebi_11060_3(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_16(X)) :- chebi_11060(X).
+single(f_chebi_11060_3(X),f_chebi_11060_17(X)) :- chebi_11060(X).
+single(f_chebi_11060_17(X),f_chebi_11060_3(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_17(X)) :- chebi_11060(X).
+single(f_chebi_11060_3(X),f_chebi_11060_18(X)) :- chebi_11060(X).
+single(f_chebi_11060_18(X),f_chebi_11060_3(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_18(X)) :- chebi_11060(X).
+single(f_chebi_11060_6(X),f_chebi_11060_19(X)) :- chebi_11060(X).
+single(f_chebi_11060_19(X),f_chebi_11060_6(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_19(X)) :- chebi_11060(X).
+single(f_chebi_11060_7(X),f_chebi_11060_20(X)) :- chebi_11060(X).
+single(f_chebi_11060_20(X),f_chebi_11060_7(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_20(X)) :- chebi_11060(X).
+single(f_chebi_11060_8(X),f_chebi_11060_21(X)) :- chebi_11060(X).
+single(f_chebi_11060_21(X),f_chebi_11060_8(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_21(X)) :- chebi_11060(X).
+single(f_chebi_11060_8(X),f_chebi_11060_22(X)) :- chebi_11060(X).
+single(f_chebi_11060_22(X),f_chebi_11060_8(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_22(X)) :- chebi_11060(X).
+single(f_chebi_11060_8(X),f_chebi_11060_23(X)) :- chebi_11060(X).
+single(f_chebi_11060_23(X),f_chebi_11060_8(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_23(X)) :- chebi_11060(X).
+single(f_chebi_11060_10(X),f_chebi_11060_24(X)) :- chebi_11060(X).
+single(f_chebi_11060_24(X),f_chebi_11060_10(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_24(X)) :- chebi_11060(X).
+single(f_chebi_11060_10(X),f_chebi_11060_25(X)) :- chebi_11060(X).
+single(f_chebi_11060_25(X),f_chebi_11060_10(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_25(X)) :- chebi_11060(X).
+single(f_chebi_11060_10(X),f_chebi_11060_26(X)) :- chebi_11060(X).
+single(f_chebi_11060_26(X),f_chebi_11060_10(X)) :- chebi_11060(X).
+hasAtom(X,f_chebi_11060_26(X)) :- chebi_11060(X).
+chebi_11060(c_chebi_11060).
+molecule(X) :- chebi_1148(X).
+o(f_chebi_1148_1(X)) :- chebi_1148(X).
+c(f_chebi_1148_2(X)) :- chebi_1148(X).
+c(f_chebi_1148_3(X)) :- chebi_1148(X).
+c(f_chebi_1148_4(X)) :- chebi_1148(X).
+c(f_chebi_1148_5(X)) :- chebi_1148(X).
+o(f_chebi_1148_6(X)) :- chebi_1148(X).
+o(f_chebi_1148_7(X)) :- chebi_1148(X).
+h(f_chebi_1148_8(X)) :- chebi_1148(X).
+h(f_chebi_1148_9(X)) :- chebi_1148(X).
+h(f_chebi_1148_10(X)) :- chebi_1148(X).
+h(f_chebi_1148_11(X)) :- chebi_1148(X).
+h(f_chebi_1148_12(X)) :- chebi_1148(X).
+h(f_chebi_1148_13(X)) :- chebi_1148(X).
+h(f_chebi_1148_14(X)) :- chebi_1148(X).
+h(f_chebi_1148_15(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_1(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_2(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_3(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_4(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_5(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_6(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_7(X)) :- chebi_1148(X).
+single(f_chebi_1148_2(X),f_chebi_1148_1(X)) :- chebi_1148(X).
+single(f_chebi_1148_1(X),f_chebi_1148_2(X)) :- chebi_1148(X).
+double(f_chebi_1148_6(X),f_chebi_1148_2(X)) :- chebi_1148(X).
+double(f_chebi_1148_2(X),f_chebi_1148_6(X)) :- chebi_1148(X).
+single(f_chebi_1148_3(X),f_chebi_1148_2(X)) :- chebi_1148(X).
+single(f_chebi_1148_2(X),f_chebi_1148_3(X)) :- chebi_1148(X).
+single(f_chebi_1148_7(X),f_chebi_1148_3(X)) :- chebi_1148(X).
+single(f_chebi_1148_3(X),f_chebi_1148_7(X)) :- chebi_1148(X).
+single(f_chebi_1148_4(X),f_chebi_1148_3(X)) :- chebi_1148(X).
+single(f_chebi_1148_3(X),f_chebi_1148_4(X)) :- chebi_1148(X).
+single(f_chebi_1148_5(X),f_chebi_1148_4(X)) :- chebi_1148(X).
+single(f_chebi_1148_4(X),f_chebi_1148_5(X)) :- chebi_1148(X).
+single(X,f_chebi_1148_8(X)) :- chebi_1148(X).
+single(f_chebi_1148_8(X),X) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_8(X)) :- chebi_1148(X).
+single(f_chebi_1148_2(X),f_chebi_1148_9(X)) :- chebi_1148(X).
+single(f_chebi_1148_9(X),f_chebi_1148_2(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_9(X)) :- chebi_1148(X).
+single(f_chebi_1148_3(X),f_chebi_1148_10(X)) :- chebi_1148(X).
+single(f_chebi_1148_10(X),f_chebi_1148_3(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_10(X)) :- chebi_1148(X).
+single(f_chebi_1148_3(X),f_chebi_1148_11(X)) :- chebi_1148(X).
+single(f_chebi_1148_11(X),f_chebi_1148_3(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_11(X)) :- chebi_1148(X).
+single(f_chebi_1148_4(X),f_chebi_1148_12(X)) :- chebi_1148(X).
+single(f_chebi_1148_12(X),f_chebi_1148_4(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_12(X)) :- chebi_1148(X).
+single(f_chebi_1148_4(X),f_chebi_1148_13(X)) :- chebi_1148(X).
+single(f_chebi_1148_13(X),f_chebi_1148_4(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_13(X)) :- chebi_1148(X).
+single(f_chebi_1148_4(X),f_chebi_1148_14(X)) :- chebi_1148(X).
+single(f_chebi_1148_14(X),f_chebi_1148_4(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_14(X)) :- chebi_1148(X).
+single(f_chebi_1148_6(X),f_chebi_1148_15(X)) :- chebi_1148(X).
+single(f_chebi_1148_15(X),f_chebi_1148_6(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_15(X)) :- chebi_1148(X).
+chebi_1148(c_chebi_1148).
+molecule(X) :- chebi_11684(X).
+c(f_chebi_11684_1(X)) :- chebi_11684(X).
+c(f_chebi_11684_2(X)) :- chebi_11684(X).
+c(f_chebi_11684_3(X)) :- chebi_11684(X).
+c(f_chebi_11684_4(X)) :- chebi_11684(X).
+c(f_chebi_11684_5(X)) :- chebi_11684(X).
+c(f_chebi_11684_6(X)) :- chebi_11684(X).
+c(f_chebi_11684_7(X)) :- chebi_11684(X).
+o(f_chebi_11684_8(X)) :- chebi_11684(X).
+c(f_chebi_11684_9(X)) :- chebi_11684(X).
+c(f_chebi_11684_10(X)) :- chebi_11684(X).
+n(f_chebi_11684_11(X)) :- chebi_11684(X).
+o(f_chebi_11684_12(X)) :- chebi_11684(X).
+i(f_chebi_11684_13(X)) :- chebi_11684(X).
+o(f_chebi_11684_14(X)) :- chebi_11684(X).
+o(f_chebi_11684_15(X)) :- chebi_11684(X).
+i(f_chebi_11684_16(X)) :- chebi_11684(X).
+i(f_chebi_11684_17(X)) :- chebi_11684(X).
+c(f_chebi_11684_18(X)) :- chebi_11684(X).
+c(f_chebi_11684_19(X)) :- chebi_11684(X).
+c(f_chebi_11684_20(X)) :- chebi_11684(X).
+c(f_chebi_11684_21(X)) :- chebi_11684(X).
+c(f_chebi_11684_22(X)) :- chebi_11684(X).
+c(f_chebi_11684_23(X)) :- chebi_11684(X).
+h(f_chebi_11684_24(X)) :- chebi_11684(X).
+h(f_chebi_11684_25(X)) :- chebi_11684(X).
+h(f_chebi_11684_26(X)) :- chebi_11684(X).
+h(f_chebi_11684_27(X)) :- chebi_11684(X).
+h(f_chebi_11684_28(X)) :- chebi_11684(X).
+h(f_chebi_11684_29(X)) :- chebi_11684(X).
+h(f_chebi_11684_30(X)) :- chebi_11684(X).
+h(f_chebi_11684_31(X)) :- chebi_11684(X).
+h(f_chebi_11684_32(X)) :- chebi_11684(X).
+h(f_chebi_11684_33(X)) :- chebi_11684(X).
+h(f_chebi_11684_34(X)) :- chebi_11684(X).
+h(f_chebi_11684_35(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_1(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_2(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_3(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_4(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_5(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_6(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_7(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_8(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_9(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_10(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_11(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_12(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_13(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_14(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_15(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_16(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_17(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_18(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_19(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_20(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_21(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_22(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_23(X)) :- chebi_11684(X).
+single(f_chebi_11684_9(X),f_chebi_11684_7(X)) :- chebi_11684(X).
+single(f_chebi_11684_7(X),f_chebi_11684_9(X)) :- chebi_11684(X).
+double(f_chebi_11684_8(X),f_chebi_11684_7(X)) :- chebi_11684(X).
+double(f_chebi_11684_7(X),f_chebi_11684_8(X)) :- chebi_11684(X).
+single(f_chebi_11684_12(X),f_chebi_11684_7(X)) :- chebi_11684(X).
+single(f_chebi_11684_7(X),f_chebi_11684_12(X)) :- chebi_11684(X).
+single(f_chebi_11684_10(X),f_chebi_11684_9(X)) :- chebi_11684(X).
+single(f_chebi_11684_9(X),f_chebi_11684_10(X)) :- chebi_11684(X).
+single(f_chebi_11684_9(X),f_chebi_11684_11(X)) :- chebi_11684(X).
+single(f_chebi_11684_11(X),f_chebi_11684_9(X)) :- chebi_11684(X).
+single(f_chebi_11684_1(X),f_chebi_11684_10(X)) :- chebi_11684(X).
+single(f_chebi_11684_10(X),f_chebi_11684_1(X)) :- chebi_11684(X).
+single(f_chebi_11684_4(X),f_chebi_11684_14(X)) :- chebi_11684(X).
+single(f_chebi_11684_14(X),f_chebi_11684_4(X)) :- chebi_11684(X).
+single(f_chebi_11684_2(X),f_chebi_11684_1(X)) :- chebi_11684(X).
+single(f_chebi_11684_1(X),f_chebi_11684_2(X)) :- chebi_11684(X).
+double(f_chebi_11684_6(X),f_chebi_11684_1(X)) :- chebi_11684(X).
+double(f_chebi_11684_1(X),f_chebi_11684_6(X)) :- chebi_11684(X).
+double(f_chebi_11684_5(X),f_chebi_11684_4(X)) :- chebi_11684(X).
+double(f_chebi_11684_4(X),f_chebi_11684_5(X)) :- chebi_11684(X).
+single(f_chebi_11684_3(X),f_chebi_11684_4(X)) :- chebi_11684(X).
+single(f_chebi_11684_4(X),f_chebi_11684_3(X)) :- chebi_11684(X).
+double(f_chebi_11684_3(X),f_chebi_11684_2(X)) :- chebi_11684(X).
+double(f_chebi_11684_2(X),f_chebi_11684_3(X)) :- chebi_11684(X).
+single(f_chebi_11684_5(X),f_chebi_11684_6(X)) :- chebi_11684(X).
+single(f_chebi_11684_6(X),f_chebi_11684_5(X)) :- chebi_11684(X).
+single(f_chebi_11684_13(X),f_chebi_11684_3(X)) :- chebi_11684(X).
+single(f_chebi_11684_3(X),f_chebi_11684_13(X)) :- chebi_11684(X).
+single(f_chebi_11684_14(X),f_chebi_11684_18(X)) :- chebi_11684(X).
+single(f_chebi_11684_18(X),f_chebi_11684_14(X)) :- chebi_11684(X).
+single(f_chebi_11684_23(X),f_chebi_11684_15(X)) :- chebi_11684(X).
+single(f_chebi_11684_15(X),f_chebi_11684_23(X)) :- chebi_11684(X).
+single(f_chebi_11684_19(X),f_chebi_11684_16(X)) :- chebi_11684(X).
+single(f_chebi_11684_16(X),f_chebi_11684_19(X)) :- chebi_11684(X).
+double(f_chebi_11684_20(X),f_chebi_11684_18(X)) :- chebi_11684(X).
+double(f_chebi_11684_18(X),f_chebi_11684_20(X)) :- chebi_11684(X).
+single(f_chebi_11684_19(X),f_chebi_11684_20(X)) :- chebi_11684(X).
+single(f_chebi_11684_20(X),f_chebi_11684_19(X)) :- chebi_11684(X).
+single(f_chebi_11684_18(X),f_chebi_11684_21(X)) :- chebi_11684(X).
+single(f_chebi_11684_21(X),f_chebi_11684_18(X)) :- chebi_11684(X).
+double(f_chebi_11684_21(X),f_chebi_11684_22(X)) :- chebi_11684(X).
+double(f_chebi_11684_22(X),f_chebi_11684_21(X)) :- chebi_11684(X).
+single(f_chebi_11684_22(X),f_chebi_11684_23(X)) :- chebi_11684(X).
+single(f_chebi_11684_23(X),f_chebi_11684_22(X)) :- chebi_11684(X).
+double(f_chebi_11684_19(X),f_chebi_11684_23(X)) :- chebi_11684(X).
+double(f_chebi_11684_23(X),f_chebi_11684_19(X)) :- chebi_11684(X).
+single(f_chebi_11684_22(X),f_chebi_11684_17(X)) :- chebi_11684(X).
+single(f_chebi_11684_17(X),f_chebi_11684_22(X)) :- chebi_11684(X).
+single(f_chebi_11684_1(X),f_chebi_11684_24(X)) :- chebi_11684(X).
+single(f_chebi_11684_24(X),f_chebi_11684_1(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_24(X)) :- chebi_11684(X).
+single(f_chebi_11684_4(X),f_chebi_11684_25(X)) :- chebi_11684(X).
+single(f_chebi_11684_25(X),f_chebi_11684_4(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_25(X)) :- chebi_11684(X).
+single(f_chebi_11684_5(X),f_chebi_11684_26(X)) :- chebi_11684(X).
+single(f_chebi_11684_26(X),f_chebi_11684_5(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_26(X)) :- chebi_11684(X).
+single(f_chebi_11684_8(X),f_chebi_11684_27(X)) :- chebi_11684(X).
+single(f_chebi_11684_27(X),f_chebi_11684_8(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_27(X)) :- chebi_11684(X).
+single(f_chebi_11684_9(X),f_chebi_11684_28(X)) :- chebi_11684(X).
+single(f_chebi_11684_28(X),f_chebi_11684_9(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_28(X)) :- chebi_11684(X).
+single(f_chebi_11684_9(X),f_chebi_11684_29(X)) :- chebi_11684(X).
+single(f_chebi_11684_29(X),f_chebi_11684_9(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_29(X)) :- chebi_11684(X).
+single(f_chebi_11684_10(X),f_chebi_11684_30(X)) :- chebi_11684(X).
+single(f_chebi_11684_30(X),f_chebi_11684_10(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_30(X)) :- chebi_11684(X).
+single(f_chebi_11684_10(X),f_chebi_11684_31(X)) :- chebi_11684(X).
+single(f_chebi_11684_31(X),f_chebi_11684_10(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_31(X)) :- chebi_11684(X).
+single(f_chebi_11684_11(X),f_chebi_11684_32(X)) :- chebi_11684(X).
+single(f_chebi_11684_32(X),f_chebi_11684_11(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_32(X)) :- chebi_11684(X).
+single(f_chebi_11684_14(X),f_chebi_11684_33(X)) :- chebi_11684(X).
+single(f_chebi_11684_33(X),f_chebi_11684_14(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_33(X)) :- chebi_11684(X).
+single(f_chebi_11684_19(X),f_chebi_11684_34(X)) :- chebi_11684(X).
+single(f_chebi_11684_34(X),f_chebi_11684_19(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_34(X)) :- chebi_11684(X).
+single(f_chebi_11684_20(X),f_chebi_11684_35(X)) :- chebi_11684(X).
+single(f_chebi_11684_35(X),f_chebi_11684_20(X)) :- chebi_11684(X).
+hasAtom(X,f_chebi_11684_35(X)) :- chebi_11684(X).
+chebi_11684(c_chebi_11684).
+molecule(X) :- chebi_11081(X).
+c(f_chebi_11081_1(X)) :- chebi_11081(X).
+c(f_chebi_11081_2(X)) :- chebi_11081(X).
+c(f_chebi_11081_3(X)) :- chebi_11081(X).
+c(f_chebi_11081_4(X)) :- chebi_11081(X).
+c(f_chebi_11081_5(X)) :- chebi_11081(X).
+c(f_chebi_11081_6(X)) :- chebi_11081(X).
+h(f_chebi_11081_7(X)) :- chebi_11081(X).
+c(f_chebi_11081_8(X)) :- chebi_11081(X).
+c(f_chebi_11081_9(X)) :- chebi_11081(X).
+c(f_chebi_11081_10(X)) :- chebi_11081(X).
+o(f_chebi_11081_11(X)) :- chebi_11081(X).
+c(f_chebi_11081_12(X)) :- chebi_11081(X).
+c(f_chebi_11081_13(X)) :- chebi_11081(X).
+c(f_chebi_11081_14(X)) :- chebi_11081(X).
+c(f_chebi_11081_15(X)) :- chebi_11081(X).
+c(f_chebi_11081_16(X)) :- chebi_11081(X).
+c(f_chebi_11081_17(X)) :- chebi_11081(X).
+c(f_chebi_11081_18(X)) :- chebi_11081(X).
+c(f_chebi_11081_19(X)) :- chebi_11081(X).
+c(f_chebi_11081_20(X)) :- chebi_11081(X).
+c(f_chebi_11081_21(X)) :- chebi_11081(X).
+c(f_chebi_11081_22(X)) :- chebi_11081(X).
+c(f_chebi_11081_23(X)) :- chebi_11081(X).
+c(f_chebi_11081_24(X)) :- chebi_11081(X).
+c(f_chebi_11081_25(X)) :- chebi_11081(X).
+c(f_chebi_11081_26(X)) :- chebi_11081(X).
+c(f_chebi_11081_27(X)) :- chebi_11081(X).
+c(f_chebi_11081_28(X)) :- chebi_11081(X).
+h(f_chebi_11081_29(X)) :- chebi_11081(X).
+c(f_chebi_11081_30(X)) :- chebi_11081(X).
+h(f_chebi_11081_31(X)) :- chebi_11081(X).
+c(f_chebi_11081_32(X)) :- chebi_11081(X).
+h(f_chebi_11081_33(X)) :- chebi_11081(X).
+c(f_chebi_11081_34(X)) :- chebi_11081(X).
+c(f_chebi_11081_35(X)) :- chebi_11081(X).
+h(f_chebi_11081_36(X)) :- chebi_11081(X).
+h(f_chebi_11081_37(X)) :- chebi_11081(X).
+h(f_chebi_11081_38(X)) :- chebi_11081(X).
+h(f_chebi_11081_39(X)) :- chebi_11081(X).
+h(f_chebi_11081_40(X)) :- chebi_11081(X).
+h(f_chebi_11081_41(X)) :- chebi_11081(X).
+h(f_chebi_11081_42(X)) :- chebi_11081(X).
+h(f_chebi_11081_43(X)) :- chebi_11081(X).
+h(f_chebi_11081_44(X)) :- chebi_11081(X).
+h(f_chebi_11081_45(X)) :- chebi_11081(X).
+h(f_chebi_11081_46(X)) :- chebi_11081(X).
+h(f_chebi_11081_47(X)) :- chebi_11081(X).
+h(f_chebi_11081_48(X)) :- chebi_11081(X).
+h(f_chebi_11081_49(X)) :- chebi_11081(X).
+h(f_chebi_11081_50(X)) :- chebi_11081(X).
+h(f_chebi_11081_51(X)) :- chebi_11081(X).
+h(f_chebi_11081_52(X)) :- chebi_11081(X).
+h(f_chebi_11081_53(X)) :- chebi_11081(X).
+h(f_chebi_11081_54(X)) :- chebi_11081(X).
+h(f_chebi_11081_55(X)) :- chebi_11081(X).
+h(f_chebi_11081_56(X)) :- chebi_11081(X).
+h(f_chebi_11081_57(X)) :- chebi_11081(X).
+h(f_chebi_11081_58(X)) :- chebi_11081(X).
+h(f_chebi_11081_59(X)) :- chebi_11081(X).
+h(f_chebi_11081_60(X)) :- chebi_11081(X).
+h(f_chebi_11081_61(X)) :- chebi_11081(X).
+h(f_chebi_11081_62(X)) :- chebi_11081(X).
+h(f_chebi_11081_63(X)) :- chebi_11081(X).
+h(f_chebi_11081_64(X)) :- chebi_11081(X).
+h(f_chebi_11081_65(X)) :- chebi_11081(X).
+h(f_chebi_11081_66(X)) :- chebi_11081(X).
+h(f_chebi_11081_67(X)) :- chebi_11081(X).
+h(f_chebi_11081_68(X)) :- chebi_11081(X).
+h(f_chebi_11081_69(X)) :- chebi_11081(X).
+h(f_chebi_11081_70(X)) :- chebi_11081(X).
+h(f_chebi_11081_71(X)) :- chebi_11081(X).
+h(f_chebi_11081_72(X)) :- chebi_11081(X).
+h(f_chebi_11081_73(X)) :- chebi_11081(X).
+h(f_chebi_11081_74(X)) :- chebi_11081(X).
+h(f_chebi_11081_75(X)) :- chebi_11081(X).
+h(f_chebi_11081_76(X)) :- chebi_11081(X).
+h(f_chebi_11081_77(X)) :- chebi_11081(X).
+h(f_chebi_11081_78(X)) :- chebi_11081(X).
+h(f_chebi_11081_79(X)) :- chebi_11081(X).
+h(f_chebi_11081_80(X)) :- chebi_11081(X).
+h(f_chebi_11081_81(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_1(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_2(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_3(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_4(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_5(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_6(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_7(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_8(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_9(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_10(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_11(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_12(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_13(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_14(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_15(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_16(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_17(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_18(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_19(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_20(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_21(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_22(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_23(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_24(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_25(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_26(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_27(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_28(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_29(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_30(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_31(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_32(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_33(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_34(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_35(X)) :- chebi_11081(X).
+single(f_chebi_11081_30(X),f_chebi_11081_1(X)) :- chebi_11081(X).
+single(f_chebi_11081_1(X),f_chebi_11081_30(X)) :- chebi_11081(X).
+single(f_chebi_11081_34(X),f_chebi_11081_30(X)) :- chebi_11081(X).
+single(f_chebi_11081_30(X),f_chebi_11081_34(X)) :- chebi_11081(X).
+single(f_chebi_11081_30(X),f_chebi_11081_18(X)) :- chebi_11081(X).
+single(f_chebi_11081_18(X),f_chebi_11081_30(X)) :- chebi_11081(X).
+single(f_chebi_11081_1(X),f_chebi_11081_2(X)) :- chebi_11081(X).
+single(f_chebi_11081_2(X),f_chebi_11081_1(X)) :- chebi_11081(X).
+single(f_chebi_11081_32(X),f_chebi_11081_2(X)) :- chebi_11081(X).
+single(f_chebi_11081_2(X),f_chebi_11081_32(X)) :- chebi_11081(X).
+single(f_chebi_11081_32(X),f_chebi_11081_3(X)) :- chebi_11081(X).
+single(f_chebi_11081_3(X),f_chebi_11081_32(X)) :- chebi_11081(X).
+single(f_chebi_11081_32(X),f_chebi_11081_34(X)) :- chebi_11081(X).
+single(f_chebi_11081_34(X),f_chebi_11081_32(X)) :- chebi_11081(X).
+double(f_chebi_11081_3(X),f_chebi_11081_4(X)) :- chebi_11081(X).
+double(f_chebi_11081_4(X),f_chebi_11081_3(X)) :- chebi_11081(X).
+single(f_chebi_11081_3(X),f_chebi_11081_28(X)) :- chebi_11081(X).
+single(f_chebi_11081_28(X),f_chebi_11081_3(X)) :- chebi_11081(X).
+single(f_chebi_11081_4(X),f_chebi_11081_5(X)) :- chebi_11081(X).
+single(f_chebi_11081_5(X),f_chebi_11081_4(X)) :- chebi_11081(X).
+single(f_chebi_11081_5(X),f_chebi_11081_6(X)) :- chebi_11081(X).
+single(f_chebi_11081_6(X),f_chebi_11081_5(X)) :- chebi_11081(X).
+single(f_chebi_11081_6(X),f_chebi_11081_7(X)) :- chebi_11081(X).
+single(f_chebi_11081_7(X),f_chebi_11081_6(X)) :- chebi_11081(X).
+single(f_chebi_11081_6(X),f_chebi_11081_8(X)) :- chebi_11081(X).
+single(f_chebi_11081_8(X),f_chebi_11081_6(X)) :- chebi_11081(X).
+single(f_chebi_11081_6(X),f_chebi_11081_14(X)) :- chebi_11081(X).
+single(f_chebi_11081_14(X),f_chebi_11081_6(X)) :- chebi_11081(X).
+single(f_chebi_11081_8(X),f_chebi_11081_9(X)) :- chebi_11081(X).
+single(f_chebi_11081_9(X),f_chebi_11081_8(X)) :- chebi_11081(X).
+single(f_chebi_11081_8(X),f_chebi_11081_10(X)) :- chebi_11081(X).
+single(f_chebi_11081_10(X),f_chebi_11081_8(X)) :- chebi_11081(X).
+single(f_chebi_11081_10(X),f_chebi_11081_11(X)) :- chebi_11081(X).
+single(f_chebi_11081_11(X),f_chebi_11081_10(X)) :- chebi_11081(X).
+single(f_chebi_11081_10(X),f_chebi_11081_12(X)) :- chebi_11081(X).
+single(f_chebi_11081_12(X),f_chebi_11081_10(X)) :- chebi_11081(X).
+single(f_chebi_11081_12(X),f_chebi_11081_13(X)) :- chebi_11081(X).
+single(f_chebi_11081_13(X),f_chebi_11081_12(X)) :- chebi_11081(X).
+single(f_chebi_11081_13(X),f_chebi_11081_14(X)) :- chebi_11081(X).
+single(f_chebi_11081_14(X),f_chebi_11081_13(X)) :- chebi_11081(X).
+single(f_chebi_11081_14(X),f_chebi_11081_15(X)) :- chebi_11081(X).
+single(f_chebi_11081_15(X),f_chebi_11081_14(X)) :- chebi_11081(X).
+single(f_chebi_11081_14(X),f_chebi_11081_28(X)) :- chebi_11081(X).
+single(f_chebi_11081_28(X),f_chebi_11081_14(X)) :- chebi_11081(X).
+single(f_chebi_11081_28(X),f_chebi_11081_16(X)) :- chebi_11081(X).
+single(f_chebi_11081_16(X),f_chebi_11081_28(X)) :- chebi_11081(X).
+single(f_chebi_11081_16(X),f_chebi_11081_17(X)) :- chebi_11081(X).
+single(f_chebi_11081_17(X),f_chebi_11081_16(X)) :- chebi_11081(X).
+single(f_chebi_11081_34(X),f_chebi_11081_17(X)) :- chebi_11081(X).
+single(f_chebi_11081_17(X),f_chebi_11081_34(X)) :- chebi_11081(X).
+single(f_chebi_11081_18(X),f_chebi_11081_19(X)) :- chebi_11081(X).
+single(f_chebi_11081_19(X),f_chebi_11081_18(X)) :- chebi_11081(X).
+single(f_chebi_11081_18(X),f_chebi_11081_20(X)) :- chebi_11081(X).
+single(f_chebi_11081_20(X),f_chebi_11081_18(X)) :- chebi_11081(X).
+single(f_chebi_11081_20(X),f_chebi_11081_21(X)) :- chebi_11081(X).
+single(f_chebi_11081_21(X),f_chebi_11081_20(X)) :- chebi_11081(X).
+single(f_chebi_11081_21(X),f_chebi_11081_22(X)) :- chebi_11081(X).
+single(f_chebi_11081_22(X),f_chebi_11081_21(X)) :- chebi_11081(X).
+double(f_chebi_11081_22(X),f_chebi_11081_23(X)) :- chebi_11081(X).
+double(f_chebi_11081_23(X),f_chebi_11081_22(X)) :- chebi_11081(X).
+single(f_chebi_11081_22(X),f_chebi_11081_24(X)) :- chebi_11081(X).
+single(f_chebi_11081_24(X),f_chebi_11081_22(X)) :- chebi_11081(X).
+single(f_chebi_11081_24(X),f_chebi_11081_25(X)) :- chebi_11081(X).
+single(f_chebi_11081_25(X),f_chebi_11081_24(X)) :- chebi_11081(X).
+single(f_chebi_11081_24(X),f_chebi_11081_26(X)) :- chebi_11081(X).
+single(f_chebi_11081_26(X),f_chebi_11081_24(X)) :- chebi_11081(X).
+single(f_chebi_11081_27(X),f_chebi_11081_23(X)) :- chebi_11081(X).
+single(f_chebi_11081_23(X),f_chebi_11081_27(X)) :- chebi_11081(X).
+single(f_chebi_11081_28(X),f_chebi_11081_29(X)) :- chebi_11081(X).
+single(f_chebi_11081_29(X),f_chebi_11081_28(X)) :- chebi_11081(X).
+single(f_chebi_11081_30(X),f_chebi_11081_31(X)) :- chebi_11081(X).
+single(f_chebi_11081_31(X),f_chebi_11081_30(X)) :- chebi_11081(X).
+single(f_chebi_11081_32(X),f_chebi_11081_33(X)) :- chebi_11081(X).
+single(f_chebi_11081_33(X),f_chebi_11081_32(X)) :- chebi_11081(X).
+single(f_chebi_11081_34(X),f_chebi_11081_35(X)) :- chebi_11081(X).
+single(f_chebi_11081_35(X),f_chebi_11081_34(X)) :- chebi_11081(X).
+single(X,f_chebi_11081_36(X)) :- chebi_11081(X).
+single(f_chebi_11081_36(X),X) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_36(X)) :- chebi_11081(X).
+single(X,f_chebi_11081_37(X)) :- chebi_11081(X).
+single(f_chebi_11081_37(X),X) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_37(X)) :- chebi_11081(X).
+single(f_chebi_11081_1(X),f_chebi_11081_38(X)) :- chebi_11081(X).
+single(f_chebi_11081_38(X),f_chebi_11081_1(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_38(X)) :- chebi_11081(X).
+single(f_chebi_11081_1(X),f_chebi_11081_39(X)) :- chebi_11081(X).
+single(f_chebi_11081_39(X),f_chebi_11081_1(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_39(X)) :- chebi_11081(X).
+single(f_chebi_11081_3(X),f_chebi_11081_40(X)) :- chebi_11081(X).
+single(f_chebi_11081_40(X),f_chebi_11081_3(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_40(X)) :- chebi_11081(X).
+single(f_chebi_11081_4(X),f_chebi_11081_41(X)) :- chebi_11081(X).
+single(f_chebi_11081_41(X),f_chebi_11081_4(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_41(X)) :- chebi_11081(X).
+single(f_chebi_11081_4(X),f_chebi_11081_42(X)) :- chebi_11081(X).
+single(f_chebi_11081_42(X),f_chebi_11081_4(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_42(X)) :- chebi_11081(X).
+single(f_chebi_11081_7(X),f_chebi_11081_43(X)) :- chebi_11081(X).
+single(f_chebi_11081_43(X),f_chebi_11081_7(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_43(X)) :- chebi_11081(X).
+single(f_chebi_11081_8(X),f_chebi_11081_44(X)) :- chebi_11081(X).
+single(f_chebi_11081_44(X),f_chebi_11081_8(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_44(X)) :- chebi_11081(X).
+single(f_chebi_11081_8(X),f_chebi_11081_45(X)) :- chebi_11081(X).
+single(f_chebi_11081_45(X),f_chebi_11081_8(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_45(X)) :- chebi_11081(X).
+single(f_chebi_11081_8(X),f_chebi_11081_46(X)) :- chebi_11081(X).
+single(f_chebi_11081_46(X),f_chebi_11081_8(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_46(X)) :- chebi_11081(X).
+single(f_chebi_11081_9(X),f_chebi_11081_47(X)) :- chebi_11081(X).
+single(f_chebi_11081_47(X),f_chebi_11081_9(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_47(X)) :- chebi_11081(X).
+single(f_chebi_11081_10(X),f_chebi_11081_48(X)) :- chebi_11081(X).
+single(f_chebi_11081_48(X),f_chebi_11081_10(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_48(X)) :- chebi_11081(X).
+single(f_chebi_11081_11(X),f_chebi_11081_49(X)) :- chebi_11081(X).
+single(f_chebi_11081_49(X),f_chebi_11081_11(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_49(X)) :- chebi_11081(X).
+single(f_chebi_11081_11(X),f_chebi_11081_50(X)) :- chebi_11081(X).
+single(f_chebi_11081_50(X),f_chebi_11081_11(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_50(X)) :- chebi_11081(X).
+single(f_chebi_11081_12(X),f_chebi_11081_51(X)) :- chebi_11081(X).
+single(f_chebi_11081_51(X),f_chebi_11081_12(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_51(X)) :- chebi_11081(X).
+single(f_chebi_11081_12(X),f_chebi_11081_52(X)) :- chebi_11081(X).
+single(f_chebi_11081_52(X),f_chebi_11081_12(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_52(X)) :- chebi_11081(X).
+single(f_chebi_11081_14(X),f_chebi_11081_53(X)) :- chebi_11081(X).
+single(f_chebi_11081_53(X),f_chebi_11081_14(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_53(X)) :- chebi_11081(X).
+single(f_chebi_11081_14(X),f_chebi_11081_54(X)) :- chebi_11081(X).
+single(f_chebi_11081_54(X),f_chebi_11081_14(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_54(X)) :- chebi_11081(X).
+single(f_chebi_11081_14(X),f_chebi_11081_55(X)) :- chebi_11081(X).
+single(f_chebi_11081_55(X),f_chebi_11081_14(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_55(X)) :- chebi_11081(X).
+single(f_chebi_11081_15(X),f_chebi_11081_56(X)) :- chebi_11081(X).
+single(f_chebi_11081_56(X),f_chebi_11081_15(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_56(X)) :- chebi_11081(X).
+single(f_chebi_11081_15(X),f_chebi_11081_57(X)) :- chebi_11081(X).
+single(f_chebi_11081_57(X),f_chebi_11081_15(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_57(X)) :- chebi_11081(X).
+single(f_chebi_11081_16(X),f_chebi_11081_58(X)) :- chebi_11081(X).
+single(f_chebi_11081_58(X),f_chebi_11081_16(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_58(X)) :- chebi_11081(X).
+single(f_chebi_11081_16(X),f_chebi_11081_59(X)) :- chebi_11081(X).
+single(f_chebi_11081_59(X),f_chebi_11081_16(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_59(X)) :- chebi_11081(X).
+single(f_chebi_11081_17(X),f_chebi_11081_60(X)) :- chebi_11081(X).
+single(f_chebi_11081_60(X),f_chebi_11081_17(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_60(X)) :- chebi_11081(X).
+single(f_chebi_11081_18(X),f_chebi_11081_61(X)) :- chebi_11081(X).
+single(f_chebi_11081_61(X),f_chebi_11081_18(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_61(X)) :- chebi_11081(X).
+single(f_chebi_11081_18(X),f_chebi_11081_62(X)) :- chebi_11081(X).
+single(f_chebi_11081_62(X),f_chebi_11081_18(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_62(X)) :- chebi_11081(X).
+single(f_chebi_11081_18(X),f_chebi_11081_63(X)) :- chebi_11081(X).
+single(f_chebi_11081_63(X),f_chebi_11081_18(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_63(X)) :- chebi_11081(X).
+single(f_chebi_11081_19(X),f_chebi_11081_64(X)) :- chebi_11081(X).
+single(f_chebi_11081_64(X),f_chebi_11081_19(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_64(X)) :- chebi_11081(X).
+single(f_chebi_11081_19(X),f_chebi_11081_65(X)) :- chebi_11081(X).
+single(f_chebi_11081_65(X),f_chebi_11081_19(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_65(X)) :- chebi_11081(X).
+single(f_chebi_11081_20(X),f_chebi_11081_66(X)) :- chebi_11081(X).
+single(f_chebi_11081_66(X),f_chebi_11081_20(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_66(X)) :- chebi_11081(X).
+single(f_chebi_11081_20(X),f_chebi_11081_67(X)) :- chebi_11081(X).
+single(f_chebi_11081_67(X),f_chebi_11081_20(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_67(X)) :- chebi_11081(X).
+single(f_chebi_11081_22(X),f_chebi_11081_68(X)) :- chebi_11081(X).
+single(f_chebi_11081_68(X),f_chebi_11081_22(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_68(X)) :- chebi_11081(X).
+single(f_chebi_11081_23(X),f_chebi_11081_69(X)) :- chebi_11081(X).
+single(f_chebi_11081_69(X),f_chebi_11081_23(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_69(X)) :- chebi_11081(X).
+single(f_chebi_11081_24(X),f_chebi_11081_70(X)) :- chebi_11081(X).
+single(f_chebi_11081_70(X),f_chebi_11081_24(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_70(X)) :- chebi_11081(X).
+single(f_chebi_11081_24(X),f_chebi_11081_71(X)) :- chebi_11081(X).
+single(f_chebi_11081_71(X),f_chebi_11081_24(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_71(X)) :- chebi_11081(X).
+single(f_chebi_11081_24(X),f_chebi_11081_72(X)) :- chebi_11081(X).
+single(f_chebi_11081_72(X),f_chebi_11081_24(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_72(X)) :- chebi_11081(X).
+single(f_chebi_11081_25(X),f_chebi_11081_73(X)) :- chebi_11081(X).
+single(f_chebi_11081_73(X),f_chebi_11081_25(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_73(X)) :- chebi_11081(X).
+single(f_chebi_11081_25(X),f_chebi_11081_74(X)) :- chebi_11081(X).
+single(f_chebi_11081_74(X),f_chebi_11081_25(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_74(X)) :- chebi_11081(X).
+single(f_chebi_11081_25(X),f_chebi_11081_75(X)) :- chebi_11081(X).
+single(f_chebi_11081_75(X),f_chebi_11081_25(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_75(X)) :- chebi_11081(X).
+single(f_chebi_11081_26(X),f_chebi_11081_76(X)) :- chebi_11081(X).
+single(f_chebi_11081_76(X),f_chebi_11081_26(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_76(X)) :- chebi_11081(X).
+single(f_chebi_11081_26(X),f_chebi_11081_77(X)) :- chebi_11081(X).
+single(f_chebi_11081_77(X),f_chebi_11081_26(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_77(X)) :- chebi_11081(X).
+single(f_chebi_11081_26(X),f_chebi_11081_78(X)) :- chebi_11081(X).
+single(f_chebi_11081_78(X),f_chebi_11081_26(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_78(X)) :- chebi_11081(X).
+single(f_chebi_11081_34(X),f_chebi_11081_79(X)) :- chebi_11081(X).
+single(f_chebi_11081_79(X),f_chebi_11081_34(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_79(X)) :- chebi_11081(X).
+single(f_chebi_11081_34(X),f_chebi_11081_80(X)) :- chebi_11081(X).
+single(f_chebi_11081_80(X),f_chebi_11081_34(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_80(X)) :- chebi_11081(X).
+single(f_chebi_11081_34(X),f_chebi_11081_81(X)) :- chebi_11081(X).
+single(f_chebi_11081_81(X),f_chebi_11081_34(X)) :- chebi_11081(X).
+hasAtom(X,f_chebi_11081_81(X)) :- chebi_11081(X).
+chebi_11081(c_chebi_11081).
+molecule(X) :- chebi_11946(X).
+o(f_chebi_11946_1(X)) :- chebi_11946(X).
+o(f_chebi_11946_2(X)) :- chebi_11946(X).
+minus1(f_chebi_11946_2(X)) :- chebi_11946(X).
+c(f_chebi_11946_3(X)) :- chebi_11946(X).
+c(f_chebi_11946_4(X)) :- chebi_11946(X).
+c(f_chebi_11946_5(X)) :- chebi_11946(X).
+c(f_chebi_11946_6(X)) :- chebi_11946(X).
+c(f_chebi_11946_7(X)) :- chebi_11946(X).
+c(f_chebi_11946_8(X)) :- chebi_11946(X).
+h(f_chebi_11946_9(X)) :- chebi_11946(X).
+n(f_chebi_11946_10(X)) :- chebi_11946(X).
+plus1(f_chebi_11946_10(X)) :- chebi_11946(X).
+c(f_chebi_11946_11(X)) :- chebi_11946(X).
+h(f_chebi_11946_12(X)) :- chebi_11946(X).
+h(f_chebi_11946_13(X)) :- chebi_11946(X).
+h(f_chebi_11946_14(X)) :- chebi_11946(X).
+h(f_chebi_11946_15(X)) :- chebi_11946(X).
+h(f_chebi_11946_16(X)) :- chebi_11946(X).
+h(f_chebi_11946_17(X)) :- chebi_11946(X).
+h(f_chebi_11946_18(X)) :- chebi_11946(X).
+h(f_chebi_11946_19(X)) :- chebi_11946(X).
+h(f_chebi_11946_20(X)) :- chebi_11946(X).
+h(f_chebi_11946_21(X)) :- chebi_11946(X).
+h(f_chebi_11946_22(X)) :- chebi_11946(X).
+h(f_chebi_11946_23(X)) :- chebi_11946(X).
+hasAtom(X,f_chebi_11946_1(X)) :- chebi_11946(X).
+hasAtom(X,f_chebi_11946_2(X)) :- chebi_11946(X).
+hasAtom(X,f_chebi_11946_3(X)) :- chebi_11946(X).
+hasAtom(X,f_chebi_11946_4(X)) :- chebi_11946(X).
+hasAtom(X,f_chebi_11946_5(X)) :- chebi_11946(X).
+hasAtom(X,f_chebi_11946_6(X)) :- chebi_11946(X).
+hasAtom(X,f_chebi_11946_7(X)) :- chebi_11946(X).
+hasAtom(X,f_chebi_11946_8(X)) :- chebi_11946(X).
+hasAtom(X,f_chebi_11946_9(X)) :- chebi_11946(X).
+hasAtom(X,f_chebi_11946_10(X)) :- chebi_11946(X).
+hasAtom(X,f_chebi_11946_11(X)) :- chebi_11946(X).
+double(f_chebi_11946_3(X),f_chebi_11946_1(X)) :- chebi_11946(X).
+double(f_chebi_11946_1(X),f_chebi_11946_3(X)) :- chebi_11946(X).
+single(f_chebi_11946_3(X),f_chebi_11946_2(X)) :- chebi_11946(X).
+single(f_chebi_11946_2(X),f_chebi_11946_3(X)) :- chebi_11946(X).
+single(f_chebi_11946_3(X),f_chebi_11946_4(X)) :- chebi_11946(X).
+single(f_chebi_11946_4(X),f_chebi_11946_3(X)) :- chebi_11946(X).
+double(f_chebi_11946_4(X),f_chebi_11946_8(X)) :- chebi_11946(X).
+double(f_chebi_11946_8(X),f_chebi_11946_4(X)) :- chebi_11946(X).
+single(f_chebi_11946_8(X),f_chebi_11946_5(X)) :- chebi_11946(X).
+single(f_chebi_11946_5(X),f_chebi_11946_8(X)) :- chebi_11946(X).
+single(f_chebi_11946_5(X),f_chebi_11946_10(X)) :- chebi_11946(X).
+single(f_chebi_11946_10(X),f_chebi_11946_5(X)) :- chebi_11946(X).
+single(f_chebi_11946_10(X),f_chebi_11946_6(X)) :- chebi_11946(X).
+single(f_chebi_11946_6(X),f_chebi_11946_10(X)) :- chebi_11946(X).
+single(f_chebi_11946_10(X),f_chebi_11946_7(X)) :- chebi_11946(X).
+single(f_chebi_11946_7(X),f_chebi_11946_10(X)) :- chebi_11946(X).
+single(f_chebi_11946_8(X),f_chebi_11946_9(X)) :- chebi_11946(X).
+single(f_chebi_11946_9(X),f_chebi_11946_8(X)) :- chebi_11946(X).
+single(f_chebi_11946_10(X),f_chebi_11946_11(X)) :- chebi_11946(X).
+single(f_chebi_11946_11(X),f_chebi_11946_10(X)) :- chebi_11946(X).
+single(f_chebi_11946_3(X),f_chebi_11946_12(X)) :- chebi_11946(X).
+single(f_chebi_11946_12(X),f_chebi_11946_3(X)) :- chebi_11946(X).
+hasAtom(X,f_chebi_11946_12(X)) :- chebi_11946(X).
+single(f_chebi_11946_4(X),f_chebi_11946_13(X)) :- chebi_11946(X).
+single(f_chebi_11946_13(X),f_chebi_11946_4(X)) :- chebi_11946(X).
+hasAtom(X,f_chebi_11946_13(X)) :- chebi_11946(X).
+single(f_chebi_11946_4(X),f_chebi_11946_14(X)) :- chebi_11946(X).
+single(f_chebi_11946_14(X),f_chebi_11946_4(X)) :- chebi_11946(X).
+hasAtom(X,f_chebi_11946_14(X)) :- chebi_11946(X).
+single(f_chebi_11946_5(X),f_chebi_11946_15(X)) :- chebi_11946(X).
+single(f_chebi_11946_15(X),f_chebi_11946_5(X)) :- chebi_11946(X).
+hasAtom(X,f_chebi_11946_15(X)) :- chebi_11946(X).
+single(f_chebi_11946_5(X),f_chebi_11946_16(X)) :- chebi_11946(X).
+single(f_chebi_11946_16(X),f_chebi_11946_5(X)) :- chebi_11946(X).
+hasAtom(X,f_chebi_11946_16(X)) :- chebi_11946(X).
+single(f_chebi_11946_5(X),f_chebi_11946_17(X)) :- chebi_11946(X).
+single(f_chebi_11946_17(X),f_chebi_11946_5(X)) :- chebi_11946(X).
+hasAtom(X,f_chebi_11946_17(X)) :- chebi_11946(X).
+single(f_chebi_11946_6(X),f_chebi_11946_18(X)) :- chebi_11946(X).
+single(f_chebi_11946_18(X),f_chebi_11946_6(X)) :- chebi_11946(X).
+hasAtom(X,f_chebi_11946_18(X)) :- chebi_11946(X).
+single(f_chebi_11946_6(X),f_chebi_11946_19(X)) :- chebi_11946(X).
+single(f_chebi_11946_19(X),f_chebi_11946_6(X)) :- chebi_11946(X).
+hasAtom(X,f_chebi_11946_19(X)) :- chebi_11946(X).
+single(f_chebi_11946_6(X),f_chebi_11946_20(X)) :- chebi_11946(X).
+single(f_chebi_11946_20(X),f_chebi_11946_6(X)) :- chebi_11946(X).
+hasAtom(X,f_chebi_11946_20(X)) :- chebi_11946(X).
+single(f_chebi_11946_10(X),f_chebi_11946_21(X)) :- chebi_11946(X).
+single(f_chebi_11946_21(X),f_chebi_11946_10(X)) :- chebi_11946(X).
+hasAtom(X,f_chebi_11946_21(X)) :- chebi_11946(X).
+single(f_chebi_11946_10(X),f_chebi_11946_22(X)) :- chebi_11946(X).
+single(f_chebi_11946_22(X),f_chebi_11946_10(X)) :- chebi_11946(X).
+hasAtom(X,f_chebi_11946_22(X)) :- chebi_11946(X).
+single(f_chebi_11946_10(X),f_chebi_11946_23(X)) :- chebi_11946(X).
+single(f_chebi_11946_23(X),f_chebi_11946_10(X)) :- chebi_11946(X).
+hasAtom(X,f_chebi_11946_23(X)) :- chebi_11946(X).
+chebi_11946(c_chebi_11946).
+molecule(X) :- chebi_1040(X).
+n(f_chebi_1040_1(X)) :- chebi_1040(X).
+c(f_chebi_1040_2(X)) :- chebi_1040(X).
+n(f_chebi_1040_3(X)) :- chebi_1040(X).
+c(f_chebi_1040_4(X)) :- chebi_1040(X).
+n(f_chebi_1040_5(X)) :- chebi_1040(X).
+c(f_chebi_1040_6(X)) :- chebi_1040(X).
+o(f_chebi_1040_7(X)) :- chebi_1040(X).
+o(f_chebi_1040_8(X)) :- chebi_1040(X).
+cl(f_chebi_1040_9(X)) :- chebi_1040(X).
+h(f_chebi_1040_10(X)) :- chebi_1040(X).
+h(f_chebi_1040_11(X)) :- chebi_1040(X).
+hasAtom(X,f_chebi_1040_1(X)) :- chebi_1040(X).
+hasAtom(X,f_chebi_1040_2(X)) :- chebi_1040(X).
+hasAtom(X,f_chebi_1040_3(X)) :- chebi_1040(X).
+hasAtom(X,f_chebi_1040_4(X)) :- chebi_1040(X).
+hasAtom(X,f_chebi_1040_5(X)) :- chebi_1040(X).
+hasAtom(X,f_chebi_1040_6(X)) :- chebi_1040(X).
+hasAtom(X,f_chebi_1040_7(X)) :- chebi_1040(X).
+hasAtom(X,f_chebi_1040_8(X)) :- chebi_1040(X).
+hasAtom(X,f_chebi_1040_9(X)) :- chebi_1040(X).
+single(f_chebi_1040_2(X),f_chebi_1040_1(X)) :- chebi_1040(X).
+single(f_chebi_1040_1(X),f_chebi_1040_2(X)) :- chebi_1040(X).
+double(f_chebi_1040_6(X),f_chebi_1040_1(X)) :- chebi_1040(X).
+double(f_chebi_1040_1(X),f_chebi_1040_6(X)) :- chebi_1040(X).
+double(f_chebi_1040_3(X),f_chebi_1040_2(X)) :- chebi_1040(X).
+double(f_chebi_1040_2(X),f_chebi_1040_3(X)) :- chebi_1040(X).
+single(f_chebi_1040_7(X),f_chebi_1040_2(X)) :- chebi_1040(X).
+single(f_chebi_1040_2(X),f_chebi_1040_7(X)) :- chebi_1040(X).
+single(f_chebi_1040_4(X),f_chebi_1040_3(X)) :- chebi_1040(X).
+single(f_chebi_1040_3(X),f_chebi_1040_4(X)) :- chebi_1040(X).
+double(f_chebi_1040_5(X),f_chebi_1040_4(X)) :- chebi_1040(X).
+double(f_chebi_1040_4(X),f_chebi_1040_5(X)) :- chebi_1040(X).
+single(f_chebi_1040_8(X),f_chebi_1040_4(X)) :- chebi_1040(X).
+single(f_chebi_1040_4(X),f_chebi_1040_8(X)) :- chebi_1040(X).
+single(f_chebi_1040_6(X),f_chebi_1040_5(X)) :- chebi_1040(X).
+single(f_chebi_1040_5(X),f_chebi_1040_6(X)) :- chebi_1040(X).
+single(f_chebi_1040_9(X),f_chebi_1040_6(X)) :- chebi_1040(X).
+single(f_chebi_1040_6(X),f_chebi_1040_9(X)) :- chebi_1040(X).
+single(f_chebi_1040_6(X),f_chebi_1040_10(X)) :- chebi_1040(X).
+single(f_chebi_1040_10(X),f_chebi_1040_6(X)) :- chebi_1040(X).
+hasAtom(X,f_chebi_1040_10(X)) :- chebi_1040(X).
+single(f_chebi_1040_7(X),f_chebi_1040_11(X)) :- chebi_1040(X).
+single(f_chebi_1040_11(X),f_chebi_1040_7(X)) :- chebi_1040(X).
+hasAtom(X,f_chebi_1040_11(X)) :- chebi_1040(X).
+chebi_1040(c_chebi_1040).
+molecule(X) :- chebi_11222(X).
+n(f_chebi_11222_1(X)) :- chebi_11222(X).
+plus1(f_chebi_11222_1(X)) :- chebi_11222(X).
+c(f_chebi_11222_2(X)) :- chebi_11222(X).
+c(f_chebi_11222_3(X)) :- chebi_11222(X).
+c(f_chebi_11222_4(X)) :- chebi_11222(X).
+c(f_chebi_11222_5(X)) :- chebi_11222(X).
+c(f_chebi_11222_6(X)) :- chebi_11222(X).
+c(f_chebi_11222_7(X)) :- chebi_11222(X).
+n(f_chebi_11222_8(X)) :- chebi_11222(X).
+n(f_chebi_11222_9(X)) :- chebi_11222(X).
+c(f_chebi_11222_10(X)) :- chebi_11222(X).
+c(f_chebi_11222_11(X)) :- chebi_11222(X).
+c(f_chebi_11222_12(X)) :- chebi_11222(X).
+c(f_chebi_11222_13(X)) :- chebi_11222(X).
+n(f_chebi_11222_14(X)) :- chebi_11222(X).
+c(f_chebi_11222_15(X)) :- chebi_11222(X).
+h(f_chebi_11222_16(X)) :- chebi_11222(X).
+h(f_chebi_11222_17(X)) :- chebi_11222(X).
+h(f_chebi_11222_18(X)) :- chebi_11222(X).
+h(f_chebi_11222_19(X)) :- chebi_11222(X).
+h(f_chebi_11222_20(X)) :- chebi_11222(X).
+h(f_chebi_11222_21(X)) :- chebi_11222(X).
+h(f_chebi_11222_22(X)) :- chebi_11222(X).
+h(f_chebi_11222_23(X)) :- chebi_11222(X).
+h(f_chebi_11222_24(X)) :- chebi_11222(X).
+h(f_chebi_11222_25(X)) :- chebi_11222(X).
+h(f_chebi_11222_26(X)) :- chebi_11222(X).
+h(f_chebi_11222_27(X)) :- chebi_11222(X).
+h(f_chebi_11222_28(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_1(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_2(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_3(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_4(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_5(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_6(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_7(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_8(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_9(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_10(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_11(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_12(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_13(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_14(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_15(X)) :- chebi_11222(X).
+single(f_chebi_11222_2(X),f_chebi_11222_1(X)) :- chebi_11222(X).
+single(f_chebi_11222_1(X),f_chebi_11222_2(X)) :- chebi_11222(X).
+double(f_chebi_11222_3(X),f_chebi_11222_1(X)) :- chebi_11222(X).
+double(f_chebi_11222_1(X),f_chebi_11222_3(X)) :- chebi_11222(X).
+single(f_chebi_11222_7(X),f_chebi_11222_1(X)) :- chebi_11222(X).
+single(f_chebi_11222_1(X),f_chebi_11222_7(X)) :- chebi_11222(X).
+double(f_chebi_11222_5(X),f_chebi_11222_2(X)) :- chebi_11222(X).
+double(f_chebi_11222_2(X),f_chebi_11222_5(X)) :- chebi_11222(X).
+single(f_chebi_11222_4(X),f_chebi_11222_3(X)) :- chebi_11222(X).
+single(f_chebi_11222_3(X),f_chebi_11222_4(X)) :- chebi_11222(X).
+double(f_chebi_11222_6(X),f_chebi_11222_4(X)) :- chebi_11222(X).
+double(f_chebi_11222_4(X),f_chebi_11222_6(X)) :- chebi_11222(X).
+single(f_chebi_11222_6(X),f_chebi_11222_5(X)) :- chebi_11222(X).
+single(f_chebi_11222_5(X),f_chebi_11222_6(X)) :- chebi_11222(X).
+single(f_chebi_11222_11(X),f_chebi_11222_7(X)) :- chebi_11222(X).
+single(f_chebi_11222_7(X),f_chebi_11222_11(X)) :- chebi_11222(X).
+double(f_chebi_11222_10(X),f_chebi_11222_8(X)) :- chebi_11222(X).
+double(f_chebi_11222_8(X),f_chebi_11222_10(X)) :- chebi_11222(X).
+single(f_chebi_11222_12(X),f_chebi_11222_8(X)) :- chebi_11222(X).
+single(f_chebi_11222_8(X),f_chebi_11222_12(X)) :- chebi_11222(X).
+single(f_chebi_11222_10(X),f_chebi_11222_9(X)) :- chebi_11222(X).
+single(f_chebi_11222_9(X),f_chebi_11222_10(X)) :- chebi_11222(X).
+double(f_chebi_11222_13(X),f_chebi_11222_9(X)) :- chebi_11222(X).
+double(f_chebi_11222_9(X),f_chebi_11222_13(X)) :- chebi_11222(X).
+single(f_chebi_11222_15(X),f_chebi_11222_10(X)) :- chebi_11222(X).
+single(f_chebi_11222_10(X),f_chebi_11222_15(X)) :- chebi_11222(X).
+double(f_chebi_11222_12(X),f_chebi_11222_11(X)) :- chebi_11222(X).
+double(f_chebi_11222_11(X),f_chebi_11222_12(X)) :- chebi_11222(X).
+single(f_chebi_11222_13(X),f_chebi_11222_11(X)) :- chebi_11222(X).
+single(f_chebi_11222_11(X),f_chebi_11222_13(X)) :- chebi_11222(X).
+single(f_chebi_11222_14(X),f_chebi_11222_13(X)) :- chebi_11222(X).
+single(f_chebi_11222_13(X),f_chebi_11222_14(X)) :- chebi_11222(X).
+single(f_chebi_11222_1(X),f_chebi_11222_16(X)) :- chebi_11222(X).
+single(f_chebi_11222_16(X),f_chebi_11222_1(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_16(X)) :- chebi_11222(X).
+single(f_chebi_11222_2(X),f_chebi_11222_17(X)) :- chebi_11222(X).
+single(f_chebi_11222_17(X),f_chebi_11222_2(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_17(X)) :- chebi_11222(X).
+single(f_chebi_11222_3(X),f_chebi_11222_18(X)) :- chebi_11222(X).
+single(f_chebi_11222_18(X),f_chebi_11222_3(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_18(X)) :- chebi_11222(X).
+single(f_chebi_11222_4(X),f_chebi_11222_19(X)) :- chebi_11222(X).
+single(f_chebi_11222_19(X),f_chebi_11222_4(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_19(X)) :- chebi_11222(X).
+single(f_chebi_11222_5(X),f_chebi_11222_20(X)) :- chebi_11222(X).
+single(f_chebi_11222_20(X),f_chebi_11222_5(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_20(X)) :- chebi_11222(X).
+single(f_chebi_11222_6(X),f_chebi_11222_21(X)) :- chebi_11222(X).
+single(f_chebi_11222_21(X),f_chebi_11222_6(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_21(X)) :- chebi_11222(X).
+single(f_chebi_11222_6(X),f_chebi_11222_22(X)) :- chebi_11222(X).
+single(f_chebi_11222_22(X),f_chebi_11222_6(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_22(X)) :- chebi_11222(X).
+single(f_chebi_11222_11(X),f_chebi_11222_23(X)) :- chebi_11222(X).
+single(f_chebi_11222_23(X),f_chebi_11222_11(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_23(X)) :- chebi_11222(X).
+single(f_chebi_11222_13(X),f_chebi_11222_24(X)) :- chebi_11222(X).
+single(f_chebi_11222_24(X),f_chebi_11222_13(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_24(X)) :- chebi_11222(X).
+single(f_chebi_11222_13(X),f_chebi_11222_25(X)) :- chebi_11222(X).
+single(f_chebi_11222_25(X),f_chebi_11222_13(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_25(X)) :- chebi_11222(X).
+single(f_chebi_11222_14(X),f_chebi_11222_26(X)) :- chebi_11222(X).
+single(f_chebi_11222_26(X),f_chebi_11222_14(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_26(X)) :- chebi_11222(X).
+single(f_chebi_11222_14(X),f_chebi_11222_27(X)) :- chebi_11222(X).
+single(f_chebi_11222_27(X),f_chebi_11222_14(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_27(X)) :- chebi_11222(X).
+single(f_chebi_11222_14(X),f_chebi_11222_28(X)) :- chebi_11222(X).
+single(f_chebi_11222_28(X),f_chebi_11222_14(X)) :- chebi_11222(X).
+hasAtom(X,f_chebi_11222_28(X)) :- chebi_11222(X).
+chebi_11222(c_chebi_11222).
+molecule(X) :- chebi_10432(X).
+c(f_chebi_10432_1(X)) :- chebi_10432(X).
+c(f_chebi_10432_2(X)) :- chebi_10432(X).
+c(f_chebi_10432_3(X)) :- chebi_10432(X).
+c(f_chebi_10432_4(X)) :- chebi_10432(X).
+c(f_chebi_10432_5(X)) :- chebi_10432(X).
+c(f_chebi_10432_6(X)) :- chebi_10432(X).
+c(f_chebi_10432_7(X)) :- chebi_10432(X).
+c(f_chebi_10432_8(X)) :- chebi_10432(X).
+c(f_chebi_10432_9(X)) :- chebi_10432(X).
+c(f_chebi_10432_10(X)) :- chebi_10432(X).
+o(f_chebi_10432_11(X)) :- chebi_10432(X).
+h(f_chebi_10432_12(X)) :- chebi_10432(X).
+h(f_chebi_10432_13(X)) :- chebi_10432(X).
+h(f_chebi_10432_14(X)) :- chebi_10432(X).
+h(f_chebi_10432_15(X)) :- chebi_10432(X).
+h(f_chebi_10432_16(X)) :- chebi_10432(X).
+h(f_chebi_10432_17(X)) :- chebi_10432(X).
+h(f_chebi_10432_18(X)) :- chebi_10432(X).
+h(f_chebi_10432_19(X)) :- chebi_10432(X).
+hasAtom(X,f_chebi_10432_1(X)) :- chebi_10432(X).
+hasAtom(X,f_chebi_10432_2(X)) :- chebi_10432(X).
+hasAtom(X,f_chebi_10432_3(X)) :- chebi_10432(X).
+hasAtom(X,f_chebi_10432_4(X)) :- chebi_10432(X).
+hasAtom(X,f_chebi_10432_5(X)) :- chebi_10432(X).
+hasAtom(X,f_chebi_10432_6(X)) :- chebi_10432(X).
+hasAtom(X,f_chebi_10432_7(X)) :- chebi_10432(X).
+hasAtom(X,f_chebi_10432_8(X)) :- chebi_10432(X).
+hasAtom(X,f_chebi_10432_9(X)) :- chebi_10432(X).
+hasAtom(X,f_chebi_10432_10(X)) :- chebi_10432(X).
+hasAtom(X,f_chebi_10432_11(X)) :- chebi_10432(X).
+single(f_chebi_10432_10(X),f_chebi_10432_9(X)) :- chebi_10432(X).
+single(f_chebi_10432_9(X),f_chebi_10432_10(X)) :- chebi_10432(X).
+double(f_chebi_10432_8(X),f_chebi_10432_9(X)) :- chebi_10432(X).
+double(f_chebi_10432_9(X),f_chebi_10432_8(X)) :- chebi_10432(X).
+single(f_chebi_10432_1(X),f_chebi_10432_9(X)) :- chebi_10432(X).
+single(f_chebi_10432_9(X),f_chebi_10432_1(X)) :- chebi_10432(X).
+double(f_chebi_10432_5(X),f_chebi_10432_10(X)) :- chebi_10432(X).
+double(f_chebi_10432_10(X),f_chebi_10432_5(X)) :- chebi_10432(X).
+single(f_chebi_10432_4(X),f_chebi_10432_10(X)) :- chebi_10432(X).
+single(f_chebi_10432_10(X),f_chebi_10432_4(X)) :- chebi_10432(X).
+single(f_chebi_10432_7(X),f_chebi_10432_8(X)) :- chebi_10432(X).
+single(f_chebi_10432_8(X),f_chebi_10432_7(X)) :- chebi_10432(X).
+single(f_chebi_10432_6(X),f_chebi_10432_5(X)) :- chebi_10432(X).
+single(f_chebi_10432_5(X),f_chebi_10432_6(X)) :- chebi_10432(X).
+double(f_chebi_10432_3(X),f_chebi_10432_4(X)) :- chebi_10432(X).
+double(f_chebi_10432_4(X),f_chebi_10432_3(X)) :- chebi_10432(X).
+double(f_chebi_10432_2(X),f_chebi_10432_1(X)) :- chebi_10432(X).
+double(f_chebi_10432_1(X),f_chebi_10432_2(X)) :- chebi_10432(X).
+single(f_chebi_10432_3(X),f_chebi_10432_2(X)) :- chebi_10432(X).
+single(f_chebi_10432_2(X),f_chebi_10432_3(X)) :- chebi_10432(X).
+single(f_chebi_10432_11(X),f_chebi_10432_2(X)) :- chebi_10432(X).
+single(f_chebi_10432_2(X),f_chebi_10432_11(X)) :- chebi_10432(X).
+double(f_chebi_10432_7(X),f_chebi_10432_6(X)) :- chebi_10432(X).
+double(f_chebi_10432_6(X),f_chebi_10432_7(X)) :- chebi_10432(X).
+single(X,f_chebi_10432_12(X)) :- chebi_10432(X).
+single(f_chebi_10432_12(X),X) :- chebi_10432(X).
+hasAtom(X,f_chebi_10432_12(X)) :- chebi_10432(X).
+single(f_chebi_10432_2(X),f_chebi_10432_13(X)) :- chebi_10432(X).
+single(f_chebi_10432_13(X),f_chebi_10432_2(X)) :- chebi_10432(X).
+hasAtom(X,f_chebi_10432_13(X)) :- chebi_10432(X).
+single(f_chebi_10432_3(X),f_chebi_10432_14(X)) :- chebi_10432(X).
+single(f_chebi_10432_14(X),f_chebi_10432_3(X)) :- chebi_10432(X).
+hasAtom(X,f_chebi_10432_14(X)) :- chebi_10432(X).
+single(f_chebi_10432_4(X),f_chebi_10432_15(X)) :- chebi_10432(X).
+single(f_chebi_10432_15(X),f_chebi_10432_4(X)) :- chebi_10432(X).
+hasAtom(X,f_chebi_10432_15(X)) :- chebi_10432(X).
+single(f_chebi_10432_5(X),f_chebi_10432_16(X)) :- chebi_10432(X).
+single(f_chebi_10432_16(X),f_chebi_10432_5(X)) :- chebi_10432(X).
+hasAtom(X,f_chebi_10432_16(X)) :- chebi_10432(X).
+single(f_chebi_10432_6(X),f_chebi_10432_17(X)) :- chebi_10432(X).
+single(f_chebi_10432_17(X),f_chebi_10432_6(X)) :- chebi_10432(X).
+hasAtom(X,f_chebi_10432_17(X)) :- chebi_10432(X).
+single(f_chebi_10432_7(X),f_chebi_10432_18(X)) :- chebi_10432(X).
+single(f_chebi_10432_18(X),f_chebi_10432_7(X)) :- chebi_10432(X).
+hasAtom(X,f_chebi_10432_18(X)) :- chebi_10432(X).
+single(f_chebi_10432_10(X),f_chebi_10432_19(X)) :- chebi_10432(X).
+single(f_chebi_10432_19(X),f_chebi_10432_10(X)) :- chebi_10432(X).
+hasAtom(X,f_chebi_10432_19(X)) :- chebi_10432(X).
+chebi_10432(c_chebi_10432).
+molecule(X) :- chebi_1506(X).
+c(f_chebi_1506_1(X)) :- chebi_1506(X).
+o(f_chebi_1506_2(X)) :- chebi_1506(X).
+c(f_chebi_1506_3(X)) :- chebi_1506(X).
+c(f_chebi_1506_4(X)) :- chebi_1506(X).
+c(f_chebi_1506_5(X)) :- chebi_1506(X).
+c(f_chebi_1506_6(X)) :- chebi_1506(X).
+o(f_chebi_1506_7(X)) :- chebi_1506(X).
+c(f_chebi_1506_8(X)) :- chebi_1506(X).
+c(f_chebi_1506_9(X)) :- chebi_1506(X).
+o(f_chebi_1506_10(X)) :- chebi_1506(X).
+o(f_chebi_1506_11(X)) :- chebi_1506(X).
+o(f_chebi_1506_12(X)) :- chebi_1506(X).
+o(f_chebi_1506_13(X)) :- chebi_1506(X).
+h(f_chebi_1506_14(X)) :- chebi_1506(X).
+h(f_chebi_1506_15(X)) :- chebi_1506(X).
+h(f_chebi_1506_16(X)) :- chebi_1506(X).
+h(f_chebi_1506_17(X)) :- chebi_1506(X).
+h(f_chebi_1506_18(X)) :- chebi_1506(X).
+h(f_chebi_1506_19(X)) :- chebi_1506(X).
+hasAtom(X,f_chebi_1506_1(X)) :- chebi_1506(X).
+hasAtom(X,f_chebi_1506_2(X)) :- chebi_1506(X).
+hasAtom(X,f_chebi_1506_3(X)) :- chebi_1506(X).
+hasAtom(X,f_chebi_1506_4(X)) :- chebi_1506(X).
+hasAtom(X,f_chebi_1506_5(X)) :- chebi_1506(X).
+hasAtom(X,f_chebi_1506_6(X)) :- chebi_1506(X).
+hasAtom(X,f_chebi_1506_7(X)) :- chebi_1506(X).
+hasAtom(X,f_chebi_1506_8(X)) :- chebi_1506(X).
+hasAtom(X,f_chebi_1506_9(X)) :- chebi_1506(X).
+hasAtom(X,f_chebi_1506_10(X)) :- chebi_1506(X).
+hasAtom(X,f_chebi_1506_11(X)) :- chebi_1506(X).
+hasAtom(X,f_chebi_1506_12(X)) :- chebi_1506(X).
+hasAtom(X,f_chebi_1506_13(X)) :- chebi_1506(X).
+double(f_chebi_1506_10(X),f_chebi_1506_1(X)) :- chebi_1506(X).
+double(f_chebi_1506_1(X),f_chebi_1506_10(X)) :- chebi_1506(X).
+single(f_chebi_1506_2(X),f_chebi_1506_1(X)) :- chebi_1506(X).
+single(f_chebi_1506_1(X),f_chebi_1506_2(X)) :- chebi_1506(X).
+double(f_chebi_1506_12(X),f_chebi_1506_3(X)) :- chebi_1506(X).
+double(f_chebi_1506_3(X),f_chebi_1506_12(X)) :- chebi_1506(X).
+single(f_chebi_1506_4(X),f_chebi_1506_3(X)) :- chebi_1506(X).
+single(f_chebi_1506_3(X),f_chebi_1506_4(X)) :- chebi_1506(X).
+single(f_chebi_1506_5(X),f_chebi_1506_4(X)) :- chebi_1506(X).
+single(f_chebi_1506_4(X),f_chebi_1506_5(X)) :- chebi_1506(X).
+double(f_chebi_1506_13(X),f_chebi_1506_5(X)) :- chebi_1506(X).
+double(f_chebi_1506_5(X),f_chebi_1506_13(X)) :- chebi_1506(X).
+single(f_chebi_1506_6(X),f_chebi_1506_5(X)) :- chebi_1506(X).
+single(f_chebi_1506_5(X),f_chebi_1506_6(X)) :- chebi_1506(X).
+double(f_chebi_1506_11(X),f_chebi_1506_6(X)) :- chebi_1506(X).
+double(f_chebi_1506_6(X),f_chebi_1506_11(X)) :- chebi_1506(X).
+single(f_chebi_1506_7(X),f_chebi_1506_6(X)) :- chebi_1506(X).
+single(f_chebi_1506_6(X),f_chebi_1506_7(X)) :- chebi_1506(X).
+single(f_chebi_1506_3(X),f_chebi_1506_8(X)) :- chebi_1506(X).
+single(f_chebi_1506_8(X),f_chebi_1506_3(X)) :- chebi_1506(X).
+single(f_chebi_1506_9(X),f_chebi_1506_1(X)) :- chebi_1506(X).
+single(f_chebi_1506_1(X),f_chebi_1506_9(X)) :- chebi_1506(X).
+double(f_chebi_1506_8(X),f_chebi_1506_9(X)) :- chebi_1506(X).
+double(f_chebi_1506_9(X),f_chebi_1506_8(X)) :- chebi_1506(X).
+single(f_chebi_1506_1(X),f_chebi_1506_14(X)) :- chebi_1506(X).
+single(f_chebi_1506_14(X),f_chebi_1506_1(X)) :- chebi_1506(X).
+hasAtom(X,f_chebi_1506_14(X)) :- chebi_1506(X).
+single(f_chebi_1506_3(X),f_chebi_1506_15(X)) :- chebi_1506(X).
+single(f_chebi_1506_15(X),f_chebi_1506_3(X)) :- chebi_1506(X).
+hasAtom(X,f_chebi_1506_15(X)) :- chebi_1506(X).
+single(f_chebi_1506_3(X),f_chebi_1506_16(X)) :- chebi_1506(X).
+single(f_chebi_1506_16(X),f_chebi_1506_3(X)) :- chebi_1506(X).
+hasAtom(X,f_chebi_1506_16(X)) :- chebi_1506(X).
+single(f_chebi_1506_6(X),f_chebi_1506_17(X)) :- chebi_1506(X).
+single(f_chebi_1506_17(X),f_chebi_1506_6(X)) :- chebi_1506(X).
+hasAtom(X,f_chebi_1506_17(X)) :- chebi_1506(X).
+single(f_chebi_1506_7(X),f_chebi_1506_18(X)) :- chebi_1506(X).
+single(f_chebi_1506_18(X),f_chebi_1506_7(X)) :- chebi_1506(X).
+hasAtom(X,f_chebi_1506_18(X)) :- chebi_1506(X).
+single(f_chebi_1506_8(X),f_chebi_1506_19(X)) :- chebi_1506(X).
+single(f_chebi_1506_19(X),f_chebi_1506_8(X)) :- chebi_1506(X).
+hasAtom(X,f_chebi_1506_19(X)) :- chebi_1506(X).
+chebi_1506(c_chebi_1506).
+molecule(X) :- chebi_1386(X).
+c(f_chebi_1386_1(X)) :- chebi_1386(X).
+c(f_chebi_1386_2(X)) :- chebi_1386(X).
+c(f_chebi_1386_3(X)) :- chebi_1386(X).
+c(f_chebi_1386_4(X)) :- chebi_1386(X).
+c(f_chebi_1386_5(X)) :- chebi_1386(X).
+c(f_chebi_1386_6(X)) :- chebi_1386(X).
+c(f_chebi_1386_7(X)) :- chebi_1386(X).
+o(f_chebi_1386_8(X)) :- chebi_1386(X).
+o(f_chebi_1386_9(X)) :- chebi_1386(X).
+c(f_chebi_1386_10(X)) :- chebi_1386(X).
+o(f_chebi_1386_11(X)) :- chebi_1386(X).
+o(f_chebi_1386_12(X)) :- chebi_1386(X).
+h(f_chebi_1386_13(X)) :- chebi_1386(X).
+h(f_chebi_1386_14(X)) :- chebi_1386(X).
+h(f_chebi_1386_15(X)) :- chebi_1386(X).
+h(f_chebi_1386_16(X)) :- chebi_1386(X).
+h(f_chebi_1386_17(X)) :- chebi_1386(X).
+h(f_chebi_1386_18(X)) :- chebi_1386(X).
+h(f_chebi_1386_19(X)) :- chebi_1386(X).
+h(f_chebi_1386_20(X)) :- chebi_1386(X).
+hasAtom(X,f_chebi_1386_1(X)) :- chebi_1386(X).
+hasAtom(X,f_chebi_1386_2(X)) :- chebi_1386(X).
+hasAtom(X,f_chebi_1386_3(X)) :- chebi_1386(X).
+hasAtom(X,f_chebi_1386_4(X)) :- chebi_1386(X).
+hasAtom(X,f_chebi_1386_5(X)) :- chebi_1386(X).
+hasAtom(X,f_chebi_1386_6(X)) :- chebi_1386(X).
+hasAtom(X,f_chebi_1386_7(X)) :- chebi_1386(X).
+hasAtom(X,f_chebi_1386_8(X)) :- chebi_1386(X).
+hasAtom(X,f_chebi_1386_9(X)) :- chebi_1386(X).
+hasAtom(X,f_chebi_1386_10(X)) :- chebi_1386(X).
+hasAtom(X,f_chebi_1386_11(X)) :- chebi_1386(X).
+hasAtom(X,f_chebi_1386_12(X)) :- chebi_1386(X).
+single(f_chebi_1386_2(X),f_chebi_1386_1(X)) :- chebi_1386(X).
+single(f_chebi_1386_1(X),f_chebi_1386_2(X)) :- chebi_1386(X).
+single(f_chebi_1386_2(X),f_chebi_1386_12(X)) :- chebi_1386(X).
+single(f_chebi_1386_12(X),f_chebi_1386_2(X)) :- chebi_1386(X).
+double(f_chebi_1386_1(X),f_chebi_1386_3(X)) :- chebi_1386(X).
+double(f_chebi_1386_3(X),f_chebi_1386_1(X)) :- chebi_1386(X).
+single(f_chebi_1386_3(X),f_chebi_1386_10(X)) :- chebi_1386(X).
+single(f_chebi_1386_10(X),f_chebi_1386_3(X)) :- chebi_1386(X).
+single(f_chebi_1386_4(X),f_chebi_1386_3(X)) :- chebi_1386(X).
+single(f_chebi_1386_3(X),f_chebi_1386_4(X)) :- chebi_1386(X).
+double(f_chebi_1386_5(X),f_chebi_1386_4(X)) :- chebi_1386(X).
+double(f_chebi_1386_4(X),f_chebi_1386_5(X)) :- chebi_1386(X).
+double(f_chebi_1386_6(X),f_chebi_1386_2(X)) :- chebi_1386(X).
+double(f_chebi_1386_2(X),f_chebi_1386_6(X)) :- chebi_1386(X).
+single(f_chebi_1386_6(X),f_chebi_1386_5(X)) :- chebi_1386(X).
+single(f_chebi_1386_5(X),f_chebi_1386_6(X)) :- chebi_1386(X).
+single(f_chebi_1386_11(X),f_chebi_1386_6(X)) :- chebi_1386(X).
+single(f_chebi_1386_6(X),f_chebi_1386_11(X)) :- chebi_1386(X).
+double(f_chebi_1386_8(X),f_chebi_1386_7(X)) :- chebi_1386(X).
+double(f_chebi_1386_7(X),f_chebi_1386_8(X)) :- chebi_1386(X).
+single(f_chebi_1386_9(X),f_chebi_1386_7(X)) :- chebi_1386(X).
+single(f_chebi_1386_7(X),f_chebi_1386_9(X)) :- chebi_1386(X).
+single(f_chebi_1386_10(X),f_chebi_1386_7(X)) :- chebi_1386(X).
+single(f_chebi_1386_7(X),f_chebi_1386_10(X)) :- chebi_1386(X).
+single(X,f_chebi_1386_13(X)) :- chebi_1386(X).
+single(f_chebi_1386_13(X),X) :- chebi_1386(X).
+hasAtom(X,f_chebi_1386_13(X)) :- chebi_1386(X).
+single(f_chebi_1386_3(X),f_chebi_1386_14(X)) :- chebi_1386(X).
+single(f_chebi_1386_14(X),f_chebi_1386_3(X)) :- chebi_1386(X).
+hasAtom(X,f_chebi_1386_14(X)) :- chebi_1386(X).
+single(f_chebi_1386_4(X),f_chebi_1386_15(X)) :- chebi_1386(X).
+single(f_chebi_1386_15(X),f_chebi_1386_4(X)) :- chebi_1386(X).
+hasAtom(X,f_chebi_1386_15(X)) :- chebi_1386(X).
+single(f_chebi_1386_8(X),f_chebi_1386_16(X)) :- chebi_1386(X).
+single(f_chebi_1386_16(X),f_chebi_1386_8(X)) :- chebi_1386(X).
+hasAtom(X,f_chebi_1386_16(X)) :- chebi_1386(X).
+single(f_chebi_1386_9(X),f_chebi_1386_17(X)) :- chebi_1386(X).
+single(f_chebi_1386_17(X),f_chebi_1386_9(X)) :- chebi_1386(X).
+hasAtom(X,f_chebi_1386_17(X)) :- chebi_1386(X).
+single(f_chebi_1386_9(X),f_chebi_1386_18(X)) :- chebi_1386(X).
+single(f_chebi_1386_18(X),f_chebi_1386_9(X)) :- chebi_1386(X).
+hasAtom(X,f_chebi_1386_18(X)) :- chebi_1386(X).
+single(f_chebi_1386_10(X),f_chebi_1386_19(X)) :- chebi_1386(X).
+single(f_chebi_1386_19(X),f_chebi_1386_10(X)) :- chebi_1386(X).
+hasAtom(X,f_chebi_1386_19(X)) :- chebi_1386(X).
+single(f_chebi_1386_11(X),f_chebi_1386_20(X)) :- chebi_1386(X).
+single(f_chebi_1386_20(X),f_chebi_1386_11(X)) :- chebi_1386(X).
+hasAtom(X,f_chebi_1386_20(X)) :- chebi_1386(X).
+chebi_1386(c_chebi_1386).
+molecule(X) :- chebi_10319(X).
+c(f_chebi_10319_1(X)) :- chebi_10319(X).
+c(f_chebi_10319_2(X)) :- chebi_10319(X).
+c(f_chebi_10319_3(X)) :- chebi_10319(X).
+c(f_chebi_10319_4(X)) :- chebi_10319(X).
+c(f_chebi_10319_5(X)) :- chebi_10319(X).
+c(f_chebi_10319_6(X)) :- chebi_10319(X).
+c(f_chebi_10319_7(X)) :- chebi_10319(X).
+c(f_chebi_10319_8(X)) :- chebi_10319(X).
+c(f_chebi_10319_9(X)) :- chebi_10319(X).
+c(f_chebi_10319_10(X)) :- chebi_10319(X).
+o(f_chebi_10319_11(X)) :- chebi_10319(X).
+h(f_chebi_10319_12(X)) :- chebi_10319(X).
+h(f_chebi_10319_13(X)) :- chebi_10319(X).
+h(f_chebi_10319_14(X)) :- chebi_10319(X).
+h(f_chebi_10319_15(X)) :- chebi_10319(X).
+h(f_chebi_10319_16(X)) :- chebi_10319(X).
+h(f_chebi_10319_17(X)) :- chebi_10319(X).
+h(f_chebi_10319_18(X)) :- chebi_10319(X).
+h(f_chebi_10319_19(X)) :- chebi_10319(X).
+hasAtom(X,f_chebi_10319_1(X)) :- chebi_10319(X).
+hasAtom(X,f_chebi_10319_2(X)) :- chebi_10319(X).
+hasAtom(X,f_chebi_10319_3(X)) :- chebi_10319(X).
+hasAtom(X,f_chebi_10319_4(X)) :- chebi_10319(X).
+hasAtom(X,f_chebi_10319_5(X)) :- chebi_10319(X).
+hasAtom(X,f_chebi_10319_6(X)) :- chebi_10319(X).
+hasAtom(X,f_chebi_10319_7(X)) :- chebi_10319(X).
+hasAtom(X,f_chebi_10319_8(X)) :- chebi_10319(X).
+hasAtom(X,f_chebi_10319_9(X)) :- chebi_10319(X).
+hasAtom(X,f_chebi_10319_10(X)) :- chebi_10319(X).
+hasAtom(X,f_chebi_10319_11(X)) :- chebi_10319(X).
+single(f_chebi_10319_10(X),f_chebi_10319_9(X)) :- chebi_10319(X).
+single(f_chebi_10319_9(X),f_chebi_10319_10(X)) :- chebi_10319(X).
+double(f_chebi_10319_8(X),f_chebi_10319_9(X)) :- chebi_10319(X).
+double(f_chebi_10319_9(X),f_chebi_10319_8(X)) :- chebi_10319(X).
+single(f_chebi_10319_1(X),f_chebi_10319_9(X)) :- chebi_10319(X).
+single(f_chebi_10319_9(X),f_chebi_10319_1(X)) :- chebi_10319(X).
+double(f_chebi_10319_5(X),f_chebi_10319_10(X)) :- chebi_10319(X).
+double(f_chebi_10319_10(X),f_chebi_10319_5(X)) :- chebi_10319(X).
+single(f_chebi_10319_4(X),f_chebi_10319_10(X)) :- chebi_10319(X).
+single(f_chebi_10319_10(X),f_chebi_10319_4(X)) :- chebi_10319(X).
+single(f_chebi_10319_7(X),f_chebi_10319_8(X)) :- chebi_10319(X).
+single(f_chebi_10319_8(X),f_chebi_10319_7(X)) :- chebi_10319(X).
+single(f_chebi_10319_6(X),f_chebi_10319_5(X)) :- chebi_10319(X).
+single(f_chebi_10319_5(X),f_chebi_10319_6(X)) :- chebi_10319(X).
+double(f_chebi_10319_3(X),f_chebi_10319_4(X)) :- chebi_10319(X).
+double(f_chebi_10319_4(X),f_chebi_10319_3(X)) :- chebi_10319(X).
+double(f_chebi_10319_2(X),f_chebi_10319_1(X)) :- chebi_10319(X).
+double(f_chebi_10319_1(X),f_chebi_10319_2(X)) :- chebi_10319(X).
+single(f_chebi_10319_11(X),f_chebi_10319_1(X)) :- chebi_10319(X).
+single(f_chebi_10319_1(X),f_chebi_10319_11(X)) :- chebi_10319(X).
+single(f_chebi_10319_3(X),f_chebi_10319_2(X)) :- chebi_10319(X).
+single(f_chebi_10319_2(X),f_chebi_10319_3(X)) :- chebi_10319(X).
+double(f_chebi_10319_7(X),f_chebi_10319_6(X)) :- chebi_10319(X).
+double(f_chebi_10319_6(X),f_chebi_10319_7(X)) :- chebi_10319(X).
+single(f_chebi_10319_1(X),f_chebi_10319_12(X)) :- chebi_10319(X).
+single(f_chebi_10319_12(X),f_chebi_10319_1(X)) :- chebi_10319(X).
+hasAtom(X,f_chebi_10319_12(X)) :- chebi_10319(X).
+single(f_chebi_10319_2(X),f_chebi_10319_13(X)) :- chebi_10319(X).
+single(f_chebi_10319_13(X),f_chebi_10319_2(X)) :- chebi_10319(X).
+hasAtom(X,f_chebi_10319_13(X)) :- chebi_10319(X).
+single(f_chebi_10319_3(X),f_chebi_10319_14(X)) :- chebi_10319(X).
+single(f_chebi_10319_14(X),f_chebi_10319_3(X)) :- chebi_10319(X).
+hasAtom(X,f_chebi_10319_14(X)) :- chebi_10319(X).
+single(f_chebi_10319_4(X),f_chebi_10319_15(X)) :- chebi_10319(X).
+single(f_chebi_10319_15(X),f_chebi_10319_4(X)) :- chebi_10319(X).
+hasAtom(X,f_chebi_10319_15(X)) :- chebi_10319(X).
+single(f_chebi_10319_5(X),f_chebi_10319_16(X)) :- chebi_10319(X).
+single(f_chebi_10319_16(X),f_chebi_10319_5(X)) :- chebi_10319(X).
+hasAtom(X,f_chebi_10319_16(X)) :- chebi_10319(X).
+single(f_chebi_10319_6(X),f_chebi_10319_17(X)) :- chebi_10319(X).
+single(f_chebi_10319_17(X),f_chebi_10319_6(X)) :- chebi_10319(X).
+hasAtom(X,f_chebi_10319_17(X)) :- chebi_10319(X).
+single(f_chebi_10319_7(X),f_chebi_10319_18(X)) :- chebi_10319(X).
+single(f_chebi_10319_18(X),f_chebi_10319_7(X)) :- chebi_10319(X).
+hasAtom(X,f_chebi_10319_18(X)) :- chebi_10319(X).
+single(f_chebi_10319_10(X),f_chebi_10319_19(X)) :- chebi_10319(X).
+single(f_chebi_10319_19(X),f_chebi_10319_10(X)) :- chebi_10319(X).
+hasAtom(X,f_chebi_10319_19(X)) :- chebi_10319(X).
+chebi_10319(c_chebi_10319).
+molecule(X) :- chebi_11531(X).
+c(f_chebi_11531_1(X)) :- chebi_11531(X).
+o(f_chebi_11531_2(X)) :- chebi_11531(X).
+c(f_chebi_11531_3(X)) :- chebi_11531(X).
+c(f_chebi_11531_4(X)) :- chebi_11531(X).
+c(f_chebi_11531_5(X)) :- chebi_11531(X).
+o(f_chebi_11531_6(X)) :- chebi_11531(X).
+c(f_chebi_11531_7(X)) :- chebi_11531(X).
+c(f_chebi_11531_8(X)) :- chebi_11531(X).
+n(f_chebi_11531_9(X)) :- chebi_11531(X).
+c(f_chebi_11531_10(X)) :- chebi_11531(X).
+o(f_chebi_11531_11(X)) :- chebi_11531(X).
+c(f_chebi_11531_12(X)) :- chebi_11531(X).
+c(f_chebi_11531_13(X)) :- chebi_11531(X).
+n(f_chebi_11531_14(X)) :- chebi_11531(X).
+o(f_chebi_11531_15(X)) :- chebi_11531(X).
+c(f_chebi_11531_16(X)) :- chebi_11531(X).
+c(f_chebi_11531_17(X)) :- chebi_11531(X).
+c(f_chebi_11531_18(X)) :- chebi_11531(X).
+c(f_chebi_11531_19(X)) :- chebi_11531(X).
+c(f_chebi_11531_20(X)) :- chebi_11531(X).
+c(f_chebi_11531_21(X)) :- chebi_11531(X).
+o(f_chebi_11531_22(X)) :- chebi_11531(X).
+o(f_chebi_11531_23(X)) :- chebi_11531(X).
+o(f_chebi_11531_24(X)) :- chebi_11531(X).
+o(f_chebi_11531_25(X)) :- chebi_11531(X).
+o(f_chebi_11531_26(X)) :- chebi_11531(X).
+o(f_chebi_11531_27(X)) :- chebi_11531(X).
+o(f_chebi_11531_28(X)) :- chebi_11531(X).
+o(f_chebi_11531_29(X)) :- chebi_11531(X).
+p(f_chebi_11531_30(X)) :- chebi_11531(X).
+p(f_chebi_11531_31(X)) :- chebi_11531(X).
+c(f_chebi_11531_32(X)) :- chebi_11531(X).
+o(f_chebi_11531_33(X)) :- chebi_11531(X).
+o(f_chebi_11531_34(X)) :- chebi_11531(X).
+o(f_chebi_11531_35(X)) :- chebi_11531(X).
+p(f_chebi_11531_36(X)) :- chebi_11531(X).
+o(f_chebi_11531_37(X)) :- chebi_11531(X).
+n(f_chebi_11531_38(X)) :- chebi_11531(X).
+c(f_chebi_11531_39(X)) :- chebi_11531(X).
+c(f_chebi_11531_40(X)) :- chebi_11531(X).
+c(f_chebi_11531_41(X)) :- chebi_11531(X).
+n(f_chebi_11531_42(X)) :- chebi_11531(X).
+n(f_chebi_11531_43(X)) :- chebi_11531(X).
+c(f_chebi_11531_44(X)) :- chebi_11531(X).
+c(f_chebi_11531_45(X)) :- chebi_11531(X).
+n(f_chebi_11531_46(X)) :- chebi_11531(X).
+n(f_chebi_11531_47(X)) :- chebi_11531(X).
+s(f_chebi_11531_48(X)) :- chebi_11531(X).
+o(f_chebi_11531_49(X)) :- chebi_11531(X).
+c(f_chebi_11531_50(X)) :- chebi_11531(X).
+c(f_chebi_11531_51(X)) :- chebi_11531(X).
+c(f_chebi_11531_52(X)) :- chebi_11531(X).
+c(f_chebi_11531_53(X)) :- chebi_11531(X).
+h(f_chebi_11531_54(X)) :- chebi_11531(X).
+h(f_chebi_11531_55(X)) :- chebi_11531(X).
+h(f_chebi_11531_56(X)) :- chebi_11531(X).
+h(f_chebi_11531_57(X)) :- chebi_11531(X).
+h(f_chebi_11531_58(X)) :- chebi_11531(X).
+h(f_chebi_11531_59(X)) :- chebi_11531(X).
+h(f_chebi_11531_60(X)) :- chebi_11531(X).
+h(f_chebi_11531_61(X)) :- chebi_11531(X).
+h(f_chebi_11531_62(X)) :- chebi_11531(X).
+h(f_chebi_11531_63(X)) :- chebi_11531(X).
+h(f_chebi_11531_64(X)) :- chebi_11531(X).
+h(f_chebi_11531_65(X)) :- chebi_11531(X).
+h(f_chebi_11531_66(X)) :- chebi_11531(X).
+h(f_chebi_11531_67(X)) :- chebi_11531(X).
+h(f_chebi_11531_68(X)) :- chebi_11531(X).
+h(f_chebi_11531_69(X)) :- chebi_11531(X).
+h(f_chebi_11531_70(X)) :- chebi_11531(X).
+h(f_chebi_11531_71(X)) :- chebi_11531(X).
+h(f_chebi_11531_72(X)) :- chebi_11531(X).
+h(f_chebi_11531_73(X)) :- chebi_11531(X).
+h(f_chebi_11531_74(X)) :- chebi_11531(X).
+h(f_chebi_11531_75(X)) :- chebi_11531(X).
+h(f_chebi_11531_76(X)) :- chebi_11531(X).
+h(f_chebi_11531_77(X)) :- chebi_11531(X).
+h(f_chebi_11531_78(X)) :- chebi_11531(X).
+h(f_chebi_11531_79(X)) :- chebi_11531(X).
+h(f_chebi_11531_80(X)) :- chebi_11531(X).
+h(f_chebi_11531_81(X)) :- chebi_11531(X).
+h(f_chebi_11531_82(X)) :- chebi_11531(X).
+h(f_chebi_11531_83(X)) :- chebi_11531(X).
+h(f_chebi_11531_84(X)) :- chebi_11531(X).
+h(f_chebi_11531_85(X)) :- chebi_11531(X).
+h(f_chebi_11531_86(X)) :- chebi_11531(X).
+h(f_chebi_11531_87(X)) :- chebi_11531(X).
+h(f_chebi_11531_88(X)) :- chebi_11531(X).
+h(f_chebi_11531_89(X)) :- chebi_11531(X).
+h(f_chebi_11531_90(X)) :- chebi_11531(X).
+h(f_chebi_11531_91(X)) :- chebi_11531(X).
+h(f_chebi_11531_92(X)) :- chebi_11531(X).
+h(f_chebi_11531_93(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_1(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_2(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_3(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_4(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_5(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_6(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_7(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_8(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_9(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_10(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_11(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_12(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_13(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_14(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_15(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_16(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_17(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_18(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_19(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_20(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_21(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_22(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_23(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_24(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_25(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_26(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_27(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_28(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_29(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_30(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_31(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_32(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_33(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_34(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_35(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_36(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_37(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_38(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_39(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_40(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_41(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_42(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_43(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_44(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_45(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_46(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_47(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_48(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_49(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_50(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_51(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_52(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_53(X)) :- chebi_11531(X).
+single(f_chebi_11531_1(X),f_chebi_11531_38(X)) :- chebi_11531(X).
+single(f_chebi_11531_38(X),f_chebi_11531_1(X)) :- chebi_11531(X).
+single(f_chebi_11531_2(X),f_chebi_11531_1(X)) :- chebi_11531(X).
+single(f_chebi_11531_1(X),f_chebi_11531_2(X)) :- chebi_11531(X).
+single(f_chebi_11531_3(X),f_chebi_11531_1(X)) :- chebi_11531(X).
+single(f_chebi_11531_1(X),f_chebi_11531_3(X)) :- chebi_11531(X).
+single(f_chebi_11531_4(X),f_chebi_11531_2(X)) :- chebi_11531(X).
+single(f_chebi_11531_2(X),f_chebi_11531_4(X)) :- chebi_11531(X).
+single(f_chebi_11531_5(X),f_chebi_11531_3(X)) :- chebi_11531(X).
+single(f_chebi_11531_3(X),f_chebi_11531_5(X)) :- chebi_11531(X).
+single(f_chebi_11531_3(X),f_chebi_11531_6(X)) :- chebi_11531(X).
+single(f_chebi_11531_6(X),f_chebi_11531_3(X)) :- chebi_11531(X).
+single(f_chebi_11531_4(X),f_chebi_11531_32(X)) :- chebi_11531(X).
+single(f_chebi_11531_32(X),f_chebi_11531_4(X)) :- chebi_11531(X).
+single(f_chebi_11531_5(X),f_chebi_11531_4(X)) :- chebi_11531(X).
+single(f_chebi_11531_4(X),f_chebi_11531_5(X)) :- chebi_11531(X).
+single(f_chebi_11531_5(X),f_chebi_11531_33(X)) :- chebi_11531(X).
+single(f_chebi_11531_33(X),f_chebi_11531_5(X)) :- chebi_11531(X).
+single(f_chebi_11531_13(X),f_chebi_11531_10(X)) :- chebi_11531(X).
+single(f_chebi_11531_10(X),f_chebi_11531_13(X)) :- chebi_11531(X).
+single(f_chebi_11531_10(X),f_chebi_11531_9(X)) :- chebi_11531(X).
+single(f_chebi_11531_9(X),f_chebi_11531_10(X)) :- chebi_11531(X).
+single(f_chebi_11531_9(X),f_chebi_11531_7(X)) :- chebi_11531(X).
+single(f_chebi_11531_7(X),f_chebi_11531_9(X)) :- chebi_11531(X).
+single(f_chebi_11531_7(X),f_chebi_11531_8(X)) :- chebi_11531(X).
+single(f_chebi_11531_8(X),f_chebi_11531_7(X)) :- chebi_11531(X).
+single(f_chebi_11531_8(X),f_chebi_11531_48(X)) :- chebi_11531(X).
+single(f_chebi_11531_48(X),f_chebi_11531_8(X)) :- chebi_11531(X).
+double(f_chebi_11531_10(X),f_chebi_11531_11(X)) :- chebi_11531(X).
+double(f_chebi_11531_11(X),f_chebi_11531_10(X)) :- chebi_11531(X).
+single(f_chebi_11531_12(X),f_chebi_11531_14(X)) :- chebi_11531(X).
+single(f_chebi_11531_14(X),f_chebi_11531_12(X)) :- chebi_11531(X).
+single(f_chebi_11531_16(X),f_chebi_11531_14(X)) :- chebi_11531(X).
+single(f_chebi_11531_14(X),f_chebi_11531_16(X)) :- chebi_11531(X).
+single(f_chebi_11531_13(X),f_chebi_11531_12(X)) :- chebi_11531(X).
+single(f_chebi_11531_12(X),f_chebi_11531_13(X)) :- chebi_11531(X).
+double(f_chebi_11531_16(X),f_chebi_11531_15(X)) :- chebi_11531(X).
+double(f_chebi_11531_15(X),f_chebi_11531_16(X)) :- chebi_11531(X).
+single(f_chebi_11531_16(X),f_chebi_11531_21(X)) :- chebi_11531(X).
+single(f_chebi_11531_21(X),f_chebi_11531_16(X)) :- chebi_11531(X).
+single(f_chebi_11531_21(X),f_chebi_11531_19(X)) :- chebi_11531(X).
+single(f_chebi_11531_19(X),f_chebi_11531_21(X)) :- chebi_11531(X).
+single(f_chebi_11531_19(X),f_chebi_11531_17(X)) :- chebi_11531(X).
+single(f_chebi_11531_17(X),f_chebi_11531_19(X)) :- chebi_11531(X).
+single(f_chebi_11531_17(X),f_chebi_11531_23(X)) :- chebi_11531(X).
+single(f_chebi_11531_23(X),f_chebi_11531_17(X)) :- chebi_11531(X).
+single(f_chebi_11531_19(X),f_chebi_11531_18(X)) :- chebi_11531(X).
+single(f_chebi_11531_18(X),f_chebi_11531_19(X)) :- chebi_11531(X).
+single(f_chebi_11531_19(X),f_chebi_11531_20(X)) :- chebi_11531(X).
+single(f_chebi_11531_20(X),f_chebi_11531_19(X)) :- chebi_11531(X).
+single(f_chebi_11531_21(X),f_chebi_11531_22(X)) :- chebi_11531(X).
+single(f_chebi_11531_22(X),f_chebi_11531_21(X)) :- chebi_11531(X).
+single(f_chebi_11531_23(X),f_chebi_11531_30(X)) :- chebi_11531(X).
+single(f_chebi_11531_30(X),f_chebi_11531_23(X)) :- chebi_11531(X).
+single(f_chebi_11531_30(X),f_chebi_11531_24(X)) :- chebi_11531(X).
+single(f_chebi_11531_24(X),f_chebi_11531_30(X)) :- chebi_11531(X).
+single(f_chebi_11531_24(X),f_chebi_11531_31(X)) :- chebi_11531(X).
+single(f_chebi_11531_31(X),f_chebi_11531_24(X)) :- chebi_11531(X).
+single(f_chebi_11531_31(X),f_chebi_11531_25(X)) :- chebi_11531(X).
+single(f_chebi_11531_25(X),f_chebi_11531_31(X)) :- chebi_11531(X).
+double(f_chebi_11531_30(X),f_chebi_11531_26(X)) :- chebi_11531(X).
+double(f_chebi_11531_26(X),f_chebi_11531_30(X)) :- chebi_11531(X).
+single(f_chebi_11531_30(X),f_chebi_11531_27(X)) :- chebi_11531(X).
+single(f_chebi_11531_27(X),f_chebi_11531_30(X)) :- chebi_11531(X).
+double(f_chebi_11531_31(X),f_chebi_11531_28(X)) :- chebi_11531(X).
+double(f_chebi_11531_28(X),f_chebi_11531_31(X)) :- chebi_11531(X).
+single(f_chebi_11531_31(X),f_chebi_11531_29(X)) :- chebi_11531(X).
+single(f_chebi_11531_29(X),f_chebi_11531_31(X)) :- chebi_11531(X).
+single(f_chebi_11531_32(X),f_chebi_11531_25(X)) :- chebi_11531(X).
+single(f_chebi_11531_25(X),f_chebi_11531_32(X)) :- chebi_11531(X).
+single(f_chebi_11531_33(X),f_chebi_11531_36(X)) :- chebi_11531(X).
+single(f_chebi_11531_36(X),f_chebi_11531_33(X)) :- chebi_11531(X).
+single(f_chebi_11531_36(X),f_chebi_11531_34(X)) :- chebi_11531(X).
+single(f_chebi_11531_34(X),f_chebi_11531_36(X)) :- chebi_11531(X).
+single(f_chebi_11531_36(X),f_chebi_11531_35(X)) :- chebi_11531(X).
+single(f_chebi_11531_35(X),f_chebi_11531_36(X)) :- chebi_11531(X).
+double(f_chebi_11531_36(X),f_chebi_11531_37(X)) :- chebi_11531(X).
+double(f_chebi_11531_37(X),f_chebi_11531_36(X)) :- chebi_11531(X).
+single(f_chebi_11531_39(X),f_chebi_11531_38(X)) :- chebi_11531(X).
+single(f_chebi_11531_38(X),f_chebi_11531_39(X)) :- chebi_11531(X).
+single(f_chebi_11531_40(X),f_chebi_11531_38(X)) :- chebi_11531(X).
+single(f_chebi_11531_38(X),f_chebi_11531_40(X)) :- chebi_11531(X).
+double(f_chebi_11531_41(X),f_chebi_11531_39(X)) :- chebi_11531(X).
+double(f_chebi_11531_39(X),f_chebi_11531_41(X)) :- chebi_11531(X).
+single(f_chebi_11531_42(X),f_chebi_11531_39(X)) :- chebi_11531(X).
+single(f_chebi_11531_39(X),f_chebi_11531_42(X)) :- chebi_11531(X).
+double(f_chebi_11531_43(X),f_chebi_11531_40(X)) :- chebi_11531(X).
+double(f_chebi_11531_40(X),f_chebi_11531_43(X)) :- chebi_11531(X).
+single(f_chebi_11531_44(X),f_chebi_11531_41(X)) :- chebi_11531(X).
+single(f_chebi_11531_41(X),f_chebi_11531_44(X)) :- chebi_11531(X).
+single(f_chebi_11531_43(X),f_chebi_11531_41(X)) :- chebi_11531(X).
+single(f_chebi_11531_41(X),f_chebi_11531_43(X)) :- chebi_11531(X).
+double(f_chebi_11531_45(X),f_chebi_11531_42(X)) :- chebi_11531(X).
+double(f_chebi_11531_42(X),f_chebi_11531_45(X)) :- chebi_11531(X).
+double(f_chebi_11531_46(X),f_chebi_11531_44(X)) :- chebi_11531(X).
+double(f_chebi_11531_44(X),f_chebi_11531_46(X)) :- chebi_11531(X).
+single(f_chebi_11531_47(X),f_chebi_11531_44(X)) :- chebi_11531(X).
+single(f_chebi_11531_44(X),f_chebi_11531_47(X)) :- chebi_11531(X).
+single(f_chebi_11531_46(X),f_chebi_11531_45(X)) :- chebi_11531(X).
+single(f_chebi_11531_45(X),f_chebi_11531_46(X)) :- chebi_11531(X).
+single(f_chebi_11531_48(X),f_chebi_11531_50(X)) :- chebi_11531(X).
+single(f_chebi_11531_50(X),f_chebi_11531_48(X)) :- chebi_11531(X).
+double(f_chebi_11531_50(X),f_chebi_11531_49(X)) :- chebi_11531(X).
+double(f_chebi_11531_49(X),f_chebi_11531_50(X)) :- chebi_11531(X).
+single(f_chebi_11531_50(X),f_chebi_11531_51(X)) :- chebi_11531(X).
+single(f_chebi_11531_51(X),f_chebi_11531_50(X)) :- chebi_11531(X).
+double(f_chebi_11531_51(X),f_chebi_11531_52(X)) :- chebi_11531(X).
+double(f_chebi_11531_52(X),f_chebi_11531_51(X)) :- chebi_11531(X).
+single(f_chebi_11531_52(X),f_chebi_11531_53(X)) :- chebi_11531(X).
+single(f_chebi_11531_53(X),f_chebi_11531_52(X)) :- chebi_11531(X).
+single(X,f_chebi_11531_54(X)) :- chebi_11531(X).
+single(f_chebi_11531_54(X),X) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_54(X)) :- chebi_11531(X).
+single(f_chebi_11531_2(X),f_chebi_11531_55(X)) :- chebi_11531(X).
+single(f_chebi_11531_55(X),f_chebi_11531_2(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_55(X)) :- chebi_11531(X).
+single(f_chebi_11531_3(X),f_chebi_11531_56(X)) :- chebi_11531(X).
+single(f_chebi_11531_56(X),f_chebi_11531_3(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_56(X)) :- chebi_11531(X).
+single(f_chebi_11531_4(X),f_chebi_11531_57(X)) :- chebi_11531(X).
+single(f_chebi_11531_57(X),f_chebi_11531_4(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_57(X)) :- chebi_11531(X).
+single(f_chebi_11531_5(X),f_chebi_11531_58(X)) :- chebi_11531(X).
+single(f_chebi_11531_58(X),f_chebi_11531_5(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_58(X)) :- chebi_11531(X).
+single(f_chebi_11531_6(X),f_chebi_11531_59(X)) :- chebi_11531(X).
+single(f_chebi_11531_59(X),f_chebi_11531_6(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_59(X)) :- chebi_11531(X).
+single(f_chebi_11531_6(X),f_chebi_11531_60(X)) :- chebi_11531(X).
+single(f_chebi_11531_60(X),f_chebi_11531_6(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_60(X)) :- chebi_11531(X).
+single(f_chebi_11531_7(X),f_chebi_11531_61(X)) :- chebi_11531(X).
+single(f_chebi_11531_61(X),f_chebi_11531_7(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_61(X)) :- chebi_11531(X).
+single(f_chebi_11531_7(X),f_chebi_11531_62(X)) :- chebi_11531(X).
+single(f_chebi_11531_62(X),f_chebi_11531_7(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_62(X)) :- chebi_11531(X).
+single(f_chebi_11531_8(X),f_chebi_11531_63(X)) :- chebi_11531(X).
+single(f_chebi_11531_63(X),f_chebi_11531_8(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_63(X)) :- chebi_11531(X).
+single(f_chebi_11531_11(X),f_chebi_11531_64(X)) :- chebi_11531(X).
+single(f_chebi_11531_64(X),f_chebi_11531_11(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_64(X)) :- chebi_11531(X).
+single(f_chebi_11531_11(X),f_chebi_11531_65(X)) :- chebi_11531(X).
+single(f_chebi_11531_65(X),f_chebi_11531_11(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_65(X)) :- chebi_11531(X).
+single(f_chebi_11531_12(X),f_chebi_11531_66(X)) :- chebi_11531(X).
+single(f_chebi_11531_66(X),f_chebi_11531_12(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_66(X)) :- chebi_11531(X).
+single(f_chebi_11531_12(X),f_chebi_11531_67(X)) :- chebi_11531(X).
+single(f_chebi_11531_67(X),f_chebi_11531_12(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_67(X)) :- chebi_11531(X).
+single(f_chebi_11531_13(X),f_chebi_11531_68(X)) :- chebi_11531(X).
+single(f_chebi_11531_68(X),f_chebi_11531_13(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_68(X)) :- chebi_11531(X).
+single(f_chebi_11531_16(X),f_chebi_11531_69(X)) :- chebi_11531(X).
+single(f_chebi_11531_69(X),f_chebi_11531_16(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_69(X)) :- chebi_11531(X).
+single(f_chebi_11531_16(X),f_chebi_11531_70(X)) :- chebi_11531(X).
+single(f_chebi_11531_70(X),f_chebi_11531_16(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_70(X)) :- chebi_11531(X).
+single(f_chebi_11531_17(X),f_chebi_11531_71(X)) :- chebi_11531(X).
+single(f_chebi_11531_71(X),f_chebi_11531_17(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_71(X)) :- chebi_11531(X).
+single(f_chebi_11531_17(X),f_chebi_11531_72(X)) :- chebi_11531(X).
+single(f_chebi_11531_72(X),f_chebi_11531_17(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_72(X)) :- chebi_11531(X).
+single(f_chebi_11531_17(X),f_chebi_11531_73(X)) :- chebi_11531(X).
+single(f_chebi_11531_73(X),f_chebi_11531_17(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_73(X)) :- chebi_11531(X).
+single(f_chebi_11531_19(X),f_chebi_11531_74(X)) :- chebi_11531(X).
+single(f_chebi_11531_74(X),f_chebi_11531_19(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_74(X)) :- chebi_11531(X).
+single(f_chebi_11531_19(X),f_chebi_11531_75(X)) :- chebi_11531(X).
+single(f_chebi_11531_75(X),f_chebi_11531_19(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_75(X)) :- chebi_11531(X).
+single(f_chebi_11531_19(X),f_chebi_11531_76(X)) :- chebi_11531(X).
+single(f_chebi_11531_76(X),f_chebi_11531_19(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_76(X)) :- chebi_11531(X).
+single(f_chebi_11531_20(X),f_chebi_11531_77(X)) :- chebi_11531(X).
+single(f_chebi_11531_77(X),f_chebi_11531_20(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_77(X)) :- chebi_11531(X).
+single(f_chebi_11531_21(X),f_chebi_11531_78(X)) :- chebi_11531(X).
+single(f_chebi_11531_78(X),f_chebi_11531_21(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_78(X)) :- chebi_11531(X).
+single(f_chebi_11531_26(X),f_chebi_11531_79(X)) :- chebi_11531(X).
+single(f_chebi_11531_79(X),f_chebi_11531_26(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_79(X)) :- chebi_11531(X).
+single(f_chebi_11531_28(X),f_chebi_11531_80(X)) :- chebi_11531(X).
+single(f_chebi_11531_80(X),f_chebi_11531_28(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_80(X)) :- chebi_11531(X).
+single(f_chebi_11531_31(X),f_chebi_11531_81(X)) :- chebi_11531(X).
+single(f_chebi_11531_81(X),f_chebi_11531_31(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_81(X)) :- chebi_11531(X).
+single(f_chebi_11531_31(X),f_chebi_11531_82(X)) :- chebi_11531(X).
+single(f_chebi_11531_82(X),f_chebi_11531_31(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_82(X)) :- chebi_11531(X).
+single(f_chebi_11531_33(X),f_chebi_11531_83(X)) :- chebi_11531(X).
+single(f_chebi_11531_83(X),f_chebi_11531_33(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_83(X)) :- chebi_11531(X).
+single(f_chebi_11531_34(X),f_chebi_11531_84(X)) :- chebi_11531(X).
+single(f_chebi_11531_84(X),f_chebi_11531_34(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_84(X)) :- chebi_11531(X).
+single(f_chebi_11531_39(X),f_chebi_11531_85(X)) :- chebi_11531(X).
+single(f_chebi_11531_85(X),f_chebi_11531_39(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_85(X)) :- chebi_11531(X).
+single(f_chebi_11531_44(X),f_chebi_11531_86(X)) :- chebi_11531(X).
+single(f_chebi_11531_86(X),f_chebi_11531_44(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_86(X)) :- chebi_11531(X).
+single(f_chebi_11531_46(X),f_chebi_11531_87(X)) :- chebi_11531(X).
+single(f_chebi_11531_87(X),f_chebi_11531_46(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_87(X)) :- chebi_11531(X).
+single(f_chebi_11531_46(X),f_chebi_11531_88(X)) :- chebi_11531(X).
+single(f_chebi_11531_88(X),f_chebi_11531_46(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_88(X)) :- chebi_11531(X).
+single(f_chebi_11531_50(X),f_chebi_11531_89(X)) :- chebi_11531(X).
+single(f_chebi_11531_89(X),f_chebi_11531_50(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_89(X)) :- chebi_11531(X).
+single(f_chebi_11531_51(X),f_chebi_11531_90(X)) :- chebi_11531(X).
+single(f_chebi_11531_90(X),f_chebi_11531_51(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_90(X)) :- chebi_11531(X).
+single(f_chebi_11531_52(X),f_chebi_11531_91(X)) :- chebi_11531(X).
+single(f_chebi_11531_91(X),f_chebi_11531_52(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_91(X)) :- chebi_11531(X).
+single(f_chebi_11531_52(X),f_chebi_11531_92(X)) :- chebi_11531(X).
+single(f_chebi_11531_92(X),f_chebi_11531_52(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_92(X)) :- chebi_11531(X).
+single(f_chebi_11531_52(X),f_chebi_11531_93(X)) :- chebi_11531(X).
+single(f_chebi_11531_93(X),f_chebi_11531_52(X)) :- chebi_11531(X).
+hasAtom(X,f_chebi_11531_93(X)) :- chebi_11531(X).
+chebi_11531(c_chebi_11531).
+molecule(X) :- chebi_11368(X).
+c(f_chebi_11368_1(X)) :- chebi_11368(X).
+c(f_chebi_11368_2(X)) :- chebi_11368(X).
+c(f_chebi_11368_3(X)) :- chebi_11368(X).
+c(f_chebi_11368_4(X)) :- chebi_11368(X).
+c(f_chebi_11368_5(X)) :- chebi_11368(X).
+c(f_chebi_11368_6(X)) :- chebi_11368(X).
+o(f_chebi_11368_7(X)) :- chebi_11368(X).
+o(f_chebi_11368_8(X)) :- chebi_11368(X).
+o(f_chebi_11368_9(X)) :- chebi_11368(X).
+o(f_chebi_11368_10(X)) :- chebi_11368(X).
+o(f_chebi_11368_11(X)) :- chebi_11368(X).
+o(f_chebi_11368_12(X)) :- chebi_11368(X).
+o(f_chebi_11368_13(X)) :- chebi_11368(X).
+o(f_chebi_11368_14(X)) :- chebi_11368(X).
+p(f_chebi_11368_15(X)) :- chebi_11368(X).
+o(f_chebi_11368_16(X)) :- chebi_11368(X).
+o(f_chebi_11368_17(X)) :- chebi_11368(X).
+o(f_chebi_11368_18(X)) :- chebi_11368(X).
+p(f_chebi_11368_19(X)) :- chebi_11368(X).
+o(f_chebi_11368_20(X)) :- chebi_11368(X).
+o(f_chebi_11368_21(X)) :- chebi_11368(X).
+o(f_chebi_11368_22(X)) :- chebi_11368(X).
+p(f_chebi_11368_23(X)) :- chebi_11368(X).
+o(f_chebi_11368_24(X)) :- chebi_11368(X).
+o(f_chebi_11368_25(X)) :- chebi_11368(X).
+o(f_chebi_11368_26(X)) :- chebi_11368(X).
+p(f_chebi_11368_27(X)) :- chebi_11368(X).
+o(f_chebi_11368_28(X)) :- chebi_11368(X).
+o(f_chebi_11368_29(X)) :- chebi_11368(X).
+o(f_chebi_11368_30(X)) :- chebi_11368(X).
+p(f_chebi_11368_31(X)) :- chebi_11368(X).
+o(f_chebi_11368_32(X)) :- chebi_11368(X).
+h(f_chebi_11368_33(X)) :- chebi_11368(X).
+h(f_chebi_11368_34(X)) :- chebi_11368(X).
+h(f_chebi_11368_35(X)) :- chebi_11368(X).
+h(f_chebi_11368_36(X)) :- chebi_11368(X).
+h(f_chebi_11368_37(X)) :- chebi_11368(X).
+h(f_chebi_11368_38(X)) :- chebi_11368(X).
+h(f_chebi_11368_39(X)) :- chebi_11368(X).
+h(f_chebi_11368_40(X)) :- chebi_11368(X).
+h(f_chebi_11368_41(X)) :- chebi_11368(X).
+h(f_chebi_11368_42(X)) :- chebi_11368(X).
+h(f_chebi_11368_43(X)) :- chebi_11368(X).
+h(f_chebi_11368_44(X)) :- chebi_11368(X).
+h(f_chebi_11368_45(X)) :- chebi_11368(X).
+h(f_chebi_11368_46(X)) :- chebi_11368(X).
+h(f_chebi_11368_47(X)) :- chebi_11368(X).
+h(f_chebi_11368_48(X)) :- chebi_11368(X).
+h(f_chebi_11368_49(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_1(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_2(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_3(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_4(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_5(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_6(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_7(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_8(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_9(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_10(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_11(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_12(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_13(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_14(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_15(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_16(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_17(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_18(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_19(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_20(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_21(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_22(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_23(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_24(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_25(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_26(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_27(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_28(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_29(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_30(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_31(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_32(X)) :- chebi_11368(X).
+single(f_chebi_11368_1(X),f_chebi_11368_2(X)) :- chebi_11368(X).
+single(f_chebi_11368_2(X),f_chebi_11368_1(X)) :- chebi_11368(X).
+single(f_chebi_11368_1(X),f_chebi_11368_6(X)) :- chebi_11368(X).
+single(f_chebi_11368_6(X),f_chebi_11368_1(X)) :- chebi_11368(X).
+single(f_chebi_11368_2(X),f_chebi_11368_3(X)) :- chebi_11368(X).
+single(f_chebi_11368_3(X),f_chebi_11368_2(X)) :- chebi_11368(X).
+single(f_chebi_11368_3(X),f_chebi_11368_5(X)) :- chebi_11368(X).
+single(f_chebi_11368_5(X),f_chebi_11368_3(X)) :- chebi_11368(X).
+single(f_chebi_11368_5(X),f_chebi_11368_4(X)) :- chebi_11368(X).
+single(f_chebi_11368_4(X),f_chebi_11368_5(X)) :- chebi_11368(X).
+single(f_chebi_11368_4(X),f_chebi_11368_6(X)) :- chebi_11368(X).
+single(f_chebi_11368_6(X),f_chebi_11368_4(X)) :- chebi_11368(X).
+single(f_chebi_11368_1(X),f_chebi_11368_8(X)) :- chebi_11368(X).
+single(f_chebi_11368_8(X),f_chebi_11368_1(X)) :- chebi_11368(X).
+single(f_chebi_11368_2(X),f_chebi_11368_9(X)) :- chebi_11368(X).
+single(f_chebi_11368_9(X),f_chebi_11368_2(X)) :- chebi_11368(X).
+single(f_chebi_11368_3(X),f_chebi_11368_10(X)) :- chebi_11368(X).
+single(f_chebi_11368_10(X),f_chebi_11368_3(X)) :- chebi_11368(X).
+single(f_chebi_11368_4(X),f_chebi_11368_12(X)) :- chebi_11368(X).
+single(f_chebi_11368_12(X),f_chebi_11368_4(X)) :- chebi_11368(X).
+single(f_chebi_11368_5(X),f_chebi_11368_11(X)) :- chebi_11368(X).
+single(f_chebi_11368_11(X),f_chebi_11368_5(X)) :- chebi_11368(X).
+single(f_chebi_11368_6(X),f_chebi_11368_7(X)) :- chebi_11368(X).
+single(f_chebi_11368_7(X),f_chebi_11368_6(X)) :- chebi_11368(X).
+single(f_chebi_11368_8(X),f_chebi_11368_15(X)) :- chebi_11368(X).
+single(f_chebi_11368_15(X),f_chebi_11368_8(X)) :- chebi_11368(X).
+single(f_chebi_11368_9(X),f_chebi_11368_19(X)) :- chebi_11368(X).
+single(f_chebi_11368_19(X),f_chebi_11368_9(X)) :- chebi_11368(X).
+single(f_chebi_11368_10(X),f_chebi_11368_23(X)) :- chebi_11368(X).
+single(f_chebi_11368_23(X),f_chebi_11368_10(X)) :- chebi_11368(X).
+single(f_chebi_11368_11(X),f_chebi_11368_27(X)) :- chebi_11368(X).
+single(f_chebi_11368_27(X),f_chebi_11368_11(X)) :- chebi_11368(X).
+single(f_chebi_11368_12(X),f_chebi_11368_31(X)) :- chebi_11368(X).
+single(f_chebi_11368_31(X),f_chebi_11368_12(X)) :- chebi_11368(X).
+double(f_chebi_11368_15(X),f_chebi_11368_13(X)) :- chebi_11368(X).
+double(f_chebi_11368_13(X),f_chebi_11368_15(X)) :- chebi_11368(X).
+single(f_chebi_11368_15(X),f_chebi_11368_14(X)) :- chebi_11368(X).
+single(f_chebi_11368_14(X),f_chebi_11368_15(X)) :- chebi_11368(X).
+single(f_chebi_11368_15(X),f_chebi_11368_16(X)) :- chebi_11368(X).
+single(f_chebi_11368_16(X),f_chebi_11368_15(X)) :- chebi_11368(X).
+double(f_chebi_11368_19(X),f_chebi_11368_17(X)) :- chebi_11368(X).
+double(f_chebi_11368_17(X),f_chebi_11368_19(X)) :- chebi_11368(X).
+single(f_chebi_11368_19(X),f_chebi_11368_18(X)) :- chebi_11368(X).
+single(f_chebi_11368_18(X),f_chebi_11368_19(X)) :- chebi_11368(X).
+single(f_chebi_11368_19(X),f_chebi_11368_20(X)) :- chebi_11368(X).
+single(f_chebi_11368_20(X),f_chebi_11368_19(X)) :- chebi_11368(X).
+single(f_chebi_11368_23(X),f_chebi_11368_21(X)) :- chebi_11368(X).
+single(f_chebi_11368_21(X),f_chebi_11368_23(X)) :- chebi_11368(X).
+double(f_chebi_11368_23(X),f_chebi_11368_22(X)) :- chebi_11368(X).
+double(f_chebi_11368_22(X),f_chebi_11368_23(X)) :- chebi_11368(X).
+single(f_chebi_11368_23(X),f_chebi_11368_24(X)) :- chebi_11368(X).
+single(f_chebi_11368_24(X),f_chebi_11368_23(X)) :- chebi_11368(X).
+double(f_chebi_11368_27(X),f_chebi_11368_25(X)) :- chebi_11368(X).
+double(f_chebi_11368_25(X),f_chebi_11368_27(X)) :- chebi_11368(X).
+single(f_chebi_11368_27(X),f_chebi_11368_26(X)) :- chebi_11368(X).
+single(f_chebi_11368_26(X),f_chebi_11368_27(X)) :- chebi_11368(X).
+single(f_chebi_11368_27(X),f_chebi_11368_28(X)) :- chebi_11368(X).
+single(f_chebi_11368_28(X),f_chebi_11368_27(X)) :- chebi_11368(X).
+double(f_chebi_11368_31(X),f_chebi_11368_29(X)) :- chebi_11368(X).
+double(f_chebi_11368_29(X),f_chebi_11368_31(X)) :- chebi_11368(X).
+single(f_chebi_11368_31(X),f_chebi_11368_30(X)) :- chebi_11368(X).
+single(f_chebi_11368_30(X),f_chebi_11368_31(X)) :- chebi_11368(X).
+single(f_chebi_11368_31(X),f_chebi_11368_32(X)) :- chebi_11368(X).
+single(f_chebi_11368_32(X),f_chebi_11368_31(X)) :- chebi_11368(X).
+single(X,f_chebi_11368_33(X)) :- chebi_11368(X).
+single(f_chebi_11368_33(X),X) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_33(X)) :- chebi_11368(X).
+single(f_chebi_11368_1(X),f_chebi_11368_34(X)) :- chebi_11368(X).
+single(f_chebi_11368_34(X),f_chebi_11368_1(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_34(X)) :- chebi_11368(X).
+single(f_chebi_11368_2(X),f_chebi_11368_35(X)) :- chebi_11368(X).
+single(f_chebi_11368_35(X),f_chebi_11368_2(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_35(X)) :- chebi_11368(X).
+single(f_chebi_11368_3(X),f_chebi_11368_36(X)) :- chebi_11368(X).
+single(f_chebi_11368_36(X),f_chebi_11368_3(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_36(X)) :- chebi_11368(X).
+single(f_chebi_11368_4(X),f_chebi_11368_37(X)) :- chebi_11368(X).
+single(f_chebi_11368_37(X),f_chebi_11368_4(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_37(X)) :- chebi_11368(X).
+single(f_chebi_11368_5(X),f_chebi_11368_38(X)) :- chebi_11368(X).
+single(f_chebi_11368_38(X),f_chebi_11368_5(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_38(X)) :- chebi_11368(X).
+single(f_chebi_11368_6(X),f_chebi_11368_39(X)) :- chebi_11368(X).
+single(f_chebi_11368_39(X),f_chebi_11368_6(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_39(X)) :- chebi_11368(X).
+single(f_chebi_11368_13(X),f_chebi_11368_40(X)) :- chebi_11368(X).
+single(f_chebi_11368_40(X),f_chebi_11368_13(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_40(X)) :- chebi_11368(X).
+single(f_chebi_11368_15(X),f_chebi_11368_41(X)) :- chebi_11368(X).
+single(f_chebi_11368_41(X),f_chebi_11368_15(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_41(X)) :- chebi_11368(X).
+single(f_chebi_11368_17(X),f_chebi_11368_42(X)) :- chebi_11368(X).
+single(f_chebi_11368_42(X),f_chebi_11368_17(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_42(X)) :- chebi_11368(X).
+single(f_chebi_11368_19(X),f_chebi_11368_43(X)) :- chebi_11368(X).
+single(f_chebi_11368_43(X),f_chebi_11368_19(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_43(X)) :- chebi_11368(X).
+single(f_chebi_11368_20(X),f_chebi_11368_44(X)) :- chebi_11368(X).
+single(f_chebi_11368_44(X),f_chebi_11368_20(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_44(X)) :- chebi_11368(X).
+single(f_chebi_11368_23(X),f_chebi_11368_45(X)) :- chebi_11368(X).
+single(f_chebi_11368_45(X),f_chebi_11368_23(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_45(X)) :- chebi_11368(X).
+single(f_chebi_11368_25(X),f_chebi_11368_46(X)) :- chebi_11368(X).
+single(f_chebi_11368_46(X),f_chebi_11368_25(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_46(X)) :- chebi_11368(X).
+single(f_chebi_11368_27(X),f_chebi_11368_47(X)) :- chebi_11368(X).
+single(f_chebi_11368_47(X),f_chebi_11368_27(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_47(X)) :- chebi_11368(X).
+single(f_chebi_11368_29(X),f_chebi_11368_48(X)) :- chebi_11368(X).
+single(f_chebi_11368_48(X),f_chebi_11368_29(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_48(X)) :- chebi_11368(X).
+single(f_chebi_11368_31(X),f_chebi_11368_49(X)) :- chebi_11368(X).
+single(f_chebi_11368_49(X),f_chebi_11368_31(X)) :- chebi_11368(X).
+hasAtom(X,f_chebi_11368_49(X)) :- chebi_11368(X).
+chebi_11368(c_chebi_11368).
+molecule(X) :- chebi_10836(X).
+h(f_chebi_10836_1(X)) :- chebi_10836(X).
+c(f_chebi_10836_2(X)) :- chebi_10836(X).
+c(f_chebi_10836_3(X)) :- chebi_10836(X).
+c(f_chebi_10836_4(X)) :- chebi_10836(X).
+c(f_chebi_10836_5(X)) :- chebi_10836(X).
+c(f_chebi_10836_6(X)) :- chebi_10836(X).
+o(f_chebi_10836_7(X)) :- chebi_10836(X).
+c(f_chebi_10836_8(X)) :- chebi_10836(X).
+c(f_chebi_10836_9(X)) :- chebi_10836(X).
+o(f_chebi_10836_10(X)) :- chebi_10836(X).
+c(f_chebi_10836_11(X)) :- chebi_10836(X).
+c(f_chebi_10836_12(X)) :- chebi_10836(X).
+c(f_chebi_10836_13(X)) :- chebi_10836(X).
+c(f_chebi_10836_14(X)) :- chebi_10836(X).
+o(f_chebi_10836_15(X)) :- chebi_10836(X).
+o(f_chebi_10836_16(X)) :- chebi_10836(X).
+c(f_chebi_10836_17(X)) :- chebi_10836(X).
+c(f_chebi_10836_18(X)) :- chebi_10836(X).
+c(f_chebi_10836_19(X)) :- chebi_10836(X).
+c(f_chebi_10836_20(X)) :- chebi_10836(X).
+o(f_chebi_10836_21(X)) :- chebi_10836(X).
+o(f_chebi_10836_22(X)) :- chebi_10836(X).
+h(f_chebi_10836_23(X)) :- chebi_10836(X).
+h(f_chebi_10836_24(X)) :- chebi_10836(X).
+h(f_chebi_10836_25(X)) :- chebi_10836(X).
+h(f_chebi_10836_26(X)) :- chebi_10836(X).
+h(f_chebi_10836_27(X)) :- chebi_10836(X).
+h(f_chebi_10836_28(X)) :- chebi_10836(X).
+h(f_chebi_10836_29(X)) :- chebi_10836(X).
+h(f_chebi_10836_30(X)) :- chebi_10836(X).
+h(f_chebi_10836_31(X)) :- chebi_10836(X).
+h(f_chebi_10836_32(X)) :- chebi_10836(X).
+h(f_chebi_10836_33(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_1(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_2(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_3(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_4(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_5(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_6(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_7(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_8(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_9(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_10(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_11(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_12(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_13(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_14(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_15(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_16(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_17(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_18(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_19(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_20(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_21(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_22(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_23(X)) :- chebi_10836(X).
+double(f_chebi_10836_10(X),f_chebi_10836_2(X)) :- chebi_10836(X).
+double(f_chebi_10836_2(X),f_chebi_10836_10(X)) :- chebi_10836(X).
+double(f_chebi_10836_11(X),f_chebi_10836_3(X)) :- chebi_10836(X).
+double(f_chebi_10836_3(X),f_chebi_10836_11(X)) :- chebi_10836(X).
+single(f_chebi_10836_4(X),f_chebi_10836_2(X)) :- chebi_10836(X).
+single(f_chebi_10836_2(X),f_chebi_10836_4(X)) :- chebi_10836(X).
+single(f_chebi_10836_17(X),f_chebi_10836_4(X)) :- chebi_10836(X).
+single(f_chebi_10836_4(X),f_chebi_10836_17(X)) :- chebi_10836(X).
+double(f_chebi_10836_5(X),f_chebi_10836_4(X)) :- chebi_10836(X).
+double(f_chebi_10836_4(X),f_chebi_10836_5(X)) :- chebi_10836(X).
+single(f_chebi_10836_18(X),f_chebi_10836_5(X)) :- chebi_10836(X).
+single(f_chebi_10836_5(X),f_chebi_10836_18(X)) :- chebi_10836(X).
+single(f_chebi_10836_6(X),f_chebi_10836_1(X)) :- chebi_10836(X).
+single(f_chebi_10836_1(X),f_chebi_10836_6(X)) :- chebi_10836(X).
+single(f_chebi_10836_6(X),f_chebi_10836_2(X)) :- chebi_10836(X).
+single(f_chebi_10836_2(X),f_chebi_10836_6(X)) :- chebi_10836(X).
+single(f_chebi_10836_7(X),f_chebi_10836_5(X)) :- chebi_10836(X).
+single(f_chebi_10836_5(X),f_chebi_10836_7(X)) :- chebi_10836(X).
+single(f_chebi_10836_8(X),f_chebi_10836_3(X)) :- chebi_10836(X).
+single(f_chebi_10836_3(X),f_chebi_10836_8(X)) :- chebi_10836(X).
+double(f_chebi_10836_13(X),f_chebi_10836_8(X)) :- chebi_10836(X).
+double(f_chebi_10836_8(X),f_chebi_10836_13(X)) :- chebi_10836(X).
+double(f_chebi_10836_9(X),f_chebi_10836_6(X)) :- chebi_10836(X).
+double(f_chebi_10836_6(X),f_chebi_10836_9(X)) :- chebi_10836(X).
+single(f_chebi_10836_3(X),f_chebi_10836_9(X)) :- chebi_10836(X).
+single(f_chebi_10836_9(X),f_chebi_10836_3(X)) :- chebi_10836(X).
+single(f_chebi_10836_9(X),f_chebi_10836_23(X)) :- chebi_10836(X).
+single(f_chebi_10836_23(X),f_chebi_10836_9(X)) :- chebi_10836(X).
+single(f_chebi_10836_12(X),f_chebi_10836_11(X)) :- chebi_10836(X).
+single(f_chebi_10836_11(X),f_chebi_10836_12(X)) :- chebi_10836(X).
+double(f_chebi_10836_14(X),f_chebi_10836_12(X)) :- chebi_10836(X).
+double(f_chebi_10836_12(X),f_chebi_10836_14(X)) :- chebi_10836(X).
+single(f_chebi_10836_15(X),f_chebi_10836_12(X)) :- chebi_10836(X).
+single(f_chebi_10836_12(X),f_chebi_10836_15(X)) :- chebi_10836(X).
+single(f_chebi_10836_14(X),f_chebi_10836_13(X)) :- chebi_10836(X).
+single(f_chebi_10836_13(X),f_chebi_10836_14(X)) :- chebi_10836(X).
+single(f_chebi_10836_16(X),f_chebi_10836_14(X)) :- chebi_10836(X).
+single(f_chebi_10836_14(X),f_chebi_10836_16(X)) :- chebi_10836(X).
+double(f_chebi_10836_19(X),f_chebi_10836_17(X)) :- chebi_10836(X).
+double(f_chebi_10836_17(X),f_chebi_10836_19(X)) :- chebi_10836(X).
+single(f_chebi_10836_22(X),f_chebi_10836_17(X)) :- chebi_10836(X).
+single(f_chebi_10836_17(X),f_chebi_10836_22(X)) :- chebi_10836(X).
+double(f_chebi_10836_20(X),f_chebi_10836_18(X)) :- chebi_10836(X).
+double(f_chebi_10836_18(X),f_chebi_10836_20(X)) :- chebi_10836(X).
+single(f_chebi_10836_20(X),f_chebi_10836_19(X)) :- chebi_10836(X).
+single(f_chebi_10836_19(X),f_chebi_10836_20(X)) :- chebi_10836(X).
+single(f_chebi_10836_21(X),f_chebi_10836_20(X)) :- chebi_10836(X).
+single(f_chebi_10836_20(X),f_chebi_10836_21(X)) :- chebi_10836(X).
+single(f_chebi_10836_6(X),f_chebi_10836_24(X)) :- chebi_10836(X).
+single(f_chebi_10836_24(X),f_chebi_10836_6(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_24(X)) :- chebi_10836(X).
+single(f_chebi_10836_7(X),f_chebi_10836_25(X)) :- chebi_10836(X).
+single(f_chebi_10836_25(X),f_chebi_10836_7(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_25(X)) :- chebi_10836(X).
+single(f_chebi_10836_10(X),f_chebi_10836_26(X)) :- chebi_10836(X).
+single(f_chebi_10836_26(X),f_chebi_10836_10(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_26(X)) :- chebi_10836(X).
+single(f_chebi_10836_12(X),f_chebi_10836_27(X)) :- chebi_10836(X).
+single(f_chebi_10836_27(X),f_chebi_10836_12(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_27(X)) :- chebi_10836(X).
+single(f_chebi_10836_14(X),f_chebi_10836_28(X)) :- chebi_10836(X).
+single(f_chebi_10836_28(X),f_chebi_10836_14(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_28(X)) :- chebi_10836(X).
+single(f_chebi_10836_15(X),f_chebi_10836_29(X)) :- chebi_10836(X).
+single(f_chebi_10836_29(X),f_chebi_10836_15(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_29(X)) :- chebi_10836(X).
+single(f_chebi_10836_17(X),f_chebi_10836_30(X)) :- chebi_10836(X).
+single(f_chebi_10836_30(X),f_chebi_10836_17(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_30(X)) :- chebi_10836(X).
+single(f_chebi_10836_18(X),f_chebi_10836_31(X)) :- chebi_10836(X).
+single(f_chebi_10836_31(X),f_chebi_10836_18(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_31(X)) :- chebi_10836(X).
+single(f_chebi_10836_20(X),f_chebi_10836_32(X)) :- chebi_10836(X).
+single(f_chebi_10836_32(X),f_chebi_10836_20(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_32(X)) :- chebi_10836(X).
+single(f_chebi_10836_21(X),f_chebi_10836_33(X)) :- chebi_10836(X).
+single(f_chebi_10836_33(X),f_chebi_10836_21(X)) :- chebi_10836(X).
+hasAtom(X,f_chebi_10836_33(X)) :- chebi_10836(X).
+chebi_10836(c_chebi_10836).
+molecule(X) :- chebi_11369(X).
+c(f_chebi_11369_1(X)) :- chebi_11369(X).
+c(f_chebi_11369_2(X)) :- chebi_11369(X).
+c(f_chebi_11369_3(X)) :- chebi_11369(X).
+c(f_chebi_11369_4(X)) :- chebi_11369(X).
+o(f_chebi_11369_5(X)) :- chebi_11369(X).
+c(f_chebi_11369_6(X)) :- chebi_11369(X).
+c(f_chebi_11369_7(X)) :- chebi_11369(X).
+o(f_chebi_11369_8(X)) :- chebi_11369(X).
+o(f_chebi_11369_9(X)) :- chebi_11369(X).
+o(f_chebi_11369_10(X)) :- chebi_11369(X).
+o(f_chebi_11369_11(X)) :- chebi_11369(X).
+o(f_chebi_11369_12(X)) :- chebi_11369(X).
+o(f_chebi_11369_13(X)) :- chebi_11369(X).
+p(f_chebi_11369_14(X)) :- chebi_11369(X).
+o(f_chebi_11369_15(X)) :- chebi_11369(X).
+o(f_chebi_11369_16(X)) :- chebi_11369(X).
+o(f_chebi_11369_17(X)) :- chebi_11369(X).
+p(f_chebi_11369_18(X)) :- chebi_11369(X).
+o(f_chebi_11369_19(X)) :- chebi_11369(X).
+o(f_chebi_11369_20(X)) :- chebi_11369(X).
+o(f_chebi_11369_21(X)) :- chebi_11369(X).
+p(f_chebi_11369_22(X)) :- chebi_11369(X).
+o(f_chebi_11369_23(X)) :- chebi_11369(X).
+o(f_chebi_11369_24(X)) :- chebi_11369(X).
+o(f_chebi_11369_25(X)) :- chebi_11369(X).
+p(f_chebi_11369_26(X)) :- chebi_11369(X).
+o(f_chebi_11369_27(X)) :- chebi_11369(X).
+o(f_chebi_11369_28(X)) :- chebi_11369(X).
+o(f_chebi_11369_29(X)) :- chebi_11369(X).
+o(f_chebi_11369_30(X)) :- chebi_11369(X).
+p(f_chebi_11369_31(X)) :- chebi_11369(X).
+o(f_chebi_11369_32(X)) :- chebi_11369(X).
+h(f_chebi_11369_33(X)) :- chebi_11369(X).
+h(f_chebi_11369_34(X)) :- chebi_11369(X).
+h(f_chebi_11369_35(X)) :- chebi_11369(X).
+h(f_chebi_11369_36(X)) :- chebi_11369(X).
+h(f_chebi_11369_37(X)) :- chebi_11369(X).
+h(f_chebi_11369_38(X)) :- chebi_11369(X).
+h(f_chebi_11369_39(X)) :- chebi_11369(X).
+h(f_chebi_11369_40(X)) :- chebi_11369(X).
+h(f_chebi_11369_41(X)) :- chebi_11369(X).
+h(f_chebi_11369_42(X)) :- chebi_11369(X).
+h(f_chebi_11369_43(X)) :- chebi_11369(X).
+h(f_chebi_11369_44(X)) :- chebi_11369(X).
+h(f_chebi_11369_45(X)) :- chebi_11369(X).
+h(f_chebi_11369_46(X)) :- chebi_11369(X).
+h(f_chebi_11369_47(X)) :- chebi_11369(X).
+h(f_chebi_11369_48(X)) :- chebi_11369(X).
+h(f_chebi_11369_49(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_1(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_2(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_3(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_4(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_5(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_6(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_7(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_8(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_9(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_10(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_11(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_12(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_13(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_14(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_15(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_16(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_17(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_18(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_19(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_20(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_21(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_22(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_23(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_24(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_25(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_26(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_27(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_28(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_29(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_30(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_31(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_32(X)) :- chebi_11369(X).
+single(f_chebi_11369_1(X),f_chebi_11369_6(X)) :- chebi_11369(X).
+single(f_chebi_11369_6(X),f_chebi_11369_1(X)) :- chebi_11369(X).
+single(f_chebi_11369_1(X),f_chebi_11369_2(X)) :- chebi_11369(X).
+single(f_chebi_11369_2(X),f_chebi_11369_1(X)) :- chebi_11369(X).
+single(f_chebi_11369_6(X),f_chebi_11369_4(X)) :- chebi_11369(X).
+single(f_chebi_11369_4(X),f_chebi_11369_6(X)) :- chebi_11369(X).
+single(f_chebi_11369_4(X),f_chebi_11369_7(X)) :- chebi_11369(X).
+single(f_chebi_11369_7(X),f_chebi_11369_4(X)) :- chebi_11369(X).
+single(f_chebi_11369_7(X),f_chebi_11369_3(X)) :- chebi_11369(X).
+single(f_chebi_11369_3(X),f_chebi_11369_7(X)) :- chebi_11369(X).
+single(f_chebi_11369_3(X),f_chebi_11369_2(X)) :- chebi_11369(X).
+single(f_chebi_11369_2(X),f_chebi_11369_3(X)) :- chebi_11369(X).
+single(f_chebi_11369_1(X),f_chebi_11369_8(X)) :- chebi_11369(X).
+single(f_chebi_11369_8(X),f_chebi_11369_1(X)) :- chebi_11369(X).
+single(f_chebi_11369_2(X),f_chebi_11369_9(X)) :- chebi_11369(X).
+single(f_chebi_11369_9(X),f_chebi_11369_2(X)) :- chebi_11369(X).
+single(f_chebi_11369_3(X),f_chebi_11369_10(X)) :- chebi_11369(X).
+single(f_chebi_11369_10(X),f_chebi_11369_3(X)) :- chebi_11369(X).
+single(f_chebi_11369_4(X),f_chebi_11369_5(X)) :- chebi_11369(X).
+single(f_chebi_11369_5(X),f_chebi_11369_4(X)) :- chebi_11369(X).
+single(f_chebi_11369_6(X),f_chebi_11369_28(X)) :- chebi_11369(X).
+single(f_chebi_11369_28(X),f_chebi_11369_6(X)) :- chebi_11369(X).
+single(f_chebi_11369_7(X),f_chebi_11369_11(X)) :- chebi_11369(X).
+single(f_chebi_11369_11(X),f_chebi_11369_7(X)) :- chebi_11369(X).
+single(f_chebi_11369_8(X),f_chebi_11369_14(X)) :- chebi_11369(X).
+single(f_chebi_11369_14(X),f_chebi_11369_8(X)) :- chebi_11369(X).
+single(f_chebi_11369_9(X),f_chebi_11369_18(X)) :- chebi_11369(X).
+single(f_chebi_11369_18(X),f_chebi_11369_9(X)) :- chebi_11369(X).
+single(f_chebi_11369_10(X),f_chebi_11369_22(X)) :- chebi_11369(X).
+single(f_chebi_11369_22(X),f_chebi_11369_10(X)) :- chebi_11369(X).
+single(f_chebi_11369_11(X),f_chebi_11369_26(X)) :- chebi_11369(X).
+single(f_chebi_11369_26(X),f_chebi_11369_11(X)) :- chebi_11369(X).
+double(f_chebi_11369_14(X),f_chebi_11369_12(X)) :- chebi_11369(X).
+double(f_chebi_11369_12(X),f_chebi_11369_14(X)) :- chebi_11369(X).
+single(f_chebi_11369_14(X),f_chebi_11369_13(X)) :- chebi_11369(X).
+single(f_chebi_11369_13(X),f_chebi_11369_14(X)) :- chebi_11369(X).
+single(f_chebi_11369_14(X),f_chebi_11369_15(X)) :- chebi_11369(X).
+single(f_chebi_11369_15(X),f_chebi_11369_14(X)) :- chebi_11369(X).
+double(f_chebi_11369_18(X),f_chebi_11369_16(X)) :- chebi_11369(X).
+double(f_chebi_11369_16(X),f_chebi_11369_18(X)) :- chebi_11369(X).
+single(f_chebi_11369_18(X),f_chebi_11369_17(X)) :- chebi_11369(X).
+single(f_chebi_11369_17(X),f_chebi_11369_18(X)) :- chebi_11369(X).
+single(f_chebi_11369_18(X),f_chebi_11369_19(X)) :- chebi_11369(X).
+single(f_chebi_11369_19(X),f_chebi_11369_18(X)) :- chebi_11369(X).
+single(f_chebi_11369_22(X),f_chebi_11369_20(X)) :- chebi_11369(X).
+single(f_chebi_11369_20(X),f_chebi_11369_22(X)) :- chebi_11369(X).
+single(f_chebi_11369_22(X),f_chebi_11369_21(X)) :- chebi_11369(X).
+single(f_chebi_11369_21(X),f_chebi_11369_22(X)) :- chebi_11369(X).
+double(f_chebi_11369_22(X),f_chebi_11369_23(X)) :- chebi_11369(X).
+double(f_chebi_11369_23(X),f_chebi_11369_22(X)) :- chebi_11369(X).
+double(f_chebi_11369_26(X),f_chebi_11369_24(X)) :- chebi_11369(X).
+double(f_chebi_11369_24(X),f_chebi_11369_26(X)) :- chebi_11369(X).
+single(f_chebi_11369_26(X),f_chebi_11369_25(X)) :- chebi_11369(X).
+single(f_chebi_11369_25(X),f_chebi_11369_26(X)) :- chebi_11369(X).
+single(f_chebi_11369_26(X),f_chebi_11369_27(X)) :- chebi_11369(X).
+single(f_chebi_11369_27(X),f_chebi_11369_26(X)) :- chebi_11369(X).
+single(f_chebi_11369_28(X),f_chebi_11369_31(X)) :- chebi_11369(X).
+single(f_chebi_11369_31(X),f_chebi_11369_28(X)) :- chebi_11369(X).
+double(f_chebi_11369_31(X),f_chebi_11369_29(X)) :- chebi_11369(X).
+double(f_chebi_11369_29(X),f_chebi_11369_31(X)) :- chebi_11369(X).
+single(f_chebi_11369_31(X),f_chebi_11369_30(X)) :- chebi_11369(X).
+single(f_chebi_11369_30(X),f_chebi_11369_31(X)) :- chebi_11369(X).
+single(f_chebi_11369_31(X),f_chebi_11369_32(X)) :- chebi_11369(X).
+single(f_chebi_11369_32(X),f_chebi_11369_31(X)) :- chebi_11369(X).
+single(X,f_chebi_11369_33(X)) :- chebi_11369(X).
+single(f_chebi_11369_33(X),X) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_33(X)) :- chebi_11369(X).
+single(f_chebi_11369_1(X),f_chebi_11369_34(X)) :- chebi_11369(X).
+single(f_chebi_11369_34(X),f_chebi_11369_1(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_34(X)) :- chebi_11369(X).
+single(f_chebi_11369_2(X),f_chebi_11369_35(X)) :- chebi_11369(X).
+single(f_chebi_11369_35(X),f_chebi_11369_2(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_35(X)) :- chebi_11369(X).
+single(f_chebi_11369_3(X),f_chebi_11369_36(X)) :- chebi_11369(X).
+single(f_chebi_11369_36(X),f_chebi_11369_3(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_36(X)) :- chebi_11369(X).
+single(f_chebi_11369_4(X),f_chebi_11369_37(X)) :- chebi_11369(X).
+single(f_chebi_11369_37(X),f_chebi_11369_4(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_37(X)) :- chebi_11369(X).
+single(f_chebi_11369_5(X),f_chebi_11369_38(X)) :- chebi_11369(X).
+single(f_chebi_11369_38(X),f_chebi_11369_5(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_38(X)) :- chebi_11369(X).
+single(f_chebi_11369_6(X),f_chebi_11369_39(X)) :- chebi_11369(X).
+single(f_chebi_11369_39(X),f_chebi_11369_6(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_39(X)) :- chebi_11369(X).
+single(f_chebi_11369_12(X),f_chebi_11369_40(X)) :- chebi_11369(X).
+single(f_chebi_11369_40(X),f_chebi_11369_12(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_40(X)) :- chebi_11369(X).
+single(f_chebi_11369_14(X),f_chebi_11369_41(X)) :- chebi_11369(X).
+single(f_chebi_11369_41(X),f_chebi_11369_14(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_41(X)) :- chebi_11369(X).
+single(f_chebi_11369_16(X),f_chebi_11369_42(X)) :- chebi_11369(X).
+single(f_chebi_11369_42(X),f_chebi_11369_16(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_42(X)) :- chebi_11369(X).
+single(f_chebi_11369_18(X),f_chebi_11369_43(X)) :- chebi_11369(X).
+single(f_chebi_11369_43(X),f_chebi_11369_18(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_43(X)) :- chebi_11369(X).
+single(f_chebi_11369_19(X),f_chebi_11369_44(X)) :- chebi_11369(X).
+single(f_chebi_11369_44(X),f_chebi_11369_19(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_44(X)) :- chebi_11369(X).
+single(f_chebi_11369_20(X),f_chebi_11369_45(X)) :- chebi_11369(X).
+single(f_chebi_11369_45(X),f_chebi_11369_20(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_45(X)) :- chebi_11369(X).
+single(f_chebi_11369_24(X),f_chebi_11369_46(X)) :- chebi_11369(X).
+single(f_chebi_11369_46(X),f_chebi_11369_24(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_46(X)) :- chebi_11369(X).
+single(f_chebi_11369_26(X),f_chebi_11369_47(X)) :- chebi_11369(X).
+single(f_chebi_11369_47(X),f_chebi_11369_26(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_47(X)) :- chebi_11369(X).
+single(f_chebi_11369_29(X),f_chebi_11369_48(X)) :- chebi_11369(X).
+single(f_chebi_11369_48(X),f_chebi_11369_29(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_48(X)) :- chebi_11369(X).
+single(f_chebi_11369_31(X),f_chebi_11369_49(X)) :- chebi_11369(X).
+single(f_chebi_11369_49(X),f_chebi_11369_31(X)) :- chebi_11369(X).
+hasAtom(X,f_chebi_11369_49(X)) :- chebi_11369(X).
+chebi_11369(c_chebi_11369).
+molecule(X) :- chebi_10860(X).
+c(f_chebi_10860_1(X)) :- chebi_10860(X).
+o(f_chebi_10860_2(X)) :- chebi_10860(X).
+o(f_chebi_10860_3(X)) :- chebi_10860(X).
+minus1(f_chebi_10860_3(X)) :- chebi_10860(X).
+c(f_chebi_10860_4(X)) :- chebi_10860(X).
+o(f_chebi_10860_5(X)) :- chebi_10860(X).
+o(f_chebi_10860_6(X)) :- chebi_10860(X).
+minus1(f_chebi_10860_6(X)) :- chebi_10860(X).
+o(f_chebi_10860_7(X)) :- chebi_10860(X).
+c(f_chebi_10860_8(X)) :- chebi_10860(X).
+o(f_chebi_10860_9(X)) :- chebi_10860(X).
+minus1(f_chebi_10860_9(X)) :- chebi_10860(X).
+c(f_chebi_10860_10(X)) :- chebi_10860(X).
+c(f_chebi_10860_11(X)) :- chebi_10860(X).
+o(f_chebi_10860_12(X)) :- chebi_10860(X).
+c(f_chebi_10860_13(X)) :- chebi_10860(X).
+c(f_chebi_10860_14(X)) :- chebi_10860(X).
+h(f_chebi_10860_15(X)) :- chebi_10860(X).
+h(f_chebi_10860_16(X)) :- chebi_10860(X).
+h(f_chebi_10860_17(X)) :- chebi_10860(X).
+h(f_chebi_10860_18(X)) :- chebi_10860(X).
+h(f_chebi_10860_19(X)) :- chebi_10860(X).
+h(f_chebi_10860_20(X)) :- chebi_10860(X).
+h(f_chebi_10860_21(X)) :- chebi_10860(X).
+hasAtom(X,f_chebi_10860_1(X)) :- chebi_10860(X).
+hasAtom(X,f_chebi_10860_2(X)) :- chebi_10860(X).
+hasAtom(X,f_chebi_10860_3(X)) :- chebi_10860(X).
+hasAtom(X,f_chebi_10860_4(X)) :- chebi_10860(X).
+hasAtom(X,f_chebi_10860_5(X)) :- chebi_10860(X).
+hasAtom(X,f_chebi_10860_6(X)) :- chebi_10860(X).
+hasAtom(X,f_chebi_10860_7(X)) :- chebi_10860(X).
+hasAtom(X,f_chebi_10860_8(X)) :- chebi_10860(X).
+hasAtom(X,f_chebi_10860_9(X)) :- chebi_10860(X).
+hasAtom(X,f_chebi_10860_10(X)) :- chebi_10860(X).
+hasAtom(X,f_chebi_10860_11(X)) :- chebi_10860(X).
+hasAtom(X,f_chebi_10860_12(X)) :- chebi_10860(X).
+hasAtom(X,f_chebi_10860_13(X)) :- chebi_10860(X).
+hasAtom(X,f_chebi_10860_14(X)) :- chebi_10860(X).
+single(f_chebi_10860_4(X),f_chebi_10860_13(X)) :- chebi_10860(X).
+single(f_chebi_10860_13(X),f_chebi_10860_4(X)) :- chebi_10860(X).
+double(f_chebi_10860_2(X),f_chebi_10860_1(X)) :- chebi_10860(X).
+double(f_chebi_10860_1(X),f_chebi_10860_2(X)) :- chebi_10860(X).
+single(f_chebi_10860_3(X),f_chebi_10860_1(X)) :- chebi_10860(X).
+single(f_chebi_10860_1(X),f_chebi_10860_3(X)) :- chebi_10860(X).
+double(f_chebi_10860_5(X),f_chebi_10860_4(X)) :- chebi_10860(X).
+double(f_chebi_10860_4(X),f_chebi_10860_5(X)) :- chebi_10860(X).
+single(f_chebi_10860_6(X),f_chebi_10860_4(X)) :- chebi_10860(X).
+single(f_chebi_10860_4(X),f_chebi_10860_6(X)) :- chebi_10860(X).
+double(f_chebi_10860_8(X),f_chebi_10860_7(X)) :- chebi_10860(X).
+double(f_chebi_10860_7(X),f_chebi_10860_8(X)) :- chebi_10860(X).
+single(f_chebi_10860_10(X),f_chebi_10860_8(X)) :- chebi_10860(X).
+single(f_chebi_10860_8(X),f_chebi_10860_10(X)) :- chebi_10860(X).
+single(f_chebi_10860_8(X),f_chebi_10860_9(X)) :- chebi_10860(X).
+single(f_chebi_10860_9(X),f_chebi_10860_8(X)) :- chebi_10860(X).
+single(f_chebi_10860_11(X),f_chebi_10860_10(X)) :- chebi_10860(X).
+single(f_chebi_10860_10(X),f_chebi_10860_11(X)) :- chebi_10860(X).
+single(f_chebi_10860_13(X),f_chebi_10860_11(X)) :- chebi_10860(X).
+single(f_chebi_10860_11(X),f_chebi_10860_13(X)) :- chebi_10860(X).
+single(f_chebi_10860_1(X),f_chebi_10860_11(X)) :- chebi_10860(X).
+single(f_chebi_10860_11(X),f_chebi_10860_1(X)) :- chebi_10860(X).
+single(f_chebi_10860_11(X),f_chebi_10860_12(X)) :- chebi_10860(X).
+single(f_chebi_10860_12(X),f_chebi_10860_11(X)) :- chebi_10860(X).
+single(f_chebi_10860_13(X),f_chebi_10860_14(X)) :- chebi_10860(X).
+single(f_chebi_10860_14(X),f_chebi_10860_13(X)) :- chebi_10860(X).
+single(f_chebi_10860_9(X),f_chebi_10860_15(X)) :- chebi_10860(X).
+single(f_chebi_10860_15(X),f_chebi_10860_9(X)) :- chebi_10860(X).
+hasAtom(X,f_chebi_10860_15(X)) :- chebi_10860(X).
+single(f_chebi_10860_9(X),f_chebi_10860_16(X)) :- chebi_10860(X).
+single(f_chebi_10860_16(X),f_chebi_10860_9(X)) :- chebi_10860(X).
+hasAtom(X,f_chebi_10860_16(X)) :- chebi_10860(X).
+single(f_chebi_10860_11(X),f_chebi_10860_17(X)) :- chebi_10860(X).
+single(f_chebi_10860_17(X),f_chebi_10860_11(X)) :- chebi_10860(X).
+hasAtom(X,f_chebi_10860_17(X)) :- chebi_10860(X).
+single(f_chebi_10860_12(X),f_chebi_10860_18(X)) :- chebi_10860(X).
+single(f_chebi_10860_18(X),f_chebi_10860_12(X)) :- chebi_10860(X).
+hasAtom(X,f_chebi_10860_18(X)) :- chebi_10860(X).
+single(f_chebi_10860_13(X),f_chebi_10860_19(X)) :- chebi_10860(X).
+single(f_chebi_10860_19(X),f_chebi_10860_13(X)) :- chebi_10860(X).
+hasAtom(X,f_chebi_10860_19(X)) :- chebi_10860(X).
+single(f_chebi_10860_13(X),f_chebi_10860_20(X)) :- chebi_10860(X).
+single(f_chebi_10860_20(X),f_chebi_10860_13(X)) :- chebi_10860(X).
+hasAtom(X,f_chebi_10860_20(X)) :- chebi_10860(X).
+single(f_chebi_10860_13(X),f_chebi_10860_21(X)) :- chebi_10860(X).
+single(f_chebi_10860_21(X),f_chebi_10860_13(X)) :- chebi_10860(X).
+hasAtom(X,f_chebi_10860_21(X)) :- chebi_10860(X).
+chebi_10860(c_chebi_10860).
+acetate(X) :- c(Y1),h(Y2),h(Y3),h(Y4),c(Y5),o(Y6),o(Y7),single(Y1,Y2),single(Y2,Y1),single(Y1,Y3),single(Y3,Y1),single(Y1,Y4),single(Y4,Y1),single(Y1,Y5),single(Y5,Y1),double(Y5,Y6),double(Y6,Y5),single(Y5,Y7),single(Y7,Y5),single(Y7,Y8),single(Y8,Y7),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),hasAtom(X,Y5),hasAtom(X,Y6),hasAtom(X,Y7),hasAtom(X,Y8),not g_acetate(Y1),not g_acetate(Y2),not g_acetate(Y3),not g_acetate(Y4),not g_acetate(Y5),not g_acetate(Y6),not g_acetate(Y7),not g_acetate(Y8).
+r_acetate(X) :- c(Y1),h(Y2),h(Y3),h(Y4),c(Y5),o(Y6),o(Y7),single(Y1,Y2),single(Y2,Y1),single(Y1,Y3),single(Y3,Y1),single(Y1,Y4),single(Y4,Y1),single(Y1,Y5),single(Y5,Y1),double(Y5,Y6),double(Y6,Y5),single(Y5,Y7),single(Y7,Y5),single(Y7,Y8),single(Y8,Y7),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),hasAtom(X,Y5),hasAtom(X,Y6),hasAtom(X,Y7),hasAtom(X,Y8),not g_acetate(Y1),not g_acetate(Y2),not g_acetate(Y3),not g_acetate(Y4),not g_acetate(Y5),not g_acetate(Y6),not g_acetate(Y7),not g_acetate(Y8).
+acetate(c_acetate).
+acid(X) :- c(Y2),o(Y3),o(Y4),h(Y5),single(Y1,Y2),single(Y2,Y1),double(Y2,Y3),double(Y3,Y2),single(Y2,Y4),single(Y4,Y2),single(Y4,Y5),single(Y5,Y4),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),hasAtom(X,Y5),not g_acid(Y1),not g_acid(Y2),not g_acid(Y3),not g_acid(Y4),not g_acid(Y5).
+r_acid(X) :- c(Y2),o(Y3),o(Y4),h(Y5),single(Y1,Y2),single(Y2,Y1),double(Y2,Y3),double(Y3,Y2),single(Y2,Y4),single(Y4,Y2),single(Y4,Y5),single(Y5,Y4),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),hasAtom(X,Y5),not g_acid(Y1),not g_acid(Y2),not g_acid(Y3),not g_acid(Y4),not g_acid(Y5).
+acid(c_acid).
+alcohol(X) :- c(Y1),o(Y2),h(Y3),single(Y1,Y2),single(Y2,Y1),single(Y2,Y3),single(Y3,Y2),single(Y1,Y4),single(Y4,Y1),single(Y1,Y5),single(Y5,Y1),single(Y1,Y6),single(Y6,Y1),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),hasAtom(X,Y5),hasAtom(X,Y6),not g_alcohol(Y1),not g_alcohol(Y2),not g_alcohol(Y3),not g_alcohol(Y4),not g_alcohol(Y5),not g_alcohol(Y6).
+r_alcohol(X) :- c(Y1),o(Y2),h(Y3),single(Y1,Y2),single(Y2,Y1),single(Y2,Y3),single(Y3,Y2),single(Y1,Y4),single(Y4,Y1),single(Y1,Y5),single(Y5,Y1),single(Y1,Y6),single(Y6,Y1),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),hasAtom(X,Y5),hasAtom(X,Y6),not g_alcohol(Y1),not g_alcohol(Y2),not g_alcohol(Y3),not g_alcohol(Y4),not g_alcohol(Y5),not g_alcohol(Y6).
+alcohol(c_alcohol).
+aldehyde(X) :- o(Y1),h(Y2),c(Y3),double(Y1,Y3),double(Y3,Y1),single(Y3,Y4),single(Y4,Y3),single(Y3,Y2),single(Y2,Y3),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),not g_aldehyde(Y1),not g_aldehyde(Y2),not g_aldehyde(Y3),not g_aldehyde(Y4).
+r_aldehyde(X) :- o(Y1),h(Y2),c(Y3),double(Y1,Y3),double(Y3,Y1),single(Y3,Y4),single(Y4,Y3),single(Y3,Y2),single(Y2,Y3),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),not g_aldehyde(Y1),not g_aldehyde(Y2),not g_aldehyde(Y3),not g_aldehyde(Y4).
+aldehyde(c_aldehyde).
+amide(X) :- n(Y1),h(Y2),h(Y3),o(Y4),c(Y5),single(Y1,Y2),single(Y2,Y1),single(Y1,Y3),single(Y3,Y1),single(Y1,Y5),single(Y5,Y1),double(Y4,Y5),double(Y5,Y4),single(Y5,Y6),single(Y6,Y5),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),hasAtom(X,Y5),hasAtom(X,Y6),not g_amide(Y1),not g_amide(Y2),not g_amide(Y3),not g_amide(Y4),not g_amide(Y5),not g_amide(Y6).
+r_amide(X) :- n(Y1),h(Y2),h(Y3),o(Y4),c(Y5),single(Y1,Y2),single(Y2,Y1),single(Y1,Y3),single(Y3,Y1),single(Y1,Y5),single(Y5,Y1),double(Y4,Y5),double(Y5,Y4),single(Y5,Y6),single(Y6,Y5),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),hasAtom(X,Y5),hasAtom(X,Y6),not g_amide(Y1),not g_amide(Y2),not g_amide(Y3),not g_amide(Y4),not g_amide(Y5),not g_amide(Y6).
+amide(c_amide).
+amine(X) :- n(Y1),h(Y2),h(Y3),double(Y1,Y2),double(Y2,Y1),single(Y1,Y3),single(Y3,Y1),single(Y1,Y4),single(Y4,Y1),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),not g_amine(Y1),not g_amine(Y2),not g_amine(Y3),not g_amine(Y4).
+r_amine(X) :- n(Y1),h(Y2),h(Y3),double(Y1,Y2),double(Y2,Y1),single(Y1,Y3),single(Y3,Y1),single(Y1,Y4),single(Y4,Y1),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),not g_amine(Y1),not g_amine(Y2),not g_amine(Y3),not g_amine(Y4).
+amine(c_amine).
+azo(X) :- n(Y1),n(Y2),double(Y1,Y2),double(Y2,Y1),single(Y2,Y3),single(Y3,Y2),single(Y1,Y4),single(Y4,Y1),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),not g_azo(Y1),not g_azo(Y2),not g_azo(Y3),not g_azo(Y4).
+r_azo(X) :- n(Y1),n(Y2),double(Y1,Y2),double(Y2,Y1),single(Y2,Y3),single(Y3,Y2),single(Y1,Y4),single(Y4,Y1),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),not g_azo(Y1),not g_azo(Y2),not g_azo(Y3),not g_azo(Y4).
+azo(c_azo).
+azomethine(X) :- n(Y1),c(Y2),double(Y1,Y2),double(Y2,Y1),single(Y2,Y3),single(Y3,Y2),single(Y1,Y4),single(Y4,Y1),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),not g_azomethine(Y1),not g_azomethine(Y2),not g_azomethine(Y3),not g_azomethine(Y4).
+r_azomethine(X) :- n(Y1),c(Y2),double(Y1,Y2),double(Y2,Y1),single(Y2,Y3),single(Y3,Y2),single(Y1,Y4),single(Y4,Y1),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),not g_azomethine(Y1),not g_azomethine(Y2),not g_azomethine(Y3),not g_azomethine(Y4).
+azomethine(c_azomethine).
+borinicAcid(X) :- b(Y1),o(Y2),h(Y3),single(Y1,Y2),single(Y2,Y1),single(Y2,Y3),single(Y3,Y2),single(Y1,Y4),single(Y4,Y1),single(Y1,Y5),single(Y5,Y1),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),hasAtom(X,Y5),not g_borinicAcid(Y1),not g_borinicAcid(Y2),not g_borinicAcid(Y3),not g_borinicAcid(Y4),not g_borinicAcid(Y5).
+r_borinicAcid(X) :- b(Y1),o(Y2),h(Y3),single(Y1,Y2),single(Y2,Y1),single(Y2,Y3),single(Y3,Y2),single(Y1,Y4),single(Y4,Y1),single(Y1,Y5),single(Y5,Y1),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),hasAtom(X,Y5),not g_borinicAcid(Y1),not g_borinicAcid(Y2),not g_borinicAcid(Y3),not g_borinicAcid(Y4),not g_borinicAcid(Y5).
+borinicAcid(c_borinicAcid).
+cyanate(X) :- n(Y1),c(Y2),o(Y3),triple(Y1,Y2),triple(Y2,Y1),single(Y2,Y3),single(Y3,Y2),single(Y3,Y4),single(Y4,Y3),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),not g_cyanate(Y1),not g_cyanate(Y2),not g_cyanate(Y3),not g_cyanate(Y4).
+r_cyanate(X) :- n(Y1),c(Y2),o(Y3),triple(Y1,Y2),triple(Y2,Y1),single(Y2,Y3),single(Y3,Y2),single(Y3,Y4),single(Y4,Y3),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),not g_cyanate(Y1),not g_cyanate(Y2),not g_cyanate(Y3),not g_cyanate(Y4).
+cyanate(c_cyanate).
+disulphide(X) :- s(Y1),c(Y2),s(Y4),c(Y5),single(Y1,Y2),single(Y2,Y1),single(Y2,Y3),single(Y3,Y2),single(Y1,Y4),single(Y4,Y1),single(Y4,Y5),single(Y5,Y4),single(Y5,Y6),single(Y6,Y5),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),hasAtom(X,Y5),hasAtom(X,Y6),not g_disulphide(Y1),not g_disulphide(Y2),not g_disulphide(Y3),not g_disulphide(Y4),not g_disulphide(Y5),not g_disulphide(Y6).
+r_disulphide(X) :- s(Y1),c(Y2),s(Y4),c(Y5),single(Y1,Y2),single(Y2,Y1),single(Y2,Y3),single(Y3,Y2),single(Y1,Y4),single(Y4,Y1),single(Y4,Y5),single(Y5,Y4),single(Y5,Y6),single(Y6,Y5),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),hasAtom(X,Y5),hasAtom(X,Y6),not g_disulphide(Y1),not g_disulphide(Y2),not g_disulphide(Y3),not g_disulphide(Y4),not g_disulphide(Y5),not g_disulphide(Y6).
+disulphide(c_disulphide).
+epoxide(X) :- o(Y1),c(Y3),h(Y4),c(Y5),h(Y6),single(Y1,Y3),single(Y3,Y1),single(Y3,Y4),single(Y4,Y3),single(Y3,Y2),single(Y2,Y3),single(Y3,Y5),single(Y5,Y3),single(Y5,Y6),single(Y6,Y5),single(Y5,Y7),single(Y7,Y5),single(Y5,Y1),single(Y1,Y5),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),hasAtom(X,Y5),hasAtom(X,Y6),hasAtom(X,Y7),not g_epoxide(Y1),not g_epoxide(Y2),not g_epoxide(Y3),not g_epoxide(Y4),not g_epoxide(Y5),not g_epoxide(Y6),not g_epoxide(Y7).
+r_epoxide(X) :- o(Y1),c(Y3),h(Y4),c(Y5),h(Y6),single(Y1,Y3),single(Y3,Y1),single(Y3,Y4),single(Y4,Y3),single(Y3,Y2),single(Y2,Y3),single(Y3,Y5),single(Y5,Y3),single(Y5,Y6),single(Y6,Y5),single(Y5,Y7),single(Y7,Y5),single(Y5,Y1),single(Y1,Y5),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),hasAtom(X,Y5),hasAtom(X,Y6),hasAtom(X,Y7),not g_epoxide(Y1),not g_epoxide(Y2),not g_epoxide(Y3),not g_epoxide(Y4),not g_epoxide(Y5),not g_epoxide(Y6),not g_epoxide(Y7).
+epoxide(c_epoxide).
+ester(X) :- c(Y2),o(Y3),o(Y4),single(Y1,Y2),single(Y2,Y1),double(Y2,Y3),double(Y3,Y2),single(Y2,Y4),single(Y4,Y2),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),not g_ester(Y1),not g_ester(Y2),not g_ester(Y3),not g_ester(Y4).
+r_ester(X) :- c(Y2),o(Y3),o(Y4),single(Y1,Y2),single(Y2,Y1),double(Y2,Y3),double(Y3,Y2),single(Y2,Y4),single(Y4,Y2),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),not g_ester(Y1),not g_ester(Y2),not g_ester(Y3),not g_ester(Y4).
+ester(c_ester).
+ether(X) :- o(Y2),single(Y1,Y2),single(Y2,Y1),single(Y2,Y3),single(Y3,Y2),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),not g_ether(Y1),not g_ether(Y2).
+r_ether(X) :- o(Y2),single(Y1,Y2),single(Y2,Y1),single(Y2,Y3),single(Y3,Y2),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),not g_ether(Y1),not g_ether(Y2).
+ether(c_ether).
+hidrazone(X) :- n(Y1),h(Y2),h(Y3),n(Y4),c(Y5),single(Y1,Y2),single(Y2,Y1),single(Y1,Y3),single(Y3,Y1),single(Y1,Y4),single(Y4,Y1),double(Y4,Y5),double(Y5,Y4),single(Y5,Y6),single(Y6,Y5),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),hasAtom(X,Y5),hasAtom(X,Y6),not g_hidrazone(Y1),not g_hidrazone(Y2),not g_hidrazone(Y3),not g_hidrazone(Y4),not g_hidrazone(Y5),not g_hidrazone(Y6).
+r_hidrazone(X) :- n(Y1),h(Y2),h(Y3),n(Y4),c(Y5),single(Y1,Y2),single(Y2,Y1),single(Y1,Y3),single(Y3,Y1),single(Y1,Y4),single(Y4,Y1),double(Y4,Y5),double(Y5,Y4),single(Y5,Y6),single(Y6,Y5),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),hasAtom(X,Y5),hasAtom(X,Y6),not g_hidrazone(Y1),not g_hidrazone(Y2),not g_hidrazone(Y3),not g_hidrazone(Y4),not g_hidrazone(Y5),not g_hidrazone(Y6).
+hidrazone(c_hidrazone).
+imine(X) :- n(Y1),h(Y2),c(Y3),single(Y1,Y2),single(Y2,Y1),double(Y2,Y3),double(Y3,Y2),single(Y3,Y5),single(Y5,Y3),single(Y3,Y4),single(Y4,Y3),single(Y1,Y6),single(Y6,Y1),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),hasAtom(X,Y5),hasAtom(X,Y6),not g_imine(Y1),not g_imine(Y2),not g_imine(Y3),not g_imine(Y4),not g_imine(Y5),not g_imine(Y6).
+r_imine(X) :- n(Y1),h(Y2),c(Y3),single(Y1,Y2),single(Y2,Y1),double(Y2,Y3),double(Y3,Y2),single(Y3,Y5),single(Y5,Y3),single(Y3,Y4),single(Y4,Y3),single(Y1,Y6),single(Y6,Y1),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),hasAtom(X,Y5),hasAtom(X,Y6),not g_imine(Y1),not g_imine(Y2),not g_imine(Y3),not g_imine(Y4),not g_imine(Y5),not g_imine(Y6).
+imine(c_imine).
+ketone(X) :- c(Y1),o(Y2),double(Y1,Y2),double(Y2,Y1),single(Y1,Y3),single(Y3,Y1),single(Y1,Y4),single(Y4,Y1),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),not g_ketone(Y1),not g_ketone(Y2),not g_ketone(Y3),not g_ketone(Y4).
+r_ketone(X) :- c(Y1),o(Y2),double(Y1,Y2),double(Y2,Y1),single(Y1,Y3),single(Y3,Y1),single(Y1,Y4),single(Y4,Y1),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),not g_ketone(Y1),not g_ketone(Y2),not g_ketone(Y3),not g_ketone(Y4).
+ketone(c_ketone).
+nitrile(X) :- n(Y1),c(Y2),triple(Y1,Y2),triple(Y2,Y1),single(Y2,Y3),single(Y3,Y2),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),not g_nitrile(Y1),not g_nitrile(Y2),not g_nitrile(Y3).
+r_nitrile(X) :- n(Y1),c(Y2),triple(Y1,Y2),triple(Y2,Y1),single(Y2,Y3),single(Y3,Y2),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),not g_nitrile(Y1),not g_nitrile(Y2),not g_nitrile(Y3).
+nitrile(c_nitrile).
+nitro(X) :- n(Y1),o(Y2),o(Y3),single(Y1,Y2),single(Y2,Y1),double(Y1,Y3),double(Y3,Y1),single(Y1,Y4),single(Y4,Y1),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),not g_nitro(Y1),not g_nitro(Y2),not g_nitro(Y3),not g_nitro(Y4).
+r_nitro(X) :- n(Y1),o(Y2),o(Y3),single(Y1,Y2),single(Y2,Y1),double(Y1,Y3),double(Y3,Y1),single(Y1,Y4),single(Y4,Y1),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),not g_nitro(Y1),not g_nitro(Y2),not g_nitro(Y3),not g_nitro(Y4).
+nitro(c_nitro).
+organicHydroxy(X) :- c(Y1),o(Y2),h(Y3),single(Y1,Y2),single(Y2,Y1),single(Y2,Y3),single(Y3,Y2),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),not g_organicHydroxy(Y1),not g_organicHydroxy(Y2),not g_organicHydroxy(Y3).
+r_organicHydroxy(X) :- c(Y1),o(Y2),h(Y3),single(Y1,Y2),single(Y2,Y1),single(Y2,Y3),single(Y3,Y2),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),not g_organicHydroxy(Y1),not g_organicHydroxy(Y2),not g_organicHydroxy(Y3).
+organicHydroxy(c_organicHydroxy).
+c(f_acetate_1(X)) :- acetate(X),not r_acetate(X).
+h(f_acetate_2(X)) :- acetate(X),not r_acetate(X).
+h(f_acetate_3(X)) :- acetate(X),not r_acetate(X).
+h(f_acetate_4(X)) :- acetate(X),not r_acetate(X).
+c(f_acetate_5(X)) :- acetate(X),not r_acetate(X).
+o(f_acetate_6(X)) :- acetate(X),not r_acetate(X).
+o(f_acetate_7(X)) :- acetate(X),not r_acetate(X).
+single(f_acetate_1(X),f_acetate_2(X)) :- acetate(X),not r_acetate(X).
+single(f_acetate_2(X),f_acetate_1(X)) :- acetate(X),not r_acetate(X).
+single(f_acetate_1(X),f_acetate_3(X)) :- acetate(X),not r_acetate(X).
+single(f_acetate_3(X),f_acetate_1(X)) :- acetate(X),not r_acetate(X).
+single(f_acetate_1(X),f_acetate_4(X)) :- acetate(X),not r_acetate(X).
+single(f_acetate_4(X),f_acetate_1(X)) :- acetate(X),not r_acetate(X).
+single(f_acetate_1(X),f_acetate_5(X)) :- acetate(X),not r_acetate(X).
+single(f_acetate_5(X),f_acetate_1(X)) :- acetate(X),not r_acetate(X).
+double(f_acetate_5(X),f_acetate_6(X)) :- acetate(X),not r_acetate(X).
+double(f_acetate_6(X),f_acetate_5(X)) :- acetate(X),not r_acetate(X).
+single(f_acetate_5(X),f_acetate_7(X)) :- acetate(X),not r_acetate(X).
+single(f_acetate_7(X),f_acetate_5(X)) :- acetate(X),not r_acetate(X).
+single(f_acetate_7(X),f_acetate_8(X)) :- acetate(X),not r_acetate(X).
+single(f_acetate_8(X),f_acetate_7(X)) :- acetate(X),not r_acetate(X).
+hasAtom(X,f_acetate_1(X)) :- acetate(X),not r_acetate(X).
+hasAtom(X,f_acetate_2(X)) :- acetate(X),not r_acetate(X).
+hasAtom(X,f_acetate_3(X)) :- acetate(X),not r_acetate(X).
+hasAtom(X,f_acetate_4(X)) :- acetate(X),not r_acetate(X).
+hasAtom(X,f_acetate_5(X)) :- acetate(X),not r_acetate(X).
+hasAtom(X,f_acetate_6(X)) :- acetate(X),not r_acetate(X).
+hasAtom(X,f_acetate_7(X)) :- acetate(X),not r_acetate(X).
+hasAtom(X,f_acetate_8(X)) :- acetate(X),not r_acetate(X).
+g_acetate(f_acetate_1(X)) :- acetate(X),not r_acetate(X).
+g_acetate(f_acetate_2(X)) :- acetate(X),not r_acetate(X).
+g_acetate(f_acetate_3(X)) :- acetate(X),not r_acetate(X).
+g_acetate(f_acetate_4(X)) :- acetate(X),not r_acetate(X).
+g_acetate(f_acetate_5(X)) :- acetate(X),not r_acetate(X).
+g_acetate(f_acetate_6(X)) :- acetate(X),not r_acetate(X).
+g_acetate(f_acetate_7(X)) :- acetate(X),not r_acetate(X).
+g_acetate(f_acetate_8(X)) :- acetate(X),not r_acetate(X).
+c(f_acid_2(X)) :- acid(X),not r_acid(X).
+o(f_acid_3(X)) :- acid(X),not r_acid(X).
+o(f_acid_4(X)) :- acid(X),not r_acid(X).
+h(f_acid_5(X)) :- acid(X),not r_acid(X).
+single(f_acid_1(X),f_acid_2(X)) :- acid(X),not r_acid(X).
+single(f_acid_2(X),f_acid_1(X)) :- acid(X),not r_acid(X).
+double(f_acid_2(X),f_acid_3(X)) :- acid(X),not r_acid(X).
+double(f_acid_3(X),f_acid_2(X)) :- acid(X),not r_acid(X).
+single(f_acid_2(X),f_acid_4(X)) :- acid(X),not r_acid(X).
+single(f_acid_4(X),f_acid_2(X)) :- acid(X),not r_acid(X).
+single(f_acid_4(X),f_acid_5(X)) :- acid(X),not r_acid(X).
+single(f_acid_5(X),f_acid_4(X)) :- acid(X),not r_acid(X).
+hasAtom(X,f_acid_1(X)) :- acid(X),not r_acid(X).
+hasAtom(X,f_acid_2(X)) :- acid(X),not r_acid(X).
+hasAtom(X,f_acid_3(X)) :- acid(X),not r_acid(X).
+hasAtom(X,f_acid_4(X)) :- acid(X),not r_acid(X).
+hasAtom(X,f_acid_5(X)) :- acid(X),not r_acid(X).
+g_acid(f_acid_1(X)) :- acid(X),not r_acid(X).
+g_acid(f_acid_2(X)) :- acid(X),not r_acid(X).
+g_acid(f_acid_3(X)) :- acid(X),not r_acid(X).
+g_acid(f_acid_4(X)) :- acid(X),not r_acid(X).
+g_acid(f_acid_5(X)) :- acid(X),not r_acid(X).
+c(f_alcohol_1(X)) :- alcohol(X),not r_alcohol(X).
+o(f_alcohol_2(X)) :- alcohol(X),not r_alcohol(X).
+h(f_alcohol_3(X)) :- alcohol(X),not r_alcohol(X).
+single(f_alcohol_1(X),f_alcohol_2(X)) :- alcohol(X),not r_alcohol(X).
+single(f_alcohol_2(X),f_alcohol_1(X)) :- alcohol(X),not r_alcohol(X).
+single(f_alcohol_2(X),f_alcohol_3(X)) :- alcohol(X),not r_alcohol(X).
+single(f_alcohol_3(X),f_alcohol_2(X)) :- alcohol(X),not r_alcohol(X).
+single(f_alcohol_1(X),f_alcohol_4(X)) :- alcohol(X),not r_alcohol(X).
+single(f_alcohol_4(X),f_alcohol_1(X)) :- alcohol(X),not r_alcohol(X).
+single(f_alcohol_1(X),f_alcohol_5(X)) :- alcohol(X),not r_alcohol(X).
+single(f_alcohol_5(X),f_alcohol_1(X)) :- alcohol(X),not r_alcohol(X).
+single(f_alcohol_1(X),f_alcohol_6(X)) :- alcohol(X),not r_alcohol(X).
+single(f_alcohol_6(X),f_alcohol_1(X)) :- alcohol(X),not r_alcohol(X).
+hasAtom(X,f_alcohol_1(X)) :- alcohol(X),not r_alcohol(X).
+hasAtom(X,f_alcohol_2(X)) :- alcohol(X),not r_alcohol(X).
+hasAtom(X,f_alcohol_3(X)) :- alcohol(X),not r_alcohol(X).
+hasAtom(X,f_alcohol_4(X)) :- alcohol(X),not r_alcohol(X).
+hasAtom(X,f_alcohol_5(X)) :- alcohol(X),not r_alcohol(X).
+hasAtom(X,f_alcohol_6(X)) :- alcohol(X),not r_alcohol(X).
+g_alcohol(f_alcohol_1(X)) :- alcohol(X),not r_alcohol(X).
+g_alcohol(f_alcohol_2(X)) :- alcohol(X),not r_alcohol(X).
+g_alcohol(f_alcohol_3(X)) :- alcohol(X),not r_alcohol(X).
+g_alcohol(f_alcohol_4(X)) :- alcohol(X),not r_alcohol(X).
+g_alcohol(f_alcohol_5(X)) :- alcohol(X),not r_alcohol(X).
+g_alcohol(f_alcohol_6(X)) :- alcohol(X),not r_alcohol(X).
+o(f_aldehyde_1(X)) :- aldehyde(X),not r_aldehyde(X).
+h(f_aldehyde_2(X)) :- aldehyde(X),not r_aldehyde(X).
+c(f_aldehyde_3(X)) :- aldehyde(X),not r_aldehyde(X).
+double(f_aldehyde_1(X),f_aldehyde_3(X)) :- aldehyde(X),not r_aldehyde(X).
+double(f_aldehyde_3(X),f_aldehyde_1(X)) :- aldehyde(X),not r_aldehyde(X).
+single(f_aldehyde_3(X),f_aldehyde_4(X)) :- aldehyde(X),not r_aldehyde(X).
+single(f_aldehyde_4(X),f_aldehyde_3(X)) :- aldehyde(X),not r_aldehyde(X).
+single(f_aldehyde_3(X),f_aldehyde_2(X)) :- aldehyde(X),not r_aldehyde(X).
+single(f_aldehyde_2(X),f_aldehyde_3(X)) :- aldehyde(X),not r_aldehyde(X).
+hasAtom(X,f_aldehyde_1(X)) :- aldehyde(X),not r_aldehyde(X).
+hasAtom(X,f_aldehyde_2(X)) :- aldehyde(X),not r_aldehyde(X).
+hasAtom(X,f_aldehyde_3(X)) :- aldehyde(X),not r_aldehyde(X).
+hasAtom(X,f_aldehyde_4(X)) :- aldehyde(X),not r_aldehyde(X).
+g_aldehyde(f_aldehyde_1(X)) :- aldehyde(X),not r_aldehyde(X).
+g_aldehyde(f_aldehyde_2(X)) :- aldehyde(X),not r_aldehyde(X).
+g_aldehyde(f_aldehyde_3(X)) :- aldehyde(X),not r_aldehyde(X).
+g_aldehyde(f_aldehyde_4(X)) :- aldehyde(X),not r_aldehyde(X).
+n(f_amide_1(X)) :- amide(X),not r_amide(X).
+h(f_amide_2(X)) :- amide(X),not r_amide(X).
+h(f_amide_3(X)) :- amide(X),not r_amide(X).
+o(f_amide_4(X)) :- amide(X),not r_amide(X).
+c(f_amide_5(X)) :- amide(X),not r_amide(X).
+single(f_amide_1(X),f_amide_2(X)) :- amide(X),not r_amide(X).
+single(f_amide_2(X),f_amide_1(X)) :- amide(X),not r_amide(X).
+single(f_amide_1(X),f_amide_3(X)) :- amide(X),not r_amide(X).
+single(f_amide_3(X),f_amide_1(X)) :- amide(X),not r_amide(X).
+single(f_amide_1(X),f_amide_5(X)) :- amide(X),not r_amide(X).
+single(f_amide_5(X),f_amide_1(X)) :- amide(X),not r_amide(X).
+double(f_amide_4(X),f_amide_5(X)) :- amide(X),not r_amide(X).
+double(f_amide_5(X),f_amide_4(X)) :- amide(X),not r_amide(X).
+single(f_amide_5(X),f_amide_6(X)) :- amide(X),not r_amide(X).
+single(f_amide_6(X),f_amide_5(X)) :- amide(X),not r_amide(X).
+hasAtom(X,f_amide_1(X)) :- amide(X),not r_amide(X).
+hasAtom(X,f_amide_2(X)) :- amide(X),not r_amide(X).
+hasAtom(X,f_amide_3(X)) :- amide(X),not r_amide(X).
+hasAtom(X,f_amide_4(X)) :- amide(X),not r_amide(X).
+hasAtom(X,f_amide_5(X)) :- amide(X),not r_amide(X).
+hasAtom(X,f_amide_6(X)) :- amide(X),not r_amide(X).
+g_amide(f_amide_1(X)) :- amide(X),not r_amide(X).
+g_amide(f_amide_2(X)) :- amide(X),not r_amide(X).
+g_amide(f_amide_3(X)) :- amide(X),not r_amide(X).
+g_amide(f_amide_4(X)) :- amide(X),not r_amide(X).
+g_amide(f_amide_5(X)) :- amide(X),not r_amide(X).
+g_amide(f_amide_6(X)) :- amide(X),not r_amide(X).
+n(f_amine_1(X)) :- amine(X),not r_amine(X).
+h(f_amine_2(X)) :- amine(X),not r_amine(X).
+h(f_amine_3(X)) :- amine(X),not r_amine(X).
+double(f_amine_1(X),f_amine_2(X)) :- amine(X),not r_amine(X).
+double(f_amine_2(X),f_amine_1(X)) :- amine(X),not r_amine(X).
+single(f_amine_1(X),f_amine_3(X)) :- amine(X),not r_amine(X).
+single(f_amine_3(X),f_amine_1(X)) :- amine(X),not r_amine(X).
+single(f_amine_1(X),f_amine_4(X)) :- amine(X),not r_amine(X).
+single(f_amine_4(X),f_amine_1(X)) :- amine(X),not r_amine(X).
+hasAtom(X,f_amine_1(X)) :- amine(X),not r_amine(X).
+hasAtom(X,f_amine_2(X)) :- amine(X),not r_amine(X).
+hasAtom(X,f_amine_3(X)) :- amine(X),not r_amine(X).
+hasAtom(X,f_amine_4(X)) :- amine(X),not r_amine(X).
+g_amine(f_amine_1(X)) :- amine(X),not r_amine(X).
+g_amine(f_amine_2(X)) :- amine(X),not r_amine(X).
+g_amine(f_amine_3(X)) :- amine(X),not r_amine(X).
+g_amine(f_amine_4(X)) :- amine(X),not r_amine(X).
+n(f_azo_1(X)) :- azo(X),not r_azo(X).
+n(f_azo_2(X)) :- azo(X),not r_azo(X).
+double(f_azo_1(X),f_azo_2(X)) :- azo(X),not r_azo(X).
+double(f_azo_2(X),f_azo_1(X)) :- azo(X),not r_azo(X).
+single(f_azo_2(X),f_azo_3(X)) :- azo(X),not r_azo(X).
+single(f_azo_3(X),f_azo_2(X)) :- azo(X),not r_azo(X).
+single(f_azo_1(X),f_azo_4(X)) :- azo(X),not r_azo(X).
+single(f_azo_4(X),f_azo_1(X)) :- azo(X),not r_azo(X).
+hasAtom(X,f_azo_1(X)) :- azo(X),not r_azo(X).
+hasAtom(X,f_azo_2(X)) :- azo(X),not r_azo(X).
+hasAtom(X,f_azo_3(X)) :- azo(X),not r_azo(X).
+hasAtom(X,f_azo_4(X)) :- azo(X),not r_azo(X).
+g_azo(f_azo_1(X)) :- azo(X),not r_azo(X).
+g_azo(f_azo_2(X)) :- azo(X),not r_azo(X).
+g_azo(f_azo_3(X)) :- azo(X),not r_azo(X).
+g_azo(f_azo_4(X)) :- azo(X),not r_azo(X).
+n(f_azomethine_1(X)) :- azomethine(X),not r_azomethine(X).
+c(f_azomethine_2(X)) :- azomethine(X),not r_azomethine(X).
+double(f_azomethine_1(X),f_azomethine_2(X)) :- azomethine(X),not r_azomethine(X).
+double(f_azomethine_2(X),f_azomethine_1(X)) :- azomethine(X),not r_azomethine(X).
+single(f_azomethine_2(X),f_azomethine_3(X)) :- azomethine(X),not r_azomethine(X).
+single(f_azomethine_3(X),f_azomethine_2(X)) :- azomethine(X),not r_azomethine(X).
+single(f_azomethine_1(X),f_azomethine_4(X)) :- azomethine(X),not r_azomethine(X).
+single(f_azomethine_4(X),f_azomethine_1(X)) :- azomethine(X),not r_azomethine(X).
+hasAtom(X,f_azomethine_1(X)) :- azomethine(X),not r_azomethine(X).
+hasAtom(X,f_azomethine_2(X)) :- azomethine(X),not r_azomethine(X).
+hasAtom(X,f_azomethine_3(X)) :- azomethine(X),not r_azomethine(X).
+hasAtom(X,f_azomethine_4(X)) :- azomethine(X),not r_azomethine(X).
+g_azomethine(f_azomethine_1(X)) :- azomethine(X),not r_azomethine(X).
+g_azomethine(f_azomethine_2(X)) :- azomethine(X),not r_azomethine(X).
+g_azomethine(f_azomethine_3(X)) :- azomethine(X),not r_azomethine(X).
+g_azomethine(f_azomethine_4(X)) :- azomethine(X),not r_azomethine(X).
+b(f_borinicAcid_1(X)) :- borinicAcid(X),not r_borinicAcid(X).
+o(f_borinicAcid_2(X)) :- borinicAcid(X),not r_borinicAcid(X).
+h(f_borinicAcid_3(X)) :- borinicAcid(X),not r_borinicAcid(X).
+single(f_borinicAcid_1(X),f_borinicAcid_2(X)) :- borinicAcid(X),not r_borinicAcid(X).
+single(f_borinicAcid_2(X),f_borinicAcid_1(X)) :- borinicAcid(X),not r_borinicAcid(X).
+single(f_borinicAcid_2(X),f_borinicAcid_3(X)) :- borinicAcid(X),not r_borinicAcid(X).
+single(f_borinicAcid_3(X),f_borinicAcid_2(X)) :- borinicAcid(X),not r_borinicAcid(X).
+single(f_borinicAcid_1(X),f_borinicAcid_4(X)) :- borinicAcid(X),not r_borinicAcid(X).
+single(f_borinicAcid_4(X),f_borinicAcid_1(X)) :- borinicAcid(X),not r_borinicAcid(X).
+single(f_borinicAcid_1(X),f_borinicAcid_5(X)) :- borinicAcid(X),not r_borinicAcid(X).
+single(f_borinicAcid_5(X),f_borinicAcid_1(X)) :- borinicAcid(X),not r_borinicAcid(X).
+hasAtom(X,f_borinicAcid_1(X)) :- borinicAcid(X),not r_borinicAcid(X).
+hasAtom(X,f_borinicAcid_2(X)) :- borinicAcid(X),not r_borinicAcid(X).
+hasAtom(X,f_borinicAcid_3(X)) :- borinicAcid(X),not r_borinicAcid(X).
+hasAtom(X,f_borinicAcid_4(X)) :- borinicAcid(X),not r_borinicAcid(X).
+hasAtom(X,f_borinicAcid_5(X)) :- borinicAcid(X),not r_borinicAcid(X).
+g_borinicAcid(f_borinicAcid_1(X)) :- borinicAcid(X),not r_borinicAcid(X).
+g_borinicAcid(f_borinicAcid_2(X)) :- borinicAcid(X),not r_borinicAcid(X).
+g_borinicAcid(f_borinicAcid_3(X)) :- borinicAcid(X),not r_borinicAcid(X).
+g_borinicAcid(f_borinicAcid_4(X)) :- borinicAcid(X),not r_borinicAcid(X).
+g_borinicAcid(f_borinicAcid_5(X)) :- borinicAcid(X),not r_borinicAcid(X).
+n(f_cyanate_1(X)) :- cyanate(X),not r_cyanate(X).
+c(f_cyanate_2(X)) :- cyanate(X),not r_cyanate(X).
+o(f_cyanate_3(X)) :- cyanate(X),not r_cyanate(X).
+triple(f_cyanate_1(X),f_cyanate_2(X)) :- cyanate(X),not r_cyanate(X).
+triple(f_cyanate_2(X),f_cyanate_1(X)) :- cyanate(X),not r_cyanate(X).
+single(f_cyanate_2(X),f_cyanate_3(X)) :- cyanate(X),not r_cyanate(X).
+single(f_cyanate_3(X),f_cyanate_2(X)) :- cyanate(X),not r_cyanate(X).
+single(f_cyanate_3(X),f_cyanate_4(X)) :- cyanate(X),not r_cyanate(X).
+single(f_cyanate_4(X),f_cyanate_3(X)) :- cyanate(X),not r_cyanate(X).
+hasAtom(X,f_cyanate_1(X)) :- cyanate(X),not r_cyanate(X).
+hasAtom(X,f_cyanate_2(X)) :- cyanate(X),not r_cyanate(X).
+hasAtom(X,f_cyanate_3(X)) :- cyanate(X),not r_cyanate(X).
+hasAtom(X,f_cyanate_4(X)) :- cyanate(X),not r_cyanate(X).
+g_cyanate(f_cyanate_1(X)) :- cyanate(X),not r_cyanate(X).
+g_cyanate(f_cyanate_2(X)) :- cyanate(X),not r_cyanate(X).
+g_cyanate(f_cyanate_3(X)) :- cyanate(X),not r_cyanate(X).
+g_cyanate(f_cyanate_4(X)) :- cyanate(X),not r_cyanate(X).
+s(f_disulphide_1(X)) :- disulphide(X),not r_disulphide(X).
+c(f_disulphide_2(X)) :- disulphide(X),not r_disulphide(X).
+s(f_disulphide_4(X)) :- disulphide(X),not r_disulphide(X).
+c(f_disulphide_5(X)) :- disulphide(X),not r_disulphide(X).
+single(f_disulphide_1(X),f_disulphide_2(X)) :- disulphide(X),not r_disulphide(X).
+single(f_disulphide_2(X),f_disulphide_1(X)) :- disulphide(X),not r_disulphide(X).
+single(f_disulphide_2(X),f_disulphide_3(X)) :- disulphide(X),not r_disulphide(X).
+single(f_disulphide_3(X),f_disulphide_2(X)) :- disulphide(X),not r_disulphide(X).
+single(f_disulphide_1(X),f_disulphide_4(X)) :- disulphide(X),not r_disulphide(X).
+single(f_disulphide_4(X),f_disulphide_1(X)) :- disulphide(X),not r_disulphide(X).
+single(f_disulphide_4(X),f_disulphide_5(X)) :- disulphide(X),not r_disulphide(X).
+single(f_disulphide_5(X),f_disulphide_4(X)) :- disulphide(X),not r_disulphide(X).
+single(f_disulphide_5(X),f_disulphide_6(X)) :- disulphide(X),not r_disulphide(X).
+single(f_disulphide_6(X),f_disulphide_5(X)) :- disulphide(X),not r_disulphide(X).
+hasAtom(X,f_disulphide_1(X)) :- disulphide(X),not r_disulphide(X).
+hasAtom(X,f_disulphide_2(X)) :- disulphide(X),not r_disulphide(X).
+hasAtom(X,f_disulphide_3(X)) :- disulphide(X),not r_disulphide(X).
+hasAtom(X,f_disulphide_4(X)) :- disulphide(X),not r_disulphide(X).
+hasAtom(X,f_disulphide_5(X)) :- disulphide(X),not r_disulphide(X).
+hasAtom(X,f_disulphide_6(X)) :- disulphide(X),not r_disulphide(X).
+g_disulphide(f_disulphide_1(X)) :- disulphide(X),not r_disulphide(X).
+g_disulphide(f_disulphide_2(X)) :- disulphide(X),not r_disulphide(X).
+g_disulphide(f_disulphide_3(X)) :- disulphide(X),not r_disulphide(X).
+g_disulphide(f_disulphide_4(X)) :- disulphide(X),not r_disulphide(X).
+g_disulphide(f_disulphide_5(X)) :- disulphide(X),not r_disulphide(X).
+g_disulphide(f_disulphide_6(X)) :- disulphide(X),not r_disulphide(X).
+o(f_epoxide_1(X)) :- epoxide(X),not r_epoxide(X).
+c(f_epoxide_3(X)) :- epoxide(X),not r_epoxide(X).
+h(f_epoxide_4(X)) :- epoxide(X),not r_epoxide(X).
+c(f_epoxide_5(X)) :- epoxide(X),not r_epoxide(X).
+h(f_epoxide_6(X)) :- epoxide(X),not r_epoxide(X).
+single(f_epoxide_1(X),f_epoxide_3(X)) :- epoxide(X),not r_epoxide(X).
+single(f_epoxide_3(X),f_epoxide_1(X)) :- epoxide(X),not r_epoxide(X).
+single(f_epoxide_3(X),f_epoxide_4(X)) :- epoxide(X),not r_epoxide(X).
+single(f_epoxide_4(X),f_epoxide_3(X)) :- epoxide(X),not r_epoxide(X).
+single(f_epoxide_3(X),f_epoxide_2(X)) :- epoxide(X),not r_epoxide(X).
+single(f_epoxide_2(X),f_epoxide_3(X)) :- epoxide(X),not r_epoxide(X).
+single(f_epoxide_3(X),f_epoxide_5(X)) :- epoxide(X),not r_epoxide(X).
+single(f_epoxide_5(X),f_epoxide_3(X)) :- epoxide(X),not r_epoxide(X).
+single(f_epoxide_5(X),f_epoxide_6(X)) :- epoxide(X),not r_epoxide(X).
+single(f_epoxide_6(X),f_epoxide_5(X)) :- epoxide(X),not r_epoxide(X).
+single(f_epoxide_5(X),f_epoxide_7(X)) :- epoxide(X),not r_epoxide(X).
+single(f_epoxide_7(X),f_epoxide_5(X)) :- epoxide(X),not r_epoxide(X).
+single(f_epoxide_5(X),f_epoxide_1(X)) :- epoxide(X),not r_epoxide(X).
+single(f_epoxide_1(X),f_epoxide_5(X)) :- epoxide(X),not r_epoxide(X).
+hasAtom(X,f_epoxide_1(X)) :- epoxide(X),not r_epoxide(X).
+hasAtom(X,f_epoxide_2(X)) :- epoxide(X),not r_epoxide(X).
+hasAtom(X,f_epoxide_3(X)) :- epoxide(X),not r_epoxide(X).
+hasAtom(X,f_epoxide_4(X)) :- epoxide(X),not r_epoxide(X).
+hasAtom(X,f_epoxide_5(X)) :- epoxide(X),not r_epoxide(X).
+hasAtom(X,f_epoxide_6(X)) :- epoxide(X),not r_epoxide(X).
+hasAtom(X,f_epoxide_7(X)) :- epoxide(X),not r_epoxide(X).
+g_epoxide(f_epoxide_1(X)) :- epoxide(X),not r_epoxide(X).
+g_epoxide(f_epoxide_2(X)) :- epoxide(X),not r_epoxide(X).
+g_epoxide(f_epoxide_3(X)) :- epoxide(X),not r_epoxide(X).
+g_epoxide(f_epoxide_4(X)) :- epoxide(X),not r_epoxide(X).
+g_epoxide(f_epoxide_5(X)) :- epoxide(X),not r_epoxide(X).
+g_epoxide(f_epoxide_6(X)) :- epoxide(X),not r_epoxide(X).
+g_epoxide(f_epoxide_7(X)) :- epoxide(X),not r_epoxide(X).
+c(f_ester_2(X)) :- ester(X),not r_ester(X).
+o(f_ester_3(X)) :- ester(X),not r_ester(X).
+o(f_ester_4(X)) :- ester(X),not r_ester(X).
+single(f_ester_1(X),f_ester_2(X)) :- ester(X),not r_ester(X).
+single(f_ester_2(X),f_ester_1(X)) :- ester(X),not r_ester(X).
+double(f_ester_2(X),f_ester_3(X)) :- ester(X),not r_ester(X).
+double(f_ester_3(X),f_ester_2(X)) :- ester(X),not r_ester(X).
+single(f_ester_2(X),f_ester_4(X)) :- ester(X),not r_ester(X).
+single(f_ester_4(X),f_ester_2(X)) :- ester(X),not r_ester(X).
+hasAtom(X,f_ester_1(X)) :- ester(X),not r_ester(X).
+hasAtom(X,f_ester_2(X)) :- ester(X),not r_ester(X).
+hasAtom(X,f_ester_3(X)) :- ester(X),not r_ester(X).
+hasAtom(X,f_ester_4(X)) :- ester(X),not r_ester(X).
+g_ester(f_ester_1(X)) :- ester(X),not r_ester(X).
+g_ester(f_ester_2(X)) :- ester(X),not r_ester(X).
+g_ester(f_ester_3(X)) :- ester(X),not r_ester(X).
+g_ester(f_ester_4(X)) :- ester(X),not r_ester(X).
+o(f_ether_2(X)) :- ether(X),not r_ether(X).
+single(f_ether_1(X),f_ether_2(X)) :- ether(X),not r_ether(X).
+single(f_ether_2(X),f_ether_1(X)) :- ether(X),not r_ether(X).
+single(f_ether_2(X),f_ether_3(X)) :- ether(X),not r_ether(X).
+single(f_ether_3(X),f_ether_2(X)) :- ether(X),not r_ether(X).
+hasAtom(X,f_ether_1(X)) :- ether(X),not r_ether(X).
+hasAtom(X,f_ether_2(X)) :- ether(X),not r_ether(X).
+hasAtom(X,f_ether_3(X)) :- ether(X),not r_ether(X).
+g_ether(f_ether_1(X)) :- ether(X),not r_ether(X).
+g_ether(f_ether_2(X)) :- ether(X),not r_ether(X).
+n(f_hidrazone_1(X)) :- hidrazone(X),not r_hidrazone(X).
+h(f_hidrazone_2(X)) :- hidrazone(X),not r_hidrazone(X).
+h(f_hidrazone_3(X)) :- hidrazone(X),not r_hidrazone(X).
+n(f_hidrazone_4(X)) :- hidrazone(X),not r_hidrazone(X).
+c(f_hidrazone_5(X)) :- hidrazone(X),not r_hidrazone(X).
+single(f_hidrazone_1(X),f_hidrazone_2(X)) :- hidrazone(X),not r_hidrazone(X).
+single(f_hidrazone_2(X),f_hidrazone_1(X)) :- hidrazone(X),not r_hidrazone(X).
+single(f_hidrazone_1(X),f_hidrazone_3(X)) :- hidrazone(X),not r_hidrazone(X).
+single(f_hidrazone_3(X),f_hidrazone_1(X)) :- hidrazone(X),not r_hidrazone(X).
+single(f_hidrazone_1(X),f_hidrazone_4(X)) :- hidrazone(X),not r_hidrazone(X).
+single(f_hidrazone_4(X),f_hidrazone_1(X)) :- hidrazone(X),not r_hidrazone(X).
+double(f_hidrazone_4(X),f_hidrazone_5(X)) :- hidrazone(X),not r_hidrazone(X).
+double(f_hidrazone_5(X),f_hidrazone_4(X)) :- hidrazone(X),not r_hidrazone(X).
+single(f_hidrazone_5(X),f_hidrazone_6(X)) :- hidrazone(X),not r_hidrazone(X).
+single(f_hidrazone_6(X),f_hidrazone_5(X)) :- hidrazone(X),not r_hidrazone(X).
+hasAtom(X,f_hidrazone_1(X)) :- hidrazone(X),not r_hidrazone(X).
+hasAtom(X,f_hidrazone_2(X)) :- hidrazone(X),not r_hidrazone(X).
+hasAtom(X,f_hidrazone_3(X)) :- hidrazone(X),not r_hidrazone(X).
+hasAtom(X,f_hidrazone_4(X)) :- hidrazone(X),not r_hidrazone(X).
+hasAtom(X,f_hidrazone_5(X)) :- hidrazone(X),not r_hidrazone(X).
+hasAtom(X,f_hidrazone_6(X)) :- hidrazone(X),not r_hidrazone(X).
+g_hidrazone(f_hidrazone_1(X)) :- hidrazone(X),not r_hidrazone(X).
+g_hidrazone(f_hidrazone_2(X)) :- hidrazone(X),not r_hidrazone(X).
+g_hidrazone(f_hidrazone_3(X)) :- hidrazone(X),not r_hidrazone(X).
+g_hidrazone(f_hidrazone_4(X)) :- hidrazone(X),not r_hidrazone(X).
+g_hidrazone(f_hidrazone_5(X)) :- hidrazone(X),not r_hidrazone(X).
+g_hidrazone(f_hidrazone_6(X)) :- hidrazone(X),not r_hidrazone(X).
+n(f_imine_1(X)) :- imine(X),not r_imine(X).
+h(f_imine_2(X)) :- imine(X),not r_imine(X).
+c(f_imine_3(X)) :- imine(X),not r_imine(X).
+single(f_imine_1(X),f_imine_2(X)) :- imine(X),not r_imine(X).
+single(f_imine_2(X),f_imine_1(X)) :- imine(X),not r_imine(X).
+double(f_imine_2(X),f_imine_3(X)) :- imine(X),not r_imine(X).
+double(f_imine_3(X),f_imine_2(X)) :- imine(X),not r_imine(X).
+single(f_imine_3(X),f_imine_5(X)) :- imine(X),not r_imine(X).
+single(f_imine_5(X),f_imine_3(X)) :- imine(X),not r_imine(X).
+single(f_imine_3(X),f_imine_4(X)) :- imine(X),not r_imine(X).
+single(f_imine_4(X),f_imine_3(X)) :- imine(X),not r_imine(X).
+single(f_imine_1(X),f_imine_6(X)) :- imine(X),not r_imine(X).
+single(f_imine_6(X),f_imine_1(X)) :- imine(X),not r_imine(X).
+hasAtom(X,f_imine_1(X)) :- imine(X),not r_imine(X).
+hasAtom(X,f_imine_2(X)) :- imine(X),not r_imine(X).
+hasAtom(X,f_imine_3(X)) :- imine(X),not r_imine(X).
+hasAtom(X,f_imine_4(X)) :- imine(X),not r_imine(X).
+hasAtom(X,f_imine_5(X)) :- imine(X),not r_imine(X).
+hasAtom(X,f_imine_6(X)) :- imine(X),not r_imine(X).
+g_imine(f_imine_1(X)) :- imine(X),not r_imine(X).
+g_imine(f_imine_2(X)) :- imine(X),not r_imine(X).
+g_imine(f_imine_3(X)) :- imine(X),not r_imine(X).
+g_imine(f_imine_4(X)) :- imine(X),not r_imine(X).
+g_imine(f_imine_5(X)) :- imine(X),not r_imine(X).
+g_imine(f_imine_6(X)) :- imine(X),not r_imine(X).
+c(f_ketone_1(X)) :- ketone(X),not r_ketone(X).
+o(f_ketone_2(X)) :- ketone(X),not r_ketone(X).
+double(f_ketone_1(X),f_ketone_2(X)) :- ketone(X),not r_ketone(X).
+double(f_ketone_2(X),f_ketone_1(X)) :- ketone(X),not r_ketone(X).
+single(f_ketone_1(X),f_ketone_3(X)) :- ketone(X),not r_ketone(X).
+single(f_ketone_3(X),f_ketone_1(X)) :- ketone(X),not r_ketone(X).
+single(f_ketone_1(X),f_ketone_4(X)) :- ketone(X),not r_ketone(X).
+single(f_ketone_4(X),f_ketone_1(X)) :- ketone(X),not r_ketone(X).
+hasAtom(X,f_ketone_1(X)) :- ketone(X),not r_ketone(X).
+hasAtom(X,f_ketone_2(X)) :- ketone(X),not r_ketone(X).
+hasAtom(X,f_ketone_3(X)) :- ketone(X),not r_ketone(X).
+hasAtom(X,f_ketone_4(X)) :- ketone(X),not r_ketone(X).
+g_ketone(f_ketone_1(X)) :- ketone(X),not r_ketone(X).
+g_ketone(f_ketone_2(X)) :- ketone(X),not r_ketone(X).
+g_ketone(f_ketone_3(X)) :- ketone(X),not r_ketone(X).
+g_ketone(f_ketone_4(X)) :- ketone(X),not r_ketone(X).
+n(f_nitrile_1(X)) :- nitrile(X),not r_nitrile(X).
+c(f_nitrile_2(X)) :- nitrile(X),not r_nitrile(X).
+triple(f_nitrile_1(X),f_nitrile_2(X)) :- nitrile(X),not r_nitrile(X).
+triple(f_nitrile_2(X),f_nitrile_1(X)) :- nitrile(X),not r_nitrile(X).
+single(f_nitrile_2(X),f_nitrile_3(X)) :- nitrile(X),not r_nitrile(X).
+single(f_nitrile_3(X),f_nitrile_2(X)) :- nitrile(X),not r_nitrile(X).
+hasAtom(X,f_nitrile_1(X)) :- nitrile(X),not r_nitrile(X).
+hasAtom(X,f_nitrile_2(X)) :- nitrile(X),not r_nitrile(X).
+hasAtom(X,f_nitrile_3(X)) :- nitrile(X),not r_nitrile(X).
+g_nitrile(f_nitrile_1(X)) :- nitrile(X),not r_nitrile(X).
+g_nitrile(f_nitrile_2(X)) :- nitrile(X),not r_nitrile(X).
+g_nitrile(f_nitrile_3(X)) :- nitrile(X),not r_nitrile(X).
+n(f_nitro_1(X)) :- nitro(X),not r_nitro(X).
+o(f_nitro_2(X)) :- nitro(X),not r_nitro(X).
+o(f_nitro_3(X)) :- nitro(X),not r_nitro(X).
+single(f_nitro_1(X),f_nitro_2(X)) :- nitro(X),not r_nitro(X).
+single(f_nitro_2(X),f_nitro_1(X)) :- nitro(X),not r_nitro(X).
+double(f_nitro_1(X),f_nitro_3(X)) :- nitro(X),not r_nitro(X).
+double(f_nitro_3(X),f_nitro_1(X)) :- nitro(X),not r_nitro(X).
+single(f_nitro_1(X),f_nitro_4(X)) :- nitro(X),not r_nitro(X).
+single(f_nitro_4(X),f_nitro_1(X)) :- nitro(X),not r_nitro(X).
+hasAtom(X,f_nitro_1(X)) :- nitro(X),not r_nitro(X).
+hasAtom(X,f_nitro_2(X)) :- nitro(X),not r_nitro(X).
+hasAtom(X,f_nitro_3(X)) :- nitro(X),not r_nitro(X).
+hasAtom(X,f_nitro_4(X)) :- nitro(X),not r_nitro(X).
+g_nitro(f_nitro_1(X)) :- nitro(X),not r_nitro(X).
+g_nitro(f_nitro_2(X)) :- nitro(X),not r_nitro(X).
+g_nitro(f_nitro_3(X)) :- nitro(X),not r_nitro(X).
+g_nitro(f_nitro_4(X)) :- nitro(X),not r_nitro(X).
+c(f_organicHydroxy_1(X)) :- organicHydroxy(X),not r_organicHydroxy(X).
+o(f_organicHydroxy_2(X)) :- organicHydroxy(X),not r_organicHydroxy(X).
+h(f_organicHydroxy_3(X)) :- organicHydroxy(X),not r_organicHydroxy(X).
+single(f_organicHydroxy_1(X),f_organicHydroxy_2(X)) :- organicHydroxy(X),not r_organicHydroxy(X).
+single(f_organicHydroxy_2(X),f_organicHydroxy_1(X)) :- organicHydroxy(X),not r_organicHydroxy(X).
+single(f_organicHydroxy_2(X),f_organicHydroxy_3(X)) :- organicHydroxy(X),not r_organicHydroxy(X).
+single(f_organicHydroxy_3(X),f_organicHydroxy_2(X)) :- organicHydroxy(X),not r_organicHydroxy(X).
+hasAtom(X,f_organicHydroxy_1(X)) :- organicHydroxy(X),not r_organicHydroxy(X).
+hasAtom(X,f_organicHydroxy_2(X)) :- organicHydroxy(X),not r_organicHydroxy(X).
+hasAtom(X,f_organicHydroxy_3(X)) :- organicHydroxy(X),not r_organicHydroxy(X).
+g_organicHydroxy(f_organicHydroxy_1(X)) :- organicHydroxy(X),not r_organicHydroxy(X).
+g_organicHydroxy(f_organicHydroxy_2(X)) :- organicHydroxy(X),not r_organicHydroxy(X).
+g_organicHydroxy(f_organicHydroxy_3(X)) :- organicHydroxy(X),not r_organicHydroxy(X).
+bond(X,Y) :- single(X,Y).
+bond(X,Y) :- double(X,Y).
+bond(X,Y) :- triple(X,Y).
+
+% molecules that contain barium
+bariumMolEntity(X) :- hasAtom(X,Y), ba(Y).
+
+% molecules that contain beryllium
+berylliumMolEntity(X) :- hasAtom(X,Y), be(Y).
+
+% molecules that contain calcium
+calciumMolEntity(X) :- hasAtom(X,Y), ca(Y).
+
+% molecules that contain magnesium
+magnesiumMolEntity(X) :- hasAtom(X,Y), mg(Y).
+
+% molecules that contain radium
+radiumMolEntity(X) :- hasAtom(X,Y), ra(Y).
+
+% molecules that contain strontium
+strontiumMolEntity(X) :- hasAtom(X,Y), sr(Y).
+
+% molecules that contain halogens
+alkalineEarthMetalMolEntity(X) :- bariumMolEntity(X).
+alkalineEarthMetalMolEntity(X) :- berylliumMolEntity(X).
+alkalineEarthMetalMolEntity(X) :- calciumMolEntity(X).
+alkalineEarthMetalMolEntity(X) :- magnesiumMolEntity(X).
+alkalineEarthMetalMolEntity(X) :- radiumMolEntity(X).
+alkalineEarthMetalMolEntity(X) :- strontiumMolEntity(X).
+
+% molecules that contain astatine
+astatineMolEntity(X) :- hasAtom(X,Y), at(Y).
+
+% molecules that contain bromine
+bromineMolEntity(X) :- hasAtom(X,Y), br(Y).
+
+% molecules that contain chlorine
+chlorineMolEntity(X) :- hasAtom(X,Y), cl(Y).
+
+% molecules that contain fluorine
+fluorineMolEntity(X) :- hasAtom(X,Y), f(Y).
+
+% molecules that contain iodine
+iodineMolEntity(X) :- hasAtom(X,Y), i(Y).
+
+% molecules that contain halogens
+halogenMolEntity(X) :- bromineMolEntity(X).
+halogenMolEntity(X) :- chlorineMolEntity(X).
+halogenMolEntity(X) :- fluorineMolEntity(X).
+halogenMolEntity(X) :- astatineMolEntity(X).
+halogenMolEntity(X) :- iodineMolEntity(X).
+
+
+% molecules that contain polonium
+poloniumMolEntity(X) :- hasAtom(X,Y), po(Y).
+
+% molecules that contain selenium
+seleniumMolEntity(X) :- hasAtom(X,Y), se(Y).
+
+% molecules that contain sulfur
+sulfurMolEntity(X) :- hasAtom(X,Y), s(Y).
+
+% molecules that contain tellurium
+telluriumMolEntity(X) :- hasAtom(X,Y), te(Y).
+
+% molecules that are chalcogens
+chalcogenMolEntity(X) :- oxygenMolEntity(X).
+chalcogenMolEntity(X) :- poloniumMolEntity(X).
+chalcogenMolEntity(X) :- seleniumMolEntity(X).
+chalcogenMolEntity(X) :- sulfurMolEntity(X).
+chalcogenMolEntity(X) :- telluriumMolEntity(X).
+
+% molecules that contain antimony
+antimonyMolEntity(X) :- hasAtom(X,Y), sb(Y).
+
+% molecules that contain arsenic
+arsenicMolEntity(X) :- hasAtom(X,Y), as(Y).
+
+% molecules that contain bismuth
+bismuthMolEntity(X) :- hasAtom(X,Y), bi(Y).
+
+% molecules that contain nitrogen
+nitrogenMolEntity(X) :- hasAtom(X,Y), n(Y).
+
+% molecules that are pnictogens
+pnictogenMolEntity(X) :- antimonyMolEntity(X).
+pnictogenMolEntity(X) :- arsenicMolEntity(X).
+pnictogenMolEntity(X) :- bismuthMolEntity(X).
+pnictogenMolEntity(X) :- nitrogenMolEntity(X).
+pnictogenMolEntity(X) :- phosphorusMolEntity(X).
+
+% molecules that contain chromium
+chromiumMolEntity(X) :- hasAtom(X,Y), cr(Y).
+
+% molecules that contain molybdenum
+molybdenumMolEntity(X) :- hasAtom(X,Y), mo(Y).
+
+% molecules that contain seaborgium
+seaborgiumMolEntity(X) :- hasAtom(X,Y), sg(Y).
+
+% molecules that contain tungsten
+tungstenMolEntity(X) :- hasAtom(X,Y), w(Y).
+
+% molecules that belong to the chromium group
+chromiumGroupMolEntity(X) :- chromiumMolEntity(X).
+chromiumGroupMolEntity(X) :- molybdenumMolEntity(X).
+chromiumGroupMolEntity(X) :- seaborgiumMolEntity(X).
+chromiumGroupMolEntity(X) :- tungstenMolEntity(X).
+
+%noble gas atoms
+noble(X) :- ar(X).
+noble(X) :- he(X).
+noble(X) :- kr(X).
+noble(X) :- ne(X).
+noble(X) :- rn(X).
+noble(X) :- xe(X).
+
+% molecules that contain noble gas atoms
+nobleGasMolEntity(X) :- hasAtom(X,Y), noble(Y).
+
+% molecules that contain carbon
+carbonMolEntity(X) :- hasAtom(X,Y), c(Y).
+
+% molecules that contain oxygen
+oxygenMolEntity(X) :- hasAtom(X,Y), o(Y).
+
+% molecules that contain hydrogen
+hydrogenMolEntity(X) :- hasAtom(X,Y), h(Y).
+
+% molecules that contain phosphorus
+phosphorusMolEntity(X) :- hasAtom(X,Y), p(Y).
+
+% molecules that do not contain carbon
+inorganic(X) :- molecule(X), not carbonMolEntity(X).
+
+% molecules that contain carbon, hydrogen and consist only of carbon and hydrogen
+notHydroCarbon(X) :- molecule(X), hasAtom(X,Y), not c(Y), not h(Y).
+hydroCarbon(X) :- molecule(X), carbonMolEntity(X), not notHydroCarbon(X).
+
+% molecules that contain carbon, hydrogen and halogen and consist only of carbon, hydrogen and halogen
+notHaloHydroCarbon(X) :- molecule(X), hasAtom(X,Y), not c(Y), not h(Y), not halogen(Y).
+haloHydroCarbon(X) :- molecule(X), carbonMolEntity(X), halogenMolEntity(X), not notHaloHydroCarbon(X).
+
+% molecules that contain exactly one carbon
+atLeast2Carbons(X) :- molecule(X), hasAtom(X,Y1), c(Y1), hasAtom(X,Y2), c(Y2), Y1 != Y2.
+exactly1Carbon(X) :- molecule(X), carbonMolEntity(X), not atLeast2Carbons(X).
+
+% molecules that contain exactly two carbons
+atLeast3Carbons(X) :- molecule(X), hasAtom(X,Y1), c(Y1), hasAtom(X,Y2), c(Y2), Y1 != Y2, hasAtom(X,Y3), c(Y3), Y1 != Y3, Y2 != Y3.
+exactly2Carbons(X) :- atLeast2Carbons(X), not atLeast3Carbons(X).
+
+% molecules that contain exactly three carbons
+atLeast4Carbons(X) :- molecule(X), hasAtom(X,Y1), c(Y1), hasAtom(X,Y2), c(Y2), Y1 != Y2, hasAtom(X,Y3), c(Y3), Y1 != Y3, Y2 != Y3, hasAtom(X,Y4), c(Y4), Y1 != Y4, Y2 != Y4, Y3 != Y4.
+exactly3Carbons(X) :- atLeast3Carbons(X), not atLeast4Carbons(X).
+
+% molecules that contain exactly four carbons
+atLeast5Carbons(X) :- molecule(X), hasAtom(X,Y1), c(Y1), hasAtom(X,Y2), c(Y2), Y1 != Y2, hasAtom(X,Y3), c(Y3), Y1 != Y3, Y2 != Y3, hasAtom(X,Y4), c(Y4), Y1 != Y4, Y2 != Y4, Y3 != Y4, hasAtom(X,Y5), c(Y5), Y1 != Y5, Y2 != Y5, Y3 != Y5, Y4 != Y5.
+exactly4Carbons(X) :- atLeast4Carbons(X), not atLeast5Carbons(X).
+
+% molecules that contain at least two atoms
+polyatomic(X) :- molecule(X), hasAtom(X,Y1), hasAtom(X,Y2), Y1 != Y2.
+
+% molecules that contains exactly one atom
+monoatomic(X) :- molecule(X), hasAtom(X,Y1),not polyatomic(X).
+
+% molecules that contain a benzene ring
+hasBenzeneRing(X) :- molecule(X), hasAtom(X,Y1), c(Y1),  hasAtom(X,Y2), c(Y2), single(Y1,Y2), single(Y2,Y1), hasAtom(X,Y3), c(Y3), double(Y2,Y3), double(Y3,Y2), hasAtom(X,Y4), c(Y4), single(Y3,Y4), single(Y4,Y3), hasAtom(X,Y5), double(Y4,Y5), double(Y5,Y4), c(Y5), hasAtom(X,Y6), c(Y6), single(Y5,Y6), single(Y6,Y5), double(Y6,Y1), double(Y1,Y6).
+
+% molecules that contain a three-membered ring
+hasThreeMemberedRing(X) :- hasAtom(X,Y1), hasAtom(X,Y2), Y1 != Y2, bond(Y1,Y2), bond(Y2,Y1), hasAtom(X,Y3), Y1 != Y3,  Y2 != Y3, bond(Y2,Y3), bond(Y3,Y2), bond(Y3,Y1), bond(Y1,Y3).
+
+% molecules that contain a four-membered ring
+hasFourMemberedRing(X) :- hasAtom(X,Y1), hasAtom(X,Y2), Y1 != Y2, bond(Y1,Y2), bond(Y2,Y1), hasAtom(X,Y3), Y1 != Y3,  Y2 != Y3, bond(Y2,Y3), bond(Y3,Y2), hasAtom(X,Y4), Y1 != Y4, Y2 != Y4, Y3 != Y4, bond(Y3,Y4), bond(Y4,Y3), bond(Y4,Y1), bond(Y1,Y4).
+
+% organic molecules that are unsaturated
+unsaturated(X) :- hasAtom(X,Y1), c(Y1), hasAtom(X,Y2), c(Y2), double(Y1,Y2), double(Y2,Y1).
+unsaturated(X) :- hasAtom(X,Y1), c(Y1), hasAtom(X,Y2), c(Y2), triple(Y1,Y2), triple(Y2,Y1).
+
+% organic molecules that are saturated
+saturated(X) :- molecule(X), hasAtom(X,Y1), c(Y1), not unsaturated(X).
+
+% organophosphorus molecules
+organophosphorus(X) :- hasAtom(X,Y1), c(Y1), hasAtom(X,Y2), p(Y2), single(Y1,Y2), single(Y2,Y1).
+
+% organooxygen molecules
+organooxygen(X) :- hasAtom(X,Y1), c(Y1), hasAtom(X,Y2), o(Y2), bond(Y1,Y2), bond(Y2,Y1).
+
+% molecules that contain at least one (possibly acyl) carbon connected with a non-carbon atom
+heteroOrganic(X) :- hasAtom(X,Y1), c(Y1), hasAtom(X,Y2), not c(Y2),  not h(Y2), bond(Y1,Y2), bond(Y2,Y1).
+
+:- organooxygen(X), heteroOrganic(X).
+:- monoatomic(X), atLeast2Carbons(X).
+:- exactly1Carbon(X), atLeast2Carbons(X).
+:- organophosphorus(X), monoatomic(X).
+:- nobleGasMolEntity(X), carbonMolEntity(X).
+:- hasBenzeneRing(X), exactly2Carbons(X).
+:- exactly4Carbons(X), hasBenzeneRing(X).
+:- nobleGasMolEntity(X), chromiumGroupMolEntity(X).
+:- polyatomic(X), nobleGasMolEntity(X).

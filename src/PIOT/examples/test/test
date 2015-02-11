@@ -10,4 +10,4 @@ bird(X) :- canfly(X).
 
 %% ABox
 bat(a).
-mammal(b).
+mammal(a).

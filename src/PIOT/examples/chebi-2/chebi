@@ -1,3 +1,63 @@
+molecule(X) :- chebi_1148(X).
+o(f_chebi_1148_1(X)) :- chebi_1148(X).
+c(f_chebi_1148_2(X)) :- chebi_1148(X).
+c(f_chebi_1148_3(X)) :- chebi_1148(X).
+c(f_chebi_1148_4(X)) :- chebi_1148(X).
+c(f_chebi_1148_5(X)) :- chebi_1148(X).
+o(f_chebi_1148_6(X)) :- chebi_1148(X).
+o(f_chebi_1148_7(X)) :- chebi_1148(X).
+h(f_chebi_1148_8(X)) :- chebi_1148(X).
+h(f_chebi_1148_9(X)) :- chebi_1148(X).
+h(f_chebi_1148_10(X)) :- chebi_1148(X).
+h(f_chebi_1148_11(X)) :- chebi_1148(X).
+h(f_chebi_1148_12(X)) :- chebi_1148(X).
+h(f_chebi_1148_13(X)) :- chebi_1148(X).
+h(f_chebi_1148_14(X)) :- chebi_1148(X).
+h(f_chebi_1148_15(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_1(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_2(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_3(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_4(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_5(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_6(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_7(X)) :- chebi_1148(X).
+single(f_chebi_1148_2(X),f_chebi_1148_1(X)) :- chebi_1148(X).
+single(f_chebi_1148_1(X),f_chebi_1148_2(X)) :- chebi_1148(X).
+double(f_chebi_1148_6(X),f_chebi_1148_2(X)) :- chebi_1148(X).
+double(f_chebi_1148_2(X),f_chebi_1148_6(X)) :- chebi_1148(X).
+single(f_chebi_1148_3(X),f_chebi_1148_2(X)) :- chebi_1148(X).
+single(f_chebi_1148_2(X),f_chebi_1148_3(X)) :- chebi_1148(X).
+single(f_chebi_1148_7(X),f_chebi_1148_3(X)) :- chebi_1148(X).
+single(f_chebi_1148_3(X),f_chebi_1148_7(X)) :- chebi_1148(X).
+single(f_chebi_1148_4(X),f_chebi_1148_3(X)) :- chebi_1148(X).
+single(f_chebi_1148_3(X),f_chebi_1148_4(X)) :- chebi_1148(X).
+single(f_chebi_1148_5(X),f_chebi_1148_4(X)) :- chebi_1148(X).
+single(f_chebi_1148_4(X),f_chebi_1148_5(X)) :- chebi_1148(X).
+single(X,f_chebi_1148_8(X)) :- chebi_1148(X).
+single(f_chebi_1148_8(X),X) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_8(X)) :- chebi_1148(X).
+single(f_chebi_1148_2(X),f_chebi_1148_9(X)) :- chebi_1148(X).
+single(f_chebi_1148_9(X),f_chebi_1148_2(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_9(X)) :- chebi_1148(X).
+single(f_chebi_1148_3(X),f_chebi_1148_10(X)) :- chebi_1148(X).
+single(f_chebi_1148_10(X),f_chebi_1148_3(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_10(X)) :- chebi_1148(X).
+single(f_chebi_1148_3(X),f_chebi_1148_11(X)) :- chebi_1148(X).
+single(f_chebi_1148_11(X),f_chebi_1148_3(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_11(X)) :- chebi_1148(X).
+single(f_chebi_1148_4(X),f_chebi_1148_12(X)) :- chebi_1148(X).
+single(f_chebi_1148_12(X),f_chebi_1148_4(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_12(X)) :- chebi_1148(X).
+single(f_chebi_1148_4(X),f_chebi_1148_13(X)) :- chebi_1148(X).
+single(f_chebi_1148_13(X),f_chebi_1148_4(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_13(X)) :- chebi_1148(X).
+single(f_chebi_1148_4(X),f_chebi_1148_14(X)) :- chebi_1148(X).
+single(f_chebi_1148_14(X),f_chebi_1148_4(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_14(X)) :- chebi_1148(X).
+single(f_chebi_1148_6(X),f_chebi_1148_15(X)) :- chebi_1148(X).
+single(f_chebi_1148_15(X),f_chebi_1148_6(X)) :- chebi_1148(X).
+hasAtom(X,f_chebi_1148_15(X)) :- chebi_1148(X).
+chebi_1148(c_chebi_1148).
 molecule(X) :- chebi_1040(X).
 n(f_chebi_1040_1(X)) :- chebi_1040(X).
 c(f_chebi_1040_2(X)) :- chebi_1040(X).
@@ -47,6 +107,9 @@ chebi_1040(c_chebi_1040).
 acetate(X) :- c(Y1),h(Y2),h(Y3),h(Y4),c(Y5),o(Y6),o(Y7),single(Y1,Y2),single(Y2,Y1),single(Y1,Y3),single(Y3,Y1),single(Y1,Y4),single(Y4,Y1),single(Y1,Y5),single(Y5,Y1),double(Y5,Y6),double(Y6,Y5),single(Y5,Y7),single(Y7,Y5),single(Y7,Y8),single(Y8,Y7),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),hasAtom(X,Y5),hasAtom(X,Y6),hasAtom(X,Y7),hasAtom(X,Y8),not g_acetate(Y1),not g_acetate(Y2),not g_acetate(Y3),not g_acetate(Y4),not g_acetate(Y5),not g_acetate(Y6),not g_acetate(Y7),not g_acetate(Y8).
 r_acetate(X) :- c(Y1),h(Y2),h(Y3),h(Y4),c(Y5),o(Y6),o(Y7),single(Y1,Y2),single(Y2,Y1),single(Y1,Y3),single(Y3,Y1),single(Y1,Y4),single(Y4,Y1),single(Y1,Y5),single(Y5,Y1),double(Y5,Y6),double(Y6,Y5),single(Y5,Y7),single(Y7,Y5),single(Y7,Y8),single(Y8,Y7),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),hasAtom(X,Y5),hasAtom(X,Y6),hasAtom(X,Y7),hasAtom(X,Y8),not g_acetate(Y1),not g_acetate(Y2),not g_acetate(Y3),not g_acetate(Y4),not g_acetate(Y5),not g_acetate(Y6),not g_acetate(Y7),not g_acetate(Y8).
 acetate(c_acetate).
+acid(X) :- c(Y2),o(Y3),o(Y4),h(Y5),single(Y1,Y2),single(Y2,Y1),double(Y2,Y3),double(Y3,Y2),single(Y2,Y4),single(Y4,Y2),single(Y4,Y5),single(Y5,Y4),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),hasAtom(X,Y5),not g_acid(Y1),not g_acid(Y2),not g_acid(Y3),not g_acid(Y4),not g_acid(Y5).
+r_acid(X) :- c(Y2),o(Y3),o(Y4),h(Y5),single(Y1,Y2),single(Y2,Y1),double(Y2,Y3),double(Y3,Y2),single(Y2,Y4),single(Y4,Y2),single(Y4,Y5),single(Y5,Y4),hasAtom(X,Y1),hasAtom(X,Y2),hasAtom(X,Y3),hasAtom(X,Y4),hasAtom(X,Y5),not g_acid(Y1),not g_acid(Y2),not g_acid(Y3),not g_acid(Y4),not g_acid(Y5).
+acid(c_acid).
 c(f_acetate_1(X)) :- acetate(X),not r_acetate(X).
 h(f_acetate_2(X)) :- acetate(X),not r_acetate(X).
 h(f_acetate_3(X)) :- acetate(X),not r_acetate(X).
@@ -84,10 +147,36 @@ g_acetate(f_acetate_5(X)) :- acetate(X),not r_acetate(X).
 g_acetate(f_acetate_6(X)) :- acetate(X),not r_acetate(X).
 g_acetate(f_acetate_7(X)) :- acetate(X),not r_acetate(X).
 g_acetate(f_acetate_8(X)) :- acetate(X),not r_acetate(X).
+c(f_acid_2(X)) :- acid(X),not r_acid(X).
+o(f_acid_3(X)) :- acid(X),not r_acid(X).
+o(f_acid_4(X)) :- acid(X),not r_acid(X).
+h(f_acid_5(X)) :- acid(X),not r_acid(X).
+single(f_acid_1(X),f_acid_2(X)) :- acid(X),not r_acid(X).
+single(f_acid_2(X),f_acid_1(X)) :- acid(X),not r_acid(X).
+double(f_acid_2(X),f_acid_3(X)) :- acid(X),not r_acid(X).
+double(f_acid_3(X),f_acid_2(X)) :- acid(X),not r_acid(X).
+single(f_acid_2(X),f_acid_4(X)) :- acid(X),not r_acid(X).
+single(f_acid_4(X),f_acid_2(X)) :- acid(X),not r_acid(X).
+single(f_acid_4(X),f_acid_5(X)) :- acid(X),not r_acid(X).
+single(f_acid_5(X),f_acid_4(X)) :- acid(X),not r_acid(X).
+hasAtom(X,f_acid_1(X)) :- acid(X),not r_acid(X).
+hasAtom(X,f_acid_2(X)) :- acid(X),not r_acid(X).
+hasAtom(X,f_acid_3(X)) :- acid(X),not r_acid(X).
+hasAtom(X,f_acid_4(X)) :- acid(X),not r_acid(X).
+hasAtom(X,f_acid_5(X)) :- acid(X),not r_acid(X).
+g_acid(f_acid_1(X)) :- acid(X),not r_acid(X).
+g_acid(f_acid_2(X)) :- acid(X),not r_acid(X).
+g_acid(f_acid_3(X)) :- acid(X),not r_acid(X).
+g_acid(f_acid_4(X)) :- acid(X),not r_acid(X).
+g_acid(f_acid_5(X)) :- acid(X),not r_acid(X).
 bond(X,Y) :- single(X,Y).
 bond(X,Y) :- double(X,Y).
 bond(X,Y) :- triple(X,Y).
+
+% molecules that contain barium
 bariumMolEntity(X) :- hasAtom(X,Y), ba(Y).
+
+% molecules that contain beryllium
 berylliumMolEntity(X) :- hasAtom(X,Y), be(Y).
 
 % molecules that contain calcium
@@ -238,17 +327,38 @@ exactly3Carbons(X) :- atLeast3Carbons(X), not atLeast4Carbons(X).
 % molecules that contain exactly four carbons
 atLeast5Carbons(X) :- molecule(X), hasAtom(X,Y1), c(Y1), hasAtom(X,Y2), c(Y2), Y1 != Y2, hasAtom(X,Y3), c(Y3), Y1 != Y3, Y2 != Y3, hasAtom(X,Y4), c(Y4), Y1 != Y4, Y2 != Y4, Y3 != Y4, hasAtom(X,Y5), c(Y5), Y1 != Y5, Y2 != Y5, Y3 != Y5, Y4 != Y5.
 exactly4Carbons(X) :- atLeast4Carbons(X), not atLeast5Carbons(X).
+
+% molecules that contain at least two atoms
 polyatomic(X) :- molecule(X), hasAtom(X,Y1), hasAtom(X,Y2), Y1 != Y2.
+
+% molecules that contains exactly one atom
 monoatomic(X) :- molecule(X), hasAtom(X,Y1),not polyatomic(X).
+
+% molecules that contain a benzene ring
 hasBenzeneRing(X) :- molecule(X), hasAtom(X,Y1), c(Y1),  hasAtom(X,Y2), c(Y2), single(Y1,Y2), single(Y2,Y1), hasAtom(X,Y3), c(Y3), double(Y2,Y3), double(Y3,Y2), hasAtom(X,Y4), c(Y4), single(Y3,Y4), single(Y4,Y3), hasAtom(X,Y5), double(Y4,Y5), double(Y5,Y4), c(Y5), hasAtom(X,Y6), c(Y6), single(Y5,Y6), single(Y6,Y5), double(Y6,Y1), double(Y1,Y6).
+
+% molecules that contain a three-membered ring
 hasThreeMemberedRing(X) :- hasAtom(X,Y1), hasAtom(X,Y2), Y1 != Y2, bond(Y1,Y2), bond(Y2,Y1), hasAtom(X,Y3), Y1 != Y3,  Y2 != Y3, bond(Y2,Y3), bond(Y3,Y2), bond(Y3,Y1), bond(Y1,Y3).
+
+% molecules that contain a four-membered ring
 hasFourMemberedRing(X) :- hasAtom(X,Y1), hasAtom(X,Y2), Y1 != Y2, bond(Y1,Y2), bond(Y2,Y1), hasAtom(X,Y3), Y1 != Y3,  Y2 != Y3, bond(Y2,Y3), bond(Y3,Y2), hasAtom(X,Y4), Y1 != Y4, Y2 != Y4, Y3 != Y4, bond(Y3,Y4), bond(Y4,Y3), bond(Y4,Y1), bond(Y1,Y4).
+
+% organic molecules that are unsaturated
 unsaturated(X) :- hasAtom(X,Y1), c(Y1), hasAtom(X,Y2), c(Y2), double(Y1,Y2), double(Y2,Y1).
 unsaturated(X) :- hasAtom(X,Y1), c(Y1), hasAtom(X,Y2), c(Y2), triple(Y1,Y2), triple(Y2,Y1).
+
+% organic molecules that are saturated
 saturated(X) :- molecule(X), hasAtom(X,Y1), c(Y1), not unsaturated(X).
+
+% organophosphorus molecules
 organophosphorus(X) :- hasAtom(X,Y1), c(Y1), hasAtom(X,Y2), p(Y2), single(Y1,Y2), single(Y2,Y1).
+
+% organooxygen molecules
 organooxygen(X) :- hasAtom(X,Y1), c(Y1), hasAtom(X,Y2), o(Y2), bond(Y1,Y2), bond(Y2,Y1).
+
+% molecules that contain at least one (possibly acyl) carbon connected with a non-carbon atom
 heteroOrganic(X) :- hasAtom(X,Y1), c(Y1), hasAtom(X,Y2), not c(Y2),  not h(Y2), bond(Y1,Y2), bond(Y2,Y1).
+
 :- organooxygen(X), heteroOrganic(X).
 :- monoatomic(X), atLeast2Carbons(X).
 :- exactly1Carbon(X), atLeast2Carbons(X).

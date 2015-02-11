@@ -46,11 +46,11 @@ void translation::trans(int output_type) {
         outfile << line << endl;
         memset(buff,0,1024);
         if (output_type == 2) {
-          sprintf(buff, "%d", rand()%10+1);
+          sprintf(buff, "%d", rand()%7+4);
           line = buff;
           outfile << line << endl;
         } else if (output_type == 3) {
-          sprintf(buff, "%d", rand()%3);
+          sprintf(buff, "%d", rand()%2+1);
           line = buff;
           outfile << line << endl;
         }
